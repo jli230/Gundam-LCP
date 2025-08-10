@@ -1,0 +1,458 @@
+[
+  {
+    "id": "c43ba4cd-069b-436f-a7da-3ed8cc327a2c",
+    "name": "ADE-M-01 Area Denial Grenades",
+    "source": "EFRD",
+    "license": "Exotic",
+    "license_id": "",
+    "license_level": 0,
+    "effect": "<div>First used in the Zeon Ardennes Offensive, the ADE-M-01 Area Denial Grenade was one of a vast array of anti-MS weaponry and tactics pioneered for use in the defense of the New Maginot Line. Lethally effective both in holding a position and skirmishing pursuing enemies on the way back to the next line of defense, the Area Denial Grenade had destroyed numerous Zaku IIs and conventional vehicles during the failed offensive and was famously cited by French general Josephine Landais as being a key component in the Federation coalition's successful defense of the French border from further Zeon incursion.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      },
+      {
+        "id": "tg_unique",
+        "val": null
+      },
+      {
+        "id": "tg_grenade",
+        "val": null
+      },
+      {
+        "id": "tg_mine",
+        "val": null
+      },
+      {
+        "id": "tg_quick_action",
+        "val": null
+      },
+      {
+        "id": "tg_exotic",
+        "val": null
+      }
+    ],
+    "actions": [
+      {
+        "name": "\"Roller\" Mode Grenade",
+        "activation": "Quick",
+        "detail": "<div>Instead of throwing this grenade, it rolls along a line 10 path directly from you, bouncing over obstructions and objects up to Size 1 and passing through holes or gaps no smaller than Size 1/2. It detonates when it moves through or adjacent to the space occupied by any character: they must succeed on an Agility save or take 1d6+3 explosive damage and be knocked 3 spaces in the direction the grenade was rolled. On a success, they take half damage and aren’t knocked back.</div>",
+        "pilot": false,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6+3"
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Deploy \"Seeker\" Mode Grenade",
+        "activation": "Quick",
+        "detail": "<div> </div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "deployables": [
+      {
+        "name": "\"Seeker\" Mode Grenade",
+        "type": "Mine",
+        "detail": "<div>This mine detonates when a flying character passes over or adjacent to it, up to 10 spaces high. The mine launches itself upwards and detonates: all characters within the affected area must succeed on a Systems save or take 2d6 explosive damage and immediately land (this counts as falling without any damage); additionally, they can’t fly until the end of their next turn. On a success, they take half damage and are otherwise unaffected.</div>",
+        "size": 0.5,
+        "activation": "",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "",
+        "evasion": "",
+        "edef": "",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "8b4753c8-9075-4f56-836a-0e328efe16dd",
+    "name": "Electromagnetic Actuators",
+    "source": "EFRD",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "effect": "<div>1/round, upon being targeted by a ranged weapon (and not tech attacks), spend a reaction to move one space in any direction before the attack is resolved. This movement does not trigger overwatch or reaction fire. Additionally, gain access to the Rapid Reaction action.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div>A special membrane treatment applied to mobile suit joints to improve their response speed. The mobile suits developed by the Earth Federation Forces use special actuators called field motors, which have their efficiency increased by the magnet coating process. The treatment also reduces friction resistance in the mobile suit's joints. First tested on the RX-78-3 Gundam \"G-3\", this process is then applied to the RX-78-2 used by Amuro Ray, reducing the time required for changes of direction by roughly 27%.</div>",
+    "actions": [
+      {
+        "name": "Rapid Reaction",
+        "activation": "Reaction",
+        "detail": "<div>Inflict 1 heat on Self. Gain +1 Accuracy to an Overwatch Reaction attack.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": "<div>Initiate an Overwatch reaction with a non-tech Attack.</div>"
+      }
+    ]
+  },
+  {
+    "id": "9a581556-1579-45aa-8968-a51cbededeef",
+    "name": "Reactive Targeting Solutions",
+    "source": "ZN",
+    "license": "Exotics",
+    "license_id": "",
+    "license_level": 0,
+    "effect": "<div>Once per turn, you may benefit from a Lock-On without consuming it. </div>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_exotic",
+        "val": null
+      }
+    ]
+  },
+  {
+    "id": "87bc7620-86a3-4427-8368-915c3e9f714e",
+    "name": "MIP-B6 Cracker Grenade",
+    "source": "ZN",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "effect": "<div>Gain 4 charges. These charges may be used for either Cracker Frag Grenade or Cracker Flash Grenade, and are replenished with a Full Repair.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_grenade",
+        "val": 0
+      },
+      {
+        "id": "tg_arcing",
+        "val": null
+      }
+    ],
+    "actions": [
+      {
+        "name": "Cracker Frag Grenade",
+        "activation": "Quick",
+        "detail": "<div>Throw a Cracker Grenade anywhere within Sensors Range. All characters within a Blast 2 area must pass an Agility save or take 1d6 Explosive damage. On a success, they take half damage.</div>",
+        "pilot": false,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Blast",
+            "val": "2"
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Cracker Flash Grenade",
+        "activation": "Quick",
+        "detail": "<div>Toss a Cracker Flash Grenade anywhere within Sensors. All targets within Blast 1 must succeed a Systems check or be Impaired until the end of their next turn.</div>",
+        "pilot": false,
+        "damage": [
+          {
+            "type": "Heat",
+            "val": "0"
+          }
+        ],
+        "range": [
+          {
+            "type": "Blast",
+            "val": "1"
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "counters": [
+      {
+        "id": "5792434e-d3bf-4592-b857-13751a333ae5",
+        "name": "Grenades",
+        "min": "0",
+        "max": "4",
+        "default_value": "4"
+      }
+    ]
+  },
+  {
+    "id": "8d142dcc-5d72-44b2-861c-85ca6c4c182a",
+    "name": "Sturmfaust",
+    "source": "ZN",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "effect": "<div>Gain two charges of Sturm Faust. Replenish these charges with a Full Repair.</div>",
+    "type": "System",
+    "sp": "1",
+    "description": "<div>The Sturm Faust is a simplified, disposable rocket launcher. It consisted of a rocket launcher and a tube for firing. The rocket launcher consists of a warhead filled with a fuse and gunpowder, to which is attached a tube with solid fuel that acts as a rocket for propulsion. To enhance straight-line propulsion, folded stabilizing wings are installed, and they unfold immediately after launch. The launch tube only had a launcher attached to it. When the rocket launches, a jet of flame flares out from the rear of the tube. After firing, the tube is discarded. The Sturm Faust could be regarded as a kind of recoilless gun. It is said to have an effective range of 600 meters, but in reality, it is necessary to move closer to be able to hit the target. Furthermore, as the warhead is not equipped with a guidance device, it is extremely hard to use the Sturm Faust to hit a moving target accurately. However, it is still a highly destructive portable weapon.</div><div>Used in anti-ship and anti-MS battles, this weapon does not require special equipment, such as a manipulator equipped with a connector for ignition, so it could be operated by any MS that can move its fingers. In addition, it was easier to handle than recoilless guns, and its disposable nature made it a popular weapon of Zeon's mobile suits from the middle to the end of the One Year War. Its simple structure also made it easy to manufacture, and after the end of the One Year War, when supply became difficult, many remnants of the Principality of Zeon used this armament. Due to its excellent cost performance, the Sturm Faust is still in use even in U.C.0090s. The same type of armament is also used by the Federation's MS, but the name \"Sturm Faust\" is frowned upon as being \"Zeon-like,\" and they are often referred to as \"clubs\" because of their shape.</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "val": 0
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Sturm Faust",
+        "activation": "Quick",
+        "detail": "<div>Fire the Sturmfaust.</div>",
+        "pilot": false,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6+3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": "12"
+          },
+          {
+            "type": "Blast",
+            "val": "1"
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "d845f1ff-71df-4197-9835-75d6575d39b9",
+    "name": "\"Prometheus\" Model Ultracompact Fusion Reactor",
+    "source": "EFRD",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "effect": "<div>The MS may now <strong>Shunt Power to Maneuvering Subsystems </strong>or <strong>Shunt Power to Weapon Systems </strong>as a Protocol in exchange for taking 1d3 Heat.</div>",
+    "type": "System",
+    "sp": "4",
+    "description": "<div>A variant of the Minovsky Ultracompact Fusion Reactor based on GM's proprietary hydrogen fusion reactor designs, this Helium-3 fusion reactor was created to be compatible with the same mountings that most mobile suits use for their Minovsky reactors and thus easily retrofittable into existing designs. Using Torenov Minovsky's insight on the original design, the GM 800FR/He-3 Prometheus Reactor is streamlined for effective mass production while also making notable improvements in reactor output. This additional power can be shunted to boost the performance of a designated system without affecting the power draw of other systems.</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "val": null
+      },
+      {
+        "id": "tg_protocol",
+        "val": null
+      },
+      {
+        "id": "tg_exotic",
+        "name": "EXOTIC GEAR",
+        "description": "EXOTIC GEAR is a general tag for equipment that exists outside the traditional licensing system.",
+        "filter_ignore": true
+      }
+    ],
+    "actions": [
+      {
+        "name": "Shunt Power to Maneuvering Subsystems",
+        "activation": "Protocol",
+        "detail": "<div>Until the start of your next turn, gain +1 Accuracy to Agility checks and saves, and enemy attacks against you suffer +1 Difficulty.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Shunt Power to Weapon Systems",
+        "activation": "Protocol",
+        "detail": "<div>Until the start of your next turn, gain 1d6 damage to all Energy weapons.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "1aaa51cb-2cb6-4885-89c7-d509434e5d58",
+    "name": "Shipbreaker Mounting",
+    "source": "ZN",
+    "license": "MSM-03C Hygogg ",
+    "license_level": 3,
+    "effect": "<div>Choose one non-Heavy Mount. Enables the use of a Shipbreaker Torpedo. This system disables the use of that mount until it is jettisoned when firing the Shipbreaker Torpedo. Doing such also counts the system as being effectively \"destroyed\". Reloading this system can be done by repairing systems as usual during Short Rests. Cannot be destroyed normally as part of System Trauma. </div><div>If the mount that this system is attached to is destroyed, roll a SYSTEMS check. On success, instead of destroying the mount this system can be \"thrown\" as a grenade up to Range 5 away, dealing ranged 1d6 Explosive damage in a Blast 2 zone to anyone that fails to pass an AGILITY save (half damage if they pass). On failure, it instead deals 1d6 Explosive AP damage to the MS and inflicted Shredded before anyone within a Burst 2 zone must roll an AGILITY save, taking 1d6 Explosive damage if they fail the save and half of that if they succeed.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "integrated": [
+      "9cd442ad-8d1a-4d68-b535-f7a078aa372c"
+    ]
+  },
+  {
+    "id": "fdf92471-3d00-46fb-b641-7bd108fe2386",
+    "name": "Renard Basque-Type AI",
+    "source": "ZN",
+    "license": "MSM-03C Hygogg ",
+    "license_id": "bd492050-6b28-49ff-ae6b-53b4ca375849",
+    "license_level": 3,
+    "effect": "<div>Gain use of the Renard Basque Protocol.</div>",
+    "type": "System",
+    "sp": "3",
+    "description": "<div>A type of artificial intelligence designed for amphibious assaults, Renard Basque-Type AIs aid their pilots by automating minute chassis maneuvers in order to minimize damage from interception fire. While not a complete substitute for a pilot, this type of artificial intelligence is capable of learning and adapting its pilot's skills to supplement its capabilities when put on autopilot.</div><div>While the base version does not possess any form of personality, unofficial modifications often give them a pirate or privateer-like personality.</div>",
+    "tags": [
+      {
+        "id": "tg_ai",
+        "val": null
+      },
+      {
+        "id": "tg_unique",
+        "val": null
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "name": "Renard Basque Protocol",
+        "activation": "Protocol",
+        "detail": "<div>Expend a charge to give you Resistance to all Overwatch attacks until the start of your next turn. In addition, the Overwatch reaction can now be taken twice per round and can be triggered on involuntary movement.</div>",
+        "cost": "1",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "39b41e88-6722-4739-b182-3a811afcaf2b",
+    "name": "Icarus Frame Shift Drive",
+    "source": "EFRD",
+    "license": "VF-0 Phoenix",
+    "license_id": "56b6b22c-e089-4720-8b84-d7eeac7ed317",
+    "license_level": 3,
+    "effect": "<div>Gain access to the Frame Shift action.</div>",
+    "type": "System",
+    "sp": "4",
+    "description": "",
+    "actions": [
+      {
+        "name": "Frame Shift",
+        "activation": "Free",
+        "detail": "<div>You may take 1d6+3 heat in order to perform a full action as a quick action.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "e232c554-eb99-4786-bfa7-46f3a0928e4f",
+    "name": "Thrust Limiter Removal",
+    "source": "EFRD",
+    "license": "VF-0 Phoenix",
+    "license_id": "56b6b22c-e089-4720-8b84-d7eeac7ed317",
+    "license_level": 2,
+    "effect": "<div>1/round you may inflict 2 Heat to yourself, and boost as a free action.</div>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "name": "HEAT {VAL} (SELF)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 2
+      },
+      {
+        "id": "tg_round",
+        "name": "{VAL}/ROUND",
+        "description": "This system, trait or reaction can be used {VAL} number of times between the start of the user’s turn and the start of their next turn.",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "63c0197b-e9a7-4e8b-80ef-e63a82661950",
+    "name": "Minovsky Cloak",
+    "source": "ZN",
+    "license": "MSM-07 Z'gok",
+    "license_id": "ca17b680-11a7-4323-a00e-b967541eb7c4",
+    "license_level": 1,
+    "effect": "<div>The Minovsky Cloak incurs 1 Difficulty on all search actions targeting this mech. For every 10 spaces between you and the source, an additional +1 Difficulty is imposed, to a maximum of 3 Difficulty. </div>",
+    "type": "System",
+    "sp": "2",
+    "description": ""
+  },
+  {
+    "id": "4e71e722-8f67-4fe1-b46c-ad5da65d1273",
+    "name": "240mm Concussive Torpedos",
+    "source": "ZN",
+    "license": "MSM-07 Z'gok",
+    "license_id": "ca17b680-11a7-4323-a00e-b967541eb7c4",
+    "license_level": 3,
+    "effect": "<div>1/round, this system may trigger upon losing the HIDDEN status. Choose up to three targets within Range 5 - each of those targets must roll a Hull check. On a failure, the targets take 5 Explosive damage and become Impaired and Slowed. On success, the targets take 3 Explosive damage.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "LIMITED {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 5
+      }
+    ]
+  }
+]
