@@ -1,11 +1,11 @@
 [
   {
-    "id": "0cc27c0f-2090-40d2-9f4d-972a7aa155b0",
+    "id": "MSG0079_mgsevensix_mk_two_bullpup_assault_rifle",
     "name": "MG76 Mk. 2 Bullpup Assault Rifle",
     "source": "EFRD",
-    "license": "",
-    "license_id": "",
-    "license_level": 0,
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 1,
     "description": "<div>Due to its bullpup configuration, the 90mm MG76 is very compact and lightweight in comparison to its contemporaries, making engaging targets in close quarters almost as easy as those at medium distance. Along with being easy to store and transport, this assault rifle is a common weapon for Federation Mobile Suits. The Mk. 2 MG76 possesses with modifications made after the Battle of Loum. The most noticeable changes is its extended barrel and improved hand grip, allowing for tighter shot placements and increased muzzle velocity. The addition of small tarp coverings over part seams has improved the service lifespan of the MG76 by preventing debris from getting into the weapon whether in space or land combat.</div>",
     "mount": "Main",
     "type": "Rifle",
@@ -31,13 +31,13 @@
     ]
   },
   {
-    "id": "83e3c155-302a-4b55-9cc3-5964376f7cbb",
+    "id": "MSG0079_bowa_br_m_sevenninec_one_beam_spray_gun",
     "name": "BOWA BR-M-79C-1 Beam Spray Gun",
     "source": "EFRD",
-    "license": "",
-    "license_id": "",
-    "license_level": 0,
-    "description": "<div>The BR-M79-C-1 Beam Spray Gun was designed and developed by BOWA corporation as an Anti-Mobile Suit weapon for the RGM-79. &nbsp;&nbsp;While the XBR-M-79, the pioneering beam rifle developed by the Federation Military ahead of the Principality of Zeon, would be classified as an long range assault rifle under the previous system of weapon categorization, the Beam Spray Gun falls more into the category of a mid range machine pistol. &nbsp;</div><div>The Beam Spray gun is not equipped with any targeting sensors, but instead relies on the data received from the head sensors of the GM, and the FCS relies on the data supplied from the main mobile suit. &nbsp;Regardless of the mid-range classification, the official effective range of the weapon remains classified, but slightly surpasses that of the 120mm machine gun utilized by the main Mobile Suit deployed by the Principality of Zeon, the MS-06 Zaku, while still retaining more than sufficient knock down power.</div>",
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 2,
+    "description": "<div>The BR-M79-C-1 Beam Spray Gun was designed and developed by BOWA corporation as an Anti-Mobile Suit weapon for the RGM-79. &nbsp;&nbsp;While the XBR-M-79, the pioneering beam rifle developed by the Federation Military ahead of the Principality of Zeon, would be classified as an long range assault rifle under the previous system of weapon categorization, the Beam Spray Gun falls more into the category of a mid range machine pistol. &nbsp;</div><div>The Beam Spray gun is not equipped with any targeting sensors, but instead relies on the data received from the head sensors of the GM, and the FCS relies on the data supplied from the main mobile suit. &nbsp;Regardless of the mid-range classification, the official effective range of the weapon remains classified, but slightly surpasses that of the 120mm machine gun utilized by the main Mobile Suit deployed by the Principality of Zeon, the MS-06 Zaku II, while still retaining more than sufficient knock down power.</div>",
     "mount": "Main",
     "type": "CQB",
     "sp": 0,
@@ -89,16 +89,22 @@
     ]
   },
   {
-    "id": "03f6c8ce-52e1-498e-8f16-31ec6135bb76",
+    "id": "MSG0079_thi_bsjgzeroone_beam_saber",
     "name": "THI BSjG01 Beam Saber",
     "source": "EFRD",
-    "license": "",
-    "license_id": "",
-    "license_level": 0,
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 2,
     "description": "<div>Stored on the left side of the backpack, it is a small device held in the mobile suit's hands when operated and is powered by a rechargeable energy capacitor. The beam saber emits a blade of plasma contained by an I-Field and can cut through any armor not treated with anti-beam coating.</div>",
     "mount": "Main",
     "type": "Melee",
     "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ap",
+        "val": null
+      }
+    ],
     "barrage": true,
     "skirmish": true,
     "cost": 1,
@@ -114,22 +120,15 @@
         "type": "Threat",
         "val": "1"
       }
-    ],
-    "tags": [
-      {
-        "id": "tg_ap",
-        "val": null
-      }
     ]
   },
   {
-    "id": "0096ffd8-7ff9-4e24-be18-68388e5e75ab",
+    "id": "MSG0079_type_five_heat_hawk",
     "name": "Type 5 Heat Hawk",
     "source": "ZN",
     "license": "",
     "license_level": 0,
     "description": "<div>An axe-shaped close combat weapon, it uses a super-heated blade to cut through the armor of enemy MS or vehicles. The thermal energy is generated by the power output of the Zaku II's thermonuclear reactor and relayed through the MS' hands.</div>",
-    "on_crit": "<div></div>",
     "mount": "Main",
     "type": "Melee",
     "cost": 1,
@@ -155,7 +154,7 @@
     "profiles": []
   },
   {
-    "id": "3c0e2a33-e573-4525-8301-6588c33d513f",
+    "id": "MSG0079_zim_m_t_konesevenfivec_onesevenfivemm_recoilless_rifle",
     "name": "ZIM/M.T-K175C 175mm Recoilless Rifle",
     "source": "ZN",
     "license": "",
@@ -215,24 +214,24 @@
     ]
   },
   {
-    "id": "7210961c-8613-4166-8bb3-5549c61d9b3f",
+    "id": "MSG0079_sixzeromm_vulcan_cannon",
     "name": "60mm Vulcan Cannon",
     "source": "EFRD",
-    "license": "",
-    "license_id": "",
-    "license_level": 0,
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 1,
     "description": "<div>A basic armament of many Federation mobile suits, a 60mm three-barrel vulcan guns can be mounted in the head and used for mid-range and close combat defense. While generally ineffective against the armor of other mobile suits, they are useful for intercepting incoming missiles/rockets, destroying mobile suit sensors, and attacking lightly-armored vehicles.</div>",
+    "effect": "<div>This weapon does not take difficulty from being Engaged.</div>",
     "mount": "Auxiliary",
     "type": "CQB",
     "sp": 0,
-    "effect": "<div>This weapon does not take difficulty from being Engaged.</div>",
     "barrage": true,
     "skirmish": true,
     "cost": 1,
     "damage": [
       {
         "type": "Kinetic",
-        "val": "1"
+        "val": "1D3"
       }
     ],
     "range": [
@@ -254,58 +253,13 @@
         "synergy_locations": [],
         "tech_attack": false,
         "frequency": "1/round",
-        "init": "<div></div>",
+        "init": "",
         "trigger": "<div>Targeted by a Launcher type weapon.</div>"
       }
     ]
   },
   {
-    "id": "8e2820dd-4d26-49e4-a0b3-c1f80dacca9c",
-    "name": "Beam Rifle",
-    "source": "EFRD",
-    "license": "Exotic",
-    "license_level": 0,
-    "description": "<div>A revolutionary weapon for its time, the beam rifle is the primary weapon of the Gundam. It is a miniaturized version of a mega particle cannon with an output of 1.9 megawatts. The beam rifle employs the Federation's energy capacitor, or E-cap, technology and uses charged concentrations of Minovsky particles as ammunition. The resulting weapon has power equivalent to that of a battleship's main gun at the time of the One Year War, allowing it to defeat a mobile suit with a single shot. The rifle can fire 12-15 shots when fully charged. It also features an offset, movable sensor that interfaces with the RX-78’s Fire Control System (FCS) to achieve a high degree of accuracy, as well as a foregrip for firing support. When not in use, the beam rifle can be stored on the back of the Gundam's waist or behind its shield.</div>",
-    "mount": "Main",
-    "type": "Rifle",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "damage": [
-      {
-        "type": "Energy",
-        "val": "2d6+4"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": "15"
-      },
-      {
-        "type": "Threat",
-        "val": "3"
-      }
-    ],
-    "sp": 0,
-    "tags": [
-      {
-        "id": "tg_ap",
-        "val": null
-      },
-      {
-        "id": "tg_limited",
-        "val": 7
-      },
-      {
-        "id": "tg_exotic",
-        "val": null
-      }
-    ],
-    "profiles": []
-  },
-  {
-    "id": "66021c1a-57f1-45b3-b8fa-8f011d9a1aa4",
+    "id": "MSG0079_asr_seveneight_ms_anti_ship_rifle",
     "name": "ASR-78 MS Anti-Ship Rifle",
     "source": "ZN",
     "license": "Exotics",
@@ -351,7 +305,7 @@
     ]
   },
   {
-    "id": "151ebae4-0eaa-452f-8175-1241c9bb2176",
+    "id": "MSG0079_zux_oneninefive_schrotflinte",
     "name": "ZUX-195 Schrotflinte",
     "source": "ZN",
     "license": "",
@@ -382,7 +336,7 @@
     ]
   },
   {
-    "id": "c16d9f70-fa00-44bf-97f0-8ea628f73413",
+    "id": "MSG0079_mmp_eightzero",
     "name": "MMP-80",
     "source": "ZN",
     "license": "",
@@ -419,7 +373,7 @@
     ]
   },
   {
-    "id": "c1665637-9e1d-49b6-92c8-4bd997255435",
+    "id": "MSG0079__nutbuster_gauntlet",
     "name": "\"Nutbuster\" Gauntlet",
     "source": "ZN",
     "license": "",
@@ -434,7 +388,6 @@
     "skirmish": true,
     "cost": 1,
     "on_hit": "<div>Targets of the same size or smaller than the user's frame must pass a Hull check, or be knocked Prone.</div>",
-    "on_crit": "<div></div>",
     "damage": [
       {
         "type": "Kinetic",
@@ -449,11 +402,11 @@
     ]
   },
   {
-    "id": "3beab2ee-43e6-40fd-a412-f96f9c218b54",
+    "id": "MSG0079_eighteightzerommrb_ttwoseven_raketen_bazooka",
     "name": "880mmRB-T27 Raketen Bazooka",
     "source": "ZN",
     "license": "MS-09 Dom",
-    "license_id": "0a106767-907e-46fa-9cff-955e87d56df6",
+    "license_id": "MSG0079_ms_zeronine_dom",
     "license_level": 3,
     "description": "<div>A new heavy bazooka which features powerful rocket-propelled rounds, and improved targeting sensor with protective cover for the aiming module. The bazooka is fed by a 5 rounds clip and spare clips can be carried.</div>",
     "mount": "Superheavy",
@@ -499,7 +452,7 @@
     ]
   },
   {
-    "id": "a7a06547-bbb2-4133-b289-45f2508bafd9",
+    "id": "MSG0079_type_fiveh_heat_halberd",
     "name": "Type 5H Heat Halberd",
     "source": "ZN",
     "license": "Exotics",
@@ -539,17 +492,16 @@
     ]
   },
   {
-    "id": "dac799f1-5a5f-4ebe-9fc1-7ff99ef41fdf",
+    "id": "MSG0079__bop_fourzeromm_missile_launcher",
     "name": "\"Bop\" 40mm Missile Launcher",
     "source": "EFRD",
     "license": "RX-75 Guntank",
-    "license_id": "91c6e529-1424-4818-a0c3-681e40a63685",
+    "license_id": "MSG0079_rx_sevenfive_guntank",
     "license_level": 1,
     "description": "<div>Two 4-tube 40mm Bop Missile Launchers are mounted in the Guntank's arms. As the Guntank is not equipped with any close range weapon, the Missile Launchers are also used as the primary defense weapon.</div>",
     "mount": "Auxiliary",
     "type": "CQB",
     "sp": 0,
-    "effect": "<div></div>",
     "barrage": true,
     "skirmish": true,
     "cost": 1,
@@ -577,18 +529,20 @@
     ]
   },
   {
-    "id": "0dd9feb3-0644-48d8-94e8-868e3c39e13a",
+    "id": "MSG0079_wanzergewehr_eightnine",
     "name": "WanzerGewehr-89",
     "source": "EFRD",
-    "license": "",
-    "license_level": 0,
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 4,
     "description": "<div>One of a few mobile suit weapons where the bolt of the weapon has to be manually operated, the WanzerGewehr is the brainchild of a particularly eccentric German engineer who took inspiration from American methods of upscaling infantry weapons into mobile suit weapons. The barrel of the rifle was machined with unusually high precision in order to ensure excellent ballistic performance, which also consequently raised the production cost of the weapon. Further compounding this long-range performance and the subsequent price increase is the use of a 76.2mm round based on British anti-tank ammunition that hasn't been in production for over two centuries. The primary ammunition is an Armor-Penetrating Fragmenting Shell, a round that is fitted with an explosive filler that, upon penetrating the target, explodes the round into numerous shrapnel that is intended to cause it and the resulting spalling to ricochet at high speeds inside a mobile suit in order to destroy internal subsystems.</div>",
-    "on_crit": "<div>Target is Impaired until the end of their next turn.</div>",
     "mount": "Main",
     "type": "Rifle",
-    "cost": 1,
+    "sp": 0,
     "barrage": true,
     "skirmish": true,
+    "cost": 1,
+    "on_crit": "<div>Target is Impaired until the end of their next turn.</div>",
     "damage": [
       {
         "type": "Kinetic",
@@ -600,12 +554,10 @@
         "type": "Range",
         "val": "20"
       }
-    ],
-    "sp": 0,
-    "profiles": []
+    ]
   },
   {
-    "id": "63c5ba11-796a-4199-a0a8-033b539be276",
+    "id": "MSG0079_msmsevenzerozero_riot_cannon",
     "name": "MSM700 Riot Cannon",
     "source": "EFRD",
     "license": "",
@@ -654,16 +606,26 @@
     ]
   },
   {
-    "id": "7188578d-29fb-4ed4-b8c4-28aabbfaaeef",
+    "id": "MSG0079_beam_pike",
     "name": "Beam Pike",
     "source": "EFRD",
-    "license": "",
-    "license_id": "",
-    "license_level": 0,
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 3,
     "description": "<div>One of several variants of the Beam Saber, the Beam Pike mounts two emitters at the end of a large pole in order to serve as a polearm-type weapon, allowing its wielder to more easily intercept enemy charges and launch melee attacks at an extended reach.</div>",
     "mount": "Heavy",
     "type": "Melee",
     "sp": 0,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_ap",
+        "val": null
+      }
+    ],
     "barrage": true,
     "skirmish": true,
     "cost": 1,
@@ -678,20 +640,10 @@
         "type": "Threat",
         "val": "2"
       }
-    ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 1
-      },
-      {
-        "id": "tg_ap",
-        "val": null
-      }
     ]
   },
   {
-    "id": "3d9c2af4-c028-4324-887c-66cc17c33410",
+    "id": "MSG0079_amsr_seveneight_zeroone_riesenjager",
     "name": "AMSR-78-01 Riesenjager",
     "source": "ZN",
     "license": "",
@@ -724,7 +676,7 @@
     ]
   },
   {
-    "id": "f106fcc6-090a-4182-9dca-91e387d50c9c",
+    "id": "MSG0079_iron_nails",
     "name": "Iron Nails",
     "source": "",
     "license": "",
@@ -751,7 +703,7 @@
     "profiles": []
   },
   {
-    "id": "1c66be2d-2e81-4e49-8cc9-284c4d10c346",
+    "id": "MSG0079_stedken_mk_i",
     "name": "Stedken Mk. I",
     "source": "EFRD",
     "license": "",
@@ -764,7 +716,6 @@
     "profiles": [
       {
         "name": "Burst Fire",
-        "effect": "<div></div>",
         "barrage": true,
         "skirmish": true,
         "cost": "0",
@@ -814,7 +765,7 @@
     ]
   },
   {
-    "id": "348b3cb5-c012-483c-b6be-8ac142d03f3e",
+    "id": "MSG0079_bg_m_sevenninef_threea_beam_gun",
     "name": "BG-M-79F-3A Beam Gun",
     "source": "EFRD",
     "license": "",
@@ -866,46 +817,11 @@
     ]
   },
   {
-    "id": "62797de3-466a-45ea-aee8-9cf8021390eb",
-    "name": "Flare Dispensers",
-    "source": "EFRD",
-    "license": "VF-0 Phoenix",
-    "license_id": "56b6b22c-e089-4720-8b84-d7eeac7ed317",
-    "license_level": 1,
-    "description": "<div>A standard feature on most modern military aircraft, decoy flares have changed very little conceptually from their pre-UC counterparts. Commonly composed of a pyrotechnic composition based on magnesium or some other hot-burning metal, these flares are intended to burn hotter than an aircraft's engines in order to confuse infrared-based homing weaponry. These are also often paired with chaff launchers in order to throw off most forms of homing and tracking weaponry such as radar-guided missiles and radar-assisted anti-aircraft guns.</div>",
-    "mount": "Auxiliary",
-    "type": "CQB",
-    "sp": 0,
-    "effect": "<div>Gain use of the <strong>Deploy Flares</strong> reaction.</div>",
-    "barrage": true,
-    "skirmish": true,
-    "cost": 1,
-    "actions": [
-      {
-        "name": "Deploy Flares",
-        "activation": "Reaction",
-        "detail": "<div>The attack receives +1 DIFFICULTY.</div>",
-        "pilot": false,
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "1/round",
-        "init": "",
-        "trigger": "<div>Targeted by any weapon with the Smart tag.</div>"
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_limited",
-        "val": 3
-      }
-    ]
-  },
-  {
-    "id": "8326e4d5-9779-4cae-87dd-5553ebdf1f8c",
+    "id": "MSG0079_heat_saber",
     "name": "Heat Saber",
     "source": "ZN",
     "license": "MS-09 Dom",
-    "license_id": "0a106767-907e-46fa-9cff-955e87d56df6",
+    "license_id": "MSG0079_ms_zeronine_dom",
     "license_level": 1,
     "description": "<div>A rod of superconductive material which uses thermal energy to heat its blade in excess of 3000<strong>°</strong>C, melting through the armor of an enemy machine. It has an electrical discharge function and can store high charges via the application of Minovsky particle physics. As the heat saber degrades during use, it must be discarded after several uses. Mounted on the back when not in use.</div>",
     "mount": "Heavy",
@@ -951,11 +867,11 @@
     ]
   },
   {
-    "id": "5d505d3c-60c5-407a-88dc-7d294d52eaa1",
+    "id": "MSG0079_h_l_gbzerothreek_threesixzeromm_giant_bazooka",
     "name": "H&L-GB03K/360mm Giant Bazooka",
     "source": "ZN",
     "license": "MS-09 Dom",
-    "license_id": "0a106767-907e-46fa-9cff-955e87d56df6",
+    "license_id": "MSG0079_ms_zeronine_dom",
     "license_level": 1,
     "description": "<div>A bazooka for MS that fires rocket-propelled 360mm physical rounds. Liquid fuel supplied through a pipe from the Dom's hand is injected as a primary propellant, and then the projectile's speed is increased by rocket motor ignition. It is fed by a 10 rounds magazine, and a single round can cause severe damage to most mobile suit.</div>",
     "mount": "Heavy",
@@ -1002,7 +918,7 @@
     ]
   },
   {
-    "id": "0bb18077-a088-47f6-ab91-cbe988044419",
+    "id": "MSG0079_heat_rod",
     "name": "Heat Rod",
     "source": "ZN",
     "license": "",
@@ -1015,7 +931,6 @@
     "barrage": true,
     "skirmish": true,
     "cost": 1,
-    "on_hit": "<div></div>",
     "on_crit": "<div>The target must pass a Hull check, or be Stunned until the end of their next turn.</div>",
     "damage": [
       {
@@ -1041,7 +956,7 @@
     ]
   },
   {
-    "id": "9227f8c4-4c1f-4cd2-be88-23aaaa960b26",
+    "id": "MSG0079_sevenfivemm_gatling_shield",
     "name": "75mm Gatling Shield",
     "source": "ZN",
     "license": "",
@@ -1082,11 +997,11 @@
     ]
   },
   {
-    "id": "1e5abd6b-e726-46bd-951c-bdcadeb9b889",
+    "id": "MSG0079_ps_iv_paladin_beam_saber",
     "name": "Ps. IV \"Paladin\" Beam Saber",
     "source": "ZN",
     "license": "YMS-15 Gyan",
-    "license_id": "42693934-35a6-4c6f-9292-bd10c895932e",
+    "license_id": "MSG0079_yms_onefive_gyan",
     "license_level": 2,
     "description": "<div>A Gyan's primary weapon, this beam saber has a higher output than the Earth Federation Forces' beam sabers, and is specialized for piercing/stabbing attack rather than cutting.</div>",
     "mount": "Main",
@@ -1125,16 +1040,22 @@
     ]
   },
   {
-    "id": "7f961a52-06aa-418b-a8c6-c0d7aac34354",
+    "id": "MSG0079_magna_hellstar_particle_projector_cannon",
     "name": "Magna Hellstar Particle Projector Cannon",
     "source": "EFRD",
     "license": "MBR-04-Mk.VI Destroid Tomahawk",
-    "license_id": "3c2b83cb-24cf-4886-b31d-08622242ce3c",
-    "license_level": 1,
+    "license_id": "MSG0079_mbr_zerofour_mk_vi_destroid_tomahawk",
+    "license_level": 2,
     "description": "<div>The Magna Hellstar GM1012IPPC is a particle cannon that makes use of Deuterium-based ionized particles rather than the Helium-3 derived Minovsky Particle as its ammunition. While not as destructive as a Megaparticle Cannon, the shots fired from the Magna Hellstar PPC can still hit with enough kinetic and thermal energy to burn away metal and buckle structural supports, and the subsequent dispersal of concentrated ionized particles resembles higher levels of Minovsky Particle interference. Firing such a weapon tends to also generate a noticeable amount of waste heat that must be dumped regularly in battle to avoid causing lasting damage to the weapon system and mounting.</div><div>This particle model of Particle Projector Cannon garnered particular fame as the main armaments of the MBR-04-Mk.VIC variant of the Destroid Tomahawk, which has been unofficially dubbed by pilots and reporters as the 'Warhammer'.</div>",
     "mount": "Main",
     "type": "Cannon",
     "sp": 0,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
     "barrage": true,
     "skirmish": true,
     "cost": 1,
@@ -1151,16 +1072,10 @@
         "type": "Range",
         "val": "18"
       }
-    ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 2
-      }
     ]
   },
   {
-    "id": "d8c00186-c6f9-4b0f-9758-53dde3ff0bcc",
+    "id": "MSG0079_mk_i_excalibur_multirole_beam_system",
     "name": "Mk. I \"Excalibur\" Multirole Beam System",
     "source": "EFRD",
     "license": "",
@@ -1251,13 +1166,12 @@
     ]
   },
   {
-    "id": "9cd442ad-8d1a-4d68-b535-f7a078aa372c",
+    "id": "MSG0079_shipbreaker_torpedo",
     "name": "Shipbreaker Torpedo",
     "source": "",
     "license": "",
     "license_level": 1,
     "description": "<div>Retooled from demolition charges used for shipbreaking obsolete space vessels, Shipbreaker Torpedoes are a form of guided missile that first slams into armor with enough force to cause structural integrity failures before detonating shortly after, sundering the armor of if not outright destroying most targets. This reinforced casing not only increases the amount of shrapnel produced, but makes the Shipbreaker Torpedo much harder to intercept with point-defense fire.</div>",
-    "effect": "<div></div>",
     "on_attack": "<div>The Shipbreaker Mounting is jettisoned, disabling use of this weapon.</div>",
     "on_hit": "<div>Inflicts Shredded.</div>",
     "on_crit": "<div>Inflicts bonus AP Explosive Damage based on double the target's Armor.</div>",
@@ -1282,12 +1196,12 @@
     "profiles": []
   },
   {
-    "id": "ad4cd104-3b4b-439c-9670-f929fe8d1bd9",
+    "id": "MSG0079_mauler_point_defense_laser_cannon",
     "name": "Mauler Point-Defense Laser Cannon",
     "source": "",
     "license": "",
     "license_level": 1,
-    "description": "<div>The Mauler Point-Defense Laser Cannon is a high-energy laser weapon that are mounted as either a singular or pair of \"horns\" on the Phoenix's head module. Moderately effective against unprotected aircraft, the Mauler's real utility is in its capability of quickly shooting down incoming missiles. Linked to the pilot's heads-up display, the Mauler can rapidly track targets to shoot down through the pilot's eye movements, similar to how target acquisition for most modern aerial weapons work.</div>",
+    "description": "<div>The Mauler Point-Defense Laser Cannon is a high-energy laser weapon that are mounted as either a singular or pair of \"horns\" on the Phoenix's head module. Moderately effective against unprotected aircraft, the Mauler's real utility is in its capability of quickly shooting down incoming missiles and other various projectiles. Linked to the pilot's heads-up display, the Mauler can rapidly track targets to shoot down through the pilot's eye movements, similar to how target acquisition for most modern aerial weapons work.</div>",
     "effect": "<div>Gain the <strong>Intercept</strong> reaction.</div>",
     "mount": "Auxiliary",
     "type": "CQB",
@@ -1306,24 +1220,23 @@
         "val": "5"
       }
     ],
-    "sp": "1",
     "actions": [
       {
         "name": "Intercept",
         "activation": "Reaction",
-        "detail": "<div>Roll a SYSTEMS check. On a success, the missile(s) is shot down by the Mauler Point-Defense Laser Cannon. If a Main Rifle is mounted in the Flex Mount, may opt to use it instead of the Mauler Laser Cannon to<strong> Intercept. </strong>Taking this reaction allows the Mauler Laser Cannon to be used for a separate Intercept reaction, but forgoes using the Overwatch reaction for the current round.</div>",
+        "detail": "<div>Roll a SYSTEMS check. On a success, the projectile(s) is shot down by the Mauler Point-Defense Laser Cannon. If a Main Cannon or Rifle is mounted in the Main Mount, may opt to use it instead of the Mauler Laser Cannon to<strong> Intercept. </strong>Taking this reaction allows the Mauler Laser Cannon to be used for a separate Intercept reaction, but forgoes using the Overwatch reaction for the current round.</div>",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
         "frequency": "1/round",
         "init": "",
-        "trigger": "<div>An enemy Launcher attack targets anyone within a Burst 5 zone or intersects it.</div>"
+        "trigger": "<div>An attack that is neither Heavy nor Superheavy and is either a Launcher, Cannon, or Nexus, targets anyone within a Burst 5 zone or intersects it.</div>"
       }
     ],
     "profiles": []
   },
   {
-    "id": "8291b64d-1b8d-46bd-81bc-c056df993efb",
+    "id": "MSG0079_uhph_onezero_poseidon_hydrocannon",
     "name": "UHPH-10 Poseidon Hydrocannon",
     "source": "",
     "license": "",
@@ -1437,7 +1350,7 @@
     ]
   },
   {
-    "id": "8e98d4bd-143a-43af-9c2f-44cb9dad4945",
+    "id": "MSG0079_oneeightzeromm_recoilless_cannons",
     "name": "180mm Recoilless Cannons",
     "source": "",
     "license": "",
@@ -1478,11 +1391,11 @@
     "profiles": []
   },
   {
-    "id": "a5adb7e7-6702-4442-81c4-ed52d26ddcf7",
+    "id": "MSG0079_howard_three_barrel_gpu_nine_threefivemm_gun_pod",
     "name": "Howard three-barrel GPU-9 35mm Gun Pod",
     "source": "EFRD",
     "license": "VF-0 Phoenix",
-    "license_id": "56b6b22c-e089-4720-8b84-d7eeac7ed317",
+    "license_id": "MSG0079_vf_zero_phoenix",
     "license_level": 1,
     "description": "<div>Variable Frame Gun Pod, designed to allow the VF-0 a measure of firepower at all times, in any mode, be it Gerwalk, Battroid or Fighter mode.</div>",
     "mount": "Main",
@@ -1517,30 +1430,16 @@
     ]
   },
   {
-    "id": "56cd3a72-b76e-4061-a806-7ab46a7d6954",
+    "id": "MSG0079_gu_oneone_fivefive_mm_three_barrel_gatling_gun_pod",
     "name": "GU-11 55 mm Three-Barrel Gatling Gun Pod",
     "source": "EFRD",
     "license": "VF-0 Phoenix",
-    "license_id": "56b6b22c-e089-4720-8b84-d7eeac7ed317",
+    "license_id": "MSG0079_vf_zero_phoenix",
     "license_level": 3,
     "description": "<div>Early production next-generation variable frame gun pod, designed to replace the aging GPU-9.</div>",
     "mount": "Main",
     "type": "Cannon",
     "sp": 0,
-    "barrage": true,
-    "skirmish": true,
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "2D6"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 5
-      }
-    ],
     "tags": [
       {
         "id": "tg_overkill",
@@ -1548,20 +1447,29 @@
         "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
       },
       {
-        "id": "tg_ap",
-        "name": "ARMOR-PIERCING (AP)",
-        "description": "Damage dealt by this weapon ignores Armor."
-      },
-      {
         "id": "tg_inaccurate",
         "name": "INACCURATE",
         "description": "Attacks made with this weapon receive +1 Difficulty.",
         "val": 1
       }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "3D3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
     ]
   },
   {
-    "id": "e79220af-b800-4498-874e-e200f87de31c",
+    "id": "MSG0079_heat_tendrils",
     "name": "Heat Tendrils",
     "source": "ZN",
     "license": "",
@@ -1598,11 +1506,11 @@
     ]
   },
   {
-    "id": "890765e4-1d4c-42dd-8653-c3a452e3e503",
+    "id": "MSG0079_assault_beam_cannon",
     "name": "Assault Beam Cannon",
     "source": "ZN",
     "license": "MSM-03C Hygogg ",
-    "license_id": "bd492050-6b28-49ff-ae6b-53b4ca375849",
+    "license_id": "MSG0079_msm_zerothreec_hygogg_",
     "license_level": 1,
     "description": "<div>One of the first Zeon beam weapons built with E-Caps, the Assault Beam Cannon fires a rapid barrage of short-burst beams rather than a prolonged beam. While this sacrifices some individual power compared to other beam weapons, this makes it much more effective in close quarters combat. Commonly equipped on the Hygogg, where an internal feed system in its forearms handles cycling the E-Caps.</div>",
     "mount": "Auxiliary",
@@ -1636,11 +1544,11 @@
     ]
   },
   {
-    "id": "ed85a619-3c1a-4957-accd-e9c9dc86f2b0",
+    "id": "MSG0079_ps_v_crusader_beam_lance",
     "name": "Ps. V Crusader Beam Lance",
     "source": "ZN",
     "license": "YMS-15 Gyan",
-    "license_id": "42693934-35a6-4c6f-9292-bd10c895932e",
+    "license_id": "MSG0079_yms_onefive_gyan",
     "license_level": 3,
     "description": "<div>A high powered beam lance, more suited for charging attacks than the original Gyan's beam sword.</div>",
     "mount": "Main",
@@ -1687,11 +1595,11 @@
     ]
   },
   {
-    "id": "d0774add-ce85-4586-8320-34ea0c917303",
+    "id": "MSG0079_hi_b_eightzero_megaparticle_cannon",
     "name": "Hi-B 80 Megaparticle Cannon",
     "source": "ZN",
     "license": "MSM-07 Z'gok",
-    "license_id": "ca17b680-11a7-4323-a00e-b967541eb7c4",
+    "license_id": "MSG0079_msm_zeroseven_z_gok",
     "license_level": 3,
     "description": "",
     "mount": "Main",
@@ -1732,7 +1640,7 @@
     ]
   },
   {
-    "id": "e2fb9027-9078-4a97-933e-ba046c971bec",
+    "id": "MSG0079_type_sevenzerozero_mega_flamethrower",
     "name": "Type 700 Mega Flamethrower",
     "source": "ZN",
     "license": "",
@@ -1781,7 +1689,7 @@
     ]
   },
   {
-    "id": "b18d2b4c-93e3-41d8-86c1-17c414f580ee",
+    "id": "MSG0079_zmp_fivezerodtwo",
     "name": "ZMP-50D2",
     "source": "ZN",
     "license": "",
@@ -1814,17 +1722,17 @@
     ]
   },
   {
-    "id": "2e30f827-0ac9-4280-8889-8ebe90ddd6d0",
+    "id": "MSG0079_hb_l_zerothree_n_std_hyper_bazooka",
     "name": "HB-L-03/N-STD Hyper Bazooka",
     "source": "EFRD",
-    "license": "",
-    "license_id": "",
-    "license_level": 0,
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 3,
     "description": "<div>The HB-L-03/N-STD Hyper Bazooka was developed by the BLASH corporation as a general purpose fire support rocket launcher platform for Mobile Suits. &nbsp;&nbsp;With considerable destructive power owing to the explosive yield in each warhead, the weapon was primarily used to destroy less-maneuverable battlefield targets such as warships, satellites, land battleships, bunkers, and buildings.&nbsp;This weapon was created with input from several of the Federation’s long range weaponry suppliers, and developed to meet the need for a recoilless rocket launcher that could be adapted to a variety of deployment situations.</div><div>While possessing relatively simple construction, the HB-L-03/N-STD has a long barrel as well as considerable ammunition weight in the rear, with the center of gravity being maintained near the center, but a specialized manual was also prepared to prevent maneuvers from being affected by the additional weight, and the fire control program was also responsible for limiting the Mobile Suit’s range of motion.</div>",
+    "effect": "<div>This weapon begins each mission with 5 charges, with a charge being consumed on attack. These charges can be replenished with a stabilize action, as if the weapon were LOADING.</div>",
     "mount": "Heavy",
     "type": "Launcher",
     "sp": 0,
-    "effect": "<div>This weapon begins each mission with 5 charges. These charges can be replenished with a stabilize action, as if the weapon were LOADING.</div>",
     "barrage": true,
     "skirmish": true,
     "cost": "0",
@@ -1855,11 +1763,11 @@
     ]
   },
   {
-    "id": "9b542785-07b6-4eb6-abb4-d12931c1b8eb",
+    "id": "MSG0079_iron_nail",
     "name": "Iron Nail",
     "source": "ZN",
     "license": "MSM-07 Z'gok",
-    "license_id": "ca17b680-11a7-4323-a00e-b967541eb7c4",
+    "license_id": "MSG0079_msm_zeroseven_z_gok",
     "license_level": 2,
     "description": "",
     "mount": "Auxiliary",
@@ -1913,7 +1821,7 @@
     ]
   },
   {
-    "id": "fb72f5ba-53af-49ff-b29b-ec11bed76a90",
+    "id": "MSG0079_bowa_xbr_h_sevennine_beam_rifle",
     "name": "BOWA XBR-H-79 Beam Rifle",
     "source": "EFRD",
     "license": "",
@@ -1952,7 +1860,7 @@
     ]
   },
   {
-    "id": "92042fcc-861d-4302-88f9-38b414d4b229",
+    "id": "MSG0079_h_l_sbtwofivek_twoeightzeromma_p_zaku_bazooka",
     "name": "H&L-SB25K/280mmA-P Zaku Bazooka",
     "source": "ZN",
     "license": "",
@@ -1995,16 +1903,29 @@
     ]
   },
   {
-    "id": "8ee9c983-52dd-41df-9ba4-4f61a8ecbedb",
+    "id": "MSG0079_rgm_m_sh_zerozerothree_tower_shield",
     "name": "RGM-M-Sh-003 Tower Shield",
     "source": "EFRD",
-    "license": "",
-    "license_id": "",
-    "license_level": 0,
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 1,
     "description": "<div>The RGM-M-Sh-003 series was first proposed as Anti Mobile Suit defensive equipment on the RX project, and the Sh-003 type is essentially identical to that used on RX-series units.</div><div>Composed of Luna Titanium Alloys, and almost completely proof against heavy weapon rounds, the Sh-003 proved to be resistant against 120mm Zaku Machine Gun fire, with even short range fire completely unable to penetrate the shield, deflecting most of the rounds that impacted the shield. &nbsp;</div>",
     "mount": "Main",
     "type": "Melee",
     "sp": 0,
+    "tags": [
+      {
+        "id": "tg_thrown",
+        "name": "THROWN {VAL}",
+        "description": "This melee weapon can be thrown at targets within {VAL} spaces. Thrown attacks follow the rules for melee attacks but are affected by cover; additionally, a thrown weapon comes to rest in an adjacent space to its target and must be retrieved as a free action while adjacent to that weapon before it can be used again.",
+        "val": 3
+      },
+      {
+        "id": "tg_shield",
+        "name": "SHIELD",
+        "description": "This system is an energy shield of some kind."
+      }
+    ],
     "barrage": true,
     "skirmish": true,
     "damage": [
@@ -2031,23 +1952,10 @@
         "init": "",
         "trigger": ""
       }
-    ],
-    "tags": [
-      {
-        "id": "tg_thrown",
-        "name": "THROWN {VAL}",
-        "description": "This melee weapon can be thrown at targets within {VAL} spaces. Thrown attacks follow the rules for melee attacks but are affected by cover; additionally, a thrown weapon comes to rest in an adjacent space to its target and must be retrieved as a free action while adjacent to that weapon before it can be used again.",
-        "val": 3
-      },
-      {
-        "id": "tg_shield",
-        "name": "SHIELD",
-        "description": "This system is an energy shield of some kind."
-      }
     ]
   },
   {
-    "id": "6e7f6bd9-c4c5-4a59-834d-70628f6ff299",
+    "id": "MSG0079_rgm_s_sh_wf_s_zerozeroonezeronine_shield",
     "name": "RGM(S)-Sh-WF/S-00109 Shield",
     "source": "EFRD",
     "license": "",
@@ -2094,11 +2002,11 @@
     ]
   },
   {
-    "id": "72f98d64-d573-4da6-84ed-2d0fbca4b1b2",
+    "id": "MSG0079_fourzeromm_missile_shield",
     "name": "40mm Missile Shield",
     "source": "ZN",
     "license": "YMS-15 Gyan",
-    "license_id": "42693934-35a6-4c6f-9292-bd10c895932e",
+    "license_id": "MSG0079_yms_onefive_gyan",
     "license_level": 1,
     "description": "",
     "mount": "Main",
@@ -2157,16 +2065,28 @@
     ]
   },
   {
-    "id": "475a2041-efa4-4e02-a256-e66f9697b389",
+    "id": "MSG0079_scattering_beam_cannon",
     "name": "Scattering Beam Cannon",
     "source": "",
     "license": "",
     "license_id": "",
     "license_level": 1,
     "description": "<div>A beam weapon mounted on the left side of the Dom's chest, the scattering beam cannon was only powerful enough to produce an intense, bright flash that could momentarily blind human eyes and visual sensors. At close range, the beam was also capable of dissipating I-fields, rendering weapons that depended on I-fields to focus and shape a cohesive blade of energy, such as the Beam Saber, inert for short periods.</div>",
-    "mount": "Aux",
+    "mount": "Auxiliary",
     "type": "CQB",
     "sp": 0,
+    "tags": [
+      {
+        "id": "tg_smart",
+        "name": "SMART",
+        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+      },
+      {
+        "id": "tg_loading",
+        "name": "LOADING",
+        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+      }
+    ],
     "barrage": true,
     "skirmish": true,
     "on_hit": "<div>The target must succeed on a Systems check. On failure, the target may only draw line of sight to adjacent spaces until the end of their next turn.</div>",
@@ -2182,17 +2102,355 @@
         "type": "Cone",
         "val": 3
       }
-    ],
+    ]
+  },
+  {
+    "id": "MSG0079_beamrifle",
+    "name": "Beam Rifle",
+    "source": "EFRD",
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 4,
+    "description": "<div>A revolutionary weapon for its time, the beam rifle is the primary weapon of the Gundam. It is a miniaturized version of a mega particle cannon with an output of 1.9 megawatts. The beam rifle employs the Federation's energy capacitor, or E-cap, technology and uses charged concentrations of Minovsky particles as ammunition. The resulting weapon has power equivalent to that of a battleship's main gun at the time of the One Year War, allowing it to defeat a mobile suit with a single shot. The rifle can fire 12-15 shots when fully charged. It also features an offset, movable sensor that interfaces with the RX-78’s Fire Control System to achieve a high degree of accuracy, as well as a foregrip for firing support. When not in use, the beam rifle can be stored on the back of the Gundam's waist or behind its shield.</div><div>There are several different variants of the Beam Rifle, with semi-mass-produced versions being distributed to Guncannons and GMs in limited amounts as potent mid-range weapons.</div>",
+    "mount": "Main",
+    "type": "Rifle",
+    "sp": 0,
     "tags": [
       {
-        "id": "tg_smart",
-        "name": "SMART",
-        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 7
       },
       {
-        "id": "tg_loading",
-        "name": "LOADING",
-        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_beam_trick_saber",
+    "name": "Beam Trick Saber",
+    "source": "ZN",
+    "license": "MS-18E Kämpfer",
+    "license_id": "MSG0079_kampfer",
+    "license_level": 1,
+    "description": "",
+    "effect": "<div><span>Whenever you attack with this weapon, you may choose to do so with or without consuming charges. This weapon can be destroyed even if it has no charges remaining.</span></div><div><span>1/round, you may expend a charge to attack with +1d6 bonus damage and +1 threat.</span></div>",
+    "mount": "Main",
+    "type": "Melee",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 2
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1D6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_giant_bazooka",
+    "name": "Giant Bazooka",
+    "source": "ZN",
+    "license": "MS-18E Kämpfer",
+    "license_id": "MSG0079_kampfer",
+    "license_level": 2,
+    "description": "",
+    "mount": "Heavy",
+    "type": "Launcher",
+    "sp": "0",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 2
+      },
+      {
+        "id": "tg_reliable",
+        "name": "Reliable {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 4
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "on_attack": "<div><span>All Soft Cover, Difficult Terrain, and Objects in the area of effect are destroyed.</span></div>",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "2D6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      },
+      {
+        "type": "Blast",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_jagdgewehr_shotgun",
+    "name": "Jagdgewehr Shotgun",
+    "source": "ZN",
+    "license": "MS-18E Kämpfer",
+    "license_id": "MSG0079_kampfer",
+    "license_level": 3,
+    "description": "<div>The <span>ZUX-197 Jagdgewehr 192mm Shotgun is the primary ranged weapon of the </span>MS-18E Kämpfer, improving upon the early-war Reisenjager shotgun. Being able to load a variety of specialist ammunition in its 9-round tube magazine, the <span>Jagdgewehr is a deadly close-quarters battle weapon.</span></div>",
+    "effect": "<div><span>You may begin any combat with any of this weapon’s profiles. You can only attack with this profile until you take a Protocol to change it to a different profile of your choice.</span></div>",
+    "mount": "Main",
+    "type": "CQB",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 6
+      }
+    ],
+    "profiles": [
+      {
+        "name": "Mechshot Shells",
+        "effect": "<div><span>This profile does not consume Limited charges and may be used even if the weapon has no more Limited charges.</span></div>",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1D6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Threat",
+            "val": 3
+          }
+        ]
+      },
+      {
+        "name": "Air Burst Shells",
+        "barrage": true,
+        "skirmish": true,
+        "cost": "1",
+        "on_crit": "<div><span>Targets must pass a Hull save or else be Shredded until the start of their next turn.</span></div>",
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1D6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Cone",
+            "val": 3
+          }
+        ],
+        "on_attack": "<div>The projectile can be programmed to detonate at a specific range and direction, allowing the Cone 3 pattern to be projected in any direction from anywhere within Range 5 that is within Line of Sight.</div>"
+      },
+      {
+        "name": "Dragon's Breath Shells",
+        "barrage": true,
+        "skirmish": true,
+        "cost": "1",
+        "on_attack": "<div><span>All characters in the area of effect must pass an Engineering save or else be Impaired and unable to draw line of sight beyond adjacent spaces until the end of their next turn. On a successful save, they only become Impaired.</span></div>",
+        "damage": [
+          {
+            "type": "Burn",
+            "val": 3
+          }
+        ],
+        "range": [
+          {
+            "type": "Cone",
+            "val": 3
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_inaccurate",
+            "name": "Inaccurate",
+            "description": "Attacks made with this weapon receive +1 Difficulty."
+          }
+        ]
+      },
+      {
+        "name": "Luna Titanium Slug Shells",
+        "barrage": true,
+        "skirmish": true,
+        "cost": "1",
+        "on_crit": "<div><span>This attack additionally ignores Resistances.</span></div>",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1D6+4"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          },
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_accurate",
+            "name": "Accurate",
+            "description": "Attacks made with this weapon receive +1 Accuracy."
+          },
+          {
+            "id": "tg_ap",
+            "name": "Armor-Piercing (AP)",
+            "description": "Damage dealt by this weapon ignores Armor."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_micro_missiles",
+    "name": "Ringneck High-Capacity Micro-Missiles",
+    "source": "EFRD",
+    "license": "VF-0 Phoenix",
+    "license_id": "MSG0079_vf_zero_phoenix",
+    "license_level": 2,
+    "description": "<div>A joint project between Saab Bofors Dynamics and Raytheon Missiles Defense, the HCMM-1 is a weapons pod that contains a large number of Ringneck 'micro-missiles'–smaller than average air-to-air missiles, each containing an advanced tracking system, a high-velocity thruster, and a modestly powerful warhead. While not as individually powerful as more ubiquitous missiles such as the Sidewinder, the sheer volume present in a standard missile barrage makes it incredibly difficult to effectively dodge. This makes it an incredibly deadly weapon in air-to-air engagements once the initial Beyond Visual Range missiles are expended, or when the presence of Minovsky Particles makes BVR targeting difficult. This quantity of munitions has also proven to be moderately effective in engaging ground targets even without establishing a target lock.</div>",
+    "mount": "Auxiliary",
+    "type": "Launcher",
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "Dumbfire Mode",
+        "effect": "<div>This firing mode is used when Ringnecks are used to attack targets that are not Locked On.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1D3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 8
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_inaccurate",
+            "name": "Inaccurate",
+            "description": "Attacks made with this weapon receive +1 Difficulty."
+          }
+        ]
+      },
+      {
+        "name": "Lock-On Mode",
+        "effect": "<div>This firing mode is used when Ringnecks are used to attack targets that are Locked On. When attacking in this mode, any additional HCMM is treated as part of the same attack roll and adds their damage to the attack. Attacks made this way has Reliable X, corresponding to the number of HCMMs used. Normal action costs apply when committing mounts.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "on_crit": "<div>If firing as part of a full HCMM Barrage action, target is now <strong>Impaired</strong> until the end of their next turn.</div>",
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1D3+1"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_seeking",
+            "name": "Seeking",
+            "description": "This weapon has a limited form of self-guidance and internal propulsion, allowing it to follow complicated paths to its targets. As long as it’s possible to draw a path to its target, this weapon ignores cover and doesn’t require line of sight."
+          },
+          {
+            "id": "tg_smart",
+            "name": "Smart",
+            "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_JAMRAAM",
+    "name": "JAMRAAM",
+    "source": "EFRD",
+    "license": "VF-0 Phoenix",
+    "license_id": "MSG0079_vf_zero_phoenix",
+    "license_level": 2,
+    "description": "<div>The AIM-180 Joint-Attack Medium-Ranged Air-to-Air Missile is a further development of the AMRAAM series of missiles, designed based on modern considerations in aerial combat with the introduction of Minovsky Particle interference. The presence of M-Particles interferes with the beyond visual range capabilities of its predecessors, forcing aircraft to close into visual range to engage targets. The JAMRAAM partially resolves this issue by having the missile interface with a frontline spotting craft once within terminal range of its target, riding along a laser beam emitted by the spotting craft's targetting module. While this involves putting said spotting craft in potential danger of engagement, proper coordination enables devastating alpha strikes.</div><div>The current Block 4 version of the JAMRAAM has been tuned to enable multi-purpose targetting, allowing it to be used to attack ground targets-particularly Mobile Suits.</div>",
+    "effect": "<div>You may attack enemies with Lock-On applied to them as if this was Range 20.</div>",
+    "mount": "Main",
+    "type": "Launcher",
+    "sp": "1",
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1D6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
       }
     ]
   }

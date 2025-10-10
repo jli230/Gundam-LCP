@@ -1,39 +1,23 @@
 [
   {
-    "id": "c43ba4cd-069b-436f-a7da-3ed8cc327a2c",
+    "id": "MSG0079_ade_m_zeroone_area_denial_grenades",
     "name": "ADE-M-01 Area Denial Grenades",
     "source": "EFRD",
-    "license": "Exotic",
-    "license_id": "",
-    "license_level": 0,
-    "effect": "<div>First used in the Zeon Ardennes Offensive, the ADE-M-01 Area Denial Grenade was one of a vast array of anti-MS weaponry and tactics pioneered for use in the defense of the New Maginot Line. Lethally effective both in holding a position and skirmishing pursuing enemies on the way back to the next line of defense, the Area Denial Grenade had destroyed numerous Zaku IIs and conventional vehicles during the failed offensive and was famously cited by French general Josephine Landais as being a key component in the Federation coalition's successful defense of the French border from further Zeon incursion.</div>",
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 2,
     "type": "System",
     "sp": "2",
-    "description": "",
+    "description": "<div>First used in the Zeon Ardennes Offensive, the ADE-M-01 Area Denial Grenade was one of a vast array of anti-MS weaponry and tactics pioneered for use in the defense of the New Maginot Line. Lethally effective both in holding a position and skirmishing pursuing enemies on the way back to the next line of defense, the Area Denial Grenade had destroyed numerous Zaku IIs and conventional vehicles during the failed offensive and was famously cited by French general Josephine Landais as being a key component in the Federation coalition's successful defense of the French border from further Zeon incursion.</div>",
     "tags": [
       {
         "id": "tg_limited",
         "val": 2
       },
       {
-        "id": "tg_unique",
-        "val": null
-      },
-      {
         "id": "tg_grenade",
-        "val": null
-      },
-      {
-        "id": "tg_mine",
-        "val": null
-      },
-      {
-        "id": "tg_quick_action",
-        "val": null
-      },
-      {
-        "id": "tg_exotic",
-        "val": null
+        "name": "Grenade",
+        "description": "As a quick action, this explosive or other device can be thrown to a space within line of sight and the specified Range."
       }
     ],
     "actions": [
@@ -53,25 +37,14 @@
         "frequency": "Unlimited",
         "init": "",
         "trigger": ""
-      },
-      {
-        "name": "Deploy \"Seeker\" Mode Grenade",
-        "activation": "Quick",
-        "detail": "<div> </div>",
-        "pilot": false,
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
       }
     ],
     "deployables": [
       {
         "name": "\"Seeker\" Mode Grenade",
         "type": "Mine",
-        "detail": "<div>This mine detonates when a flying character passes over or adjacent to it, up to 10 spaces high. The mine launches itself upwards and detonates: all characters within the affected area must succeed on a Systems save or take 2d6 explosive damage and immediately land (this counts as falling without any damage); additionally, they can’t fly until the end of their next turn. On a success, they take half damage and are otherwise unaffected.</div>",
-        "size": 0.5,
+        "detail": "<div>This mine detonates when an enemy unit moves into or within a burst 5 zone. The mine launches itself towards the offending target and detonates in a Blast 1 zone centered on said target: all characters within the affected area must succeed on a Systems save or take 2d6 explosive damage. On a success, they take half damage and are otherwise unaffected.</div>",
+        "size": null,
         "activation": "",
         "deactivation": "",
         "recall": "",
@@ -94,12 +67,12 @@
     ]
   },
   {
-    "id": "8b4753c8-9075-4f56-836a-0e328efe16dd",
+    "id": "MSG0079_electromagnetic_actuators",
     "name": "Electromagnetic Actuators",
     "source": "EFRD",
-    "license": "",
-    "license_id": "",
-    "license_level": 0,
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 4,
     "effect": "<div>1/round, upon being targeted by a ranged weapon (and not tech attacks), spend a reaction to move one space in any direction before the attack is resolved. This movement does not trigger overwatch or reaction fire. Additionally, gain access to the Rapid Reaction action.</div>",
     "type": "System",
     "sp": "2",
@@ -119,7 +92,7 @@
     ]
   },
   {
-    "id": "9a581556-1579-45aa-8968-a51cbededeef",
+    "id": "MSG0079_reactive_targeting_solutions",
     "name": "Reactive Targeting Solutions",
     "source": "ZN",
     "license": "Exotics",
@@ -137,7 +110,7 @@
     ]
   },
   {
-    "id": "87bc7620-86a3-4427-8368-915c3e9f714e",
+    "id": "MSG0079_mip_bsix_cracker_grenade",
     "name": "MIP-B6 Cracker Grenade",
     "source": "ZN",
     "license": "",
@@ -216,7 +189,7 @@
     ]
   },
   {
-    "id": "8d142dcc-5d72-44b2-861c-85ca6c4c182a",
+    "id": "MSG0079_sturmfaust",
     "name": "Sturmfaust",
     "source": "ZN",
     "license": "",
@@ -267,12 +240,12 @@
     ]
   },
   {
-    "id": "d845f1ff-71df-4197-9835-75d6575d39b9",
+    "id": "MSG0079__prometheus_model_ultracompact_fusion_reactor",
     "name": "\"Prometheus\" Model Ultracompact Fusion Reactor",
     "source": "EFRD",
-    "license": "",
-    "license_id": "",
-    "license_level": 0,
+    "license": "RGM-79 GM",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "license_level": 4,
     "effect": "<div>The MS may now <strong>Shunt Power to Maneuvering Subsystems </strong>or <strong>Shunt Power to Weapon Systems </strong>as a Protocol in exchange for taking 1d3 Heat.</div>",
     "type": "System",
     "sp": "4",
@@ -319,7 +292,7 @@
     ]
   },
   {
-    "id": "1aaa51cb-2cb6-4885-89c7-d509434e5d58",
+    "id": "MSG0079_shipbreaker_mounting",
     "name": "Shipbreaker Mounting",
     "source": "ZN",
     "license": "MSM-03C Hygogg ",
@@ -329,15 +302,15 @@
     "sp": "2",
     "description": "",
     "integrated": [
-      "9cd442ad-8d1a-4d68-b535-f7a078aa372c"
+      "MSG0079_shipbreaker_torpedo"
     ]
   },
   {
-    "id": "fdf92471-3d00-46fb-b641-7bd108fe2386",
+    "id": "MSG0079_renard_basque_type_ai",
     "name": "Renard Basque-Type AI",
     "source": "ZN",
     "license": "MSM-03C Hygogg ",
-    "license_id": "bd492050-6b28-49ff-ae6b-53b4ca375849",
+    "license_id": "MSG0079_msm_zerothreec_hygogg_",
     "license_level": 3,
     "effect": "<div>Gain use of the Renard Basque Protocol.</div>",
     "type": "System",
@@ -373,12 +346,12 @@
     ]
   },
   {
-    "id": "39b41e88-6722-4739-b182-3a811afcaf2b",
+    "id": "MSG0079_icarus_frame_shift_drive",
     "name": "Icarus Frame Shift Drive",
     "source": "EFRD",
-    "license": "VF-0 Phoenix",
-    "license_id": "56b6b22c-e089-4720-8b84-d7eeac7ed317",
-    "license_level": 3,
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
     "effect": "<div>Gain access to the Frame Shift action.</div>",
     "type": "System",
     "sp": "4",
@@ -398,13 +371,13 @@
     ]
   },
   {
-    "id": "e232c554-eb99-4786-bfa7-46f3a0928e4f",
+    "id": "MSG0079_thrust_limiter_removal",
     "name": "Thrust Limiter Removal",
     "source": "EFRD",
     "license": "VF-0 Phoenix",
-    "license_id": "56b6b22c-e089-4720-8b84-d7eeac7ed317",
-    "license_level": 2,
-    "effect": "<div>1/round you may inflict 2 Heat to yourself, and boost as a free action.</div>",
+    "license_id": "MSG0079_vf_zero_phoenix",
+    "license_level": 3,
+    "effect": "<div>Gain use of the Limiter Override action.</div>",
     "type": "System",
     "sp": "3",
     "description": "",
@@ -421,14 +394,27 @@
         "description": "This system, trait or reaction can be used {VAL} number of times between the start of the user’s turn and the start of their next turn.",
         "val": 1
       }
+    ],
+    "actions": [
+      {
+        "name": "Limiter Override",
+        "activation": "Protocol",
+        "detail": "<div>Until the end of your next turn, any heat damage received over heat cap is converted into AP energy instead of causing an overehat.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
     ]
   },
   {
-    "id": "63c0197b-e9a7-4e8b-80ef-e63a82661950",
+    "id": "MSG0079_minovsky_cloak",
     "name": "Minovsky Cloak",
     "source": "ZN",
     "license": "MSM-07 Z'gok",
-    "license_id": "ca17b680-11a7-4323-a00e-b967541eb7c4",
+    "license_id": "MSG0079_msm_zeroseven_z_gok",
     "license_level": 1,
     "effect": "<div>The Minovsky Cloak incurs 1 Difficulty on all search actions targeting this mech. For every 10 spaces between you and the source, an additional +1 Difficulty is imposed, to a maximum of 3 Difficulty. </div>",
     "type": "System",
@@ -436,11 +422,11 @@
     "description": ""
   },
   {
-    "id": "4e71e722-8f67-4fe1-b46c-ad5da65d1273",
+    "id": "MSG0079_twofourzeromm_concussive_torpedos",
     "name": "240mm Concussive Torpedos",
     "source": "ZN",
     "license": "MSM-07 Z'gok",
-    "license_id": "ca17b680-11a7-4323-a00e-b967541eb7c4",
+    "license_id": "MSG0079_msm_zeroseven_z_gok",
     "license_level": 3,
     "effect": "<div>1/round, this system may trigger upon losing the HIDDEN status. Choose up to three targets within Range 5 - each of those targets must roll a Hull check. On a failure, the targets take 5 Explosive damage and become Impaired and Slowed. On success, the targets take 3 Explosive damage.</div>",
     "type": "System",
@@ -452,6 +438,176 @@
         "name": "LIMITED {VAL}",
         "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
         "val": 5
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_extra_weapon_rack",
+    "name": "Extra Weapon Rack",
+    "source": "ZN",
+    "license": "MS-18E Kämpfer",
+    "license_id": "MSG0079_kampfer",
+    "license_level": 1,
+    "effect": "<div><span>Upon taking this System or during a Full Repair, choose a mount type: Aux/Aux, Main, or Heavy. This mounting can accept weapons according to its type, and is treated as its own mount for purpose of skirmishing and barraging. This system has X amount of charges based on type of weapon mounting used (Aux/Aux: 3, Main: 2, Heavy: 1), representing the amount of times you may attack with this mount. For weapons with the Limited Tag, their charges are reduced to X charges. Any weapons mounted to Extra Weapon Rack cannot benefit from any modification, including weapon mods and core bonuses.</span></div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 0
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_chain_mines",
+    "name": "Chain Mines",
+    "source": "ZN",
+    "license": "MS-18E Kämpfer",
+    "license_id": "MSG0079_kampfer",
+    "license_level": 2,
+    "type": "System",
+    "sp": "2",
+    "description": "<div><span>The Chain Mine was a number of disc-shaped mines connected to each other by flexible cable. Each mine had magnetic claws on its underside, allowing it to be attached to objects. The Chain Mine could be thrown out like grenades one by one, laid on the ground or fixed to a building as a mine, or (most destructively) attached to a single enemy and detonated</span></div>",
+    "tags": [
+      {
+        "id": "tg_grenade",
+        "name": "Grenade",
+        "description": "As a quick action, this explosive or other device can be thrown to a space within line of sight and the specified Range."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 4
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Throw Chain Mine",
+        "activation": "Quick",
+        "detail": "<div><span>Expend any number of charges to throw a length of Chain Mine onto a character within Range 5. This character must succeed at a Hull save or else be Immobilized until they remove the chain or the mines are detonated. On a successful save, they are Slowed instead. These mines arm at the end of your turn, after which you may detonate them with a Quick Action to deal an amount of 1d6 Explosive damage equal to the amount of charges you expended. An affected character may remove their binds with a successful Hull save, taken as a Full Action.</span></div>",
+        "cost": "1",
+        "pilot": false,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "XD6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Chain Mine",
+        "type": "Mine",
+        "detail": "<div><span>Whenever you expend a charge to deploy a mine, deploy another in any free space adjacent to the first one. Characters who move directly on top of this mine must pass an Agility save or else take 1d6 Explosive damage, or half on a successful save.</span></div>",
+        "size": null,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": "2",
+        "cost": 1,
+        "armor": "",
+        "hp": "",
+        "evasion": "",
+        "edef": "",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_sleipnir_drive",
+    "name": "Sleipnir Drive",
+    "source": "ZN",
+    "license": "MS-18E Kämpfer",
+    "license_id": "MSG0079_kampfer",
+    "license_level": 3,
+    "effect": "<div><span>Whenever your action economy is limited by an effect (ie. Brace, Stunned), retain the ability to perform Free Actions and Overcharge. Each action taken this way generates 2 Heat.</span></div>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_flare_dispensers",
+    "name": "Flare Dispensers",
+    "source": "EFRD",
+    "license": "VF-0 Phoenix",
+    "license_id": "MSG0079_vf_zero_phoenix",
+    "license_level": 1,
+    "effect": "<div><span>Gain access to the </span><strong><span>Deploy Flares</span></strong><span> Reaction.</span></div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div>A standard feature on most modern military aircraft, decoy flares have changed very little conceptually from their pre-UC counterparts. Commonly composed of a pyrotechnic composition based on magnesium or some other hot-burning metal, these flares are intended to burn hotter than an aircraft's engines in order to confuse infrared-based homing weaponry. These are also often paired with chaff launchers in order to throw off most forms of homing and tracking weaponry such as radar-guided missiles and radar-assisted anti-aircraft guns.</div>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Deploy Flares",
+        "activation": "Reaction",
+        "detail": "<div><span>This attack may not benefit from Accuracy and additionally is made as if the target were Invisible.</span></div>",
+        "cost": "1",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/turn",
+        "init": "",
+        "trigger": "<div><span>An attack against you or an adjacent ally consumes the Locked-On condition.</span></div>"
       }
     ]
   }

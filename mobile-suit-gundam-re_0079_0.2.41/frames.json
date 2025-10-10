@@ -1,7 +1,7 @@
 [
   {
-    "id": "91c6e529-1424-4818-a0c3-681e40a63685",
-    "license_id": "91c6e529-1424-4818-a0c3-681e40a63685",
+    "id": "MSG0079_rx_sevenfive_guntank",
+    "license_id": "MSG0079_rx_sevenfive_guntank",
     "source": "EFRD",
     "license_level": 1,
     "name": "RX-75 Guntank",
@@ -60,7 +60,7 @@
       "counters": [],
       "integrated": [
         "f922ac38-8c56-4116-a571-42a19ee3b572",
-        "8e98d4bd-143a-43af-9c2f-44cb9dad4945"
+        "MSG0079_oneeightzeromm_recoilless_cannons"
       ],
       "special_equipment": [],
       "tags": []
@@ -69,8 +69,8 @@
     "y_pos": 37
   },
   {
-    "id": "227d871c-67ec-4eb9-bdb5-f2627027e512",
-    "license_id": "227d871c-67ec-4eb9-bdb5-f2627027e512",
+    "id": "MSG0079_rb_sevennine_ball",
+    "license_id": "MSG0079_rb_sevennine_ball",
     "source": "EFRD",
     "license_level": 0,
     "name": "RB-79 Ball",
@@ -124,14 +124,14 @@
       "active_name": "\"Lockdown\" Targeting Protocols",
       "active_effect": "<p>For the remainder of the scene, the RB-79 ignores the Ordnance tag with Rifles and Cannons. Weapons without Ordnance instead gain Reliable based on weapon size (Auxiliary: 1, Main: 2, Heavy or larger: 3), or if they already have Reliable, add 1 to the default Reliable value.</p>",
       "activation": "Protocol",
-      "description": "<p></p>",
+      "description": "",
       "deactivation": "",
       "use": "",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "",
-      "passive_effect": "<p></p>",
+      "passive_effect": "",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -150,8 +150,8 @@
     "y_pos": 45
   },
   {
-    "id": "bd492050-6b28-49ff-ae6b-53b4ca375849",
-    "license_id": "bd492050-6b28-49ff-ae6b-53b4ca375849",
+    "id": "MSG0079_msm_zerothreec_hygogg_",
+    "license_id": "MSG0079_msm_zerothreec_hygogg_",
     "source": "ZN",
     "license_level": 2,
     "name": "MSM-03C Hygogg ",
@@ -201,14 +201,14 @@
       "active_name": "Killing Lunge",
       "active_effect": "<p>For the remainder of the scene, your Rams and Improvised Attacks now Immobilize the target until the end of their next turn.</p>",
       "activation": "Full",
-      "description": "<p></p>",
+      "description": "",
       "deactivation": "",
       "use": "",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "",
-      "passive_effect": "<p></p>",
+      "passive_effect": "",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -216,7 +216,7 @@
       "counters": [],
       "integrated": [],
       "special_equipment": [
-        "f106fcc6-090a-4182-9dca-91e387d50c9c"
+        "MSG0079_iron_nails"
       ],
       "tags": []
     },
@@ -224,8 +224,8 @@
     "y_pos": 20
   },
   {
-    "id": "56b6b22c-e089-4720-8b84-d7eeac7ed317",
-    "license_id": "56b6b22c-e089-4720-8b84-d7eeac7ed317",
+    "id": "MSG0079_vf_zero_phoenix",
+    "license_id": "MSG0079_vf_zero_phoenix",
     "source": "EFRD",
     "license_level": 2,
     "name": "VF-0 Phoenix",
@@ -234,24 +234,24 @@
     ],
     "description": "<div>An experimental redesign of the venerable F-14 Tomcat, the VF-0 Phoenix is a new type of mobile suit that's capable of transforming between three different modes. Built to be highly adaptable to a chaotic battlefield, the Phoenix can use its transformation system to perform extreme high-G maneuvers in the air or as a means of staying mobile on the ground.</div>",
     "mounts": [
+      "Main",
       "Flex",
-      "Aux/Aux",
-      "Aux/Aux"
+      "Flex"
     ],
     "stats": {
       "size": 1,
       "structure": 4,
       "stress": 4,
       "armor": 0,
-      "hp": 6,
-      "evasion": 0,
+      "hp": 8,
+      "evasion": 10,
       "edef": 8,
-      "heatcap": 7,
+      "heatcap": 6,
       "repcap": 4,
       "sensor_range": 14,
       "tech_attack": 0,
       "save": 10,
-      "speed": 0,
+      "speed": 5,
       "sp": 6
     },
     "traits": [
@@ -264,6 +264,16 @@
         "name": "Agile",
         "use": "",
         "description": "<div>The Phoenix gains <strong>+1</strong> <strong>ACCURACY</strong> on <strong>AGILITY </strong>checks and saves.</div>"
+      },
+      {
+        "name": "Head-Mounted Display Tracking",
+        "use": "",
+        "description": "<div>Upon destroying or structuring an enemy after having consumed a Lock-On, may immediately apply Lock-On to any other enemy within Sensors (including the same enemy if this was triggered via structuring).</div>"
+      },
+      {
+        "name": "Highway to the...",
+        "use": "",
+        "description": "<div>When in <strong>Danger Zone</strong>, 1/turn before or after any action, move 2 spaces in any direction, <span>ignoring engagement and reactions.</span></div>"
       }
     ],
     "core_system": {
@@ -278,11 +288,11 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Change Modes",
-      "passive_effect": "<p>As a Full Action, the Phoenix may opt to change into one of its other modes. It has three, of which any can be chosen when starting a mission. This changes several of the Phoenix's base stats and gives it an ability unique to the mode along with enabling or disabling certain actions.</p><h3>Mobile Suit/Battroid Mode </h3><p><strong>Armor: 1, Speed: 3, Evasion: 8.</strong> Disables use of the Aux/Aux mounts. Enables use of the <strong>Mauler Point-Defense Laser Cannon.</strong></p><h3>GERWALK/Chicken Walker Mode </h3><p><strong>Armor: 1, Speed: 5, Evasion: 10.</strong> Unit is now constantly Hovering. Cannot use Melee weapons. Gain the <strong>Strafe</strong> Reaction.</p><h3>Fighter Mode </h3><p><strong>Armor: 0, Speed: 10, Evasion: 12. </strong>Unit is now constantly Flying and must keep moving up to half its speed in order to not fall. Disables Grapple, Improvised Attack and Ram. May not pick up objects nor manipulate objects or the environment. Cannot use Melee weapons. As a Quick Action, may ascend above the battlefield and then fly down to a free space anywhere on the map, completely bypassing engagement and reactions. Enables use of the <strong>Flare Dispenser</strong> System.</p>",
+      "passive_effect": "<p>As a Quick Action, the Phoenix may opt to change into one of its other modes. It has three, of which any can be chosen when starting a mission. This gives the Phoenix an ability unique to the mode along with enabling or disabling certain actions.</p><h3>Mobile Suit/Battroid Mode</h3><p>Disables use of the Flex mounts. Enables use of the <strong>Mauler Point-Defense Laser Cannon.</strong></p><h3>GERWALK/Chicken Walker Mode</h3><p>Unit is now constantly Hovering. Cannot use Melee weapons. Gain the <strong>Strafe</strong> Reaction.</p><h3>Fighter Mode</h3><p>Unit is now constantly Flying and may boost once per turn as a Free Action, but it must move in a straight line during individual movement actions. It must keep moving up to its speed per turn in order to not fall. Disables Grapple, Improvised Attack and Ram. May not pick up objects nor manipulate objects or the environment. Cannot use Melee weapons. As a Quick Action, may ascend above the battlefield and then fly down to a free space anywhere on the map, completely bypassing engagement and reactions.</p>",
       "passive_actions": [
         {
           "name": "Change Mode",
-          "activation": "Full",
+          "activation": "Quick",
           "detail": "<p>The Phoenix may switch to a mode it is not already in.</p>",
           "cost": 0,
           "pilot": false,
@@ -314,8 +324,7 @@
       "deployables": [],
       "counters": [],
       "integrated": [
-        "62797de3-466a-45ea-aee8-9cf8021390eb",
-        "ad4cd104-3b4b-439c-9670-f929fe8d1bd9"
+        "MSG0079_mauler_point_defense_laser_cannon"
       ],
       "special_equipment": [],
       "tags": []
@@ -324,8 +333,8 @@
     "y_pos": 14
   },
   {
-    "id": "0a106767-907e-46fa-9cff-955e87d56df6",
-    "license_id": "0a106767-907e-46fa-9cff-955e87d56df6",
+    "id": "MSG0079_ms_zeronine_dom",
+    "license_id": "MSG0079_ms_zeronine_dom",
     "source": "ZN",
     "license_level": 2,
     "name": "MS-09 Dom",
@@ -387,14 +396,14 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "",
-      "passive_effect": "<p></p>",
+      "passive_effect": "",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
       "deployables": [],
       "counters": [],
       "integrated": [
-        "475a2041-efa4-4e02-a256-e66f9697b389"
+        "MSG0079_scattering_beam_cannon"
       ],
       "special_equipment": [],
       "tags": []
@@ -403,8 +412,8 @@
     "y_pos": 12
   },
   {
-    "id": "42693934-35a6-4c6f-9292-bd10c895932e",
-    "license_id": "42693934-35a6-4c6f-9292-bd10c895932e",
+    "id": "MSG0079_yms_onefive_gyan",
+    "license_id": "MSG0079_yms_onefive_gyan",
     "source": "ZN",
     "license_level": 2,
     "name": "YMS-15 Gyan",
@@ -476,19 +485,19 @@
     "y_pos": 14
   },
   {
-    "id": "3c2b83cb-24cf-4886-b31d-08622242ce3c",
-    "license_id": "3c2b83cb-24cf-4886-b31d-08622242ce3c",
+    "id": "MSG0079_mbr_zerofour_mk_vi_destroid_tomahawk",
+    "license_id": "MSG0079_mbr_zerofour_mk_vi_destroid_tomahawk",
     "source": "EFRD",
-    "license_level": 1,
+    "license_level": 2,
     "name": "MBR-04-Mk.VI Destroid Tomahawk",
     "mechtype": [
       "Artillery"
     ],
     "description": "<div>Developed as a joint project between BAE Land Systems and General Resource's Chrysler Defense subsidiary, the Tomahawk is one of the first fielded of the \"Destroid\" line of mobile suits that takes some departures from established MS designs. Resembling the Guntank line of mobile weapons even more than the Guncannon, the Tomahawk carries more traditional weapon mountings on the end of its arms as opposed to the handlike manipulators of other mobile suits. The standard armament of these mountings are often similar to those found on main battle tanks, though certain configurations replaces them with other weapons such as rocket pods, Gatling cannons, and even energy weapons such as Megaparticle Cannons or Ionized Particle Projector Cannons. Combined with additional space for weapons on its shoulders and body, the Tomahawk lugs considerable firepower into the thick of combat.</div><div>In spite of its unusual configuration compared to most mobile suits, the Tomahawk actually shares roughly 70% parts commonality with the RGM-79 GM, making the machine rather easy to integrate into the arsenal of existing Federation arsenals. Spare parts for the remaining fraction is produced in significant enough numbers and designed intuitively to ensure that the Tomahawk has a smooth repair and maintenance process, to the point that certain GMs and Guncannons have seen Tomahawk parts being used for ad hoc repairs.</div><div>Along with the RGM-79GS Gunslinger GM, the Tomahawk is a popular mobile suit of choice for pilots of the Federation's Gunslinger Initiative, a special training program to produce pilots that can fight on par or even exceed the skills of Zeon's own top aces and survive to pass their experience down to other pilots. As opposed to the Gunslinger GM, the Tomahawk emphasizes accurate barrages of lethal firepower to suppress dangerous threats before they can close into close combat, though unconventional modifications of the Tomahawk have seen it holding up fairly well in close combat in the right hands.</div>",
     "mounts": [
-      "Main",
-      "Main",
-      "Heavy"
+      "Heavy",
+      "Flex",
+      "Flex"
     ],
     "stats": {
       "size": 1,
@@ -544,8 +553,8 @@
     "y_pos": 16
   },
   {
-    "id": "62bb393f-573e-428e-ba9e-44b1630de3b6",
-    "license_id": "62bb393f-573e-428e-ba9e-44b1630de3b6",
+    "id": "MSG0079_rx_sevenninebd_one_blue_destiny",
+    "license_id": "MSG0079_rx_sevenninebd_one_blue_destiny",
     "source": "EFRD",
     "license_level": 1,
     "name": "RX-79BD-1 Blue Destiny",
@@ -617,8 +626,8 @@
     "y_pos": 7
   },
   {
-    "id": "622074c3-229e-4656-a9b7-f4cc1dcec282",
-    "license_id": "622074c3-229e-4656-a9b7-f4cc1dcec282",
+    "id": "MSG0079_metal_gear_ray",
+    "license_id": "MSG0079_metal_gear_ray",
     "source": "ZN",
     "license_level": 1,
     "name": "Metal Gear RAY",
@@ -675,7 +684,7 @@
       "active_name": "B4N-100K \"Banshee\" Acoustic Amplifier",
       "active_effect": "<p>For the remainder of the scene, when the RAY uses the Lock-On quick tech action, all hostile MECH type characters with range 3 of the initial target gain the LOCK ON status. Additionally, gain access to the \"Thunderous Shriek\" action.</p>",
       "activation": "Protocol",
-      "description": "<p></p>",
+      "description": "",
       "deactivation": "",
       "use": "",
       "active_actions": [
@@ -719,7 +728,7 @@
       "deployables": [],
       "counters": [],
       "integrated": [
-        "8291b64d-1b8d-46bd-81bc-c056df993efb"
+        "MSG0079_uhph_onezero_poseidon_hydrocannon"
       ],
       "special_equipment": [],
       "tags": []
@@ -728,11 +737,11 @@
     "y_pos": 35
   },
   {
-    "id": "bdc0f01b-9aca-4650-a506-4e3fc515c64c",
-    "license_id": "bdc0f01b-9aca-4650-a506-4e3fc515c64c",
+    "id": "MSG0079_rgm_sevennine_gm",
+    "license_id": "MSG0079_rgm_sevennine_gm",
     "source": "EFRD",
-    "license_level": 0,
-    "name": "RGM-79 \"GM\"",
+    "license_level": 1,
+    "name": "RGM-79 GM",
     "mechtype": [
       "Balanced"
     ],
@@ -773,17 +782,17 @@
     ],
     "core_system": {
       "name": "Standardized Weapon Racks",
-      "active_name": "\"Bag of Holding\" Protocols",
+      "active_name": "Deploy Weapon Pack",
       "active_effect": "<p>Once per mission, the RGM-79 may discard its current weapon armaments and exchange them for a new set. The old weapons are lost and cannot be re-equipped.</p>",
       "activation": "Full",
-      "description": "<p></p>",
+      "description": "",
       "deactivation": "",
       "use": "Mission",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
-      "passive_name": "Modular Compensators",
-      "passive_effect": "<p>If the GM should ever mount an Aux weapon to its Main mount, or an Aux or Main weapon to its Heavy mount, that weapon mount will benefit from +1 accuracy and +1 additional damage.</p>",
+      "passive_name": "Modular Fittings",
+      "passive_effect": "<p>Upon creation or during a Full Repair, select one weapon type. All Main weapons of that type gain one of the following effects depending on weapon type:</p><ul><li><p>Melee: 1/round on critical hit, damage from the attack gains AP. If the attack already has AP, or otherwise cannot be reduced, you may take 1 heat to add +2 bonus damage.</p></li><li><p>Rifle: Gain Reliable 1, and any weapon with Reliable increases its effect by 1.</p></li><li><p>Cannon: Gain Knockback 1, and any weapon with Knockback increases its effect by 1. 1/round on critical hit, the target must pass a Hull save or be knocked Prone.</p></li><li><p>Launcher: Weapons with Ordnance loses the tag. Weapons without Ordnance gains Arcing. Weapons with Arcing may 1/round attack as if they were Seeking.</p></li><li><p>CQB: This weapon ignores penalties from Engagement.</p></li><li><p>Nexus: 1/round, when consuming Lock On with this weapon it gains AP and Overkill.</p></li></ul><p>If the GM should ever mount an Aux weapon to its Main mount, or an Aux or Main weapon to its Heavy mount, that weapon mount will benefit from +1 accuracy and +1 additional damage.</p>",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -797,8 +806,8 @@
     "y_pos": 4
   },
   {
-    "id": "d140ba82-0bdb-4a58-a03b-bcb3ef3452a9",
-    "license_id": "d140ba82-0bdb-4a58-a03b-bcb3ef3452a9",
+    "id": "MSG0079_ms_zerosix_zaku_ii",
+    "license_id": "MSG0079_ms_zerosix_zaku_ii",
     "source": "ZN",
     "license_level": 0,
     "name": "MS-06 Zaku II",
@@ -866,8 +875,8 @@
     "y_pos": 25
   },
   {
-    "id": "ca17b680-11a7-4323-a00e-b967541eb7c4",
-    "license_id": "ca17b680-11a7-4323-a00e-b967541eb7c4",
+    "id": "MSG0079_msm_zeroseven_z_gok",
+    "license_id": "MSG0079_msm_zeroseven_z_gok",
     "source": "ZN",
     "license_level": 2,
     "name": "MSM-07 Z'gok",
@@ -937,5 +946,244 @@
     },
     "image_url": "https://cdn.shopify.com/s/files/1/2786/5582/products/mg-msm-07-z-gok-01_clipped_rev_1.png?v=1668804659",
     "y_pos": 0
+  },
+  {
+    "id": "MSG0079_rgm_sevenninegs_gunslinger_gm",
+    "license_id": "MSG0079_rgm_sevennine_gm",
+    "source": "EFRD",
+    "license_level": 3,
+    "name": "RGM-79GS Gunslinger GM",
+    "mechtype": [
+      "Striker"
+    ],
+    "variant": "RGM-79 GM",
+    "description": "<div><span>Iterated from Rolls Royce's RGM-79AWM Arctic Warfare GM, the GS GM, also known as the 'Gunslinger' GM, is an improved RGM-79 GM designed by General Motors for high-intensity warfare in dense urban environments. The Gunslinger GM was one of the first in the GM family to make use of vernier thrusters distributed all over its body even for ground configurations. In addition, its backpack was redesigned from scratch into two separate types for optimized operation in space or atmosphere. It is also one of a few GM models that uniformly makes use of the monoeye configuration for its main head camera, granting it enhanced precision in ranged attacks. Additional sensors in both its main head unit and its backpack (replacing the usual beam saber mounting that other GMs possess) grants it a higher degree of battlefield awareness.</span></div><div><span>Due to its popularity as a squad lead unit, the Gunslinger GM has also gained a second unofficial moniker as the Command GM.</span></div><div><br></div>",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 10,
+      "evasion": 9,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 12,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Gunfighter's Grit",
+        "use": "",
+        "description": "<div>Upon successfully dodging an attack, the Gunslinger GM <span>can immediately move 1 space in any direction as long as it isn’t Immobilize or Slowed. This movement ignores engagement and doesn’t provoke reactions.</span></div>"
+      }
+    ],
+    "core_system": {
+      "name": "All-Terrain Aggressive Maneuver System",
+      "active_name": "ATAMS Safety Override",
+      "active_effect": "<p>Gunslinger's Grit now moves up to 3 spaces and ignores Immobilized and Slowed. <span>This combat maneuver may be treated as Flying, but must end the movement on the ground or another solid surface, or else immediately begin falling.</span></p>",
+      "activation": "Protocol",
+      "description": "<p><span>The ATAMS is a combination of additional verniers distributed through its body and durable rapid-response sensors located in its head unit and backpack. Using this system, the Gunslinger GM in the right hands is incredibly hard to pin down. Normally the performance of this system is suppressed in order to prevent collateral damage from accidental collisions, but the safety measures can be shut off whether due to extenuous circumstances or if such danger is not a factor.</span></p>",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/iUvTFYv.png",
+    "y_pos": 19
+  },
+  {
+    "id": "MSG0079_kampfer",
+    "license_id": "MSG0079_kampfer",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "MS-18E Kämpfer",
+    "mechtype": [
+      "Striker"
+    ],
+    "variant": "",
+    "description": "<div>A variant of a late-war mobile suit design, the MS-18E Kämpfer is a very singularly focused design that prioritized speed and firepower over armor protection. The E model was originally built as a high-speed assault unit assigned to special forces, eschewing its base model's armor to make room for additional weapon mounts (of which were jettisonable in order to minimize dead weight during prolonged combat).</div><div>First spotted during Operation Odessa, the Kämpfer gained a reputation for being an especially dangerous city-fighter, ambushing Federation units in tight close-quarters engagements to deadly effect.</div><div>Ironically, one of the most famous specimens was a Kämpfer that had been captured by Ukrainian militia during the Battle of Odessa City, the blue-and-gold emblazoned machine used by the Ukrainian citizens in spearheading the charge to retake the city.</div><div>With the end of the war, production on the Kämpfer has winded down significantly, though the Republic of Zeon maintains a small fleet of these machines. It has also seen rising popularity with private defense contractors, due to its specs lending itself well in short-duration search and destroy operations against militant insurgencies.</div>",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 12,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 2,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Expendable Mountings",
+        "use": "Round",
+        "description": "<div>1/round, the Kämpfer may perform the following action:</div>",
+        "actions": [
+          {
+            "name": "Discard",
+            "activation": "Free",
+            "detail": "<div><span>As a Free Action, the Kampfer may expend a Charge from any Limited system in exchange for 1 Momentum.</span></div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      },
+      {
+        "name": "Einhauen",
+        "use": "Turn",
+        "description": "<div><span>1/turn, when the </span>Kämpfer <span>uses a weapon or system with the Limited tag, it may move up to 3 spaces, before or after taking the action, ignoring engagement and reactions. This includes using the Discard action.</span></div>"
+      },
+      {
+        "name": "Fragile",
+        "use": "",
+        "description": "<div>T<span>he Kämpfer takes +1 difficulty on all Hull checks and saves.</span></div>"
+      }
+    ],
+    "core_system": {
+      "name": "Wilde Jagd Combat Computer",
+      "active_name": "Through Violence",
+      "active_effect": "<p><span>For the rest of the Scene, raise the maximum amount of Momentum dice you can hold to 6. Remove the round restriction on taking Momentum actions and generating Momentum dice. Additionally, gain access to the following options:</span></p>",
+      "activation": "Protocol",
+      "description": "",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [
+        {
+          "name": "Push",
+          "activation": "Free",
+          "detail": "<p><strong><span>(Cost: 3 dice)</span></strong><span> Move in a straight line up to your speed, ignoring engagement and obstructions. Select up to 3 characters in or adjacent to this path—they each take 1d6 AP Kinetic damage and must pass an Agility save or else fall Prone. Objects in this path take 10 AP Kinetic damage.</span></p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        },
+        {
+          "name": "Brutalize ",
+          "activation": "Free",
+          "detail": "<p><strong><span>(Cost: 3 dice)</span></strong><span> Choose any non-Superheavy weapon. The next time you attack with this weapon, destroying a target or dealing structure damage triggers the following secondary attack effect: move up to your speed and attack any other character within range. Secondary attacks may trigger additional secondary attacks.</span></p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        },
+        {
+          "name": "Phase",
+          "activation": "Free",
+          "detail": "<p><strong><span>(Cost: 2 dice</span></strong><span>) Roll a number of dice equal to this ability’s cost. A number of attacks made against you (equal to your lowest rolled value) treats you as if you were Invisible. Attacks affected by this ability are unable to inflict any non-damage effects, such as Reliable. This effect lasts until either all charges have been used, or the end of your next turn.</span></p>",
+          "cost": "0",
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Reach Heaven",
+      "passive_effect": "<p>Upon inflicting structure damage on an enemy (including destroying), gain a D6 Momentum dice, up to a maximum of 3. This can only be generated once per enemy per round, even if multiple structure damage was inflicted.</p><p><span>1/round, you may spend your Momentum for one of the following effects as a Free Action.</span></p>",
+      "passive_actions": [
+        {
+          "name": "Recover",
+          "activation": "Free",
+          "detail": "<p><strong><span>(Cost: 1 die) </span></strong><span>Make an Agility Check, using the die as Accuracy. Clear the Slowed or Immobilized condition on a successful check. This ability can only clear one condition per die.</span></p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        },
+        {
+          "name": "Scrape",
+          "activation": "Free",
+          "detail": "<p><strong><span>(Cost: 1 die) </span></strong><span>Pick a target within Range 3. You fire your head-mounted Vulcans, dealing 2 Kinetic damage. If you cause structure damage or kill a hostile mech character with this action, refund the cost.</span></p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        },
+        {
+          "name": "Dodge ",
+          "activation": "Free",
+          "detail": "<p><strong><span>(Cost: 2 dice) </span></strong><span>Roll the dice and pick the highest of the two. Gain Overshield equal to the result, dissipating at the end of your next turn. When this Overshield is expended, you may move up to your speed, ignoring engagement and reactions.</span></p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/ySt6iR9.png",
+    "y_pos": 20
   }
 ]
