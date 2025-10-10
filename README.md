@@ -1,0 +1,1 @@
+Upload LCP to https://cc-lcp-editor.netlify.app/#/ in order to edit. For record keeping, also upload a decompiled version of the LCP in order to track changes. This can be done by renaming the LCP file back to a ZIP file (though this prevents it from being rebuilt back into a LCP file). The extracted JSON files can be imported into the LCP editor for modifying that way.
