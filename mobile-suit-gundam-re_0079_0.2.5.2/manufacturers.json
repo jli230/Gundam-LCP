@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ZN",
+    "name": "Zeonic",
+    "light": "#10640AFF",
+    "dark": "#2C2C2C",
+    "description": "<div>The civilian company that developed the first mobile suits, and went on to become the Principality of Zeon's main mobile suit supplier. Zeonic is responsible for the development of the MS-05 Zaku I and MS-06 Zaku II, as well as later models like the MSM-04 Acguy and MS-14 Gelgoog.</div>",
+    "logo_url": "https://i.imgur.com/SZA7Q7g.png"
+  },
+  {
+    "id": "EFRD",
+    "name": "Earth Federation Research & Development",
+    "light": "#EBB308",
+    "dark": "#002199",
+    "logo_url": "https://i.imgur.com/izWQ0fW.png"
+  }
+]
