@@ -1,0 +1,61 @@
+[
+  {
+    "id": "MSG0079__class_newtype",
+    "name": "α Class Newtype",
+    "ranks": [
+      {
+        "name": "Danger Sense",
+        "description": "<div>When targeted by Blast type weapons, gain +1 Accuracy to evasion checks.</div>",
+        "exclusive": false
+      },
+      {
+        "name": "Combat Instinct",
+        "description": "<div>Upon destroying a target, gain one Newtype Die - a D6 - up to a maximum of 3. When you are targeted by a ranged or line attack, you may spend any number of these dice to roll them, and for each result above 4, apply one stack of Inaccuracy to the attacker's roll. </div>",
+        "exclusive": false
+      },
+      {
+        "name": "Precognition",
+        "description": "<div>If any of your Newtype die roll a 6, the attack is ignored, excluding Reliable and Blast effects. All Newtype dice spent on the attack are still lost.</div>",
+        "exclusive": false
+      }
+    ],
+    "description": "<div>A Newtype is a person who has reached a new stage of human evolution in the Gundam universe. The theory behind this minor but groundbreaking metamorphosis is: in order to adapt to life in space, the human body evolved with heightened mental awareness. As such, Newtypes tend to appear among Spacenoids, although not exclusively.</div>",
+    "terse": "Utilize superhuman senses to anticipate dangers on the battlefield."
+  },
+  {
+    "id": "MSG0079_hoplite",
+    "name": "Hoplite",
+    "terse": "Wield the humble shield as a mighty weapon of war; become the immovable object to defeat unstoppable forces.",
+    "ranks": [
+      {
+        "name": "One Man Phalanx",
+        "description": "<div>Bracing while equipped with any weapon with the Shield tag confers an additional +1 Armor for the duration of the brace. This armor value may stack for additional equipped weapons with the Shield tag. Additionally, gain access to the A Taste of Grass action.</div>",
+        "actions": [
+          {
+            "name": "A Taste of Grass",
+            "activation": "Free",
+            "detail": "<div>1/Round, when attacking with any weapon with the Shield tag, you may force an enemy to roll a hull save or be knocked prone.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "exclusive": false
+      },
+      {
+        "name": "Discombobulate",
+        "description": "<div>Any time you use a weapon with the Shield tag to attack an enemy, gain +1 accuracy to the next attack you make against that target with any melee weapon attack or tech attack. This accuracy stacks, to a maximum value of +6.</div><div>Bracing now confers +2 armor for each equipped weapon with the Shield tag, rather than +1.</div>",
+        "exclusive": false
+      },
+      {
+        "name": "May I Stand Unshaken",
+        "description": "<div>At the end of every turn in which you were not Stunned or Prone, you gain 1 Poise Die – a d6 – up to a maximum of 3 Poise Dice. They last until expended or the current scene ends. You can expend Poise Dice 1-for-1 for the following:</div><ul><li><div><strong>Interpose: </strong>As a free action, reduce incoming damage for any one adjacent character of your choice by 1d6.</div></li><li><div><strong>Barrier Burst: </strong>Upon landing an attack with any weapon with the Shield tag, apply 1d6 knockback.</div></li><li><div><strong>Immovable:</strong> As a reaction to any attack targeted at you, you may roll any number of Poise dice. If any of these roll 5 or above, you may Brace without sacrificing any actions or movement on your following turn.</div></li></ul>",
+        "exclusive": false
+      }
+    ],
+    "description": "<div><em>As the rumble of the mobile suit engine rattles through my teeth and skull, I lock eyes with the group of trainees arranged neatly in a square before me. Towering above them in my GM, I flick the loudspeaker on, before clearing my throat. \"Listen up, cadets. In the chaos of battle, shields aren't just for defense; they're defensive weapons. Angle them right and you can deflect the hardest of fire. Timing is everything. Anticipate their moves, angle the shield just right, and watch their attacks crumble against your unyielding defense. Remember, a shield is not a barrier—it's a battering ram. Use it aggressively, seize control, and turn the tide in your favor.\"</em></div><div><em>- Excerpt from the memoirs of Corporal Ela Towers, retired.</em></div>"
+  }
+]
