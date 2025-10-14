@@ -376,5 +376,29 @@
     "restricted_sizes": [],
     "added_damage": [],
     "added_range": []
+  },
+  {
+    "id": "ZN_shipbreaker_mount",
+    "name": "Shipbreaker Mounting",
+    "source": "ZN",
+    "license": "MSM-03C Hygogg ",
+    "license_id": "MSG0079_msm_zerothreec_hygogg_",
+    "license_level": 2,
+    "effect": "<div>Disables this mount, but grants use of the <strong>Shipbreaker Torpedo. </strong>Only one copy of this mod can be applied per mount.</div>",
+    "sp": "2",
+    "description": "",
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main"
+    ],
+    "restricted_sizes": [
+      "Heavy",
+      "Superheavy"
+    ],
+    "added_damage": [],
+    "added_range": [],
+    "integrated": [
+      "MSG0079_shipbreaker_torpedo"
+    ]
   }
 ]

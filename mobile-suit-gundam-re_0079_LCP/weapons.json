@@ -1170,30 +1170,34 @@
     "name": "Shipbreaker Torpedo",
     "source": "",
     "license": "",
+    "license_id": "",
     "license_level": 1,
     "description": "<div>Retooled from demolition charges used for shipbreaking obsolete space vessels, Shipbreaker Torpedoes are a form of guided missile that first slams into armor with enough force to cause structural integrity failures before detonating shortly after, sundering the armor of if not outright destroying most targets. This reinforced casing not only increases the amount of shrapnel produced, but makes the Shipbreaker Torpedo much harder to intercept with point-defense fire.</div>",
-    "on_attack": "<div>The Shipbreaker Mounting is jettisoned, disabling use of this weapon.</div>",
-    "on_hit": "<div>Inflicts Shredded.</div>",
-    "on_crit": "<div>Inflicts bonus AP Explosive Damage based on double the target's Armor.</div>",
+    "effect": "<div>This weapon's damage scales based on how many hexes of a target is caught inside the blast radius. For each additional hex caught in the blast radius, the target takes an additional 1d6 bonus explosive damage on hit.</div>",
     "mount": "Main",
     "type": "Launcher",
-    "cost": 1,
+    "sp": 0,
     "barrage": true,
     "skirmish": true,
+    "cost": 1,
+    "on_attack": "<div>The Shipbreaker Mounting is jettisoned, disabling use of this weapon.</div>",
+    "on_crit": "<div>The target becomes Shredded until the end of their next turn.</div>",
     "damage": [
       {
         "type": "Explosive",
-        "val": "2d6"
+        "val": "1d6"
       }
     ],
     "range": [
       {
         "type": "Range",
         "val": "15"
+      },
+      {
+        "type": "Blast",
+        "val": 1
       }
-    ],
-    "sp": 0,
-    "profiles": []
+    ]
   },
   {
     "id": "MSG0079_mauler_point_defense_laser_cannon",
@@ -1391,51 +1395,12 @@
     "profiles": []
   },
   {
-    "id": "MSG0079_howard_three_barrel_gpu_nine_threefivemm_gun_pod",
-    "name": "Howard three-barrel GPU-9 35mm Gun Pod",
-    "source": "EFRD",
-    "license": "VF-0 Phoenix",
-    "license_id": "MSG0079_vf_zero_phoenix",
-    "license_level": 1,
-    "description": "<div>Variable Frame Gun Pod, designed to allow the VF-0 a measure of firepower at all times, in any mode, be it Gerwalk, Battroid or Fighter mode.</div>",
-    "mount": "Main",
-    "type": "Cannon",
-    "sp": 0,
-    "barrage": true,
-    "skirmish": true,
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "1D3+2"
-      }
-    ],
-    "range": [
-      {
-        "val": 4,
-        "type": "Range"
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_reliable",
-        "name": "RELIABLE {VAL}",
-        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
-        "val": 2
-      },
-      {
-        "id": "tg_overkill",
-        "name": "OVERKILL",
-        "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
-      }
-    ]
-  },
-  {
     "id": "MSG0079_gu_oneone_fivefive_mm_three_barrel_gatling_gun_pod",
     "name": "GU-11 55 mm Three-Barrel Gatling Gun Pod",
     "source": "EFRD",
     "license": "VF-0 Phoenix",
     "license_id": "MSG0079_vf_zero_phoenix",
-    "license_level": 3,
+    "license_level": 1,
     "description": "<div>Early production next-generation variable frame gun pod, designed to replace the aging GPU-9.</div>",
     "mount": "Main",
     "type": "Cannon",
@@ -1513,12 +1478,20 @@
     "license_id": "MSG0079_msm_zerothreec_hygogg_",
     "license_level": 1,
     "description": "<div>One of the first Zeon beam weapons built with E-Caps, the Assault Beam Cannon fires a rapid barrage of short-burst beams rather than a prolonged beam. While this sacrifices some individual power compared to other beam weapons, this makes it much more effective in close quarters combat. Commonly equipped on the Hygogg, where an internal feed system in its forearms handles cycling the E-Caps.</div>",
+    "effect": "<div>If you have hit a target with a melee attack this turn, this weapon gains +1 Accuracy.</div>",
     "mount": "Auxiliary",
     "type": "CQB",
     "sp": 0,
+    "tags": [
+      {
+        "id": "tg_loading",
+        "name": "LOADING",
+        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+      }
+    ],
     "barrage": true,
     "skirmish": true,
-    "on_crit": "<div>Gain AP</div>",
+    "on_crit": "<div>You may load this weapon as a free action.</div>",
     "damage": [
       {
         "type": "Energy",
@@ -1533,13 +1506,6 @@
       {
         "type": "Threat",
         "val": 3
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_loading",
-        "name": "LOADING",
-        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
       }
     ]
   },

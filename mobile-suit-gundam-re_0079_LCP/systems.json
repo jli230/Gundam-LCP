@@ -292,21 +292,7 @@
     ]
   },
   {
-    "id": "MSG0079_shipbreaker_mounting",
-    "name": "Shipbreaker Mounting",
-    "source": "ZN",
-    "license": "MSM-03C Hygogg ",
-    "license_level": 3,
-    "effect": "<div>Choose one non-Heavy Mount. Enables the use of a Shipbreaker Torpedo. This system disables the use of that mount until it is jettisoned when firing the Shipbreaker Torpedo. Doing such also counts the system as being effectively \"destroyed\". Reloading this system can be done by repairing systems as usual during Short Rests. Cannot be destroyed normally as part of System Trauma. </div><div>If the mount that this system is attached to is destroyed, roll a SYSTEMS check. On success, instead of destroying the mount this system can be \"thrown\" as a grenade up to Range 5 away, dealing ranged 1d6 Explosive damage in a Blast 2 zone to anyone that fails to pass an AGILITY save (half damage if they pass). On failure, it instead deals 1d6 Explosive AP damage to the MS and inflicted Shredded before anyone within a Burst 2 zone must roll an AGILITY save, taking 1d6 Explosive damage if they fail the save and half of that if they succeed.</div>",
-    "type": "System",
-    "sp": "2",
-    "description": "",
-    "integrated": [
-      "MSG0079_shipbreaker_torpedo"
-    ]
-  },
-  {
-    "id": "MSG0079_renard_basque_type_ai",
+    "id": "MSG0079_renard_basque_ai",
     "name": "Renard Basque-Type AI",
     "source": "ZN",
     "license": "MSM-03C Hygogg ",
@@ -334,7 +320,7 @@
       {
         "name": "Renard Basque Protocol",
         "activation": "Protocol",
-        "detail": "<div>Expend a charge to give you Resistance to all Overwatch attacks until the start of your next turn. In addition, the Overwatch reaction can now be taken twice per round and can be triggered on involuntary movement.</div>",
+        "detail": "<div>As a protocol, gain the following benefits until the beginning of your next turn:</div><ul><li><div>You may take the Overwatch reaction twice per round and may take an additional reaction this turn.</div></li><li><div>Your reactions can be triggered by involuntary movement.</div></li><li><div>Whenever you take the Overwatch reaction, you may opt to Ram or Grapple if the target is within range.</div><div>This effect immediately ends if you are STUNNED or take either structure or stress damage.</div></li></ul>",
         "cost": "1",
         "pilot": false,
         "synergy_locations": [],
@@ -399,7 +385,7 @@
       {
         "name": "Limiter Override",
         "activation": "Protocol",
-        "detail": "<div>Until the end of your next turn, any heat damage received over heat cap is converted into AP energy instead of causing an overehat.</div>",
+        "detail": "<div>Until the end of your next turn, any self-inflicted heat damage received over heat cap is converted into AP energy instead of causing an overehat.</div>",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
@@ -608,6 +594,68 @@
         "frequency": "1/turn",
         "init": "",
         "trigger": "<div><span>An attack against you or an adjacent ally consumes the Locked-On condition.</span></div>"
+      }
+    ]
+  },
+  {
+    "id": "ZN_Predator_Lunge",
+    "name": "Predator Lunge",
+    "source": "ZN",
+    "license": "MSM-03C Hygogg ",
+    "license_id": "MSG0079_msm_zerothreec_hygogg_",
+    "license_level": 1,
+    "effect": "<div>1/round, before making a Ram, Grapple, or Improvised Melee, you may fly up to two spaces directly toward your target. If you end this movement adjacent to your target, they must make a Hull save or else be knocked prone. This action triggers engagement and reactions as usual.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": ""
+  },
+  {
+    "id": "ZN_serrated_grapple",
+    "name": "Serrated Heat Claws",
+    "source": "ZN",
+    "license": "MSM-03C Hygogg ",
+    "license_id": "MSG0079_msm_zerothreec_hygogg_",
+    "license_level": 2,
+    "effect": "<div>Gain the <strong>Heat Up</strong> protocol.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "actions": [
+      {
+        "name": "Heat Up",
+        "activation": "Protocol",
+        "detail": "<div>Until the start of your next turn, if a character escapes your grapple by any means, they must pass a Hull save or else take 1d6 AP Energy damage and be Shredded. This effect immediately ends if you are Stunned, Jammed, or if the grapple is reversed through a contested Hull check.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "ZN_kaiju_musculature",
+    "name": "Kaiju-Class Artificial Musculature",
+    "source": "ZN",
+    "license": "MSM-03C Hygogg ",
+    "license_id": "MSG0079_msm_zerothreec_hygogg_",
+    "license_level": 3,
+    "effect": "<div>Gain access to the <strong>Kaiju Attacks </strong>quick action. You are not immobilized or slowed when lifting or dragging, respectively.</div>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "actions": [
+      {
+        "name": "Kaiju Attacks",
+        "activation": "Quick",
+        "detail": "<div>You take one character you are grappling or an object you are lifting and swing them at a chosen target. This counts as attacking with a Melee Weapon with Threat 1 and can be modified by anything that modifies Threat. This deals 2 Kinetic damage on a hit to both the grappled character/lifted object and the target, dealing 1d6 additional Kinetic damage for each Size larger than 1/2. If this is enough to destroy the grappled character, you may then elect to place the wreck in any adjacent free space.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
       }
     ]
   }

@@ -161,13 +161,14 @@
     "description": "<div>Although the MSM-03 Gogg was one of the first true amphibious mobile suits, it was handicapped by several problems including being under-powered, limited armament, and poor performance on land. To address these shortcomings, the Hygogg was developed. Introduced at the end of the One Year War, this machine was designed from scratch and retained only its predecessor's basic concepts. The result was a smaller, lighter, compact, and more powerful machine equipped with an improved generator and better weaponry. Its agility and mobility in water and on land were also enhanced. Additionally, production costs were reduced due to the implementation of standardized parts, including the cockpit, derived from the United Maintenance Plan, which greatly enhanced repairs and servicing.</div>",
     "mounts": [
       "Flex",
-      "Flex"
+      "Flex",
+      "Main"
     ],
     "stats": {
       "size": 1,
       "structure": 4,
       "stress": 4,
-      "armor": 1,
+      "armor": 0,
       "hp": 8,
       "evasion": 8,
       "edef": 8,
@@ -220,8 +221,8 @@
       ],
       "tags": []
     },
-    "image_url": "https://cdn.discordapp.com/attachments/961013256795865098/1050656751348895866/image.png",
-    "y_pos": 20
+    "image_url": "https://i.imgur.com/RqmI8IG.png",
+    "y_pos": 28
   },
   {
     "id": "MSG0079_vf_zero_phoenix",
@@ -279,8 +280,8 @@
     "core_system": {
       "name": "Variable Fighter Transformation System",
       "active_name": "Rapid Transformation",
-      "active_effect": "<p>For the rest of the Scene, the Phoenix may transform as a Protocol instead. Doing so grants an additional effect to each transformation mode.</p><p><strong>Mobile Suit/Battroid Mode: </strong>Gain one additional Mauler Point-Defense Laser Cannon reaction.<strong> </strong>Spending this Reaction against an enemy Barrage only consumes one Reaction instead of two.<strong> </strong></p><p><strong>GERWALK/Chicken Walker Mode: Strafe</strong> can be triggered twice per round instead of just once.<strong> </strong></p><p><strong>Fighter Mode: </strong>When done as a reaction to an attack by a Smart Weapon, the Smart Weapon must roll against the Phoenix's E-Defense plus 1/4 of its Evasion. All three Mounts may be fired as part of a Barrage.</p>",
-      "activation": "Protocol",
+      "active_effect": "<p><span>As a Free Action, change into any other form. This action may be taken in the middle of any Full Action with two distinct parts (e.g. Barrage with two weapons). This action is </span><strong>Efficient</strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span></p><p><span>When this action is performed, gain the following benefit to for each mode. This effect lasts until the start of your next turn.</span></p><h3>Battroid Mode</h3><ul><li><p><span>1/round, when you hit a target with a Cannon weapon, you may apply the Lock-On and Shredded conditions. The Shredded condition lasts until the end of the target's next turn.</span></p></li></ul><h3>GERWALK Mode</h3><ul><li><p><span>1/round, when consuming Lock-on, selecting another weapon with which to attack the same target instead deals full damage, heat, and burn on a hit.</span></p></li></ul><h3>Fighter Mode</h3><ul><li><p><span>1/round, when consuming Lock-on as part of an attack made with a Launcher weapon, the attack instead cannot be reduced in any way.</span></p></li></ul>",
+      "activation": "Free",
       "description": "<p>The VF-0 Phoenix's unique high-speed transformation system allows for it to change mission roles on the fly, though it takes incredible resilience to high-G stresses to transform the Phoenix outside of recommended speed bands. Even then this is poorly advised due to the strain put on the airframe when performing an improper transformation, shortening the machine's service lifespan.</p>",
       "deactivation": "",
       "use": "Scene",
@@ -288,11 +289,11 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Change Modes",
-      "passive_effect": "<p>As a Quick Action, the Phoenix may opt to change into one of its other modes. It has three, of which any can be chosen when starting a mission. This gives the Phoenix an ability unique to the mode along with enabling or disabling certain actions.</p><h3>Mobile Suit/Battroid Mode</h3><p>Disables use of the Flex mounts. Enables use of the <strong>Mauler Point-Defense Laser Cannon.</strong></p><h3>GERWALK/Chicken Walker Mode</h3><p>Unit is now constantly Hovering. Cannot use Melee weapons. Gain the <strong>Strafe</strong> Reaction.</p><h3>Fighter Mode</h3><p>Unit is now constantly Flying and may boost once per turn as a Free Action, but it must move in a straight line during individual movement actions. It must keep moving up to its speed per turn in order to not fall. Disables Grapple, Improvised Attack and Ram. May not pick up objects nor manipulate objects or the environment. Cannot use Melee weapons. As a Quick Action, may ascend above the battlefield and then fly down to a free space anywhere on the map, completely bypassing engagement and reactions.</p>",
+      "passive_effect": "<p><span>As a Protocol, the Phoenix may change into one of the following modes. It may choose to start a scene in any form.</span></p><h3>Battroid Mode</h3><ul><li><p><span>Gain +1 Difficulty when using Launcher weapons.</span></p></li><li><p><span>1/round, when you hit a target with a Cannon weapon, you may apply the Lock-On condition. </span></p></li></ul><h3>GERWALK Mode</h3><ul><li><p><span>Treat all movement as if the Phoenix were Hovering.</span></p></li><li><p><span>1/round, when consuming Lock-on, select another weapon with which to attack the same target, dealing half damage, heat, and burn on a hit.</span></p></li></ul><h3>Fighter Mode</h3><ul><li><p><span>Gain +1 Difficulty to all Melee attacks.</span></p></li><li><p><span>Treat all movement as if the Phoenix were Flying. </span></p></li><li><p><span>When Boosting, you may move up to twice your speed.</span></p></li><li><p><span>1/round, when consuming Lock-on as part of an attack made with a Launcher weapon, the attack gains AP.</span></p></li></ul>",
       "passive_actions": [
         {
           "name": "Change Mode",
-          "activation": "Quick",
+          "activation": "Protocol",
           "detail": "<p>The Phoenix may switch to a mode it is not already in.</p>",
           "cost": 0,
           "pilot": false,
@@ -303,20 +304,6 @@
           "frequency": "Unlimited",
           "init": "",
           "trigger": ""
-        },
-        {
-          "name": "Strafe",
-          "activation": "Reaction",
-          "detail": "<p>The Phoenix may move two spaces in any direction. This movement ignores engagement and reactions.</p>",
-          "cost": 0,
-          "pilot": false,
-          "damage": [],
-          "range": [],
-          "synergy_locations": [],
-          "tech_attack": false,
-          "frequency": "Unlimited",
-          "init": "",
-          "trigger": "<p>An enemy attack misses.</p>"
         }
       ],
       "passive_bonuses": [],
@@ -1185,5 +1172,70 @@
     "specialty": false,
     "image_url": "https://i.imgur.com/ySt6iR9.png",
     "y_pos": 20
+  },
+  {
+    "id": "ZN_Hygogg_Halo",
+    "license_id": "MSG0079_msm_zerothreec_hygogg_",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "MSM-03HA Hygogg \"Hunter\"",
+    "mechtype": [
+      "Striker",
+      "Defender"
+    ],
+    "variant": "MSM-03C Hygogg ",
+    "description": "<div>A postwar Zeon Republican modification of the Hygogg, the Hunter variant of the Hygogg is analogous to Federation Full Armor refits from the One Year War.</div>",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 6,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 6,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 12,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Aquatic",
+        "use": "",
+        "description": "<div>The Hygogg treats all bodies of water or similar fluids as normal terrain, and has integrated EVA for deep ocean environments.</div>"
+      }
+    ],
+    "core_system": {
+      "name": "",
+      "active_name": "",
+      "active_effect": "",
+      "activation": "",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "",
+    "y_pos": 0
   }
 ]
