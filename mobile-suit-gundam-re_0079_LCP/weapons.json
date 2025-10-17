@@ -1400,8 +1400,8 @@
     "profiles": []
   },
   {
-    "id": "MSG0079_gu_oneone_fivefive_mm_three_barrel_gatling_gun_pod",
-    "name": "GU-11 55 mm Three-Barrel Gatling Gun Pod",
+    "id": "MSG0079_gatling_gun_pod",
+    "name": "GU-11 Gatling Gun Pod",
     "source": "EFRD",
     "license": "VF-0 Phoenix",
     "license_id": "MSG0079_vf_zero_phoenix",
@@ -1411,11 +1411,6 @@
     "type": "Cannon",
     "sp": 0,
     "tags": [
-      {
-        "id": "tg_overkill",
-        "name": "OVERKILL",
-        "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
-      },
       {
         "id": "tg_inaccurate",
         "name": "INACCURATE",
@@ -1428,7 +1423,7 @@
     "damage": [
       {
         "type": "Kinetic",
-        "val": "3D3"
+        "val": "2D3+2"
       }
     ],
     "range": [

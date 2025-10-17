@@ -269,7 +269,7 @@
       {
         "name": "Head-Mounted Display Tracking",
         "use": "",
-        "description": "<div>Upon destroying or structuring an enemy after having consumed a Lock-On, may immediately apply Lock-On to any other enemy within Sensors (including the same enemy if this was triggered via structuring).</div>"
+        "description": "<div>Upon destroying or structuring an enemy after having consumed a <strong>Lock-On</strong>, may immediately apply <strong>Lock-On</strong> to any other enemy within Sensors (including the same enemy if this was triggered via structuring).</div>"
       },
       {
         "name": "Highway to the...",
@@ -280,7 +280,7 @@
     "core_system": {
       "name": "Variable Fighter Transformation System",
       "active_name": "Rapid Transformation",
-      "active_effect": "<p><span>As a Free Action, change into any other form. This action may be taken in the middle of any Full Action with two distinct parts (e.g. Barrage with two weapons). This action is </span><strong>Efficient</strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span></p><p><span>When this action is performed, gain the following benefit to for each mode. This effect lasts until the start of your next turn.</span></p><h3>Battroid Mode</h3><ul><li><p><span>1/round, when you hit a target with a Cannon weapon, you may apply the Lock-On and Shredded conditions. The Shredded condition lasts until the end of the target's next turn.</span></p></li></ul><h3>GERWALK Mode</h3><ul><li><p><span>1/round, when consuming Lock-on, selecting another weapon with which to attack the same target instead deals full damage, heat, and burn on a hit.</span></p></li></ul><h3>Fighter Mode</h3><ul><li><p><span>1/round, when consuming Lock-on as part of an attack made with a Launcher weapon, the attack instead cannot be reduced in any way.</span></p></li></ul>",
+      "active_effect": "<p><span>As a Free Action, change into any other form. This action may be taken in the middle of any Full Action with two distinct parts (e.g. Barrage with two weapons). This action is </span><strong>Efficient</strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span></p><p><span>When this action is performed, gain the following benefit to for each mode. This effect lasts until the start of your next turn.</span></p><h3>Battroid Mode</h3><ul><li><p><span>1/round, when you hit a target with a Cannon weapon, you may apply the Lock-On and Shredded conditions. The Shredded condition lasts until the end of the target's next turn.</span></p></li></ul><h3>GERWALK Mode</h3><ul><li><p><span>1/round, when consuming Lock-on, selecting another weapon with which to attack the same target instead deals full damage, heat, and burn on a hit.</span></p></li></ul><h3>Fighter Mode</h3><ul><li><p><span>1/round, when consuming Lock-on as part of an attack made with a Launcher weapon, the resulting damage may not be reduced in any way.</span></p></li></ul>",
       "activation": "Free",
       "description": "<p>The VF-0 Phoenix's unique high-speed transformation system allows for it to change mission roles on the fly, though it takes incredible resilience to high-G stresses to transform the Phoenix outside of recommended speed bands. Even then this is poorly advised due to the strain put on the airframe when performing an improper transformation, shortening the machine's service lifespan.</p>",
       "deactivation": "",
