@@ -165,7 +165,7 @@
       "Main"
     ],
     "stats": {
-      "size": 1,
+      "size": 2,
       "structure": 4,
       "stress": 4,
       "armor": 0,
@@ -174,7 +174,7 @@
       "edef": 8,
       "heatcap": 6,
       "repcap": 4,
-      "sensor_range": 10,
+      "sensor_range": 5,
       "tech_attack": -2,
       "save": 10,
       "speed": 4,
@@ -184,7 +184,7 @@
       {
         "name": "Segmented Manipulator Mounts",
         "use": "",
-        "description": "<div>The Hygogg may use Melee weapons with <strong>+1 Threat</strong>. In addition, the Hygogg can <strong>GRAPPLE </strong>targets within <strong>Range 5</strong>. If the <strong>GRAPPLE </strong>is successful, the target is immediately pulled adjacent to the Hygogg by the most direct path. If there are no suitable spaces, the grapple breaks and the target does not move.</div>"
+        "description": "<div><span>All melee attacks gain an additional range or threat, whichever is applicable.</span></div>"
       },
       {
         "name": "Aquatic",
@@ -192,15 +192,15 @@
         "description": "<div>The Hygogg treats all bodies of water or similar fluids as normal terrain, and has integrated EVA for deep ocean environments.</div>"
       },
       {
-        "name": "Vice Claw",
+        "name": "Meat Shield",
         "use": "",
-        "description": "<div>The Hygogg has +1 Accuracy for Grapples.</div>"
+        "description": "<div><span>Whenever the Hygogg is grappling a character or lifting an object, all attacks made against it or adjacent allied characters gain +1 Difficulty. Additionally, any attacks that miss the Hygogg or an adjacent ally while this effect is active must be rerolled against a grappled character or lifted object of its choice. Pattern attacks are not affected by this trait.</span></div>"
       }
     ],
     "core_system": {
       "name": "Kraken Routine",
-      "active_name": "Killing Lunge",
-      "active_effect": "<p>For the remainder of the scene, your Rams and Improvised Attacks now Immobilize the target until the end of their next turn.</p>",
+      "active_name": "IT CAME FROM THE SEA",
+      "active_effect": "<p><span>For the remainder of the scene, the Hygogg exerts a </span><strong><span>Burst </span></strong><span>2 zone of control. Any character of its choice that enters, exits, or moves within this zone must succeed a </span><strong><span>Hull </span></strong><span>save or be pulled adjacent (or to the nearest free space) and grappled. Additionally, for the purposes of engagement, ramming, and grappling, the Hygogg always counts as the larger character while this effect is active.</span></p>",
       "activation": "Full",
       "description": "",
       "deactivation": "",
@@ -1190,19 +1190,19 @@
       "Heavy"
     ],
     "stats": {
-      "size": 1,
+      "size": 2,
       "structure": 4,
       "stress": 4,
       "armor": 3,
-      "hp": 6,
+      "hp": 4,
       "evasion": 6,
       "edef": 8,
       "heatcap": 6,
       "repcap": 6,
-      "sensor_range": 10,
+      "sensor_range": 8,
       "tech_attack": 0,
-      "save": 12,
-      "speed": 4,
+      "save": 10,
+      "speed": 3,
       "sp": 6
     },
     "traits": [
@@ -1210,17 +1210,55 @@
         "name": "Aquatic",
         "use": "",
         "description": "<div>The Hygogg treats all bodies of water or similar fluids as normal terrain, and has integrated EVA for deep ocean environments.</div>"
+      },
+      {
+        "name": "Uparmored Bulk",
+        "use": "",
+        "description": "<div><span>Any hostile action that must draw line of sight through the Hunter Hygogg to reach its target must be redirected toward the Hunter Hygogg. Cone and Line effects that intersect with Hunter Hygogg may not pass through it.</span></div>"
+      },
+      {
+        "name": "Mobile Defender",
+        "use": "",
+        "description": "<div><span>Gain access to the Hustle Reaction</span></div>",
+        "actions": [
+          {
+            "name": "Hustle",
+            "activation": "Reaction",
+            "detail": "<div><span>Move up to your speed along the shortest possible route to intersect the action.</span></div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "1/round",
+            "init": "",
+            "trigger": "<div><span>An ally within Sensors is targeted by any hostile effect.</span></div>"
+          }
+        ]
       }
     ],
     "core_system": {
-      "name": "",
-      "active_name": "",
-      "active_effect": "",
-      "activation": "",
+      "name": "MAV Tactical Algorithms",
+      "active_name": "Hunter-Killer Team",
+      "active_effect": "<p>S<span>elect an allied character within Sensors to designate as a Battle Buddy. A data-link opens between your machines, increasing your efficiency when working together. This connection remains active until the end of the Scene. Both parties gain unique effects, which are active so long as they are adjacent with one another.</span></p><ul><li><p><span>Hunter Hygogg effect:</span></p><ul><li><p><span>Gain resistance to all Damage, Burn, and Heat that isn’t self-inflicted.</span></p></li></ul></li><li><p><span>Battle Buddy effect:</span></p><ul><li><p><span>Gain the Counterattack reaction.</span></p></li></ul></li></ul>",
+      "activation": "Quick",
       "description": "",
       "deactivation": "",
       "use": "",
-      "active_actions": [],
+      "active_actions": [
+        {
+          "name": "Counterattack",
+          "activation": "Reaction",
+          "detail": "<p><span>Skirmish against the triggering hostile character if they are in range, dealing half damage, burn, and heat on a hit. This attack has a base </span><strong><span>+1 Accuracy</span></strong><span>.</span></p>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "3/round",
+          "init": "",
+          "trigger": "<p><span>The Hunter Hygogg is targeted by any hostile effect.</span></p>"
+        }
+      ],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "",
@@ -1230,7 +1268,9 @@
       "passive_synergies": [],
       "deployables": [],
       "counters": [],
-      "integrated": [],
+      "integrated": [
+        "MSG0079_ZN_Hunter_Shield"
+      ],
       "special_equipment": [],
       "tags": []
     },

@@ -1204,14 +1204,16 @@
     "name": "Mauler Point-Defense Laser Cannon",
     "source": "",
     "license": "",
+    "license_id": "",
     "license_level": 1,
     "description": "<div>The Mauler Point-Defense Laser Cannon is a high-energy laser weapon that are mounted as either a singular or pair of \"horns\" on the Phoenix's head module. Moderately effective against unprotected aircraft, the Mauler's real utility is in its capability of quickly shooting down incoming missiles and other various projectiles. Linked to the pilot's heads-up display, the Mauler can rapidly track targets to shoot down through the pilot's eye movements, similar to how target acquisition for most modern aerial weapons work.</div>",
     "effect": "<div>Gain the <strong>Intercept</strong> reaction.</div>",
     "mount": "Auxiliary",
     "type": "CQB",
-    "cost": 1,
     "barrage": true,
     "skirmish": true,
+    "cost": 1,
+    "on_hit": "<div>The Intercept reaction gains +1 accuracy against any attacks the current target makes until the start of your next turn.</div>",
     "damage": [
       {
         "type": "Energy",
@@ -1222,22 +1224,25 @@
       {
         "type": "Range",
         "val": "5"
+      },
+      {
+        "type": "Threat",
+        "val": 3
       }
     ],
     "actions": [
       {
         "name": "Intercept",
         "activation": "Reaction",
-        "detail": "<div>Roll a SYSTEMS check. On a success, the projectile(s) is shot down by the Mauler Point-Defense Laser Cannon. If a Main Cannon or Rifle is mounted in the Main Mount, may opt to use it instead of the Mauler Laser Cannon to<strong> Intercept. </strong>Taking this reaction allows the Mauler Laser Cannon to be used for a separate Intercept reaction, but forgoes using the Overwatch reaction for the current round.</div>",
+        "detail": "<div>Roll against the attack using the Mauler Point-Defense Laser Cannon, benefitting from talents. If the rolls higher than the attack's result, the incoming attack is intercepted by the Mauler Point-Defense Laser Cannon, nullifying it. If a Main Cannon or Rifle is mounted in the Main Mount, may opt to use it instead of the Mauler Laser Cannon to<strong> Intercept. </strong>Taking this reaction allows the Mauler Laser Cannon to be used for a separate Intercept reaction, but forgoes using the Overwatch reaction for the current round.</div>",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
         "frequency": "1/round",
         "init": "",
-        "trigger": "<div>An attack that is neither Heavy nor Superheavy and is either a Launcher, Cannon, or Nexus, targets anyone within a Burst 5 zone or intersects it.</div>"
+        "trigger": "<div>An attack that is neither Heavy nor Superheavy and is either a Launcher, Cannon, or Nexus, targets anyone within a Burst 5 zone.</div>"
       }
-    ],
-    "profiles": []
+    ]
   },
   {
     "id": "MSG0079_uhph_onezero_poseidon_hydrocannon",
@@ -2417,6 +2422,104 @@
       {
         "type": "Range",
         "val": 10
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_ZN_Hunter_Shield",
+    "name": "Serpent Shield",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "description": "<div>A spiked broadshield that is built from a Lunar Titanium-ceramic composite and treated with anti-beam coating. This shield can deflect most forms of attacks, while also doubling as a potent bludgeoning weapon.</div>",
+    "effect": "<div><span>As a quick action, this shield may be used to </span><strong><span>Defend</span></strong><span>. Due to the bulk of this shield, you may only attack or defend with it in any given round.</span></div>",
+    "mount": "Heavy",
+    "type": "Melee",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "name": "Knockback {VAL}",
+        "description": "On a hit, the user may choose to knock their target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a Blast). Multiple Knockback effects stack with each other. This means that an attack made with a Knockback 1 weapon and a talent that grants Knockback 1 counts as having Knockback 2.",
+        "val": 3
+      },
+      {
+        "id": "tg_shield",
+        "name": "Shield",
+        "description": "This system is an energy shield of some kind."
+      },
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1D6+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Defend",
+        "activation": "Quick",
+        "detail": "<div><span>Until the start of your next turn, whenever you are attacked, roll a d6. On a 5+, the attack misses. This effect does not stack with Invisible. Become Slowed for the length of the effect.</span></div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_jet_lance",
+    "name": "Heat Lance",
+    "source": "EFRD",
+    "license": "VF-0 Phoenix",
+    "license_id": "MSG0079_vf_zero_phoenix",
+    "license_level": 3,
+    "description": "",
+    "effect": "<div><span>For every 6 spaces you travel in an uninterrupted straight line, your next attack with this weapon this turn gains +1d6 bonus Energy damage, up to a maximum of +3d6.</span></div>",
+    "mount": "Main",
+    "type": "Melee",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 2
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
       }
     ]
   }
