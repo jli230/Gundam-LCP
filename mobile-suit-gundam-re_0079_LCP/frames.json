@@ -43,16 +43,16 @@
     "core_system": {
       "name": "Stable Platform",
       "active_name": "Tz.86 Colossus Stabilizer",
-      "active_effect": "<p>All weapon mount ranges double for the remainder of the scene.</p>",
+      "active_effect": "All weapon mount ranges double for the remainder of the scene.",
       "activation": "",
-      "description": "<p>The Guntank's squat, wide form factor grants its operators a superb sense of stability under most conditions. Though the chassis is largely impossible to kit for different missions due to the lack of manipulators, its integrated weapons make strong use of this intrinsic stability, making long range shots and devastatingly accurate cover fire a simple matter. </p>",
+      "description": "The Guntank's squat, wide form factor grants its operators a superb sense of stability under most conditions. Though the chassis is largely impossible to kit for different missions due to the lack of manipulators, its integrated weapons make strong use of this intrinsic stability, making long range shots and devastatingly accurate cover fire a simple matter. ",
       "deactivation": "",
       "use": "Round",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Predictive Firing Solution Algorithm",
-      "passive_effect": "<p>Cannon type weapons gain +1 Accuracy when firing on targets further than range 10.</p>",
+      "passive_effect": "Cannon type weapons gain +1 Accuracy when firing on targets further than range 10.",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -122,7 +122,7 @@
     "core_system": {
       "name": "Atlas Gyrostabilizer",
       "active_name": "\"Lockdown\" Targeting Protocols",
-      "active_effect": "<p>For the remainder of the scene, the RB-79 ignores the Ordnance tag with Rifles and Cannons. Weapons without Ordnance instead gain Reliable based on weapon size (Auxiliary: 1, Main: 2, Heavy or larger: 3), or if they already have Reliable, add 1 to the default Reliable value.</p>",
+      "active_effect": "For the remainder of the scene, the RB-79 ignores the Ordnance tag with Rifles and Cannons. Weapons without Ordnance instead gain Reliable based on weapon size (Auxiliary: 1, Main: 2, Heavy or larger: 3), or if they already have Reliable, add 1 to the default Reliable value.",
       "activation": "Protocol",
       "description": "",
       "deactivation": "",
@@ -200,7 +200,7 @@
     "core_system": {
       "name": "Kraken Routine",
       "active_name": "IT CAME FROM THE SEA",
-      "active_effect": "<p><span>For the remainder of the scene, the Hygogg exerts a </span><strong><span>Burst </span></strong><span>2 zone of control. Any character of its choice that enters, exits, or moves within this zone must succeed a </span><strong><span>Hull </span></strong><span>save or be pulled adjacent (or to the nearest free space) and grappled. Additionally, for the purposes of engagement, ramming, and grappling, the Hygogg always counts as the larger character while this effect is active.</span></p>",
+      "active_effect": "<span>For the remainder of the scene, the Hygogg exerts a </span><strong><span>Burst </span></strong><span>2 zone of control. Any character of its choice that enters, exits, or moves within this zone must succeed a </span><strong><span>Hull </span></strong><span>save or be pulled adjacent (or to the nearest free space) and grappled. Additionally, for the purposes of engagement, ramming, and grappling, the Hygogg always counts as the larger character while this effect is active.</span>",
       "activation": "Full",
       "description": "",
       "deactivation": "",
@@ -280,21 +280,21 @@
     "core_system": {
       "name": "Variable Fighter Transformation System",
       "active_name": "Rapid Transformation",
-      "active_effect": "<p><span>As a Free Action, change into any other form. This action may be taken in the middle of any Full Action with two distinct parts (e.g. Barrage with two weapons). This action is </span><strong>Efficient</strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span></p><p><span>When this action is performed, gain the following benefit to for each mode. This effect lasts until the start of your next turn.</span></p><h3>Battroid Mode</h3><ul><li><p><span>1/round, when you hit a target with a Cannon weapon, you may apply the Lock-On and Shredded conditions. The Shredded condition lasts until the end of the target's next turn.</span></p></li></ul><h3>GERWALK Mode</h3><ul><li><p><span>1/round, when consuming Lock-on, selecting another weapon with which to attack the same target instead deals full damage, heat, and burn on a hit.</span></p></li></ul><h3>Fighter Mode</h3><ul><li><p><span>1/round, when consuming Lock-on as part of an attack made with a Launcher weapon, the resulting damage may not be reduced in any way.</span></p></li></ul>",
+      "active_effect": "<span>As a Free Action, change into any other form. This action may be taken in the middle of any Full Action with two distinct parts (e.g. Barrage with two weapons). This action is </span><strong>Efficient</strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span><br/><span>When this action is performed, gain the following benefit to for each mode. This effect lasts until the start of your next turn.</span><br/><h3>Battroid Mode</h3><ul><li><span>1/round, when you hit a target with a Cannon weapon, you may apply the Lock-On and Shredded conditions. The Shredded condition lasts until the end of the target's next turn.</span><br/></li></ul><h3>GERWALK Mode</h3><ul><li><span>1/round, when consuming Lock-on, selecting another weapon with which to attack the same target instead deals full damage, heat, and burn on a hit.</span><br/></li></ul><h3>Fighter Mode</h3><ul><li><span>1/round, when consuming Lock-on as part of an attack made with a Launcher weapon, the resulting damage may not be reduced in any way.</span><br/></li></ul>",
       "activation": "Free",
-      "description": "<p>The VF-0 Phoenix's unique high-speed transformation system allows for it to change mission roles on the fly, though it takes incredible resilience to high-G stresses to transform the Phoenix outside of recommended speed bands. Even then this is poorly advised due to the strain put on the airframe when performing an improper transformation, shortening the machine's service lifespan.</p>",
+      "description": "The VF-0 Phoenix's unique high-speed transformation system allows for it to change mission roles on the fly, though it takes incredible resilience to high-G stresses to transform the Phoenix outside of recommended speed bands. Even then this is poorly advised due to the strain put on the airframe when performing an improper transformation, shortening the machine's service lifespan.",
       "deactivation": "",
       "use": "Scene",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Change Modes",
-      "passive_effect": "<p><span>As a Protocol, the Phoenix may change into one of the following modes. It may choose to start a scene in any form.</span></p><h3>Battroid Mode</h3><ul><li><p><span>Gain +1 Difficulty when using Launcher weapons.</span></p></li><li><p><span>1/round, when you hit a target with a Cannon weapon, you may apply the Lock-On condition. </span></p></li></ul><h3>GERWALK Mode</h3><ul><li><p><span>Treat all movement as if the Phoenix were Hovering.</span></p></li><li><p><span>1/round, when consuming Lock-on, select another weapon with which to attack the same target, dealing half damage, heat, and burn on a hit.</span></p></li></ul><h3>Fighter Mode</h3><ul><li><p><span>Gain +1 Difficulty to all Melee attacks.</span></p></li><li><p><span>Treat all movement as if the Phoenix were Flying. </span></p></li><li><p><span>When Boosting, you may move up to twice your speed.</span></p></li><li><p><span>1/round, when consuming Lock-on as part of an attack made with a Launcher weapon, the attack gains AP.</span></p></li></ul>",
+      "passive_effect": "<span>As a Protocol, the Phoenix may change into one of the following modes. It may choose to start a scene in any form.</span><br/><h3>Battroid Mode</h3><ul><li><span>Gain +1 Difficulty when using Launcher weapons.</span><br/></li><li><span>1/round, when you hit a target with a Cannon weapon, you may apply the Lock-On condition. </span><br/></li></ul><h3>GERWALK Mode</h3><ul><li><span>Treat all movement as if the Phoenix were Hovering.</span><br/></li><li><span>1/round, when consuming Lock-on, select another weapon with which to attack the same target, dealing half damage, heat, and burn on a hit.</span><br/></li></ul><h3>Fighter Mode</h3><ul><li><span>Gain +1 Difficulty to all Melee attacks.</span><br/></li><li><span>Treat all movement as if the Phoenix were Flying. </span><br/></li><li><span>When Boosting, you may move up to twice your speed.</span><br/></li><li><span>1/round, when consuming Lock-on as part of an attack made with a Launcher weapon, the attack gains AP.</span><br/></li></ul>",
       "passive_actions": [
         {
           "name": "Change Mode",
           "activation": "Protocol",
-          "detail": "<p>The Phoenix may switch to a mode it is not already in.</p>",
+          "detail": "The Phoenix may switch to a mode it is not already in.",
           "cost": 0,
           "pilot": false,
           "damage": [],
@@ -374,7 +374,7 @@
     "core_system": {
       "name": "Saturn Engines",
       "active_name": "Zimmad Mk III \"Justiciar\" Kinetic Compensator",
-      "active_effect": "<p>For the remainder of the scene, the Dom may ignore the Ordnance tag.</p>",
+      "active_effect": "For the remainder of the scene, the Dom may ignore the Ordnance tag.",
       "activation": "",
       "description": "",
       "deactivation": "",
@@ -449,16 +449,16 @@
     "core_system": {
       "name": "Fluid Pulse Accelerator",
       "active_name": "Fancy Footwork",
-      "active_effect": "<p>For the remainder of the scene, all melee weapons on the Gyan are considered to have a base Threat of 4. Additionally, Perfect Form now confers 3 Overwatch reactions per turn.</p>",
+      "active_effect": "For the remainder of the scene, all melee weapons on the Gyan are considered to have a base Threat of 4. Additionally, Perfect Form now confers 3 Overwatch reactions per turn.",
       "activation": "",
-      "description": "<p>A cylindrical unit located in the Gyan's groin, the fluid pulse accelerator stores excess pressure generated by the reactor, transmitting it to each actuator when needed. This greatly improves the responsiveness and torque of the Gyan's joints, allowing it to repeatedly move forward and backward, similar to fencing footwork. In the event of damage, it can be immediately ejected.</p>",
+      "description": "A cylindrical unit located in the Gyan's groin, the fluid pulse accelerator stores excess pressure generated by the reactor, transmitting it to each actuator when needed. This greatly improves the responsiveness and torque of the Gyan's joints, allowing it to repeatedly move forward and backward, similar to fencing footwork. In the event of damage, it can be immediately ejected.",
       "deactivation": "",
       "use": "",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Parry and Riposte",
-      "passive_effect": "<p>If the Gyan successfully Resists a Melee attack, they may immediately make a Melee attack with halved damage against their attacker in turn, unless the attacker is outside Threat.</p>",
+      "passive_effect": "If the Gyan successfully Resists a Melee attack, they may immediately make a Melee attack with halved damage against their attacker in turn, unless the attacker is outside Threat.",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -517,16 +517,16 @@
     "core_system": {
       "name": "Equalizer Fire Control System",
       "active_name": "Alpha Strike Protocol",
-      "active_effect": "<p>For the rest of the Scene, Barraging can be done with all weapon mounts in exchange for 1d3+1 Heat.</p>",
+      "active_effect": "For the rest of the Scene, Barraging can be done with all weapon mounts in exchange for 1d3+1 Heat.",
       "activation": "Protocol",
-      "description": "<p>Built for the Tomahawk's main role as a frontline fire support mobile suit, the Equalizer Fire Control System assists in adjusting the optimal convergence zone of its weaponry in order to maximize overall accuracy. In addition, an \"Alpha Strike\" Protocol can be activated which primes all of the Tomahawk's weapons for either attacking many targets or concentrating on a singular target. While the resulting heat buildup for initiating an Alpha Strike can risk damage to the mobile suit's internals, it is often deemed an acceptable tradeoff when in situations where such an immediate output of firepower is necessary.</p>",
+      "description": "Built for the Tomahawk's main role as a frontline fire support mobile suit, the Equalizer Fire Control System assists in adjusting the optimal convergence zone of its weaponry in order to maximize overall accuracy. In addition, an \"Alpha Strike\" Protocol can be activated which primes all of the Tomahawk's weapons for either attacking many targets or concentrating on a singular target. While the resulting heat buildup for initiating an Alpha Strike can risk damage to the mobile suit's internals, it is often deemed an acceptable tradeoff when in situations where such an immediate output of firepower is necessary.",
       "deactivation": "",
       "use": "Scene",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Barrage Calibration",
-      "passive_effect": "<p>When Barraging, all attacks receive +1 <strong>ACCURACY</strong>.</p>",
+      "passive_effect": "When Barraging, all attacks receive +1 <strong>ACCURACY</strong>.",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -590,9 +590,9 @@
     "core_system": {
       "name": "EXAM System",
       "active_name": "Full Power EXAM System",
-      "active_effect": "<p>All of the Blue Destiny's weapons gain Reliable X for the rest of the scene, where X is equal to one third of the weapon's theoretical maximum damage.</p><p>While Full Power EXAM System is engaged, the Blue Destiny MUST make an attack, ram, or grapple action on at least one valid target once per round. If this does not occur, the Blue Destiny will make an automatic Skirmish on the closest valid target with the weapon mount which has the highest theoretical maximum damage. If all targets are out of range, the Blue Destiny will take an automatic move action in the direction of the closest valid target. If the Blue Destiny cannot move freely when this occurs for any reason, it will take 1d6 AP kinetic damage.</p>",
+      "active_effect": "All of the Blue Destiny's weapons gain Reliable X for the rest of the scene, where X is equal to one third of the weapon's theoretical maximum damage.<br/>While Full Power EXAM System is engaged, the Blue Destiny MUST make an attack, ram, or grapple action on at least one valid target once per round. If this does not occur, the Blue Destiny will make an automatic Skirmish on the closest valid target with the weapon mount which has the highest theoretical maximum damage. If all targets are out of range, the Blue Destiny will take an automatic move action in the direction of the closest valid target. If the Blue Destiny cannot move freely when this occurs for any reason, it will take 1d6 AP kinetic damage.",
       "activation": "Quick",
-      "description": "<p>As awareness (and hatred) of Newtypes grows, a number of machines and systems are being engineered to counter their abilities. EXAM is one of these, designed as a system that gives normal pilots the ability to mimic the power of Newtypes. While little is known about the mechanics of the system, the primary component [REDACTED]. The conflict of [REDACTED] with the bonds of the system makes it extremely unstable and hard to control, to the point that the system - and the mobile suit - will sometimes go berserk. Eventually, a limiter was set in the EXAM system by Alph Kamra, restricting it to roughly half of its output and only allowing the full output to be used for 5 minutes before the machine overheats. While under the influence of the EXAM System, the mobile suit's optical sensors glow red.</p>",
+      "description": "As awareness (and hatred) of Newtypes grows, a number of machines and systems are being engineered to counter their abilities. EXAM is one of these, designed as a system that gives normal pilots the ability to mimic the power of Newtypes. While little is known about the mechanics of the system, the primary component [REDACTED]. The conflict of [REDACTED] with the bonds of the system makes it extremely unstable and hard to control, to the point that the system - and the mobile suit - will sometimes go berserk. Eventually, a limiter was set in the EXAM system by Alph Kamra, restricting it to roughly half of its output and only allowing the full output to be used for 5 minutes before the machine overheats. While under the influence of the EXAM System, the mobile suit's optical sensors glow red.",
       "deactivation": "",
       "use": "Turn",
       "active_actions": [],
@@ -669,7 +669,7 @@
     "core_system": {
       "name": "UHPH-10 \"POSEIDON\" HYDROCANNON",
       "active_name": "B4N-100K \"Banshee\" Acoustic Amplifier",
-      "active_effect": "<p>For the remainder of the scene, when the RAY uses the Lock-On quick tech action, all hostile MECH type characters with range 3 of the initial target gain the LOCK ON status. Additionally, gain access to the \"Thunderous Shriek\" action.</p>",
+      "active_effect": "For the remainder of the scene, when the RAY uses the Lock-On quick tech action, all hostile MECH type characters with range 3 of the initial target gain the LOCK ON status. Additionally, gain access to the \"Thunderous Shriek\" action.",
       "activation": "Protocol",
       "description": "",
       "deactivation": "",
@@ -678,7 +678,7 @@
         {
           "name": "Thunderous Shriek",
           "activation": "Full",
-          "detail": "<p>As a full action, the RAY will bellow an omnidirectional shriek of dangerous high-intensity noise, marking all hostile MECH characters within sensors with LOCK ON and PINGED, in addition to all hostile MECH characters within range 3 of successfully LOCKED ON characters. All characters within Sensors with the SQUAD or SOLDIER tags, friendly or hostile, take 2d6 AP Kinetic damage. The RAY itself also gains the LOCK ON status, which cannot be removed by any means until the beginning of its next turn.</p>",
+          "detail": "As a full action, the RAY will bellow an omnidirectional shriek of dangerous high-intensity noise, marking all hostile MECH characters within sensors with LOCK ON and PINGED, in addition to all hostile MECH characters within range 3 of successfully LOCKED ON characters. All characters within Sensors with the SQUAD or SOLDIER tags, friendly or hostile, take 2d6 AP Kinetic damage. The RAY itself also gains the LOCK ON status, which cannot be removed by any means until the beginning of its next turn.",
           "cost": 0,
           "pilot": false,
           "damage": [],
@@ -693,12 +693,12 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Engage Plasma Cannon",
-      "passive_effect": "<p>During any Full Repair, the pilot may switch the Poseidon Hydrocannon to a Plasma Cutter. In this state, the Hydrocannon does not charge in water sources, deals Energy instead of Kinetic damage, gains the Overkill tag, and gains BURN X, where X equals the number of charges available. In lieu of passive charging, the pilot gains access to the Plasma Charge action.</p>",
+      "passive_effect": "During any Full Repair, the pilot may switch the Poseidon Hydrocannon to a Plasma Cutter. In this state, the Hydrocannon does not charge in water sources, deals Energy instead of Kinetic damage, gains the Overkill tag, and gains BURN X, where X equals the number of charges available. In lieu of passive charging, the pilot gains access to the Plasma Charge action.",
       "passive_actions": [
         {
           "name": "Plasma Charge",
           "activation": "Quick",
-          "detail": "<p>Inflict 2 heat to the RAY. Gain +1 charge to the Poseidon Hydrocannon.</p>",
+          "detail": "Inflict 2 heat to the RAY. Gain +1 charge to the Poseidon Hydrocannon.",
           "cost": 0,
           "pilot": false,
           "damage": [],
@@ -770,7 +770,7 @@
     "core_system": {
       "name": "Standardized Weapon Racks",
       "active_name": "Deploy Weapon Pack",
-      "active_effect": "<p>Once per mission, the RGM-79 may discard its current weapon armaments and exchange them for a new set. The old weapons are lost and cannot be re-equipped.</p>",
+      "active_effect": "Once per mission, the RGM-79 may discard its current weapon armaments and exchange them for a new set. The old weapons are lost and cannot be re-equipped.",
       "activation": "Full",
       "description": "",
       "deactivation": "",
@@ -779,7 +779,7 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Modular Fittings",
-      "passive_effect": "<p>Upon creation or during a Full Repair, select one weapon type. All Main weapons of that type gain one of the following effects depending on weapon type:</p><ul><li><p>Melee: 1/round on critical hit, damage from the attack gains AP. If the attack already has AP, or otherwise cannot be reduced, you may take 1 heat to add +2 bonus damage.</p></li><li><p>Rifle: Gain Reliable 1, and any weapon with Reliable increases its effect by 1.</p></li><li><p>Cannon: Gain Knockback 1, and any weapon with Knockback increases its effect by 1. 1/round on critical hit, the target must pass a Hull save or be knocked Prone.</p></li><li><p>Launcher: Weapons with Ordnance loses the tag. Weapons without Ordnance gains Arcing. Weapons with Arcing may 1/round attack as if they were Seeking.</p></li><li><p>CQB: This weapon ignores penalties from Engagement.</p></li><li><p>Nexus: 1/round, when consuming Lock On with this weapon it gains AP and Overkill.</p></li></ul><p>If the GM should ever mount an Aux weapon to its Main mount, or an Aux or Main weapon to its Heavy mount, that weapon mount will benefit from +1 accuracy and +1 additional damage.</p>",
+      "passive_effect": "Upon creation or during a Full Repair, select one weapon type. All Main weapons of that type gain one of the following effects depending on weapon type:<br/><ul><li>Melee: 1/round on critical hit, damage from the attack gains AP. If the attack already has AP, or otherwise cannot be reduced, you may take 1 heat to add +2 bonus damage.<br/></li><li>Rifle: Gain Reliable 1, and any weapon with Reliable increases its effect by 1.<br/></li><li>Cannon: Gain Knockback 1, and any weapon with Knockback increases its effect by 1. 1/round on critical hit, the target must pass a Hull save or be knocked Prone.<br/></li><li>Launcher: Weapons with Ordnance loses the tag. Weapons without Ordnance gains Arcing. Weapons with Arcing may 1/round attack as if they were Seeking.<br/></li><li>CQB: This weapon ignores penalties from Engagement.<br/></li><li>Nexus: 1/round, when consuming Lock On with this weapon it gains AP and Overkill.<br/></li></ul>If the GM should ever mount an Aux weapon to its Main mount, or an Aux or Main weapon to its Heavy mount, that weapon mount will benefit from +1 accuracy and +1 additional damage.",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -839,7 +839,7 @@
     "core_system": {
       "name": "\"Paradise Lost\" Fusion Reactor Redundancy Suite",
       "active_name": "Invoke the Spirit of Zeon",
-      "active_effect": "<p>Until the end of your next turn, the Zaku gains resistance to all damage. For the remainder of the scene, the Zaku takes the highest roll on all structure and stress checks, rather than the lowest.</p>",
+      "active_effect": "Until the end of your next turn, the Zaku gains resistance to all damage. For the remainder of the scene, the Zaku takes the highest roll on all structure and stress checks, rather than the lowest.",
       "activation": "Protocol",
       "description": "",
       "deactivation": "",
@@ -912,7 +912,7 @@
     "core_system": {
       "name": "Leviathan Engine",
       "active_name": "Apex Predator",
-      "active_effect": "<p>Immediately become INVISIBLE and HIDDEN until the end of your next turn. Upon destroying any target, the Z'gok may elect to become INTANGIBLE as a free action. At the start of the Z'gok's next turn, they must to teleport anywhere within Movement as a free action, and may clear 2 heat in addition to one condition of their choice, at which point they are no longer INTANGIBLE, becoming INVISIBLE and HIDDEN instead.</p>",
+      "active_effect": "Immediately become INVISIBLE and HIDDEN until the end of your next turn. Upon destroying any target, the Z'gok may elect to become INTANGIBLE as a free action. At the start of the Z'gok's next turn, they must to teleport anywhere within Movement as a free action, and may clear 2 heat in addition to one condition of their choice, at which point they are no longer INTANGIBLE, becoming INVISIBLE and HIDDEN instead.",
       "activation": "Protocol",
       "description": "",
       "deactivation": "",
@@ -944,7 +944,7 @@
       "Striker"
     ],
     "variant": "RGM-79 GM",
-    "description": "<div><span>Iterated from Rolls Royce's RGM-79AWM Arctic Warfare GM, the GS GM, also known as the 'Gunslinger' GM, is an improved RGM-79 GM designed by General Motors for high-intensity warfare in dense urban environments. The Gunslinger GM was one of the first in the GM family to make use of vernier thrusters distributed all over its body even for ground configurations. In addition, its backpack was redesigned from scratch into two separate types for optimized operation in space or atmosphere. It is also one of a few GM models that uniformly makes use of the monoeye configuration for its main head camera, granting it enhanced precision in ranged attacks. Additional sensors in both its main head unit and its backpack (replacing the usual beam saber mounting that other GMs possess) grants it a higher degree of battlefield awareness.</span></div><div><span>Due to its popularity as a squad lead unit, the Gunslinger GM has also gained a second unofficial moniker as the Command GM.</span></div><div><br></div>",
+    "description": "<span>Iterated from Rolls Royce's RGM-79AWM Arctic Warfare GM, the GS GM, also known as the 'Gunslinger' GM, is an improved RGM-79 GM designed by General Motors for high-intensity warfare in dense urban environments. The Gunslinger GM was one of the first in the GM family to make use of vernier thrusters distributed all over its body even for ground configurations. In addition, its backpack was redesigned from scratch into two separate types for optimized operation in space or atmosphere. It is also one of a few GM models that uniformly makes use of the monoeye configuration for its main head camera, granting it enhanced precision in ranged attacks. Additional sensors in both its main head unit and its backpack (replacing the usual beam saber mounting that other GMs possess) grants it a higher degree of battlefield awareness.</span><br/><span>Due to its popularity as a squad lead unit, the Gunslinger GM has also gained a second unofficial moniker as the Command GM.</span>",
     "mounts": [
       "Main",
       "Flex",
@@ -970,15 +970,20 @@
       {
         "name": "Gunfighter's Grit",
         "use": "",
-        "description": "<div>Upon successfully dodging an attack, the Gunslinger GM <span>can immediately move 1 space in any direction as long as it isn’t Immobilize or Slowed. This movement ignores engagement and doesn’t provoke reactions.</span></div>"
+        "description": "2/round upon successfully evading an attack, the Gunslinger GM <span>can immediately move 1 space in any direction as long as it isn’t Immobilize or Slowed. This movement ignores engagement and doesn’t provoke reactions.</span>"
+      },
+      {
+        "name": "Quick Draw",
+        "use": "",
+        "description": "<span>1/round, whenever the GM Gunslinger is targeted by an attack, it may first Skirmish with a non-Heavy mount against the attacker, dealing half damage, heat, and burn on a hit and expending its Overwatch reaction. If the attacker dies or structures from this attack, the GM Gunslinger may move up to its speed, ignoring Engagement and Reactions.</span>"
       }
     ],
     "core_system": {
       "name": "All-Terrain Aggressive Maneuver System",
       "active_name": "ATAMS Safety Override",
-      "active_effect": "<p>Gunslinger's Grit now moves up to 3 spaces and ignores Immobilized and Slowed. <span>This combat maneuver may be treated as Flying, but must end the movement on the ground or another solid surface, or else immediately begin falling.</span></p>",
+      "active_effect": "Until the end of the scene, Gunslinger's Grit now moves up to 3 spaces and ignores Immobilized and Slowed. <span>This combat maneuver may be treated as Flying, but must end the movement on the ground or another solid surface, or else immediately begin falling. In addition, Quick Draw now deals full damage, heat, and burn.</span>",
       "activation": "Protocol",
-      "description": "<p><span>The ATAMS is a combination of additional verniers distributed through its body and durable rapid-response sensors located in its head unit and backpack. Using this system, the Gunslinger GM in the right hands is incredibly hard to pin down. Normally the performance of this system is suppressed in order to prevent collateral damage from accidental collisions, but the safety measures can be shut off whether due to extenuous circumstances or if such danger is not a factor.</span></p>",
+      "description": "<span>The ATAMS is a combination of additional verniers distributed through its body and durable rapid-response sensors located in its head unit and backpack. Using this system, the Gunslinger GM in the right hands is incredibly hard to pin down. Normally the performance of this system is suppressed in order to prevent collateral damage from accidental collisions, but the safety measures can be shut off whether due to extenuous circumstances or if such danger is not a factor.</span>",
       "deactivation": "",
       "use": "Scene",
       "active_actions": [],
@@ -1064,7 +1069,7 @@
     "core_system": {
       "name": "Wilde Jagd Combat Computer",
       "active_name": "Through Violence",
-      "active_effect": "<p><span>For the rest of the Scene, raise the maximum amount of Momentum dice you can hold to 6. Remove the round restriction on taking Momentum actions and generating Momentum dice. Additionally, gain access to the following options:</span></p>",
+      "active_effect": "<span>For the rest of the Scene, raise the maximum amount of Momentum dice you can hold to 6. Remove the round restriction on taking Momentum actions and generating Momentum dice. Additionally, gain access to the following options:</span>",
       "activation": "Protocol",
       "description": "",
       "deactivation": "",
@@ -1073,7 +1078,7 @@
         {
           "name": "Push",
           "activation": "Free",
-          "detail": "<p><strong><span>(Cost: 3 dice)</span></strong><span> Move in a straight line up to your speed, ignoring engagement and obstructions. Select up to 3 characters in or adjacent to this path—they each take 1d6 AP Kinetic damage and must pass an Agility save or else fall Prone. Objects in this path take 10 AP Kinetic damage.</span></p>",
+          "detail": "<strong><span>(Cost: 3 dice)</span></strong><span> Move in a straight line up to your speed, ignoring engagement and obstructions. Select up to 3 characters in or adjacent to this path—they each take 1d6 AP Kinetic damage and must pass an Agility save or else fall Prone. Objects in this path take 10 AP Kinetic damage.</span>",
           "cost": 0,
           "pilot": false,
           "damage": [],
@@ -1087,7 +1092,7 @@
         {
           "name": "Brutalize ",
           "activation": "Free",
-          "detail": "<p><strong><span>(Cost: 3 dice)</span></strong><span> Choose any non-Superheavy weapon. The next time you attack with this weapon, destroying a target or dealing structure damage triggers the following secondary attack effect: move up to your speed and attack any other character within range. Secondary attacks may trigger additional secondary attacks.</span></p>",
+          "detail": "<strong><span>(Cost: 3 dice)</span></strong><span> Choose any non-Superheavy weapon. The next time you attack with this weapon, destroying a target or dealing structure damage triggers the following secondary attack effect: move up to your speed and attack any other character within range. Secondary attacks may trigger additional secondary attacks.</span>",
           "cost": 0,
           "pilot": false,
           "damage": [],
@@ -1101,7 +1106,7 @@
         {
           "name": "Phase",
           "activation": "Free",
-          "detail": "<p><strong><span>(Cost: 2 dice</span></strong><span>) Roll a number of dice equal to this ability’s cost. A number of attacks made against you (equal to your lowest rolled value) treats you as if you were Invisible. Attacks affected by this ability are unable to inflict any non-damage effects, such as Reliable. This effect lasts until either all charges have been used, or the end of your next turn.</span></p>",
+          "detail": "<strong><span>(Cost: 2 dice</span></strong><span>) Roll a number of dice equal to this ability’s cost. A number of attacks made against you (equal to your lowest rolled value) treats you as if you were Invisible. Attacks affected by this ability are unable to inflict any non-damage effects, such as Reliable. This effect lasts until either all charges have been used, or the end of your next turn.</span>",
           "cost": "0",
           "pilot": false,
           "damage": [],
@@ -1116,12 +1121,12 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Reach Heaven",
-      "passive_effect": "<p>Upon inflicting structure damage on an enemy (including destroying), gain a D6 Momentum dice, up to a maximum of 3. This can only be generated once per enemy per round, even if multiple structure damage was inflicted.</p><p><span>1/round, you may spend your Momentum for one of the following effects as a Free Action.</span></p>",
+      "passive_effect": "Upon inflicting structure damage on an enemy (including destroying), gain a D6 Momentum dice, up to a maximum of 3. This can only be generated once per enemy per round, even if multiple structure damage was inflicted.<br/><span>1/round, you may spend your Momentum for one of the following effects as a Free Action.</span>",
       "passive_actions": [
         {
           "name": "Recover",
           "activation": "Free",
-          "detail": "<p><strong><span>(Cost: 1 die) </span></strong><span>Make an Agility Check, using the die as Accuracy. Clear the Slowed or Immobilized condition on a successful check. This ability can only clear one condition per die.</span></p>",
+          "detail": "<strong><span>(Cost: 1 die) </span></strong><span>Make an Agility Check, using the die as Accuracy. Clear the Slowed or Immobilized condition on a successful check. This ability can only clear one condition per die.</span>",
           "cost": 0,
           "pilot": false,
           "damage": [],
@@ -1135,7 +1140,7 @@
         {
           "name": "Scrape",
           "activation": "Free",
-          "detail": "<p><strong><span>(Cost: 1 die) </span></strong><span>Pick a target within Range 3. You fire your head-mounted Vulcans, dealing 2 Kinetic damage. If you cause structure damage or kill a hostile mech character with this action, refund the cost.</span></p>",
+          "detail": "<strong><span>(Cost: 1 die) </span></strong><span>Pick a target within Range 3. You fire your head-mounted Vulcans, dealing 2 Kinetic damage. If you cause structure damage or kill a hostile mech character with this action, refund the cost.</span>",
           "cost": 0,
           "pilot": false,
           "damage": [],
@@ -1149,7 +1154,7 @@
         {
           "name": "Dodge ",
           "activation": "Free",
-          "detail": "<p><strong><span>(Cost: 2 dice) </span></strong><span>Roll the dice and pick the highest of the two. Gain Overshield equal to the result, dissipating at the end of your next turn. When this Overshield is expended, you may move up to your speed, ignoring engagement and reactions.</span></p>",
+          "detail": "<strong><span>(Cost: 2 dice) </span></strong><span>Roll the dice and pick the highest of the two. Gain Overshield equal to the result, dissipating at the end of your next turn. When this Overshield is expended, you may move up to your speed, ignoring engagement and reactions.</span>",
           "cost": 0,
           "pilot": false,
           "damage": [],
@@ -1238,7 +1243,7 @@
     "core_system": {
       "name": "MAV Tactical Algorithms",
       "active_name": "Hunter-Killer Team",
-      "active_effect": "<p>S<span>elect an allied character within Sensors to designate as a Battle Buddy. A data-link opens between your machines, increasing your efficiency when working together. This connection remains active until the end of the Scene. Both parties gain unique effects, which are active so long as they are adjacent with one another.</span></p><ul><li><p><span>Hunter Hygogg effect:</span></p><ul><li><p><span>Gain resistance to all Damage, Burn, and Heat that isn’t self-inflicted.</span></p></li></ul></li><li><p><span>Battle Buddy effect:</span></p><ul><li><p><span>Gain the Counterattack reaction.</span></p></li></ul></li></ul>",
+      "active_effect": "S<span>elect an allied character within Sensors to designate as a Battle Buddy. A data-link opens between your machines, increasing your efficiency when working together. This connection remains active until the end of the Scene. Both parties gain unique effects, which are active so long as they are adjacent with one another.</span><br/><ul><li><span>Hunter Hygogg effect:</span><br/><ul><li><span>Gain resistance to all Damage, Burn, and Heat that isn’t self-inflicted.</span><br/></li></ul></li><li><span>Battle Buddy effect:</span><br/><ul><li><span>Gain the Counterattack reaction.</span><br/></li></ul></li></ul>",
       "activation": "Quick",
       "description": "",
       "deactivation": "",
@@ -1247,7 +1252,7 @@
         {
           "name": "Counterattack",
           "activation": "Reaction",
-          "detail": "<p><span>Skirmish against the triggering hostile character if they are in range, dealing half damage, burn, and heat on a hit. This attack has a base </span><strong><span>+1 Accuracy</span></strong><span>.</span></p>",
+          "detail": "<span>Skirmish against the triggering hostile character if they are in range, dealing half damage, burn, and heat on a hit. This attack has a base </span><strong><span>+1 Accuracy</span></strong><span>.</span>",
           "cost": 0,
           "pilot": false,
           "damage": [],
@@ -1256,7 +1261,7 @@
           "tech_attack": false,
           "frequency": "3/round",
           "init": "",
-          "trigger": "<p><span>The Hunter Hygogg is targeted by any hostile effect.</span></p>"
+          "trigger": "<span>The Hunter Hygogg is targeted by any hostile effect.</span>"
         }
       ],
       "active_bonuses": [],

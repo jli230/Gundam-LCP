@@ -5,17 +5,30 @@
     "ranks": [
       {
         "name": "Danger Sense",
-        "description": "<div>When targeted by Blast type weapons, gain +1 Accuracy to evasion checks.</div>",
+        "description": "<div><span>All pattern attacks (ie. Blast, Burst, Cone) gain +1 Difficulty when targeting you, and you gain +1 Accuracy toward avoiding any pattern-based hostile Save effects.</span></div>",
         "exclusive": false
       },
       {
         "name": "Combat Instinct",
-        "description": "<div>Upon destroying a target, gain one Newtype Die - a D6 - up to a maximum of 3. When you are targeted by a ranged or line attack, you may spend any number of these dice to roll them, and for each result above 4, apply one stack of Inaccuracy to the attacker's roll. </div>",
+        "description": "<div><span>When you avoid any pattern-based effect, move to any free space adjacent to the area of effect. 1/round, if you use this effect to move adjacent to a hostile character, they become Impaired until the end of their next turn.</span></div>",
         "exclusive": false
       },
       {
         "name": "Precognition",
-        "description": "<div>If any of your Newtype die roll a 6, the attack is ignored, excluding Reliable and Blast effects. All Newtype dice spent on the attack are still lost.</div>",
+        "description": "<div><span>1/round, whenever you avoid any pattern-based effect, gain a Newtype die—a D6—up to a maximum of 3. Additionally, start every scene with one Newtype die. They last until expended or the end of the scene. Whenever you gain a Newtype die, roll the D6 and keep the result.</span></div><div><span>In addition, gain the Flatten Probability Reaction:</span></div>",
+        "actions": [
+          {
+            "name": "Flatten Probability",
+            "activation": "Reaction",
+            "detail": "<div><span>Add or subtract the value of a Newtype die of your choice to or from the roll.</span></div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "2/round",
+            "init": "",
+            "trigger": "<div><span>You or any other character rolls a D20 within Line of Sight.</span></div>"
+          }
+        ],
         "exclusive": false
       }
     ],
@@ -29,7 +42,7 @@
     "ranks": [
       {
         "name": "One Man Phalanx",
-        "description": "<div>Bracing while equipped with any weapon with the Shield tag confers an additional +1 Armor for the duration of the brace. This armor value may stack for additional equipped weapons with the Shield tag. Additionally, gain access to the A Taste of Grass action.</div>",
+        "description": "<div><span>Whenever you Brace, gain +1 Armor for each undestroyed Shield weapon mounted to your mech. This can bring you above the maximum (+4). This effect lasts until the end of your next turn.</span></div>",
         "actions": [
           {
             "name": "A Taste of Grass",
@@ -47,12 +60,12 @@
       },
       {
         "name": "Discombobulate",
-        "description": "<div>Any time you use a weapon with the Shield tag to attack an enemy, gain +1 accuracy to the next attack you make against that target with any melee weapon attack or tech attack. This accuracy stacks, to a maximum value of +6.</div><div>Bracing now confers +2 armor for each equipped weapon with the Shield tag, rather than +1.</div>",
+        "description": "<div><span>1/round. When you hit a hostile character with a Shield weapon, they must pass a Hull save or else be knocked back 2 spaces in the direction of the attack, and be knocked Prone. On a successful save, they are only knocked back.</span></div>",
         "exclusive": false
       },
       {
         "name": "May I Stand Unshaken",
-        "description": "<div>At the end of every turn in which you were not Stunned or Prone, you gain 1 Poise Die – a d6 – up to a maximum of 3 Poise Dice. They last until expended or the current scene ends. You can expend Poise Dice 1-for-1 for the following:</div><ul><li><div><strong>Interpose: </strong>As a free action, reduce incoming damage for any one adjacent character of your choice by 1d6.</div></li><li><div><strong>Barrier Burst: </strong>Upon landing an attack with any weapon with the Shield tag, apply 1d6 knockback.</div></li><li><div><strong>Immovable:</strong> As a reaction to any attack targeted at you, you may roll any number of Poise dice. If any of these roll 5 or above, you may Brace without sacrificing any actions or movement on your following turn.</div></li></ul>",
+        "description": "<div><span>At the end of every hostile turn in which you do not take damage and do not suffer involuntary movement, you gain 1 poise die—a D6—up to a maximum of 3 dice. They last until expended or the end of the scene. You may expend Poise dice 1-for-1 for the following effects:</span></div><ul><li><div><strong>Interpose: </strong><span>Whenever you Brace, expend a Poise die to grant all on-brace effects to one adjacent allied character. They do not suffer from a reduction in action economy. This effect lasts until they break adjacency, or until the end of your next turn.</span></div></li><li><div><strong>Immovable:</strong> <span>Whenever you Brace, you may expend a Poise die—this allows you to take two Quick Actions or one Full Action next turn, rather than a single Quick Action.</span></div></li><li><div><strong>Barrier Burst: </strong><span>Whenever you Brace, you may expend a Poise die to apply 1d6 Knockback to any number of characters within threat of one of your Shield weapons.</span></div></li></ul>",
         "exclusive": false
       }
     ],

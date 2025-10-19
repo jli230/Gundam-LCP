@@ -1234,7 +1234,7 @@
       {
         "name": "Intercept",
         "activation": "Reaction",
-        "detail": "<div>Roll against the attack using the Mauler Point-Defense Laser Cannon, benefitting from talents. If the rolls higher than the attack's result, the incoming attack is intercepted by the Mauler Point-Defense Laser Cannon, nullifying it. If a Main Cannon or Rifle is mounted in the Main Mount, may opt to use it instead of the Mauler Laser Cannon to<strong> Intercept. </strong>Taking this reaction allows the Mauler Laser Cannon to be used for a separate Intercept reaction, but forgoes using the Overwatch reaction for the current round.</div>",
+        "detail": "Roll against the attack using the Mauler Point-Defense Laser Cannon, benefitting from talents. If the roll is higher than the attack's result, the incoming attack is intercepted by the Mauler Point-Defense Laser Cannon, nullifying it. If a Main Cannon or Rifle is mounted in the Main Mount, may opt to use it instead of the Mauler Laser Cannon to<strong> Intercept. </strong>Taking this reaction allows the Mauler Laser Cannon to be used for a separate Intercept reaction, but forgoes using the Overwatch reaction for the current round.",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
@@ -2206,7 +2206,7 @@
         "id": "tg_limited",
         "name": "Limited {VAL}",
         "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
-        "val": 6
+        "val": 3
       }
     ],
     "profiles": [
