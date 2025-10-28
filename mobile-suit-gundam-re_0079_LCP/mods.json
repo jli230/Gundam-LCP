@@ -400,5 +400,33 @@
     "integrated": [
       "MSG0079_shipbreaker_torpedo"
     ]
+  },
+  {
+    "id": "MSG0079_psy-receptor",
+    "name": "Psycommu Control Module",
+    "source": "EFRD",
+    "license": "MS-06X Psycommu Zaku",
+    "license_id": "fdsafdjsaiofghdsia",
+    "license_level": 1,
+    "effect": "<span>Any weapon that this mod is applied to gains the Drone and Smart tags. This weapon may be fired normally, or deployed into any free space within Sensors as a free action. It may be recalled or redeployed as a Quick Action. While deployed, it may be fired as usual, tracing Range and Line of Sight from itself. If the weapon this is applied to already has the Drone tag, then the weapon additionally gains the Twinned tag.</span>",
+    "sp": "2",
+    "description": "",
+    "allowed_types": [
+      "Rifle",
+      "Cannon",
+      "Launcher",
+      "CQB",
+      "Nexus",
+      "Melee"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": []
   }
 ]

@@ -1,0 +1,7 @@
+[
+  {
+    "name": "Twinned",
+    "id": "MSG0079_drone_twinned",
+    "description": "<span>Whenever this Drone is deployed, you may either deploy it by itself, or deploy two as a pair of twins. If you decide to deploy it as a pair of twins, all damage, burn, and heat they deal is halved before reduction. If the Twinned tag is found on a weapon, then both instances fire at the same time when the weapon is used to attack. Damage is not shared between Twinned Drones, but if one is destroyed, then both are destroyed. Similarly, when one is recalled or redeployed, both are recalled or redeployed.</span>"
+  }
+]

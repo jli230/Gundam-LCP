@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "id": "MSG0079_comm-tenna",
+    "name": "Command Antenna",
+    "source": "ZN",
+    "effect": "<span>Gain +5 sensors. As a protocol, you may select any number of allied characters within Line of Sight and Sensors. So long as you aren’t Jammed, they may move 2 spaces in a direction of your choice, ignoring engagement and reactions.</span>",
+    "description": "",
+    "mounted_effect": ""
+  },
+  {
+    "id": "MSG0079_mob-armor",
+    "name": "Mobile Armor Refit",
+    "source": "ZN",
+    "effect": "<span>The frame this Core Bonus is applied to receives the following effects:</span><br/><ul><li><span>Its size increases by 1, up to a maximum of 4. Additionally, it may move through and stand in spaces occupied by obstructions and characters smaller than its current size.&nbsp;</span><br/></li><li><span>It ignores engagement from all characters smaller than itself.</span><br/></li><li><span>It gains the ability to mount one Superheavy weapon as if it were Integrated. This special Superheavy weapon may be fired with a Skirmish action or as part of a Barrage with another weapon, but may only be used 1/scene.</span><br/></li></ul>",
+    "description": "",
+    "mounted_effect": ""
+  },
+  {
+    "id": "MSG0079_himo",
+    "name": "Hi-Mo Module",
+    "source": "ZN",
+    "effect": "<span>Whenever you Overcharge, you may move up to your speed before or after taking your Overcharge action. This movement may be taken as if you were Flying, and grants Invisibility until the start of your next turn.</span>",
+    "description": "",
+    "mounted_effect": ""
+  },
+  {
+    "id": "MSG0079_comm-targmo",
+    "name": "Commander Targeting Module",
+    "source": "EFRD",
+    "effect": "<span>Gain +5 Sensors.</span><br/><span>Whenever you lock-on to a hostile character, you may apply a special Focus mark. When an ally consumes this lock, they may also consume this mark to select one of the following benefits:</span><br/><ul><li><span>Allies may attack this character as if they were not Hidden or Invisible, and gain an additional Accuracy when doing so.&nbsp;</span><br/></li><li><span>On a hit, this attack deals +1d6 bonus damage and its damage cannot be reduced in any way.</span><br/><span>Only one Focus mark may be active at a time. Whenever you apply a Focus mark while one is still active, the previous one is cleared.</span><br/></li></ul>",
+    "description": "",
+    "mounted_effect": ""
+  },
+  {
+    "id": "MSG0079_full-armor",
+    "name": "Full Armor Refit",
+    "source": "EFRD",
+    "effect": "<span>Whenever you Rest or have a Full Repair, you may elect to sortie in the next Combat with the following effects:</span><br/><ul><li><span>Your Armor is increased by 1, up to a maximum of 4.</span><br/></li><li><span>Whenever you Barrage, you may select an additional weapon to fire at the same time.</span><br/></li><li><span>Gain Overshield equal to 12+Grit. This Overshield can not be increased or replaced, and persists between scenes (until a Full Repair).</span><br/><span>When the Overshield granted is depleted, or you choose to deplete it all as a Protocol, you cast off your armor kit and may move up to your speed, ignoring Reactions. You then lose all other benefits associated with this Core Bonus. This Core Bonus may only be used 1/mission.</span><br/></li></ul>",
+    "description": "",
+    "mounted_effect": ""
+  }
+]

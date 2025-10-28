@@ -500,7 +500,7 @@
     "license_level": 1,
     "description": "<div>Two 4-tube 40mm Bop Missile Launchers are mounted in the Guntank's arms. As the Guntank is not equipped with any close range weapon, the Missile Launchers are also used as the primary defense weapon.</div>",
     "mount": "Auxiliary",
-    "type": "CQB",
+    "type": "Launcher",
     "sp": 0,
     "barrage": true,
     "skirmish": true,
@@ -508,23 +508,17 @@
     "damage": [
       {
         "type": "Explosive",
-        "val": "1d3+1"
+        "val": 2
       }
     ],
     "range": [
       {
-        "type": "Threat",
-        "val": "3"
+        "type": "Range",
+        "val": 10
       },
       {
-        "type": "Range",
-        "val": "5"
-      }
-    ],
-    "tags": [
-      {
-        "id": "tg_reliable",
-        "val": 2
+        "type": "Blast",
+        "val": 1
       }
     ]
   },
@@ -1207,8 +1201,8 @@
     "license_id": "",
     "license_level": 1,
     "description": "<div>The Mauler Point-Defense Laser Cannon is a high-energy laser weapon that are mounted as either a singular or pair of \"horns\" on the Phoenix's head module. Moderately effective against unprotected aircraft, the Mauler's real utility is in its capability of quickly shooting down incoming missiles and other various projectiles. Linked to the pilot's heads-up display, the Mauler can rapidly track targets to shoot down through the pilot's eye movements, similar to how target acquisition for most modern aerial weapons work.</div>",
-    "effect": "Gain the <strong>Intercept</strong> reaction. This weapon may be fired as a free action when Lock-On is consumed, gaining +5 Range when fired in this way. This weapon however may not consume nor benefit from the effects of Lock-On.",
-    "mount": "Main",
+    "effect": "<div>Gain the <strong>Intercept</strong> reaction.</div>",
+    "mount": "Auxiliary",
     "type": "CQB",
     "barrage": true,
     "skirmish": true,
@@ -1363,25 +1357,11 @@
     "name": "180mm Recoilless Cannons",
     "source": "",
     "license": "",
+    "license_id": "",
     "license_level": 1,
     "description": "",
-    "mount": "Heavy",
+    "mount": "Superheavy",
     "type": "Cannon",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
-    "damage": [
-      {
-        "type": "Explosive",
-        "val": "2d6+1"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": "25"
-      }
-    ],
     "sp": 0,
     "tags": [
       {
@@ -1389,15 +1369,30 @@
         "val": null
       },
       {
-        "id": "tg_arcing",
-        "val": null
+        "id": "tg_reliable",
+        "val": 4
       },
       {
-        "id": "tg_reliable",
-        "val": 3
+        "id": "tg_overkill",
+        "name": "Overkill",
+        "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
       }
     ],
-    "profiles": []
+    "barrage": true,
+    "skirmish": true,
+    "cost": 1,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "3d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": "25"
+      }
+    ]
   },
   {
     "id": "MSG0079_gatling_gun_pod",
@@ -2078,7 +2073,7 @@
     "license_id": "MSG0079_rgm_sevennine_gm",
     "license_level": 4,
     "description": "<div>A revolutionary weapon for its time, the beam rifle is the primary weapon of the Gundam. It is a miniaturized version of a mega particle cannon with an output of 1.9 megawatts. The beam rifle employs the Federation's energy capacitor, or E-cap, technology and uses charged concentrations of Minovsky particles as ammunition. The resulting weapon has power equivalent to that of a battleship's main gun at the time of the One Year War, allowing it to defeat a mobile suit with a single shot. The rifle can fire 12-15 shots when fully charged. It also features an offset, movable sensor that interfaces with the RX-78’s Fire Control System to achieve a high degree of accuracy, as well as a foregrip for firing support. When not in use, the beam rifle can be stored on the back of the Gundam's waist or behind its shield.</div><div>There are several different variants of the Beam Rifle, with semi-mass-produced versions being distributed to Guncannons and GMs in limited amounts as potent mid-range weapons.</div>",
-    "mount": "Heavy",
+    "mount": "Main",
     "type": "Rifle",
     "sp": 0,
     "tags": [
@@ -2206,7 +2201,12 @@
         "id": "tg_limited",
         "name": "Limited {VAL}",
         "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
-        "val": 3
+        "val": 6
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
       }
     ],
     "profiles": [
@@ -2362,14 +2362,14 @@
       },
       {
         "name": "Lock-On Mode",
-        "effect": "<div>This firing mode is used when Ringnecks are used to attack targets that are Locked On. When attacking in this mode, any additional HCMM is treated as part of the same attack roll and adds their damage to the attack. Attacks made this way has Reliable X, corresponding to the number of HCMMs used. Normal action costs apply when committing mounts.</div>",
+        "effect": "This firing mode is used when Ringnecks are used to attack targets that are Locked On. When attacking in this mode, any additional Ringnecks are treated as part of the same attack roll. If the attack roll indicates a hit, all Ringnecks that are committed to this attack counts as hitting the target, combining their damage together. Attacks made this way has Reliable X, corresponding to the number of Ringnecks used. Normal action costs apply when committing mounts.",
         "barrage": true,
         "skirmish": true,
         "on_crit": "<div>If firing as part of a full HCMM Barrage action, target is now <strong>Impaired</strong> until the end of their next turn.</div>",
         "damage": [
           {
             "type": "Explosive",
-            "val": "1D3+1"
+            "val": "1D3"
           }
         ],
         "range": [
@@ -2379,11 +2379,6 @@
           }
         ],
         "tags": [
-          {
-            "id": "tg_seeking",
-            "name": "Seeking",
-            "description": "This weapon has a limited form of self-guidance and internal propulsion, allowing it to follow complicated paths to its targets. As long as it’s possible to draw a path to its target, this weapon ignores cover and doesn’t require line of sight."
-          },
           {
             "id": "tg_smart",
             "name": "Smart",
@@ -2515,6 +2510,322 @@
       {
         "type": "Threat",
         "val": 2
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_shaw-funnel",
+    "name": "Hornet Funnels",
+    "source": "EFRD",
+    "license": "MS-06X Psycommu Zaku",
+    "license_id": "fdsafdjsaiofghdsia",
+    "license_level": 1,
+    "description": "",
+    "effect": "This weapon may be used to attack as normal, or deployed as a Drone.",
+    "mount": "Auxiliary",
+    "type": "Nexus",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_smart",
+        "name": "Smart",
+        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+      },
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_loading",
+        "name": "Loading",
+        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      },
+      {
+        "type": "Range",
+        "val": 3
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Hornet Funnel",
+        "type": "Drone",
+        "detail": "<span>This Hornet Funnel can be deployed to a free space within Sensors and line of sight as a free action, where it becomes a stationary, hovering Drone. Once deployed, you may still use it for Skirmish and Barrage attacks as though it is still a weapon, but with line of sight and Range traced from its location. </span>You may recall or redeploy any number of Hornet Funnels as a Quick Action. At the end of any turn in which they were recalled, they may be reloaded as a Free Action.<br/><span>Until recalled or destroyed, it remains deployed until the end of the scene. If destroyed, it follows the rules for destroyed Drones and can’t be used until repaired.</span>",
+        "size": 0.5,
+        "activation": "Free",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "5",
+        "evasion": "12",
+        "edef": "10",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "five-finger-beam",
+    "name": "5-Barrel Mega Particle Cannon",
+    "source": "EFRD",
+    "license": "MS-06X Psycommu Zaku",
+    "license_id": "fdsafdjsaiofghdsia",
+    "license_level": 3,
+    "description": "",
+    "effect": "This weapon may be used to attack as normal, or deployed as a Drone.",
+    "mount": "Heavy",
+    "type": "Nexus",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_smart",
+        "name": "Smart",
+        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "5d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "deployables": [
+      {
+        "name": "5-Barrel Mega Particle Cannon",
+        "type": "Drone",
+        "detail": "<span>This 5-Barrel Mega Particle Cannon can be deployed to a free space within Sensors and line of sight as a free action, where it becomes a stationary, hovering Drone. Once deployed, you may still use it for Skirmish and Barrage attacks as though it is still a weapon, but with line of sight and Range traced from its location. </span>You may recall or redeploy this drone as a Quick Action.<br/><span>Until recalled or destroyed, it remains deployed until the end of the scene. If destroyed, it follows the rules for destroyed Drones and can’t be used until repaired.</span>",
+        "size": 0.5,
+        "activation": "Free",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "8",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "fangs",
+    "name": "Fang Drones",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "description": "",
+    "effect": "<span>Your mech comes equipped with an integrated weapon that can either be fired as a normal weapon, or deployed as a Drone. At the start of any scene, you may start with your Fang Drones deployed in any adjacent space or integrated with your mech. Fang Drones may be deployed to any free space in Sensors as a Free Action, and recalled or redeployed as a Quick Action.&nbsp;</span>",
+    "mount": "Main",
+    "type": "Nexus",
+    "sp": 0,
+    "tags": [
+      {
+        "name": "Twinned",
+        "id": "MSG0079_drone_twinned",
+        "description": "<span>Whenever this Drone is deployed, you may either deploy it by itself, or deploy two as a pair of twins. If you decide to deploy it as a pair of twins, all damage, burn, and heat they deal is halved before reduction. If the Twinned tag is found on a weapon, then both instances fire at the same time when the weapon is used to attack. Damage is not shared between Twinned Drones, but if one is destroyed, then both are destroyed. Similarly, when one is recalled or redeployed, both are recalled or redeployed.</span>"
+      },
+      {
+        "id": "tg_smart",
+        "name": "Smart",
+        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1D6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Fang Drones",
+        "type": "Drone",
+        "detail": "<span>While deployed, these drones move independently on your turn and share your Evasion, E-Defense, and Speed. These drones can be fired as normal while deployed, and trace Range and Line of Sight from their position. They benefit from pilot talents.</span><br/><span>These drones can hover and come with Integrated EVA.</span>",
+        "size": 0.5,
+        "activation": "Free",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": "1",
+        "hp": "6 + GRIT",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_vi-stake",
+    "name": "Viral Stake",
+    "source": "ZN",
+    "license": "SRf-06 Dahle",
+    "license_id": "dahle-skink",
+    "license_level": 1,
+    "description": "",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "sp": "1",
+    "tags": [
+      {
+        "id": "tg_thrown",
+        "name": "Thrown {VAL}",
+        "description": "This melee weapon can be thrown at targets within {VAL} spaces. Thrown attacks follow the rules for melee attacks but are affected by cover; additionally, a thrown weapon comes to rest in an adjacent space to its target and must be retrieved as a free action while adjacent to that weapon before it can be used again.",
+        "val": 5
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "<span>You may declare that the Stake has embedded into your target. While it is embedded, the first tech attack against this target on any given round is made with +1 Accuracy and deals an additional 2 Heat damage. As long as the stake is embedded into the target, it can not be used on another target until it is retrieved, as if it were thrown. Your target may remove the Stake as a Hull Check performed as a Quick Action, dropping it in an adjacent free space.</span>",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_beam-coach-gun",
+    "name": "Beam Coach Gun",
+    "source": "ZN",
+    "license": "SRf-06 Dahle",
+    "license_id": "dahle-skink",
+    "license_level": 2,
+    "description": "",
+    "effect": "<span>The E-Caps for this weapon are worn around your mobile suit in a bandolier. There really is no other place to put them… When you take a structure damage (or this weapon is destroyed for any other reason), this bandolier explodes in a Blast 1 pattern centered on yourself (or where the Coach Gun is, if you dropped it). All characters in the blast radius take 1d6+2 AP Energy damage and the weapon is destroyed. The damage from this effect can not be reduced or prevented in any way.</span>",
+    "mount": "Main",
+    "type": "CQB",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_loading",
+        "name": "Loading",
+        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+      },
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d3+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      },
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_4-auto-cannon",
+    "name": "4-Barrel Auto Cannon",
+    "source": "EFRD",
+    "license": "RX-75 Guntank",
+    "license_id": "MSG0079_rx_sevenfive_guntank",
+    "license_level": 2,
+    "description": "",
+    "mount": "Auxiliary",
+    "type": "Cannon",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_inaccurate",
+        "name": "Inaccurate",
+        "description": "Attacks made with this weapon receive +1 Difficulty."
+      },
+      {
+        "id": "tg_reliable",
+        "name": "Reliable {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 2
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 5
       }
     ]
   }

@@ -3,56 +3,62 @@
     "id": "MSG0079_rx_sevenfive_guntank",
     "license_id": "MSG0079_rx_sevenfive_guntank",
     "source": "EFRD",
-    "license_level": 1,
+    "license_level": 2,
     "name": "RX-75 Guntank",
     "mechtype": [
       "Artillery"
     ],
     "description": "<div>The RX-75 Guntank was the first prototype Earth Federation Forces mobile suit developed by Operation V. However, it was said to be closer to a tank rather than a mobile suit. A number of companies such as Takim and Hervic participated in its development. The Guntank had the torso and arms of a mobile suit, but possessed caterpillar treads for legs. Initially, it was designed to be piloted by a crew of two, with a gunner in the canopy-style cockpit on the head and a driver in another cockpit in the torso. However, it was later changed to be controlled by a single pilot in the canopy-style cockpit. Like all \"Operation V\" mobile suits, the Guntank used the Core Block System.</div><div>Its reactor is a hybrid type of nuclear reactors and gas turbines, and its output is insufficient for powering beam weapons. The Guntank's main weapons are twin 120mm cannons, which are effective at long and medium ranges. Its arms have four-barrel missile launchers instead of hands, and they provided good cover fire against enemy tanks and aircraft, but are less effective against enemy mobile suits. A major flaw of the Guntank is its inability to turn its torso, making it difficult to aim the cannons at moving targets, as the Guntank must reposition itself. Another major flaw is that its design was primarily for ground combat, resulting in it having poor maneuverability in space.</div>",
     "mounts": [
-      "Aux/Aux"
+      "Aux/Aux",
+      "Main"
     ],
     "stats": {
-      "size": 1,
+      "size": 2,
       "structure": 4,
       "stress": 4,
-      "armor": 1,
+      "armor": 0,
       "hp": 10,
-      "evasion": 7,
+      "evasion": 6,
       "edef": 8,
       "heatcap": 5,
       "repcap": 4,
-      "sensor_range": 15,
+      "sensor_range": 10,
       "tech_attack": -1,
       "save": 10,
-      "speed": 7,
-      "sp": 5
+      "speed": 6,
+      "sp": 6
     },
     "traits": [
       {
-        "name": "Ramming Speed",
+        "name": "Tz. 86 Colossus Stabilizer",
         "use": "",
-        "description": "<div>The Guntank has +1 Accuracy on Ramming checks.</div>"
+        "description": "<span>1/round, the Guntank can reroll a cannon attack. The target cannot be in Hard Cover. You must keep the second result.</span>"
       },
       {
-        "name": "Track Mobility",
+        "name": "Direct-Strike Ordnance",
         "use": "",
-        "description": "<div>The Guntank's speed is immense, but its tank treads severely hamper its ability to navigate up sheer slopes and through muddy terrain. Climbing always requires an Agility check, and the Guntank cannot jump. Standing from Prone takes a Full Action.</div>"
+        "description": "<span>The Guntank’s attacks ignore resistance to Kinetic and Explosive.</span>"
+      },
+      {
+        "name": "Poor Maneuverability",
+        "use": "",
+        "description": "<span>The Guntank must roll Agility Checks and Saves twice, keeping the lower result.</span>"
       }
     ],
     "core_system": {
       "name": "Stable Platform",
       "active_name": "Tz.86 Colossus Stabilizer",
-      "active_effect": "All weapon mount ranges double for the remainder of the scene.",
-      "activation": "",
+      "active_effect": "<span>Create a Blast 3 area within line of sight of yourself or an allied character and within Range of the “180mm Recoilless Cannons.” While the area is in place, you become Immobilized. You may, as a free action, shoot any characters that enter the area or start their turn inside the area with the “180mm Recoilless Cannons.” Characters partially within the affected area take half damage from these attacks.</span><br/><span>This area lasts for the rest of the scene, or until deactivated as a protocol.</span><br/><br>",
+      "activation": "Protocol",
       "description": "The Guntank's squat, wide form factor grants its operators a superb sense of stability under most conditions. Though the chassis is largely impossible to kit for different missions due to the lack of manipulators, its integrated weapons make strong use of this intrinsic stability, making long range shots and devastatingly accurate cover fire a simple matter. ",
-      "deactivation": "",
+      "deactivation": "Protocol",
       "use": "Round",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
-      "passive_name": "Predictive Firing Solution Algorithm",
-      "passive_effect": "Cannon type weapons gain +1 Accuracy when firing on targets further than range 10.",
+      "passive_name": "",
+      "passive_effect": "",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -289,7 +295,7 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Change Modes",
-      "passive_effect": "<span>As a Protocol, the Phoenix may change into one of the following modes. It may choose to start a scene in any form.</span><br><br/><h3>Battroid Mode</h3><ul><li><span>Gain +1 Difficulty when using Launcher weapons.</span><br/></li><li><span>1/round, when you hit a target with a Cannon weapon, you may apply the Lock-On condition. </span><br><br/></li></ul><h3>GERWALK Mode</h3><ul><li><span>Treat all movement as if the Phoenix were Hovering.</span><br/></li><li><span>1/round, when consuming Lock-on, select another weapon with which to attack the same target, dealing half damage, heat, and burn on a hit.</span><br><br/></li></ul><h3>Fighter Mode</h3><ul><li><span>Gain +1 Difficulty to all Melee attacks.</span><br/></li><li><span>Treat all movement as if the Phoenix were Flying. When Boosting, you may move up to twice your speed.</span><br/></li><li><span>As a full action, the Phoenix may fly above the battlefield and then descend down to another space on the map of its choosing. This movement ignores engagement and reactions.</span><br/></li><li><span>1/round, when consuming Lock-on as part of an attack made with a Launcher weapon, the attack gains AP.</span><br><br/></li></ul>",
+      "passive_effect": "<span>As a Protocol, the Phoenix may change into one of the following modes. It may choose to start a scene in any form.</span><br/><h3>Battroid Mode</h3><ul><li><span>Gain +1 Difficulty when using Launcher weapons.</span><br/></li><li><span>1/round, when you hit a target with a Cannon weapon, you may apply the Lock-On condition. </span><br/></li></ul><h3>GERWALK Mode</h3><ul><li><span>Treat all movement as if the Phoenix were Hovering.</span><br/></li><li><span>1/round, when consuming Lock-on, select another weapon with which to attack the same target, dealing half damage, heat, and burn on a hit.</span><br/></li></ul><h3>Fighter Mode</h3><ul><li><span>Gain +1 Difficulty to all Melee attacks.</span><br/></li><li><span>Treat all movement as if the Phoenix were Flying. </span><br/></li><li><span>When Boosting, you may move up to twice your speed.</span><br/></li><li><span>1/round, when consuming Lock-on as part of an attack made with a Launcher weapon, the attack gains AP.</span><br/></li></ul>",
       "passive_actions": [
         {
           "name": "Change Mode",
@@ -1276,6 +1282,180 @@
       "integrated": [
         "MSG0079_ZN_Hunter_Shield"
       ],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "",
+    "y_pos": 0
+  },
+  {
+    "id": "fdsafdjsaiofghdsia",
+    "license_id": "fdsafdjsaiofghdsia",
+    "source": "EFRD",
+    "license_level": 2,
+    "name": "MS-06X Psycommu Zaku",
+    "mechtype": [
+      "Striker"
+    ],
+    "variant": "",
+    "description": "<span>The Psycommu Zaku is an experimental Federation weapon currently in limited production. This design is based on highly classified Zeonic design documents that were a part of the \"Bishop Plan,\" a research initiative dedicated to developing remote-control weapons controlled by Newtype brainwaves. Though it was never realized during the One Year War due to resource constraints and lack of confidence in its highly experimental design, Anaheim collaborated in its development during a post-war boom in interest for remote Newtype weaponry. In essence, it’s a stripped down Zaku II with highly sensitive psycommu control systems built into the frame. It has a limited capacity to control wireless, guided, miniaturized weapon platforms called funnels. Due to the sensitive nature of the highly experimental psycommu control system, this mobile suit is reserved for Newtype and Cyber Newtype pilots, often members of the Federation’s paramilitary special forces, Task Force Ouranos. Though, special exceptions are often made for members of the regular EFSF forces, so long as they have the prerequisite aptitude.</span>",
+    "mounts": [
+      "Heavy",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Hive Guard",
+        "use": "",
+        "description": "Gain access to the <strong>Hive Guard </strong>Reaction.",
+        "actions": [
+          {
+            "name": "Hive Guard",
+            "activation": "Reaction",
+            "detail": "<span>Select an allied Drone within Sensors Range. As long as there is a path to reach you, the Drone is moved adjacent to the target and becomes the new target.</span>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "1/round",
+            "init": "",
+            "trigger": "You or an adjacent ally have been targeted by an enemy attack."
+          }
+        ]
+      },
+      {
+        "name": "Sixth Sense",
+        "use": "",
+        "description": "<span>The Psycommu Zaku may draw Sensors and Line of Sight from any of its deployed drones for the purpose of Tech Actions.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Psycommu System",
+      "active_name": "Omni-directional Attack",
+      "active_effect": "<span>Recall all weapons with the Drone tag. You may then redeploy as many of them as you wish—after which you may attack once with all deployed weapons.</span>",
+      "activation": "Full",
+      "description": "An experimental interface built into the Mobile Suit. It runs to the pilot, reading brain waves and converting thought into machine code. The results speak for themselves; actions are executed at a speed as quick as thought, allowing dozens of individual weapon platforms to deploy and fire on target. ",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [
+        "fangs"
+      ],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "",
+    "y_pos": 0
+  },
+  {
+    "id": "dahle-skink",
+    "license_id": "dahle-skink",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "SRf-06 Dahle",
+    "mechtype": [
+      "Striker",
+      "Controller"
+    ],
+    "variant": "",
+    "description": "",
+    "mounts": [
+      "Main/Aux",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 8,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Of the Land",
+        "use": "",
+        "description": "<span>While resting, the Dahle can replenish Drones or Deployables with the Limited tag, at a rate of 1 repair per charge, up to your current maximum. At your discretion, you may also do this for allies, using your own repairs.</span>"
+      },
+      {
+        "name": "Sacrifice",
+        "use": "",
+        "description": "<span>1/round, as a Free Action, destroy one of your drones or deployables within Sensors and line of sight. Your next attack deals +1d6 bonus damage.</span>"
+      },
+      {
+        "name": "Old Bones",
+        "use": "",
+        "description": "<span>You take +1 Difficulty to all System Checks and Saves.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Quick-Eject Mounts",
+      "active_name": "Autotomy",
+      "active_effect": "Gain access to the <strong>Autotomy </strong>Reaction.",
+      "activation": "Reaction",
+      "description": "",
+      "deactivation": "",
+      "use": null,
+      "active_actions": [
+        {
+          "name": "Autotomy",
+          "activation": "Reaction",
+          "detail": "<span>Be reduced to 1 health instead. A mount or system of your choice is removed from your mech and placed on any free adjacent space as a size 1 obstruction with 10 HP. This mount or system may not be retrieved until the end of the scene, if it was not destroyed. For purposes of talents and traits, this is considered a Deployable. You may then move up to your speed in a direction of your choice, ignoring engagement and reactions. If you end this movement in a space where you may hide, you become Hidden.</span>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": "<span>You are about to take a structure damage, or your machine is about to be destroyed.</span>"
+        }
+      ],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
       "special_equipment": [],
       "tags": []
     },

@@ -658,5 +658,403 @@
         "trigger": ""
       }
     ]
+  },
+  {
+    "id": "if-cage-pro",
+    "name": "I-Field Cage Projector",
+    "source": "EFRD",
+    "license": "MS-06X Psycommu Zaku",
+    "license_id": "fdsafdjsaiofghdsia",
+    "license_level": 2,
+    "effect": "<span>Select any free space within Sensors and Line of Sight to deploy the I-Field Cage Projector. It may be redeployed or recalled as a Quick Action.</span>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      },
+      {
+        "id": "tg_resistance",
+        "name": "Resistance",
+        "description": "Reduce all damage from a source you have resistance to by half",
+        "val": "Energy"
+      }
+    ],
+    "deployables": [
+      {
+        "name": "I-Field Cage Projector",
+        "type": "Drone",
+        "detail": "<span>This drone projects a Burst 2 cloud of supercharged Minovsky Particles. If an attack that does any Energy damage would draw line of sight through this area, the attack and all secondary effects are negated. Instead, the attack ricochets off the I-Field, attacking a target of your choice within Range 5 of the Cage Projector. On a hit, this attack deals +1d6 bonus Energy damage. Bonus damage does stack if the attack bounces between multiple I-Field Cages.&nbsp;</span><br><span>The Limited tag does not refer to the amount of Drones of this class you are able to deploy—it refers to the amount of times this effect can happen. When you run out of charges, the Drone is not destroyed, but its E-Caps can no longer support the projection of an I-Field Cage.</span>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "5",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_butt-master",
+    "name": "Butterfly Impulse",
+    "source": "EFRD",
+    "license": "MS-06X Psycommu Zaku",
+    "license_id": "fdsafdjsaiofghdsia",
+    "license_level": 2,
+    "type": "Tech",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Activate Butterfly Impulse",
+        "activation": "Full Tech",
+        "detail": "<span>Make a tech attack against a character within Sensors and Line of Sight. If successful, your target takes 1 Heat and is Locked-on. You may then select another character within Range 5 of your original target and make another tech attack. If successful, they also take 1 Heat and are Locked-on. The chain continues until there are no more valid targets or until a tech attack fails. You may pass this effect through willing allied characters—if you do so, they instead clear 1 Heat. This system cannot target the same target more than once.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "coop-mino-barrier",
+    "name": "Cooperative Minovsky Particle Accelerator",
+    "source": "EFRD",
+    "license": "MS-06X Psycommu Zaku",
+    "license_id": "fdsafdjsaiofghdsia",
+    "license_level": 3,
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 2
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Deploy Minovsky Barrier",
+        "activation": "Quick Tech",
+        "detail": "<span>Select any two allied Drones within Sensors and Line of Sight, up to 8 spaces from each other. These two drones bounce a series of highly charged Minovsky Particles between each other, generating a Line between the two, 4 spaces high. The first time a character enters this zone in a round they must succeed a Hull Save or else take 1d6 Burn Damage and 2 Heat, half on a successful save. If the drones move, the line moves with them. This effect provides Soft Cover.</span><br/><span>At the beginning of every turn you have this effect active, you take 2 Heat. If the drones move further than 8 spaces from each other, lose Line of Sight with each other, or you cancel this action with a Free Action, the effect ends.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_sewer-slide-drone",
+    "name": "Suicide Drone",
+    "source": "ZN",
+    "license": "SRf-06 Dahle",
+    "license_id": "dahle-skink",
+    "license_level": 1,
+    "effect": "<span>As a Quick Action, deploy this drone to any free adjacent space. </span><br/><span>As this drone has no internal guidance mechanism, you must use a Quick Action if you want to move it up to its speed. Since the Drone is laser-guided, you may only move your Drone this way when it is within your Sensors Range and Line of Sight. When this Drone collides with a character or obstruction, or is otherwise destroyed, it detonates in a Blast 2 explosion centered on itself. Everything caught in the blast radius must pass a Hull Save or else take 3d6 Explosive damage, or half on a successful save. This Drone is capable of hover flight.</span>",
+    "type": "Drone",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 2
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Suicide Drone",
+        "type": "Drone",
+        "detail": "<span>As a Quick Action, deploy this drone to any free adjacent space. </span><br/><span>As this drone has no internal guidance mechanism, you must use a Quick Action if you want to move it up to its speed. Since the Drone is laser-guided, you may only move your Drone this way when it is within your Sensors Range and Line of Sight. When this Drone collides with a character or obstruction, or is otherwise destroyed, it detonates in a Blast 2 explosion. Everything caught in the blast radius must pass a Hull Save or else take 3d6 Explosive damage, or half on a successful save. This Drone is capable of hover flight.</span>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "2",
+        "evasion": "10",
+        "edef": "6",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "6",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_harp-drone",
+    "name": "Harpoon Drone",
+    "source": "ZN",
+    "license": "SRf-06 Dahle",
+    "license_id": "dahle-skink",
+    "license_level": 2,
+    "effect": "This Drone may be deployed anywhere within Line of Sight and Sensors as a Quick Action. It may be recalled or redeployed as a Quick Action.<br/><span>Upon being deployed, this Drone exerts a Burst 3 zone of influence. If any hostile character moves into or within this zone, the drone fires a harpoon. The target must make an Agility save or else be hit, dealing 5 Kinetic damage and linking with the target. While linked, the target may not take any movement that takes them further from the Drone, voluntary or otherwise. This effect lasts until the target is destroyed, passes a Hull Save as a Quick Action to escape, the Drone is destroyed, or the Drone is recalled or redeployed. Only one target may be under this effect at a time per drone.</span>",
+    "type": "Drone",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Harpoon Drone",
+        "type": "Drone",
+        "detail": "<span>Upon being deployed, this Drone exerts a Burst 3 zone of influence. If any hostile character moves into or within this zone, the drone fires a harpoon. The target must make an Agility Save or else be hit, dealing 5 Kinetic damage and linking with the target. While linked, the target may not take any movement that takes them further from the Drone, voluntary or otherwise. This effect lasts until the target is destroyed, passes a Hull Save as a Quick Action to escape, the Drone is destroyed, or the Drone is recalled or redeployed. Only one target may be under this effect at a time per drone.</span>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": "1",
+        "hp": "5",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_flip-flappers",
+    "name": "Flipper Beacon",
+    "source": "ZN",
+    "license": "SRf-06 Dahle",
+    "license_id": "dahle-skink",
+    "license_level": 3,
+    "effect": "<span>Select a free space within Range 5 to deploy this Flipper Beacon as a Quick Action. It projects a Burst 2 area, in which all hostile Drones and Deployables at least partially in the area of effect flip allegiance and become yours for all intents and purposes. If any given Drone or Deployable is moved out of range of the beacon or the beacon is destroyed, it is returned to the original owner. Otherwise, this effect lasts until the end of the scene.</span>",
+    "type": "Deployable",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 2
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Flipper Beacon",
+        "type": "Deployable",
+        "detail": "<span>Select a free space within Range 5 to deploy this Flipper Beacon as a Quick Action. It projects a Burst 2 area, in which all hostile Drones and Deployables at least partially in the area of effect flip and become yours for all intents and purposes. If any given Drone or Deployable is moved out of range of the beacon or the beacon is destroyed, it is returned to the original owner. Otherwise, this effect lasts until the end of the scene.</span>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "10",
+        "evasion": "5",
+        "edef": "5",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_good-boy",
+    "name": "Mastiff Drone",
+    "source": "ZN",
+    "license": "SRf-06 Dahle",
+    "license_id": "dahle-skink",
+    "license_level": 3,
+    "effect": "<span>You may deploy the Mastiff Drone (name optional) to any adjacent free space. When you deploy the Mastiff Drone, you may select any non-Superheavy weapon to remove from your mech and mount on the Drone. This Drone gains its own place in the turn order as a friendly NPC controlled by the GM, and has a set of standard actions and reactions. As long as you aren’t Jammed, you may issue basic orders to your Mastiff Drone, which it performs to the best of its ability. If you don’t issue an order to your drone, it simply idles and passes its turn (but that’s okay, because he's trying his best).</span><strong><span> </span></strong><span>Your Mastiff Drone uses your Grit and Save Target when rolling, but does not benefit from your Talents or Traits. The Mastiff is able to Engage enemies and provides Hard Cover. If the Mastiff is destroyed, the weapon it carries is also destroyed.</span><br/><span>The Mastiff cannot be recalled or redeployed when it is on the field, and lasts until the scene ends.</span>",
+    "type": "Drone",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_full_action",
+        "name": "Full Action",
+        "description": "This system requires a full action to Activate."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Mastiff Drone",
+        "type": "Drone",
+        "detail": "<span>You may deploy the Mastiff Drone (name optional) to any adjacent free space. When you deploy the Mastiff Drone, you may select any non-Superheavy weapon to remove from your mech and mount on the Drone. This Drone gains its own place in the turn order as a friendly NPC controlled by the GM, and has a set of standard actions and reactions. As long as you aren’t Jammed, you may issue basic orders to your Mastiff Drone, which it performs to the best of its ability. If you don’t issue an order to your drone, it simply idles and passes its turn (but that’s okay, because he's trying his best).</span><strong><span> </span></strong><span>Your Mastiff Drone uses your Grit and Save Target when rolling, but does not benefit from your Talents or Traits. The Mastiff is able to Engage enemies and provides Hard Cover. If the Mastiff is destroyed, the weapon it carries is also destroyed.</span><br/><span>The Mastiff cannot be recalled or redeployed when it is on the field, and lasts until the scene ends.</span>",
+        "size": 1,
+        "activation": "Full",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "3",
+        "hp": "5",
+        "evasion": "6",
+        "edef": "6",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "3",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_aux-thrust-net",
+    "name": "Auxiliary Thruster Network",
+    "source": "EFRD",
+    "license": "RX-75 Guntank",
+    "license_id": "MSG0079_rx_sevenfive_guntank",
+    "license_level": 1,
+    "effect": "<span>When you Brace you may immediately move spaces equal to half your Speed but you become immobilized until the end of your next turn. This movement ignores engagement and doesn't provoke reactions. If this movement would get you out of the attack’s range the attack fails.</span>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_fire-support",
+    "name": "Fire Support Network",
+    "source": "EFRD",
+    "license": "RX-75 Guntank",
+    "license_id": "MSG0079_rx_sevenfive_guntank",
+    "license_level": 2,
+    "effect": "<span>Choose an allied character within sensors. They feed you extra data. When you make a ranged attack roll against a character or structure within your ally’s sensors:</span><br/><ul><li><span>the attack’s damage cannot be reduced in any way</span><br/></li><li><span>the firing weapon gains ARCING</span><br/></li><li><strong><span>On Crit:</span></strong><span> the target must succeed on a HULL save or get Shredded until the end of their next turn.</span><br/></li></ul><span>This effect ends when you successfully hit a target with a ranged attack roll or at the end of the scene.</span><br/><br>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079-ACS",
+    "name": "ACS-75",
+    "source": "EFRD",
+    "license": "RX-75 Guntank",
+    "license_id": "MSG0079_rx_sevenfive_guntank",
+    "license_level": 3,
+    "effect": "<span>As a protocol you may select an allied character within sensor range as your Designator. You can only have one Designator active at the same time. As long as your Designator is not Jammed, they may, as a Protocol, call for a strike on a hostile target or a piece of terrain within range of at least one of your ranged weapons, allowing you to Skirmish or Barrage at the target at your discretion as a Reaction. Attacks made this way gain +2 difficulty.</span>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_ai",
+        "name": "AI",
+        "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or COMP/CON unit installed that can act somewhat autonomously. A pilot can choose to hand over the controls to their AI or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_protocol",
+        "name": "Protocol",
+        "description": "This system can be activated as a free action, but only at the start of the user’s turn. Another action might be needed to deactivate it."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_rec-anchor",
+    "name": "Recoil Anchor",
+    "source": "EFRD",
+    "license": "RX-75 Guntank",
+    "license_id": "MSG0079_rx_sevenfive_guntank",
+    "license_level": 3,
+    "effect": "<span>You gain an additional +1 to all ranged attack rolls. This amount increases by +1 for each of your turns that you have remained stationary, up to a maximum of +3.</span><br/><span>This effect lasts until you move, including involuntary movement, take any kind of damage or until an enemy character gets within range 2 from you.</span><br/><br>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
+      }
+    ]
   }
 ]

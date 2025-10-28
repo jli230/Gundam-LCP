@@ -1,6 +1,6 @@
 [
   {
-    "id": "MSG0079__class_newtype",
+    "id": "MSG0079__spatial-netwype",
     "name": "α Class Newtype",
     "ranks": [
       {
@@ -70,5 +70,77 @@
       }
     ],
     "description": "<div><em>As the rumble of the mobile suit engine rattles through my teeth and skull, I lock eyes with the group of trainees arranged neatly in a square before me. Towering above them in my GM, I flick the loudspeaker on, before clearing my throat. \"Listen up, cadets. In the chaos of battle, shields aren't just for defense; they're defensive weapons. Angle them right and you can deflect the hardest of fire. Timing is everything. Anticipate their moves, angle the shield just right, and watch their attacks crumble against your unyielding defense. Remember, a shield is not a barrier—it's a battering ram. Use it aggressively, seize control, and turn the tide in your favor.\"</em></div><div><em>- Excerpt from the memoirs of Corporal Ela Towers, retired.</em></div>"
+  },
+  {
+    "id": "MSG0079_precog-newtype",
+    "name": "β Class Newtype",
+    "terse": "See things that others do not. Predict your enemy's moves before they happen. ",
+    "ranks": [
+      {
+        "name": "Blindsight",
+        "description": "<span>Within Range 3, you ignore Invisible, Hidden, and Line of Sight restrictions on targeting.</span>",
+        "exclusive": false
+      },
+      {
+        "name": "All Things as They Should be",
+        "description": "<span>1/round, When your prepared action is triggered, the target (if there is one) gains +1 Difficulty on any Check or Save you force as a part of this action. If your prepared action was an attack, it gains +1 Accuracy.</span>",
+        "exclusive": false
+      },
+      {
+        "name": "Precognition",
+        "description": "<span>1/round, when you prepare an action, you may force the character who takes the trigger action to roll a Systems save. On failure, they must take the trigger action, so long as it is possible for them to do so.</span>",
+        "exclusive": false
+      }
+    ],
+    "description": "placeholder"
+  },
+  {
+    "id": "MSG0079_hypno-newtype",
+    "name": "Ɣ Class Newtype",
+    "terse": "Bend wills, invade minds, and become the unattainable object of desire. Humans are toys, and nothing matters.",
+    "ranks": [
+      {
+        "name": "You Were There",
+        "description": "<span>When you Scan a character, you may select two options. The target must also roll the next Check or Save you impose on them at +1 Difficulty. Additionally, you may take the Scan action even if you are Jammed. All abilities in this talent line, including Scan, may be taken on foot against characters within Range 5.</span>",
+        "exclusive": false
+      },
+      {
+        "name": "Monsters Walk the Earth",
+        "description": "<span>Gain access to the </span><strong><span>Isolate </span></strong><span>Quick Action, which you can take on characters previously scanned this scene.</span>",
+        "actions": [
+          {
+            "name": "Isolate",
+            "activation": "Quick",
+            "detail": "<span>Select a hostile character within Line of Sight and Sensors. They must roll a Systems Save. On a failure, they treat all characters as hostile and all other characters treat them as hostile, for all purposes, until the end of their next turn. Every character may only be affected by this ability 1/scene.</span>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "exclusive": false
+      },
+      {
+        "name": "Mechanisms of Desire",
+        "description": "<span>Gain access to the </span><strong><span>Together in the Dark </span></strong><span>Full Action, which you can take on characters previously scanned this scene.</span>",
+        "actions": [
+          {
+            "name": "Together in the Dark",
+            "activation": "Full",
+            "detail": "<span>1/mission, select a hostile character within Line of Sight and Sensors. They must roll a Systems Save. On a failure, they treat all characters except you as hostile and all characters except you treat them as hostile, for all purposes, until the end of the scene. You can’t issue orders to this character—they will strictly do what they believe is best for you with no concern for their own safety. If a character succeeds at this Save, the action cost and frequency is refunded. You may decide what happens to this character after the scene ends; their life is in your hands. However—no matter what—you can not take them with you.</span>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "exclusive": false
+      }
+    ],
+    "description": "placeholder"
   }
 ]
