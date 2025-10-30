@@ -574,7 +574,7 @@
         "id": "tg_limited",
         "name": "Limited {VAL}",
         "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
-        "val": 3
+        "val": 5
       },
       {
         "id": "tg_unique",
@@ -593,7 +593,7 @@
         "tech_attack": false,
         "frequency": "1/turn",
         "init": "",
-        "trigger": "<div><span>An attack against you or an adjacent ally consumes the Locked-On condition.</span></div>"
+        "trigger": "<span>An attack against you or an adjacent ally is Smart, is a Tech Attack, or consumes the Locked-On condition.</span>"
       }
     ]
   },

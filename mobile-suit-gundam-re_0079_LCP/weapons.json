@@ -1201,9 +1201,9 @@
     "license_id": "",
     "license_level": 1,
     "description": "<div>The Mauler Point-Defense Laser Cannon is a high-energy laser weapon that are mounted as either a singular or pair of \"horns\" on the Phoenix's head module. Moderately effective against unprotected aircraft, the Mauler's real utility is in its capability of quickly shooting down incoming missiles and other various projectiles. Linked to the pilot's heads-up display, the Mauler can rapidly track targets to shoot down through the pilot's eye movements, similar to how target acquisition for most modern aerial weapons work.</div>",
-    "effect": "<div>Gain the <strong>Intercept</strong> reaction.</div>",
-    "mount": "Auxiliary",
-    "type": "CQB",
+    "effect": "Gain the <strong>Intercept</strong> reaction.<br><br>1/round, when you consume Lock on for any attack, you may fire the Mauler as a Free Action. Attacks made this way gain +5 Range.",
+    "mount": "Main",
+    "type": "Cannon",
     "barrage": true,
     "skirmish": true,
     "cost": 1,
@@ -1400,7 +1400,7 @@
     "source": "EFRD",
     "license": "VF-0 Phoenix",
     "license_id": "MSG0079_vf_zero_phoenix",
-    "license_level": 1,
+    "license_level": 2,
     "description": "<div>Early production next-generation variable frame gun pod, designed to replace the aging GPU-9.</div>",
     "mount": "Main",
     "type": "Cannon",
@@ -2333,7 +2333,7 @@
     "profiles": [
       {
         "name": "Dumbfire Mode",
-        "effect": "<div>This firing mode is used when Ringnecks are used to attack targets that are not Locked On.</div>",
+        "effect": "This firing mode is used when Ringnecks are used to attack targets that are not Locked On. This weapon gains +1 Accuracy when attacking targets within Range 4",
         "barrage": true,
         "skirmish": true,
         "damage": [
@@ -2362,7 +2362,7 @@
       },
       {
         "name": "Lock-On Mode",
-        "effect": "This firing mode is used when Ringnecks are used to attack targets that are Locked On. When attacking in this mode, any additional Ringnecks are treated as part of the same attack roll. If the attack roll indicates a hit, all Ringnecks that are committed to this attack counts as hitting the target, combining their damage together. Attacks made this way has Reliable X, corresponding to the number of Ringnecks used. Normal action costs apply when committing mounts.",
+        "effect": "This firing mode is used when Ringnecks are used to attack targets that are Locked On. When attacking in this mode, any additional Ringnecks are treated as part of the same attack roll. If the attack roll indicates a hit, all Ringnecks that are committed to this attack count as hitting the target, combining their damage. Attacks made this way have Reliable X, corresponding to the number of Ringnecks used. Normal action costs apply when committing mounts.",
         "barrage": true,
         "skirmish": true,
         "on_crit": "<div>If firing as part of a full HCMM Barrage action, target is now <strong>Impaired</strong> until the end of their next turn.</div>",
@@ -2383,6 +2383,12 @@
             "id": "tg_smart",
             "name": "Smart",
             "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+          },
+          {
+            "id": "tg_reliable",
+            "name": "Reliable {VAL}",
+            "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+            "val": "X"
           }
         ]
       }
@@ -2394,7 +2400,7 @@
     "source": "EFRD",
     "license": "VF-0 Phoenix",
     "license_id": "MSG0079_vf_zero_phoenix",
-    "license_level": 2,
+    "license_level": 1,
     "description": "<div>The AIM-180 Joint-Attack Medium-Ranged Air-to-Air Missile is a further development of the AMRAAM series of missiles, designed based on modern considerations in aerial combat with the introduction of Minovsky Particle interference. The presence of M-Particles interferes with the beyond visual range capabilities of its predecessors, forcing aircraft to close into visual range to engage targets. The JAMRAAM partially resolves this issue by having the missile interface with a frontline spotting craft once within terminal range of its target, riding along a laser beam emitted by the spotting craft's targetting module. While this involves putting said spotting craft in potential danger of engagement, proper coordination enables devastating alpha strikes.</div><div>The current Block 4 version of the JAMRAAM has been tuned to enable multi-purpose targetting, allowing it to be used to attack ground targets-particularly Mobile Suits.</div>",
     "effect": "<div>You may attack enemies with Lock-On applied to them as if this was Range 20.</div>",
     "mount": "Main",
@@ -2826,6 +2832,40 @@
       {
         "type": "Range",
         "val": 5
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_gpu_nine_gatling_cannon",
+    "name": "GPU-9 Gatling Cannon",
+    "source": "EFRD",
+    "license": "VF-0 Phoenix",
+    "license_id": "MSG0079_vf_zero_phoenix",
+    "license_level": 1,
+    "description": "A 35mm Triple-barrel Gatling Cannon. Currently being phased out for the more powerful GU-11.",
+    "mount": "Main",
+    "type": "Cannon",
+    "sp": "0",
+    "tags": [
+      {
+        "id": "tg_accurate",
+        "name": "Accurate",
+        "description": "Attacks made with this weapon receive +1 Accuracy.",
+        "val": "Reliable 2"
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
       }
     ]
   }
