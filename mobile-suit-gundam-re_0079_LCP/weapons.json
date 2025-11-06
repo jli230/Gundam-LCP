@@ -1201,7 +1201,7 @@
     "license_id": "",
     "license_level": 1,
     "description": "<div>The Mauler Point-Defense Laser Cannon is a high-energy laser weapon that are mounted as either a singular or pair of \"horns\" on the Phoenix's head module. Moderately effective against unprotected aircraft, the Mauler's real utility is in its capability of quickly shooting down incoming missiles and other various projectiles. Linked to the pilot's heads-up display, the Mauler can rapidly track targets to shoot down through the pilot's eye movements, similar to how target acquisition for most modern aerial weapons work.</div>",
-    "effect": "Gain the <strong>Intercept</strong> reaction.<br><br>1/round, when you consume Lock on for any attack, you may fire the Mauler as a Free Action. Attacks made this way gain +5 Range.",
+    "effect": "Gain the <strong>Intercept</strong> reaction.<br>1/round, when you consume Lock on for any attack, you may fire the Mauler as a Free Action. Attacks made this way gain +5 Range.",
     "mount": "Main",
     "type": "Cannon",
     "barrage": true,
@@ -2333,7 +2333,7 @@
     "profiles": [
       {
         "name": "Dumbfire Mode",
-        "effect": "This firing mode is used when Ringnecks are used to attack targets that are not Locked On. This weapon gains +1 Accuracy when attacking targets within Range 4",
+        "effect": "This firing mode is used when attacking targets that are not Locked On. This weapon gains +1 Accuracy when attacking targets within Range 4.",
         "barrage": true,
         "skirmish": true,
         "damage": [
@@ -2362,14 +2362,13 @@
       },
       {
         "name": "Lock-On Mode",
-        "effect": "This firing mode is used when Ringnecks are used to attack targets that are Locked On. When attacking in this mode, any additional Ringnecks are treated as part of the same attack roll. If the attack roll indicates a hit, all Ringnecks that are committed to this attack count as hitting the target, combining their damage. Attacks made this way have Reliable X, corresponding to the number of Ringnecks used. Normal action costs apply when committing mounts.",
+        "effect": "This firing mode is used when you consume Lock On. When attacking in this mode, any additional Ringnecks are treated as part of the same attack roll. If the attack roll indicates a hit, all Ringnecks that are committed to this attack count as hitting the target, combining their damage.<span> </span>Normal action costs apply when committing mounts.",
         "barrage": true,
         "skirmish": true,
-        "on_crit": "<div>If firing as part of a full HCMM Barrage action, target is now <strong>Impaired</strong> until the end of their next turn.</div>",
         "damage": [
           {
             "type": "Explosive",
-            "val": "1D3"
+            "val": "1D3+1"
           }
         ],
         "range": [
@@ -2385,10 +2384,9 @@
             "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
           },
           {
-            "id": "tg_reliable",
-            "name": "Reliable {VAL}",
-            "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
-            "val": "X"
+            "id": "tg_seeking",
+            "name": "Seeking",
+            "description": "This weapon has a limited form of self-guidance and internal propulsion, allowing it to follow complicated paths to its targets. As long as it’s possible to draw a path to its target, this weapon ignores cover and doesn’t require line of sight."
           }
         ]
       }

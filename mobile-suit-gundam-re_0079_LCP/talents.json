@@ -5,17 +5,17 @@
     "ranks": [
       {
         "name": "Danger Sense",
-        "description": "<div><span>All pattern attacks (ie. Blast, Burst, Cone) gain +1 Difficulty when targeting you, and you gain +1 Accuracy toward avoiding any pattern-based hostile Save effects.</span></div>",
+        "description": "<span>All non-self inflicted pattern attacks (ie. Blast, Burst, Cone) gain +1 Difficulty when targeting you, and you gain +1 Accuracy toward avoiding any pattern-based hostile Save effects.</span>",
         "exclusive": false
       },
       {
         "name": "Combat Instinct",
-        "description": "<div><span>When you avoid any pattern-based effect, move to any free space adjacent to the area of effect. 1/round, if you use this effect to move adjacent to a hostile character, they become Impaired until the end of their next turn.</span></div>",
+        "description": "<span>When you avoid any non-self inflicted pattern-based effect, move to any free space adjacent to the area of effect. 1/round, if you use this effect to move adjacent to a hostile character, they become Impaired until the end of their next turn.</span>",
         "exclusive": false
       },
       {
         "name": "Precognition",
-        "description": "<div><span>1/round, whenever you avoid any pattern-based effect, gain a Newtype die—a D6—up to a maximum of 3. Additionally, start every scene with one Newtype die. They last until expended or the end of the scene. Whenever you gain a Newtype die, roll the D6 and keep the result.</span></div><div><span>In addition, gain the Flatten Probability Reaction:</span></div>",
+        "description": "<span>1/round, whenever you avoid any non-self inflicted pattern-based effect, gain a Newtype die—a D6—up to a maximum of 3. Additionally, start every scene with one Newtype die. They last until expended or the end of the scene. Whenever you gain a Newtype die, roll the D6 and keep the result.</span><br/><span>In addition, gain the Flatten Probability Reaction:</span>",
         "actions": [
           {
             "name": "Flatten Probability",
