@@ -1,36 +1,5 @@
 [
   {
-    "id": "MSG0079_mgsevensix_mk_two_bullpup_assault_rifle",
-    "name": "MG76 Mk. 2 Bullpup Assault Rifle",
-    "source": "EFRD",
-    "license": "RGM-79 GM",
-    "license_id": "MSG0079_rgm_sevennine_gm",
-    "license_level": 1,
-    "description": "<div>Due to its bullpup configuration, the 90mm MG76 is very compact and lightweight in comparison to its contemporaries, making engaging targets in close quarters almost as easy as those at medium distance. Along with being easy to store and transport, this assault rifle is a common weapon for Federation Mobile Suits. The Mk. 2 MG76 possesses with modifications made after the Battle of Loum. The most noticeable changes is its extended barrel and improved hand grip, allowing for tighter shot placements and increased muzzle velocity. The addition of small tarp coverings over part seams has improved the service lifespan of the MG76 by preventing debris from getting into the weapon whether in space or land combat.</div>",
-    "mount": "Main",
-    "type": "Rifle",
-    "sp": 0,
-    "barrage": true,
-    "skirmish": true,
-    "cost": 1,
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "1d3+2"
-      }
-    ],
-    "range": [
-      {
-        "val": "10",
-        "type": "Range"
-      },
-      {
-        "type": "Threat",
-        "val": "3"
-      }
-    ]
-  },
-  {
     "id": "MSG0079_bowa_br_m_sevenninec_one_beam_spray_gun",
     "name": "BOWA BR-M-79C-1 Beam Spray Gun",
     "source": "EFRD",
@@ -519,34 +488,6 @@
       {
         "type": "Blast",
         "val": 1
-      }
-    ]
-  },
-  {
-    "id": "MSG0079_wanzergewehr_eightnine",
-    "name": "WanzerGewehr-89",
-    "source": "EFRD",
-    "license": "RGM-79 GM",
-    "license_id": "MSG0079_rgm_sevennine_gm",
-    "license_level": 4,
-    "description": "<div>One of a few mobile suit weapons where the bolt of the weapon has to be manually operated, the WanzerGewehr is the brainchild of a particularly eccentric German engineer who took inspiration from American methods of upscaling infantry weapons into mobile suit weapons. The barrel of the rifle was machined with unusually high precision in order to ensure excellent ballistic performance, which also consequently raised the production cost of the weapon. Further compounding this long-range performance and the subsequent price increase is the use of a 76.2mm round based on British anti-tank ammunition that hasn't been in production for over two centuries. The primary ammunition is an Armor-Penetrating Fragmenting Shell, a round that is fitted with an explosive filler that, upon penetrating the target, explodes the round into numerous shrapnel that is intended to cause it and the resulting spalling to ricochet at high speeds inside a mobile suit in order to destroy internal subsystems.</div>",
-    "mount": "Main",
-    "type": "Rifle",
-    "sp": 0,
-    "barrage": true,
-    "skirmish": true,
-    "cost": 1,
-    "on_crit": "<div>Target is Impaired until the end of their next turn.</div>",
-    "damage": [
-      {
-        "type": "Kinetic",
-        "val": "1d3+2"
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": "20"
       }
     ]
   },
@@ -2864,6 +2805,191 @@
       {
         "type": "Range",
         "val": 8
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_pavise_shield",
+    "name": "Pavise Shield",
+    "source": "EFRD",
+    "license": "RGM-79SP GM Sniper II",
+    "license_id": "gm_sniper_II",
+    "license_level": 2,
+    "description": "Modified from the Gunslinger GM's curved tower shield, the Pavise Shield bears a bipod mounting that allows for the shield to be set down as a temporary fortification. This also provides a stable mounting for most forms of ranged weaponry.",
+    "mount": "Main",
+    "type": "Melee",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_shield",
+        "name": "Shield",
+        "description": "This system is an energy shield of some kind."
+      },
+      {
+        "id": "tg_knockback",
+        "name": "Knockback {VAL}",
+        "description": "On a hit, the user may choose to knock their target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a Blast). Multiple Knockback effects stack with each other. This means that an attack made with a Knockback 1 weapon and a talent that grants Knockback 1 counts as having Knockback 2.",
+        "val": 1
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1D3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Deploy Shield",
+        "activation": "Quick",
+        "detail": "Plants the shield on the ground, acting as a Size 1 Hard Cover that has 10 HP and 2 Armor. Characters using the shield as cover may use the <strong>Ranging Shot</strong> protocol action. The shield may be picked up as a Quick Action if it remains intact. If it is destroyed, the weapon is counted as being Destroyed.",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Ranging Shot",
+        "activation": "Protocol",
+        "detail": "Target an enemy with a ranged attack, dealing half damage, burn, and heat on hit. Additionally, until the enemy moves, all attacks against them gains +1 Accuracy.",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_MG79_sniper_II",
+    "name": "MG79 Mk. 3 Bullpup Assault Rifle",
+    "source": "EFRD",
+    "license": "RGM-79SP GM Sniper II",
+    "license_id": "gm_sniper_II",
+    "license_level": 1,
+    "description": "<span>Developed from the Mk. 2 version, the MG79 Mk.3 retains the bullpup design of its predecessor. Reliable and easy to use, the MG79 improves the venerable weapon by adding an integrated laser rangefinder and video camera that directly interfaces with the machine’s targeting systems. Furthermore, the muzzle velocity has been given an increase through the usage of newer gunpowder blends, giving greater stopping power.</span>",
+    "mount": "Main",
+    "type": "Rifle",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1D3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ]
+  },
+  {
+    "id": "MSG_0079 Wanzergewehr",
+    "name": "Wanzergewehr K.98 Sniper Rifle",
+    "source": "EFRD",
+    "license": "RGM-79SP GM Sniper II",
+    "license_id": "gm_sniper_II",
+    "license_level": 2,
+    "description": "The WanzerGewehr is the brainchild of a particularly eccentric German engineer who took inspiration from American methods of upscaling infantry weapons into mobile suit weapons. <br><span>An oddity amongst mobile suit weapons, the Wanzergewehr is one of the few MS scale ballistic weapons that features a manual bolt.</span> A further quirk is the use of a 76.2mm round based on British anti-tank ammunition that had dated back to the Second World War. <span>While the smaller than average caliber for a MS sized rifle has been questioned by many, their doubts were quickly silenced upon seeing the WanzerGewehr’s impressive range, in no small part due to </span>the barrel of the rifle being machined with unusually high precision in order to ensure excellent ballistic performance.<br>The primary ammunition is an Armor-Penetrating Fragmenting Shell, a round that is fitted with an explosive filler that, upon penetrating the target, explodes the round into numerous shrapnel that is intended to cause the resulting spalling to ricochet at high speeds inside a mobile suit in order to destroy internal subsystems. ",
+    "mount": "Heavy",
+    "type": "Rifle",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_ordnance",
+        "name": "Ordnance",
+        "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+      },
+      {
+        "id": "tg_accurate",
+        "name": "Accurate",
+        "description": "Attacks made with this weapon receive +1 Accuracy."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1D6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 25
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_sniper_beam_rifle",
+    "name": "XBR-X-79YK Sniper Beam Rifle",
+    "source": "EFRD",
+    "license": "RGM-79SP GM Sniper II",
+    "license_id": "gm_sniper_II",
+    "license_level": 3,
+    "description": "<span>Developed by Brash corporation, the XBR-X-79XK is a super large beam weapon developed with a sniper-use beam generation system and equipped with a large sight scope. &nbsp;</span><br/><span>Though the weapon is capable of producing a continuous beam for up to six seconds, the combined output of just the gun’s internal battery and the Mobile Suit’s generator is insufficient for sustained fire, and so additional energy from an external generator option is required. However, even without an external generator there is enough stored energy for two volleys of fire, but with the long minimum recharge time of 120 seconds it was initially difficult to deploy effectively in combat.</span>",
+    "effect": "<span>When at an elevation above the target, you may fire a Line 5 area of effect within Range and LoS in any direction.</span>",
+    "mount": "Heavy",
+    "type": "Rifle",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_ordnance",
+        "name": "Ordnance",
+        "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 2
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2D6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 20
+      },
+      {
+        "type": "Line",
+        "val": 5
       }
     ]
   }

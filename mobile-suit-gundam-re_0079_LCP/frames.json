@@ -1462,5 +1462,76 @@
     "specialty": false,
     "image_url": "",
     "y_pos": 0
+  },
+  {
+    "id": "gm_sniper_II",
+    "license_id": "gm_sniper_II",
+    "source": "EFRD",
+    "license_level": 2,
+    "name": "RGM-79SP GM Sniper II",
+    "mechtype": [
+      "Artillery",
+      "Striker"
+    ],
+    "variant": "",
+    "description": "<span>Developed from the well liked RGM-79SC GM Sniper Custom and based on the GM Gunslinger, the RGM-79SP Sniper II is the premiere Federation sniper mobile suit. The last of the GM-Type units and most advanced of the GM Sniper line, the Sniper II was unfortunate in its production, being developed late into the One Year War. Regardless of its late arrival, the machine proved itself to be a powerful machine, even rivaling the legendary Gundam itself. A master of long-range shooting, the Sniper II was used to take out priority targets throughout the course of the war. Even then, the Sniper II was also competently capable of engaging enemies within close to medium ranges. Only a few GM Sniper IIs were manufactured due to their late war development, yet the frame remains in active service long after the OYW thanks to its excellent performance and shooting capabilities.</span>",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Hybrid Sights",
+        "use": "",
+        "description": "<span>1/round, gain +1 Accuracy when attacking with a ranged weapon at range 10 or further, and gain +1d6 bonus damage when attacking with a ranged weapon at range 10 or less.</span>"
+      },
+      {
+        "name": "Step Off",
+        "use": "",
+        "description": "<span>1/round when striking with a melee attack, the attack gains 2 additional knockback. Afterwards, move up to speed in any direction.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Hermes Type 1 Targetting Visor",
+      "active_name": "Dead Eye",
+      "active_effect": "<span>When you critically hit a hostile character with a Ranged Attack, you may as a Free Action expend a Core Power to inflict one of the following effects, which lasts until the end of the enemy’s turn:</span><br><strong>Disarm</strong>: Select a weapon or system of the target and destroy it. They may no longer use the destroyed weapon or system. They must make an Engineering Save at +1 Difficulty or remain unable to use the weapon or system until their next turn.<br/><strong>Cockpit Snipe</strong>: Target must make a Hull save at +1 Difficulty. On failure, target becomes Stunned until the end of their next turn. On success, target instead becomes Impaired until the end of their next turn.<br><strong>Sever Comms</strong>: Your target becomes Jammed or Impaired. Flip a coin to decide the effect. They must make a Systems Save at +1 Difficulty or remain Jammed or Impaired until their next turn.&nbsp;<span><br>This ability is </span><strong>Efficient</strong><span> and will refund 1 Core Point at the end of any scene in which this ability was used.</span>",
+      "activation": "Free",
+      "description": "<span>Mounted on the head unit of the GM Sniper II is a specialized head visor created for precision shooting. It is fitted with built-in compound sensors, laser rangefinders, powerful cameras, and image stabilizers that give the pilot unparalleled picture quality. Alongside the sensors and coolers within the head unit itself, pilots could accurately hit targets no matter how far they were.</span>",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/bYkG9NV.png",
+    "y_pos": "16"
   }
 ]

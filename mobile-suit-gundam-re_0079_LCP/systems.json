@@ -1056,5 +1056,68 @@
         "description": "This system requires a quick action to Activate."
       }
     ]
+  },
+  {
+    "id": "MSG0079_dashboost",
+    "name": "Quick Cycling Thrust Nozzles",
+    "source": "EFRD",
+    "license": "RGM-79SP GM Sniper II",
+    "license_id": "gm_sniper_II",
+    "license_level": 1,
+    "effect": "Gain access to the <strong>Reposition</strong> protocol action.",
+    "type": "System",
+    "sp": "2",
+    "description": "<em><span>A common mistake made by pilots, both new and old, is not thinking their actions through. Regrets are had when they’re in the middle of something, regret assails their choices, and they curse their old selves from a few seconds ago. With just a quick tweak to their thrusters, any regrets quickly melt away as fate decides to be just so ever lenient with them.</span></em>",
+    "actions": [
+      {
+        "name": "Reposition",
+        "activation": "Protocol",
+        "detail": "<span>You may move up to your Speed in any direction, ignoring Ordnance. On the turns you choose to use this System, you may not make any Voluntary Movement other than this one</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_Condor_Drone",
+    "name": "Condor Targeting Drone",
+    "source": "EFRD",
+    "license": "RGM-79SP GM Sniper II",
+    "license_id": "gm_sniper_II",
+    "license_level": 3,
+    "effect": "<span>1/scene, you may launch one targeting drone as a Quick Action, deploying it within Line of Sight and Sensors. The drone hovers at Height 10 and is permanently invisible.</span>",
+    "type": "System",
+    "sp": "3",
+    "description": "<span>In a bid to improve pilot battlefield awareness, the Condor is the result of attaching as many cameras, laser rangefinders and designators onto a small drone frame. Launched from a mobile suit and maintaining a connection via optic fiber cables, this drone hovers high in the air and constantly streams targeting information back to its pilot. Artillery units have found great use of this drone by being able to strike their targets far beyond their expected effective ranges.</span>",
+    "deployables": [
+      {
+        "name": "Condor Targeting Drone",
+        "type": "Drone",
+        "detail": "<span>Enemies within Range 10 and Line of Sight do not benefit from any cover, and any ranged attack made against them has +1 Accuracy within a weapon’s range or threat. Additionally, these enemies can be attacked with ranged weapons outside of their effective range for +2 Difficulty.</span>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": "0",
+        "hp": "5",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
   }
 ]
