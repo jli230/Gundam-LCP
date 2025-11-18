@@ -1533,5 +1533,131 @@
     "specialty": false,
     "image_url": "https://i.imgur.com/bYkG9NV.png",
     "y_pos": "16"
+  },
+  {
+    "id": "MSG0079_x_one_methuss",
+    "license_id": "MSG0079_vf_zero_phoenix",
+    "source": "EFRD",
+    "license_level": 2,
+    "name": "X-1 Methuss",
+    "mechtype": [
+      "Striker"
+    ],
+    "variant": "VF-0 Phoenix",
+    "description": "<span>After the completion of the MSA-005 Methuss, Anaheim Electronics started to explore further development potential of the mobile suit. The design team for the MSA-005X-1 Methuss X-1 included former members of the Hervic Company, which developed the FF-X7 Core Fighter during the One Year War. The X-1 was designed for air superiority in a 1G environment, resulting in its mobile armor mode resembling an air combat fighter. Stealth properties built into the design of the X-1 made it difficult to detect by radar. The X-1’s clipped delta wing design allowed for stable, high-speed flight. Its tail stabilizers, which mounted electronic equipment, were later used by the Zeta Plus series and other mobile suits.</span>",
+    "mounts": [
+      "Aux/Aux",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 6,
+      "evasion": 12,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Fragile",
+        "use": "",
+        "description": "<span>The X-1 makes all Hull Checks and Saves with +1 Difficulty.</span>"
+      },
+      {
+        "name": "Calibrated Weapon",
+        "use": "",
+        "description": "<span>When you build this mech or Rest, choose 1 Ranged Weapon. 1/turn, you ignore the Heat (self) and Ordnance tag of that weapon.</span>"
+      },
+      {
+        "name": "Overpowered Reactor",
+        "use": "",
+        "description": "<span>When the X-1 is in the Danger Zone, all of its weapons that would deal kinetic or explosive damage instead deal energy, and your first successful attack that round deals +1d6 Bonus Damage.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "AIR SUPERIORITY KIT",
+      "active_name": "Hyper-Active Intercept Suite",
+      "active_effect": "<strong><span>Trigger:</span></strong><span> When a hostile character moves within Range 5, even if that movement does not provoke Reactions.</span><br/><strong><span>Effect:</span></strong><span> You may expend your Overwatch reaction to Barrage against them. This ignores restrictions against allowing Superheavy weapons to fire as a reaction, but if you don’t fire a Superheavy with this action, you may instead Barrage with up to 3 Mounts. This action is </span><strong><span>Efficient</span></strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span>",
+      "activation": "Reaction",
+      "description": "<span>The X-1's design team conducted trials at the California Base, including transformation tests at subsonic speeds to observe the X-1’s adaptability in changing combat situations. However, the X-1 was unable to withstand the shock of transformation at subsonic speed and was destroyed. However, the data gathered contributed to improving the atmospheric flight performance of the MSZ-006A1 Zeta Plus A1.</span>",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [
+        {
+          "name": "Hyper-Active Intercept",
+          "activation": "Reaction",
+          "detail": "<span>You may expend your Overwatch reaction to Barrage against them. This ignores restrictions against allowing Superheavy weapons to fire as a reaction, but if you don’t fire a Superheavy with this action, you may instead Barrage with up to 3 Mounts. This action is </span><strong><span>Efficient</span></strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span>",
+          "cost": "1",
+          "pilot": false,
+          "damage": [],
+          "range": [
+            {
+              "type": "Range",
+              "val": 5
+            }
+          ],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": "<span>When a hostile character moves within Range 5, even if that movement does not provoke Reactions.</span>"
+        }
+      ],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Transformable Stealth Mobile Armor",
+      "passive_effect": "<span>As a Protocol, the X-1 may change into one of the following modes. It may choose to start a scene in any form.<br></span><strong><span>Mobile Suit mode:</span></strong><br/><ul><li><span>May treat all Ranged Energy Weapons as CQB Weapons with Threat 3.</span><br/></li><li><span>Arm Beam Gun gains Accurate tag.</span><br/></li><li><span>1/round, as a reaction, you may first Lock on to a hostile character attempting to Scan, Lock on, or Attack you.</span><br/></li></ul><strong><span>Mobile Armor mode:</span></strong><br/><ul><li><span>May count all movement as Flying.</span><br/></li><li><span>Hostiles attempting to Scan or Lock on against the X-1 Methuss must first pass a Systems save. On a Failure, they gain Lock on.</span><br/></li><li><span>1/round you may Boost as a Protocol.</span><br/></li><li><span>May not make melee attacks other than Ram.</span><br/></li></ul>",
+      "passive_actions": [
+        {
+          "name": "Change Mode",
+          "activation": "Protocol",
+          "detail": "<span>The X-1 may switch to a mode it is not already in.</span>",
+          "cost": "1",
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        },
+        {
+          "name": "Full Afterburners",
+          "activation": "Protocol",
+          "detail": "You may Boost as a Protocol",
+          "cost": "1",
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [
+        "MSG0079_arm_beam_gun"
+      ],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "",
+    "y_pos": 0
   }
 ]

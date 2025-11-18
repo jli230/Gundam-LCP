@@ -2992,5 +2992,37 @@
         "val": 5
       }
     ]
+  },
+  {
+    "id": "MSG0079_arm_beam_gun",
+    "name": "Arm Beam Gun",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "description": "<em><span>One on each forearm, the pair of arm beam guns flip forward when in use, and are powered directly by the X-1's generator. The particle beam fired from the weapon can penetrate any armor not treated with specific countermeasures. Each arm beam gun is power rated at 2.0 MW.</span></em>",
+    "effect": "<span>When you Overwatch with this weapon, it deals an additional 3 damage and gains AP.</span>",
+    "mount": "Main",
+    "type": "CQB",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "cost": "1",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ]
   }
 ]
