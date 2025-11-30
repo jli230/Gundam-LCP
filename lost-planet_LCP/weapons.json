@@ -1,0 +1,230 @@
+[
+  {
+    "id": "LPVS-VS_Saw",
+    "name": "VS Saw",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "description": "",
+    "mount": "Main",
+    "type": "Melee",
+    "sp": 0,
+    "effect": "<div>After attacking with the VS Saw, you may move one space in any direction. This move ignores engagement and does not provoke reaction.</div>",
+    "barrage": true,
+    "skirmish": true,
+    "on_crit": "<div>Inflict Shredded on target.</div>",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_overkill",
+        "name": "OVERKILL",
+        "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
+      }
+    ]
+  },
+  {
+    "id": "LPVS-SMG",
+    "name": "MGP/V-79-1 Machine Pistol",
+    "source": "NEVEC",
+    "license": "PTX-140 Hardballer",
+    "license_id": "LPVS-Hardballer",
+    "license_level": 1,
+    "description": "<div>Created for close quarter battles, the MGP/V-79-1 Machine Pistol is a compact rapid-fire weapon that can usually be taken as a supplementary weapon to larger mech weapons or dual-wielded. The sizable magazine for the machine pistol also allows for it to be used in a \"Bandit Shooting\" stance, scattering shells over a wide arc to attack a large concentration of enemies.</div>",
+    "mount": "Auxiliary",
+    "type": "Rifle",
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "Standard Fire",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 8
+          },
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ]
+      },
+      {
+        "name": "Bandit Shooting",
+        "effect": "<div>This weapon must be reloaded after being used in this profile.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Cone",
+            "val": 5
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_loading",
+            "name": "LOADING",
+            "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+          },
+          {
+            "id": "tg_inaccurate",
+            "name": "INACCURATE",
+            "description": "Attacks made with this weapon receive +1 Difficulty."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LPVS-Super-Hardballer-Blade",
+    "name": "LPB-999 EMF Blade",
+    "source": "NEVEC",
+    "license": "PTX-140 Hardballer",
+    "license_id": "LPVS-Hardballer",
+    "license_level": 3,
+    "description": "<div>A set of large heat-resistant blades, the LPB-999's true power is shown when linked directly to the mech's reactor—causing the blades to be encased in an azure sheathe of burning plasma. While potentially causing long-term damage to the reactor, the EMF Blade's terrifying performance in close combat turns any pilot capable of wielding it into a hurricane of destruction as the blades cleaves through most forms of heavy-grade armor.</div>",
+    "mount": "Superheavy",
+    "type": "Melee",
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "Uncharged",
+        "effect": "<div>Unlike other Superheavy weapons, this weapon can be used with the basic profile to Skirmish and can be used as part of a barrage (counting as a single mount's weapon).<br>You may charge this weapon as a quick action. While charged, you are SLOWED, take 4 Heat at the start of your turn, and can no longer use the EMF Blade with SKIRMISH. At the start of any of your turns while it is charged, it has the Charged profile.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          },
+          {
+            "type": "Line",
+            "val": 2
+          }
+        ],
+        "actions": [
+          {
+            "name": "Charge EMF Blade",
+            "activation": "Quick",
+            "detail": "<div>Charge the EMF Blade. At the start of any of your turns while the EMF Blade is Charged, it uses the \"Charged\" profile. You become SLOWED, and benefit from soft cover. Additionally, gain 4 Heat at the start of your turn.<br>The \"Charged\" profile cannot be used to Skirmish.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      },
+      {
+        "name": "Charged",
+        "effect": "<div>Unlike other Superheavy weapons, this weapon can be used with the basic profile to Skirmish and can be used as part of a barrage (counting as a single mount's weapon).<br>You may charge this weapon as a quick action. While charged, you are SLOWED, take 4 Heat at the start of your turn, and can no longer use the EMF Blade with SKIRMISH. At the start of any of your turns while it is charged, it has the Charged profile.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "on_attack": "<div>While charged, this weapon deals 30 AP Energy Damage when it hits objects or pieces of terrain. In addition, it creates a Burst 1 zone of burning terrain that inflicts 2 AP Energy Damage to all characters within it and 30 AP Energy Damage to all objects or pieces of terrain within it.<br>This weapon loses its charge when you hit a target, when you disperse its charge as a free action, or when you become STUNNED or SHUT DOWN.</div>",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "2d6+10"
+          }
+        ],
+        "range": [
+          {
+            "type": "Cone",
+            "val": 3
+          }
+        ],
+        "actions": [
+          {
+            "name": "Disperse Charge",
+            "activation": "Free",
+            "detail": "<div>Initiate emergency shunts, shutting down the EMF Blade. Returns the EMF Blade to its Uncharged State.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap",
+            "name": "ARMOR-PIERCING (AP)",
+            "description": "Damage dealt by this weapon ignores Armor."
+          },
+          {
+            "id": "tg_reliable",
+            "name": "RELIABLE {VAL}",
+            "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+            "val": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LPVS-Hardballer-Cannon",
+    "name": "CRC/V-80 Punt Gun",
+    "source": "NEVEC",
+    "license": "PTX-140 Hardballer",
+    "license_id": "LPVS-Hardballer",
+    "license_level": 2,
+    "description": "<div>This retooled smoothbore tank cannon has been shorted somewhat from its original form, now equipped to fire high-velocity canister shot in order to knock enemy mechs off-balance—an oftentimes fatal situation in a close-quarters battle.</div>",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "on_crit": "<div>Target is knocked <strong>Prone</strong>.</div>",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "name": "KNOCKBACK {VAL}",
+        "description": "On a hit, the user may choose to knock their target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a Blast). Multiple Knockback effects stack with each other. This means that an attack made with a Knockback 1 weapon and a talent that grants Knockback 1 counts as having Knockback 2.",
+        "val": 1
+      }
+    ]
+  }
+]
