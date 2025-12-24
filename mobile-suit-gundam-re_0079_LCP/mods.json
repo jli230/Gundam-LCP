@@ -113,7 +113,7 @@
     "license": "MS-09 Dom",
     "license_id": "MSG0079_ms_zeronine_dom",
     "license_level": 2,
-    "effect": "<div>All bonus damage becomes Burn damage. The blast radius of this weapon is also set aflame, and will inflict Burn 1 on anyone who moves through it until the end of your next turn.</div>",
+    "effect": "<span>When you attack with the modded weapon, you may fire with special napalm ammunition, which turns your weapon’s damage type into Burn until the attack is resolved. Whenever you attack this way, you deal half damage on hit, can’t deal bonus damage, and your weapon is unloaded as if it had the Loading tag. Hit or miss, If the weapon this is applied to attacks in a pattern, the area of effect is covered in lingering flames, causing all characters who end their turn or enter the zone for the first time in a round to take 2 Burn. Characters in this zone additionally automatically fail all Engineering checks to clear Burn. This lingering effect lasts until the end of your next turn.</span>",
     "sp": "2",
     "description": "",
     "allowed_types": [
@@ -183,7 +183,7 @@
     "license": "YMS-15 Gyan",
     "license_id": "MSG0079_yms_onefive_gyan",
     "license_level": 1,
-    "effect": "<div>The weapon gains +2 Accuracy, but its damage profile is reduced solely to damage rolled by dice or Reliable effects. \"Flat\" damage must be ignored - thus, a weapon with a 1d6+4 damage profile, would become a weapon with a 1d6 damage profile. </div>",
+    "effect": "<span>The weapon gains +2 Accuracy, but its base damage profile is reduced solely to damage rolled by dice or Reliable effects. \"Flat\" damage must be ignored - thus, a weapon with a 1d6+4 damage profile, would become a weapon with a 1d6 damage profile.</span>",
     "sp": "1",
     "description": "<div>An optional hilt adjustment for various melee weapons, the pistol grip is an old fashioned type of hilt intended to augment the user's fine control of a blade, at the expense of killing power. Intended for gentlemanly duels, this modification is seldom seen on the battlefield - but a few eccentrics find it familiar and indispensable in duels with enemy mobile suits, when landing the first strike can mean life or death.</div>",
     "allowed_types": [
@@ -222,7 +222,7 @@
     "license": "YMS-15 Gyan",
     "license_id": "MSG0079_yms_onefive_gyan",
     "license_level": 3,
-    "effect": "<div>Pick one Main or larger weapon without the Reliable or Overkill tags. That weapon gains Reliable (4) and 1 Heat (Self)</div>",
+    "effect": "<span>Pick one Main or larger weapon without the Overkill tag. That weapon gains Reliable (4) and 1 Heat (Self). If the weapon already has Reliable, it gains +2 Reliable.</span>",
     "sp": "3",
     "description": "",
     "allowed_types": [
@@ -257,37 +257,6 @@
         "val": 1
       }
     ]
-  },
-  {
-    "id": "MSG0079_enhanced_traversal_hydraulics",
-    "name": "Enhanced Traversal Hydraulics",
-    "source": "ZN",
-    "license": "MS-09 Dom",
-    "license_id": "MSG0079_ms_zeronine_dom",
-    "license_level": 3,
-    "effect": "<div>1/Round, upon resolving a successful attack within your Sensors range, you may take 1d3+2 heat to make another attack with the same weapon at another target within Sensors range as a free action.</div>",
-    "sp": "3",
-    "description": "",
-    "allowed_types": [
-      "Rifle",
-      "Cannon",
-      "Launcher",
-      "CQB"
-    ],
-    "allowed_sizes": [
-      "Main",
-      "Heavy",
-      "Auxiliary"
-    ],
-    "restricted_types": [
-      "Nexus",
-      "Melee"
-    ],
-    "restricted_sizes": [
-      "Superheavy"
-    ],
-    "added_damage": [],
-    "added_range": []
   },
   {
     "id": "MSG0079_aural_suppression_suite",
@@ -428,5 +397,93 @@
     "restricted_sizes": [],
     "added_damage": [],
     "added_range": []
+  },
+  {
+    "id": "MSG0079_round-energizer",
+    "name": "Round Energizer",
+    "source": "NEVEC",
+    "license": "GTF-13 Vensa",
+    "license_id": "MSG0079_shorty",
+    "license_level": 3,
+    "effect": "<span>The weapon this mod is attached to gains Overkill. Whenever this weapon triggers Overkill, it deals +1 Burn damage until the attack resolves.</span>",
+    "sp": "2",
+    "description": "",
+    "allowed_types": [
+      "Rifle",
+      "Cannon",
+      "Launcher",
+      "CQB",
+      "Nexus"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "restricted_types": [
+      "Melee"
+    ],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": [],
+    "added_tags": [
+      {
+        "id": "tg_overkill",
+        "name": "Overkill",
+        "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_parry",
+    "name": "Reactive Targeting Uplink",
+    "source": "ZN",
+    "license": "YMS-15 Gyan",
+    "license_id": "MSG0079_yms_onefive_gyan",
+    "license_level": 2,
+    "effect": "<span>Gain the </span><strong><span>Perfect Parry </span></strong><span>Reaction.</span>",
+    "sp": "2",
+    "description": "",
+    "allowed_types": [
+      "CQB",
+      "Melee"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main",
+      "Heavy"
+    ],
+    "restricted_types": [
+      "Nexus",
+      "Launcher",
+      "Cannon",
+      "Rifle"
+    ],
+    "restricted_sizes": [
+      "Superheavy"
+    ],
+    "added_damage": [],
+    "added_range": [],
+    "added_tags": [
+      {
+        "id": "tg_reaction",
+        "name": "Reaction",
+        "description": "This system can be activated as a reaction."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Perfect Parry",
+        "activation": "Reaction",
+        "detail": "<span>Counterattack with the modded weapon. On a hit, your rolled damage is subtracted from your enemy’s rolled damage. If you deal more damage, the remainder is dealt to the enemy. If this Reaction results in you not taking any damage, the enemy’s attack is considered to have missed for purposes of traits, systems, and talents.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<span>An enemy within threat has hit you with a melee attack, and damage has been rolled.</span>"
+      }
+    ]
   }
 ]

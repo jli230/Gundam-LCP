@@ -113,9 +113,9 @@
     "id": "MSG0079_mip_bsix_cracker_grenade",
     "name": "MIP-B6 Cracker Grenade",
     "source": "ZN",
-    "license": "",
-    "license_id": "",
-    "license_level": 0,
+    "license": "MS-06 Zaku II",
+    "license_id": "MSG0079_ms_zerosix_zaku_ii",
+    "license_level": 2,
     "effect": "<div>Gain 4 charges. These charges may be used for either Cracker Frag Grenade or Cracker Flash Grenade, and are replenished with a Full Repair.</div>",
     "type": "System",
     "sp": "2",
@@ -128,6 +128,12 @@
       {
         "id": "tg_arcing",
         "val": null
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 4
       }
     ],
     "actions": [
@@ -385,7 +391,7 @@
       {
         "name": "Limiter Override",
         "activation": "Protocol",
-        "detail": "<div>Until the end of your next turn, any self-inflicted heat damage received over heat cap is converted into AP energy instead of causing an overehat.</div>",
+        "detail": "Until the end of your next turn, any self-inflicted heat damage received over heat cap is converted into AP energy instead of causing an overheat.",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
@@ -666,7 +672,7 @@
     "license": "MS-06X Psycommu Zaku",
     "license_id": "fdsafdjsaiofghdsia",
     "license_level": 2,
-    "effect": "<span>Select any free space within Sensors and Line of Sight to deploy the I-Field Cage Projector. It may be redeployed or recalled as a Quick Action.</span>",
+    "effect": "<span>Select any free space within Sensors and Line of Sight to deploy the I-Field Cage Projector. It may be redeployed or recalled as a Quick Action. This drone has Resistance to Energy damage.</span>",
     "type": "System",
     "sp": "3",
     "description": "",
@@ -681,7 +687,7 @@
         "id": "tg_resistance",
         "name": "Resistance",
         "description": "Reduce all damage from a source you have resistance to by half",
-        "val": "Energy"
+        "val": 0
       }
     ],
     "deployables": [
@@ -732,7 +738,7 @@
       {
         "name": "Activate Butterfly Impulse",
         "activation": "Full Tech",
-        "detail": "<span>Make a tech attack against a character within Sensors and Line of Sight. If successful, your target takes 1 Heat and is Locked-on. You may then select another character within Range 5 of your original target and make another tech attack. If successful, they also take 1 Heat and are Locked-on. The chain continues until there are no more valid targets or until a tech attack fails. You may pass this effect through willing allied characters—if you do so, they instead clear 1 Heat. This system cannot target the same target more than once.</span>",
+        "detail": "<span>Make a tech attack against a character within Sensors and Line of Sight. If successful, your target takes 1 Heat and is Locked-on. You may then select another character within Range 5 of your original target and make another tech attack. If successful, they also take 1 Heat and are Locked-on. The chain continues until there are no more valid targets or until a tech attack fails. You may pass or begin this effect through willing allied characters—if you do so, they instead may clear 1 Heat. This system cannot target the same target more than once.</span>",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
@@ -1117,6 +1123,517 @@
         "speed": "",
         "pilot": false,
         "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_T-ENG-R",
+    "name": "Thermal Energy Regulator",
+    "source": "NEVEC",
+    "license": "GTF-13 Vensa",
+    "license_id": "MSG0079_shorty",
+    "license_level": 1,
+    "effect": "<span>Add +1 Heat Cap to your Mech. 1/scene, when rolling an Engineering Check caused by Overheat, gain +1 Accuracy.</span>",
+    "type": "System",
+    "sp": "1",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_harmonizer",
+    "name": "Harmonizer-Class Reactor Module",
+    "source": "NEVEC",
+    "license": "GTF-13 Vensa",
+    "license_id": "MSG0079_shorty",
+    "license_level": 2,
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_full_action",
+        "name": "Full Action",
+        "description": "This system requires a full action to Activate."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Activate Harmonizer",
+        "activation": "Full",
+        "detail": "<span>As a Full Action, clear all Heat. Your mech recovers an equivalent amount of HP. Whenever this System is used, it also restores the same amount of HP, or clears the Down and Out Status, to a Character of your choice inside your mech.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_ahab",
+    "name": "Ahab-Class Combat Computer",
+    "source": "NEVEC",
+    "license": "GTF-13 Vensa",
+    "license_id": "MSG0079_shorty",
+    "license_level": 3,
+    "effect": "<span>Your mech gains the AI tag and the AHAB Protocol.</span>",
+    "type": "AI",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_ai",
+        "name": "AI",
+        "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or COMP/CON unit installed that can act somewhat autonomously. A pilot can choose to hand over the controls to their AI or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_protocol",
+        "name": "Protocol",
+        "description": "This system can be activated as a free action, but only at the start of the user’s turn. Another action might be needed to deactivate it."
+      }
+    ],
+    "actions": [
+      {
+        "name": "AHAB Protocol",
+        "activation": "Protocol",
+        "detail": "<span>As a Protocol, apply a </span><strong><span>Hunter’s Mark</span></strong><span> to the largest character, hostile or allied, within Line of Sight (if all characters within Line of Sight are the same size, Ahab selects the closest character instead). Until you deactivate this System, the marked character is destroyed, or the Scene ends, the following effects are active:</span><br/><ul><li><span>You gain +3 Difficulty on attacks made against targets who are not affected by your </span><strong><span>Hunter’s Mark, </span></strong><span>and can not benefit from Accuracy when attacking any other character but your current mark.</span><br/></li><li><span>If you have lost Line of Sight on your mark, you must spend all your voluntary movement, including Boost, to reestablish Line of Sight.</span><br/></li><li><span>When targeting your mark, you ignore Cover, Invisible, and Hidden.</span><br/></li><li><span>Gain +1 Accuracy on all Ranged attacks against your mark.</span><br/></li><li><span>If your mark is larger than you, all Ranged attacks against them gain +1d6 bonus damage on a critical hit.</span><br/><span>Because Ahab is so rabid and angry, you can consider it to be in a state of pseudo-cascade even during regular use. To disable Ahab before the destruction of your target, you have to Shut Down your mech.</span><br/></li></ul>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_blowback",
+    "name": "Blowback Leg Module",
+    "source": "NEVEC",
+    "license": "GTB-22 Faze",
+    "license_id": "MSG0079_hopper",
+    "license_level": 1,
+    "effect": "<span>Gain Resistance to fall damage. Whenever you land after falling, characters of your choice adjacent to your landing spot are pushed back and amount of spaces equal to the fall damage you would take before Resistances, Reductions, and Immunity.</span>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_passrail",
+    "name": "Passenger Rails",
+    "source": "NEVEC",
+    "license": "GTB-22 Faze",
+    "license_id": "MSG0079_hopper",
+    "license_level": 1,
+    "effect": "<span>These rails mounted on either side of your machine allow you to carry up to two size ½ characters. Mounting a Passenger Rail is a Quick Action, and as long as the character is mounted, they share your space, move when you move, and may take actions as usual, drawing Line of Sight, Sensors, and Range from your space. Dismounting a Passenger Rail may be done as a Free Action. Characters who mount your Passenger Rails may be targeted separately from you.</span>",
+    "type": "System",
+    "sp": "1",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_ewac",
+    "name": "EWAC Surveillance Suite",
+    "source": "NEVEC",
+    "license": "GTB-22 Faze",
+    "license_id": "MSG0079_hopper",
+    "license_level": 2,
+    "effect": "<span>Gain access to the </span><strong><span>Ping </span></strong><span>Full Tech Action.</span>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_full_tech",
+        "name": "Full Tech",
+        "description": "This tech can be used as a Full Tech Action"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Ping",
+        "activation": "Full Tech",
+        "detail": "<span>All hostile characters with Hidden or Invisible within Line of Sight and half-Sensors must succeed at an Agility Save or else be unable to benefit from Hidden or Invisible until the start of your next turn. Mines within the same area of effect are automatically revealed for the same duration. So long as they are revealed, they may be targeted without penalty, detonating on a successful attack.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_daisychain",
+    "name": "Laser Detonator",
+    "source": "NEVEC",
+    "license": "GTB-22 Faze",
+    "license_id": "MSG0079_hopper",
+    "license_level": 3,
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_quick_tech",
+        "name": "Quick Tech",
+        "description": "This tech can be used as a Quick Tech Action"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Daisy Chain",
+        "activation": "Quick",
+        "detail": "<span>Select a mine within Sensors and Line of Sight, allied or hostile, primed or not. Make a Tech Attack against E-Defense 6—on a success, the mine detonates. Other mines caught in the target mine’s area of effect automatically detonate, whether or not they are primed.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Tune IFF",
+        "activation": "Quick",
+        "detail": "<span>Select a Blast 3 area, completely in Sensors and Line of Sight. All mines in this area, no matter who they were originally deployed by, only detonate if a hostile character triggers them. This effect lasts until the end of the scene.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_wrist-shield",
+    "name": "Wrist Shield",
+    "source": "NEVEC",
+    "license": "GAH-42 Bleed",
+    "license_id": "MSG0079_bleed",
+    "license_level": 1,
+    "effect": "<span>Whenever you Brace, gain the following benefits until the end of your next turn:</span><br/><ul><li><span>Before damage is applied, gain 2 + Grit Overshield.</span><br/></li><li><span>If you take Structure Damage, you do not roll the Structure table.</span><br/></li></ul>",
+    "type": "Shield",
+    "sp": "1",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_shield",
+        "name": "Shield",
+        "description": "This system is an energy shield of some kind."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_latch-control",
+    "name": "Latch/Control Claws",
+    "source": "NEVEC",
+    "license": "GAH-42 Bleed",
+    "license_id": "MSG0079_bleed",
+    "license_level": 2,
+    "effect": "<span>Gain access to the </span><strong><span>Latch </span></strong><span>and </span><strong><span>Control </span></strong><span>Reactions.</span>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_reaction",
+        "name": "Reaction",
+        "description": "This system can be activated as a reaction."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Latch",
+        "activation": "Reaction",
+        "detail": "<span>Roll a Hull Check. On a success, you remain adjacent to the character of your choice. Movement follows and mirrors the larger character. If you are the same size as your target, you may choose who counts as the larger character.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": "<span>You or a character you are adjacent to is being moved out of adjacency by any means.</span>"
+      },
+      {
+        "name": "Control",
+        "activation": "Reaction",
+        "detail": "<span>Roll a contested Hull Check. If you win, you may redirect the attack to a target of your choice within the weapon’s Range or Threat, drawn from and including the attacker, at +1 Difficulty. If you lose, the attack is redirected towards yourself, automatically hitting.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": "<span>A character you are adjacent to is attacking with a weapon.</span>"
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_EMC",
+    "name": "EM CHarges",
+    "source": "NEVEC",
+    "license": "GAH-42 Bleed",
+    "license_id": "MSG0079_bleed",
+    "license_level": 3,
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_grenade",
+        "name": "Grenade",
+        "description": "As a quick action, this explosive or other device can be thrown to a space within line of sight and the specified Range."
+      },
+      {
+        "id": "tg_mine",
+        "name": "Mine",
+        "description": "As a quick action, this device can be planted in an adjacent, free and valid space on any surface, but not adjacent to any other mines. Upon deployment, it arms at the end of the deploying character’s turn and – unless otherwise specified – is triggered when any character enters an adjacent space. Characters leaving an adjacent space will not trigger a mine. Once triggered, a mine creates a Burst attack starting from the space in which it was placed. Mines within a character’s Sensors can be detected by making a successful Systems check as a quick action, otherwise they are Hidden and can’t be targeted. Detected mines can be disarmed from adjacent spaces by making a successful Systems check as a quick action; the attempt takes place before the mine detonates, and on a failure, the mine detonates as normal."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "EM Grenade",
+        "activation": "Quick",
+        "detail": "<span>Throw an EM Grenade within Range 5. All Characters within Blast 1 must succeed at an Engineering Save or else take 1d3 Heat and become Impaired until the end of your next turn. On a successful save, they take half Heat and are not Impaired. Drones and other electronic objects in the area of effect are disabled for the same duration.</span>",
+        "pilot": false,
+        "damage": [
+          {
+            "type": "Heat",
+            "val": "1d3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "deployables": [
+      {
+        "name": "EM Charge",
+        "type": "Mine",
+        "detail": "<span>In addition to Free Spaces, you may plant this charge on characters larger than yourself. Once armed, this mine must be detonated with a Quick Action.</span>",
+        "size": null,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "",
+        "evasion": "",
+        "edef": "",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Detonate",
+            "activation": "Quick",
+            "detail": "<span>The mine generates a Blast 1 area of coruscating energy centered on itself that lasts until the end of your next turn. Characters caught in this blast when it detonates must pass an Engineering Save or else take 1d6 Heat and become Stunned for as long as they remain in this area. On a successful save, they take half Heat and are Jammed instead for the same duration. Characters that enter this area for the first time in a round must make the same save.</span>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_tenderizer",
+    "name": "Hydraulic Spike Gauntlet",
+    "source": "NEVEC",
+    "license": "GAH-42 Bleed",
+    "license_id": "MSG0079_bleed",
+    "license_level": 3,
+    "effect": "<span>This manipulator attachment modifies your Improvised Attack action with the following effects:</span><br/><ul><li><span>It may be used as a Quick Action.</span><br/></li><li><span>It gains the AP and Overkill tags.</span><br/></li><li>It gains Heat 2 (Self).<br/></li></ul>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_en-trav-hydra-v2",
+    "name": "Enhanced Traversal Hydraulics",
+    "source": "ZN",
+    "license": "MS-09 Dom",
+    "license_id": "MSG0079_ms_zeronine_dom",
+    "license_level": 3,
+    "effect": "<span>When you attack with a weapon that has Blast, Line, or Cone, you may take the heat cost of this system to designate a second area of effect. You push your machine’s traversal system to its limits, allowing you to get a quick shot off at another location within Range and Sensors. The second area of effect can not benefit from bonus damage and deals minimum damage on hit. For all intents and purposes, this second area of effect counts as part of the original attack, ignoring heat heat costs, charge usage, and the Loading tag until the attack is resolved.</span>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": "1d3+2"
+      },
+      {
+        "id": "tg_round",
+        "name": "{VAL}/Round",
+        "description": "This system, trait or reaction can be used {VAL} number of times between the start of the user’s turn and the start of their next turn.",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_smart-grenade",
+    "name": "Smart Grenades",
+    "source": "ZN",
+    "license": "MS-09 Dom",
+    "license_id": "MSG0079_ms_zeronine_dom",
+    "license_level": 2,
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "name": "Deploy Smart Grenades",
+        "activation": "Quick",
+        "detail": "<span>You toss a bundle of Smart Grenades, which linger in the air and automatically seek out enemies. Select a Blast 2 area completely within Sensors and Line of Sight. Hostile characters that enter, leave, or move within this zone are struck by a Smart Grenade and take 1d6+2 Explosive damage. This may happen once per round, per character. This zone lasts until the start of your next turn.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_boostattack",
+    "name": "Cossack Dueling OS Package",
+    "source": "NEVEC",
+    "license": "PTX-140 Hardballer",
+    "license_id": "MSG0079_hardballer",
+    "license_level": 1,
+    "effect": "When you Boost in a straight line, you may elect any Main Melee weapon to use to attack an enemy as a special reaction. Damage dealt, including bonus damage, is halved. The mount used is treated as having Skirmished this turn.",
+    "type": "System",
+    "sp": "2",
+    "description": "A simple OS tuning package that enables most mechs to be more effective in executing hit-and-run attacks.",
+    "actions": [
+      {
+        "name": "Sideswipe",
+        "activation": "Reaction",
+        "detail": "You may roll to attack with the melee weapon. Damage dealt, including bonus damage, is halved.",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "While <strong>Boosting</strong>, there is an enemy within Threat of an equipped Main Melee weapon along the path of the Boost."
       }
     ]
   }

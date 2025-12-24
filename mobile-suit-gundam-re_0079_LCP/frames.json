@@ -336,60 +336,61 @@
     ],
     "description": "<div>A heavy mobile suit developed by Zimmad, the MS-09 Dom was a ground combat machine equipped with hovercraft technology. It was fitted with thermonuclear jets and rockets under its feet, allowing it to quickly move across the ground, greatly improving its mobility compared to previous ground-use mobile suits. Thanks to sensors located in front of its feet, it was able to traverse uneven terrain. While in cruising mode, it could hover across the ground using only its thermonuclear jets. The Dom can hover at a maximum speed of 381 km/hr for up to 5 hours.</div><div>Its primary thrusters adopted the Saturn Engine, a type of thermonuclear engine that used heavy elements such as zinc and lead as propellant, granting it higher thrust than thermonuclear engines that used lighter elements as propellant. The mobile suit's design was largely unchanged from the YMS-09 Prototype Dom aside from its appearance. It inherited the same cross-shaped monoeye rail from the MS-07C-5 Gouf Test Prototype, granting it an improved view of aerial targets. Lateral field of view was obtained by auxiliary sensors.</div><div>For defense, the Dom was heavily protected, adopting a unique \"skirt armor\" design to protect weak points in the back, such as thrusters. Its cockpit hatch armor, which was its greatest weakness in the front, was also greatly enhanced. However, since the cockpit was entered directly from the front of the Dom, pilots in desert and wetland areas complained that the console panel would become dirty from entering and exiting. Meanwhile, the Dom's head was merged into its chest, a design intended to deflect and ricochet enemy projectiles, as well as lowering the possibility of being hit.</div><div>The Dom's primary weapon, the 360mm Giant Bazooka, was developed in parallel with the mobile suit. It was capable of sinking a space cruiser with a single shot. It was also armed with a heat saber for close combat, as well as a scattering beam cannon in its chest, which was capable of blinding the enemy. It was said that the beam cannon was originally intended to be an energy port for beam weapons, but was repurposed after the development of beam weapons was delayed.</div>",
     "mounts": [
+      "Heavy",
       "Main",
-      "Heavy"
+      "Flex"
     ],
     "stats": {
-      "size": 1,
+      "size": 2,
       "structure": 4,
       "stress": 4,
       "armor": 2,
       "hp": 8,
-      "evasion": 10,
-      "edef": 7,
-      "heatcap": 5,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
       "repcap": 4,
       "sensor_range": 8,
       "tech_attack": -1,
       "save": 10,
-      "speed": 6,
+      "speed": 5,
       "sp": 4
     },
     "traits": [
       {
         "name": "Hover Thrusters",
         "use": "",
-        "description": "<div>The Dom ignores difficult terrain.</div>"
+        "description": "<span>The Dom ignores Difficult and Dangerous Terrain, as well as ground-based environmental effects. This trait is disabled until the end of your next turn if you take Structure or Stress damage. You are Slowed for the same duration.</span>"
       },
       {
-        "name": "Tempest Whirlwind",
+        "name": "Juggernaut",
         "use": "",
-        "description": "<div>The Dom cannot benefit from Hidden, Invisible, or Soft Cover.</div>"
+        "description": "<span>The Dom gains Resistance to all Damage, Heat, and Burn while moving.</span>"
       },
       {
-        "name": "Unbalanced",
+        "name": "Guardian",
         "use": "",
-        "description": "<div>The Dom is affected twice as much by Knockback effects. Upon standing up from Prone, the Dom is Immobilized and Impaired until the end of its next turn.</div>"
+        "description": "<span>The Dom counts as Hard Cover for adjacent allies.</span>"
       },
       {
         "name": "Treacherous Cockpit",
         "use": "",
-        "description": "<div>The pilot (and any passengers) must succeed at an Engineering check to eject from the Dom.</div>"
+        "description": "<span>The pilot (and any passengers) must succeed at an Engineering check to eject or dismount from the Dom.</span>"
       }
     ],
     "core_system": {
-      "name": "Saturn Engines",
-      "active_name": "Zimmad Mk III \"Justiciar\" Kinetic Compensator",
-      "active_effect": "For the remainder of the scene, the Dom may ignore the Ordnance tag.",
-      "activation": "",
+      "name": "Saturn Engines (Hover Type)",
+      "active_name": "Jet Stream Attack",
+      "active_effect": "<span>Select two other allied characters within Range 5 and Line of Sight. All three of you may immediately Boost and Skirmish as a part of this action. Until this action resolves, both selected characters benefit from the effects of </span><strong><span>Juggernaut.</span></strong>",
+      "activation": "Full",
       "description": "",
       "deactivation": "",
       "use": "",
       "active_actions": [],
       "active_bonuses": [],
       "active_synergies": [],
-      "passive_name": "",
-      "passive_effect": "",
+      "passive_name": "Zimmad Mk III \"Justiciar\" Kinetic Compensator",
+      "passive_effect": "<span>The Dom may split a Barrage action with its standard move so long as its </span><strong><span>Hover Thrusters</span></strong><span> are still active. Weapons with the Ordnance tag may be fired as the second part of the Barrage action even if the Dom moves this way.</span>",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -425,7 +426,7 @@
       "stress": 4,
       "armor": 0,
       "hp": 8,
-      "evasion": 9,
+      "evasion": 10,
       "edef": 8,
       "heatcap": 5,
       "repcap": 3,
@@ -439,32 +440,47 @@
       {
         "name": "Duelist's Stance",
         "use": "",
-        "description": "<div>1/round, the Gyan may deal +1d6 bonus damage on hit with a melee attack if its target has no adjacent characters, or if the Gyan is the only character adjacent to the target.</div>"
+        "description": "<span>1/round, the Gyan may deal +1d6 bonus damage whenever it critically hits with a melee weapon.</span>"
       },
       {
         "name": "Perfect Form",
         "use": "",
-        "description": "<div>The Gyan can take two Overwatch reactions per turn, instead of one.</div>"
+        "description": "<span>The Gyan considers all rolls 19+ as critical hits.</span>"
       },
       {
-        "name": "Royal Guard",
+        "name": "Agile",
         "use": "",
-        "description": "<div>The Gyan and all adjacent allied characters have IMMUNITY to all damage and effects from missed attacks, including Reliable.</div>"
+        "description": "<span>The Gyan gains +1 Accuracy on all Agility Checks and Saves</span>"
       }
     ],
     "core_system": {
       "name": "Fluid Pulse Accelerator",
-      "active_name": "Fancy Footwork",
-      "active_effect": "For the remainder of the scene, all melee weapons on the Gyan are considered to have a base Threat of 4. Additionally, Perfect Form now confers 3 Overwatch reactions per turn.",
-      "activation": "",
+      "active_name": "Allez!",
+      "active_effect": "<span>For the rest of the scene, gain the following benefits:</span><br/><ul><li><span>You may Overwatch with Melee Weapons whenever an enemy enters, exits, or moves within threat.</span><br/></li><li><span>Whenever using </span><strong><span>Fancy Footwork, </span></strong><span>you may choose to move 2 spaces instead of 1 space.</span><br/></li><li><span>Gain access to </span><strong><span>Parry and Riposte, </span></strong><span>a special Reaction that does not count toward the normal 1/turn Reaction limit.</span><br/></li></ul>",
+      "activation": "Protocol",
       "description": "A cylindrical unit located in the Gyan's groin, the fluid pulse accelerator stores excess pressure generated by the reactor, transmitting it to each actuator when needed. This greatly improves the responsiveness and torque of the Gyan's joints, allowing it to repeatedly move forward and backward, similar to fencing footwork. In the event of damage, it can be immediately ejected.",
       "deactivation": "",
       "use": "",
-      "active_actions": [],
+      "active_actions": [
+        {
+          "name": "Parry and Riposte",
+          "activation": "Reaction",
+          "detail": "<span>So long as the attacker is within threat, you may make an attack against them with any non-Superheavy Melee weapon. If this attack is a Critical Hit, they are additionally Jammed until the end of their next turn.</span>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "1/turn",
+          "init": "",
+          "trigger": "<span>You are targeted by a Melee attack and it misses.</span>"
+        }
+      ],
       "active_bonuses": [],
       "active_synergies": [],
-      "passive_name": "Parry and Riposte",
-      "passive_effect": "If the Gyan successfully Resists a Melee attack, they may immediately make a Melee attack with halved damage against their attacker in turn, unless the attacker is outside Threat.",
+      "passive_name": "Fancy Footwork",
+      "passive_effect": "<span>1/turn, before rolling a melee attack or before being targeted by a melee attack, the Gyan may move 1 space in a direction of its choice, ignoring engagement and reactions. If this movement moves either party out of threat, the triggering attack automatically misses.</span>",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -474,8 +490,8 @@
       "special_equipment": [],
       "tags": []
     },
-    "image_url": "https://cdn.discordapp.com/attachments/961013256795865098/1067257205440655470/image.png",
-    "y_pos": 14
+    "image_url": "https://i.imgur.com/mtfzMAu.png",
+    "y_pos": "20"
   },
   {
     "id": "MSG0079_mbr_zerofour_mk_vi_destroid_tomahawk",
@@ -802,7 +818,7 @@
     "id": "MSG0079_ms_zerosix_zaku_ii",
     "license_id": "MSG0079_ms_zerosix_zaku_ii",
     "source": "ZN",
-    "license_level": 0,
+    "license_level": 2,
     "name": "MS-06 Zaku II",
     "mechtype": [
       "Balanced"
@@ -1195,7 +1211,7 @@
       "Defender"
     ],
     "variant": "MSM-03C Hygogg ",
-    "description": "<div>A postwar Zeon Republican modification of the Hygogg, the Hunter variant of the Hygogg is analogous to Federation Full Armor refits from the One Year War.</div>",
+    "description": "A postwar Zeon Republican modification of the Hygogg, the Hunter variant of the Hygogg is analogous to Federation Full Armor refits from the One Year War. This moniker was given due to being designed for frontline 'Hunter-Killer' tactics, where typically it'd be deployed as part of a pair, often partnered with either the base Hygogg or another Hunter Hygogg. The Hunter Hygogg would be used to draw incoming fire and identify the attacker while the other would eliminate said attacker.<br/>While still largely untested in a full-scaled war, the Hunter Hygogg has seen limited deployment during Federation peacekeeping operations in Southeast Asia. ",
     "mounts": [
       "Flex",
       "Heavy"
@@ -1286,8 +1302,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "",
-    "y_pos": 0
+    "image_url": "https://i.imgur.com/pNUl6q8.png",
+    "y_pos": "32"
   },
   {
     "id": "fdsafdjsaiofghdsia",
@@ -1329,7 +1345,7 @@
           {
             "name": "Hive Guard",
             "activation": "Reaction",
-            "detail": "<span>Select an allied Drone within Sensors Range. As long as there is a path to reach you, the Drone is moved adjacent to the target and becomes the new target.</span>",
+            "detail": "<span>Select an allied Drone within Sensors Range. As long as there is a path to reach you, the Drone is moved adjacent to the target and is hit instead.</span>",
             "pilot": false,
             "synergy_locations": [],
             "tech_attack": false,
@@ -1370,8 +1386,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "",
-    "y_pos": 0
+    "image_url": "https://i.imgur.com/XfokCid.png",
+    "y_pos": "4"
   },
   {
     "id": "dahle-skink",
@@ -1384,7 +1400,7 @@
       "Controller"
     ],
     "variant": "",
-    "description": "",
+    "description": "Dahle or Desert Skink is a designation used for a somewhat broad category of 'Franken Suits', Mobile Suits cobbled together from a wide range of salvaged parts, typically that of Zakus and GMs. Commonly used by insurgent and revolutionary groups that acquired said parts through black market deals, configurations tend to vary wildly as much due to resource constraints as much as tactical needs. This is made possible in part due to GM parts being developed with the feature to be refitted to captured Zakus and vice-versa as a contigency plan for potential resource shortages should the Principality of Zeon force Earth's militaries into fighting a guerilla war. Such features are perhaps ironically now often used to facilitate the arming of guerilla forces that stand in opposition to the current status quo on Earth.<br/>There also exists a rough template used by certain national and private entities as an 'economy' option over buying whole mobile suits. This version is analogous to the Earth Federation's Zanny mobile suit, a Zaku II refitted with technologies that would be later used on the GM. <br/>Notable operators of this pattern group include the Kurdish Free State, the South Seas Alliance, and the Afghan National Resistance Front. ",
     "mounts": [
       "Main/Aux",
       "Flex"
@@ -1460,8 +1476,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "",
-    "y_pos": 0
+    "image_url": "https://i.imgur.com/us2jYnp.png",
+    "y_pos": "12"
   },
   {
     "id": "gm_sniper_II",
@@ -1659,5 +1675,566 @@
     "specialty": false,
     "image_url": "",
     "y_pos": 0
+  },
+  {
+    "id": "MSG0079_shorty",
+    "license_id": "MSG0079_shorty",
+    "source": "NEVEC",
+    "license_level": 2,
+    "name": "GTF-13 Vensa",
+    "mechtype": [
+      "Artillery"
+    ],
+    "variant": "",
+    "description": "",
+    "mounts": [
+      "Heavy"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 4,
+      "repcap": 6,
+      "sensor_range": 3,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 4
+    },
+    "traits": [
+      {
+        "name": "Big Game Hunter",
+        "use": "",
+        "description": "<span>The Vensa counts as Size 3 whenever inflicting Knockback or Prone with ranged attacks.</span>"
+      },
+      {
+        "name": "Pint-Sized Terror",
+        "use": "",
+        "description": "<span>1/round, when attacking a Prone target larger than itself, the Vensa may deal +1d6 bonus damage.</span>"
+      },
+      {
+        "name": "Open-Air Cockpit",
+        "use": "",
+        "description": "<span>1/round, you may Dismount or Mount the Vensa as a Free Action. This is the only way to leave the Vensa—you may not Eject because it has no ejection mechanism.</span>"
+      },
+      {
+        "name": "Civilian Machine",
+        "use": "",
+        "description": "<span>The Vensa makes all Checks and Saves at +1 Difficulty.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Custom Mounting",
+      "active_name": "God’s Smallest, Most Vicious, Most Heartless Creature",
+      "active_effect": "<span>For the rest of the scene, the weapon mounted to your Heavy Mount (including Superheavy weapons) gains +1 Accuracy. The next critical hit you make with this weapon this scene has its damage maximized, including bonus damage. Upon activation of this core, if the weapon mounted to your Heavy Mount is destroyed, repair it automatically. If it has less than full Limited Charges, return it to full. If it is unloaded, reload it.</span>",
+      "activation": "Quick",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Tiny Frame, Overflowing Malice",
+      "passive_effect": "<span>The Heavy mount on this frame has been tweaked to perfection. Any weapon mounted to it (including Superheavy weapons) gains the following benefits:</span><br/><ul><li><span>When Barraging, you may fire this weapon twice instead of firing this weapon and another. This effect does not apply to Superheavy weapons.</span><br/></li><li><span>On Crit: the target must succeed a Hull Save or else be knocked Prone.</span><br/></li><li><span>Gain Tags: Knockback 3, AP, Overkill</span><br/></li></ul><span>Whenever the Vensa takes System Trauma, no matter the roll, the Heavy Mount is selected for destruction.</span>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/QjhLGQx.png",
+    "y_pos": 26
+  },
+  {
+    "id": "MSG0079_hopper",
+    "license_id": "MSG0079_hopper",
+    "source": "NEVEC",
+    "license_level": 2,
+    "name": "GTB-22 Faze",
+    "mechtype": [
+      "Artillery"
+    ],
+    "variant": "",
+    "description": "",
+    "mounts": [
+      "Heavy",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 5,
+      "sensor_range": 16,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Reinforced Suspension",
+        "use": "",
+        "description": "<span>The Faze has immunity to fall damage. When the Faze jumps, it may jump up to its Speed horizontally or vertically (in any combination).</span>"
+      },
+      {
+        "name": "Jump Jets",
+        "use": "",
+        "description": "<span>When the Faze Boosts, it may jump. The Faze may jump even while midair.</span>"
+      },
+      {
+        "name": "Agile",
+        "use": "",
+        "description": "<span>The Faze makes all Agility Checks and Saves at +1 Accuracy.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Core Boosters",
+      "active_name": "Over the Moon",
+      "active_effect": "<span>As a Protocol, prime your jump jets. The next time you jump this turn, you may jump up to twice your Speed horizontally or vertically (or any combination of the two). At any point during this jump, you may choose to immediately fall down to the ground instead of obeying normal falling rules. Characters adjacent to your landing spot must succeed at an Agility Save or else take an amount of damage equal to the amount of spaces you have fallen, up to a maximum of 9 AP Kinetic, and fall Prone. On a successful save, they take half damage and do not fall Prone.</span>",
+      "activation": "Protocol",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/XEBRtsV.png",
+    "y_pos": 24
+  },
+  {
+    "id": "MSG0079_zudah",
+    "license_id": "MSG0079_ms_zerosix_zaku_ii",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "EMS-10 Zudah",
+    "mechtype": [
+      "Balanced"
+    ],
+    "variant": "MS-06 Zaku II",
+    "description": "",
+    "mounts": [
+      "Heavy",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -1,
+      "save": 10,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Redline",
+        "use": "",
+        "description": "<span>When the Zudah is in the Danger Zone, all of its voluntary movements ignore Engagement, Reactions, and the Ordnance Tag (i.e., it is allowed to use weapons with the Ordnance tag even after moving).</span>"
+      },
+      {
+        "name": "1000 Meters",
+        "use": "",
+        "description": "<span>1/round, whenever the Zudah voluntarily moves out of Engagement with another character, it may force the character to roll a contested Agility Check. If the target of this effect loses, then they become Prone until the end of their next turn.</span>"
+      },
+      {
+        "name": "Overtaxed Reactor",
+        "use": "",
+        "description": "<span>The Zudah takes +1 Difficulty on all Engineering Checks and Saves.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Saturn Engine",
+      "active_name": "Leave the World Behind",
+      "active_effect": "<span>As a protocol, turn off the safety limiters on your thrusters. </span><strong><span>Divine Speed </span></strong><span>no longer has a maximum amount of d6 you may roll. Whenever you take a boost modified by </span><strong><span>Divine Speed, </span></strong><span>you project a Cone 3 pattern opposite of your direction of flight. Characters within this cone must pass an Agility Save or else take an amount of Burn equal to the heat cost of </span><strong><span>Divine Speed</span></strong><span>, up to a maximum of 9 Burn.</span>",
+      "activation": "Protocol",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Divine Speed",
+      "passive_effect": "<span>As a protocol, you may spin up your thrusters. </span>",
+      "passive_actions": [
+        {
+          "name": "Spin Up Thrusters",
+          "activation": "Protocol",
+          "detail": "<span>Roll a number of d6 with a maximum of 3d6—the result of this roll is how many additional spaces you may move during your next Boost action this round. However, you take an amount of Heat equivalent to half the result before resistances. All movement taken during this Boost action can be made as if you were flying, but you must end this movement on the ground or else start falling.</span>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [
+        "MSG0079_spike-shield"
+      ],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/K4A3PCT.png",
+    "y_pos": "14"
+  },
+  {
+    "id": "MSG0079_bleed",
+    "license_id": "MSG0079_bleed",
+    "source": "NEVEC",
+    "license_level": 2,
+    "name": "GAH-42 Bleed",
+    "mechtype": [
+      "Striker"
+    ],
+    "variant": "",
+    "description": "",
+    "mounts": [
+      "Main",
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 0.5,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 5,
+      "evasion": 0,
+      "edef": 0,
+      "heatcap": 7,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 0,
+      "sp": 4
+    },
+    "traits": [
+      {
+        "name": "Walking Coffin",
+        "use": "",
+        "description": "<span>The Bleed is little more than a powered exoskeleton. As a result, it takes the stats of your pilot for Armor, Evasion, E-Defense, Speed, and Bonus HP. While in the Bleed, you may still use abilities and effects associated with Pilot Gear, Armor, and Weaponry.</span>"
+      },
+      {
+        "name": "Up Close and Personal",
+        "use": "",
+        "description": "<span>The Bleed ignores Armor and Resistances of characters it is Grappling or Jockeying.</span>"
+      },
+      {
+        "name": "Tertiary Arm",
+        "use": "",
+        "description": "<span>1/round, the Bleed may use one piece of Pilot Gear or Pilot Weaponry as a Free Action. Additionally, the Bleed can interact with Pilot-scale objects as if it had Manipulators equipped.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Scrapper Kit",
+      "active_name": "Deliver Thee Into My Hand",
+      "active_effect": "<span>Fly up to your Speed directly toward a hostile character of your choice. If you end this movement next to them, they are automatically Jockeyed, and you may take one Jockey option. This core is </span><strong><span>Efficient</span></strong><span>, and is refunded at the end of any Scene in which it is used.</span>",
+      "activation": "Quick",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "To the Wild Beasts of the Earth",
+      "passive_effect": "<span>The Bleed may take the Jockey Action against characters larger than itself, rolling a Contested Hull Check instead of Grit. When it does so, it uses a modified table of standard Jockey effects that it may choose from as usual.</span><br/><ul><li><span>OVERLOAD SENSORS: The mech is IMPAIRED and SLOWED, and it can not draw Line of Sight beyond adjacent spaces until the end of its next turn.</span><br/></li><li><span>SLICE REACTOR: Deal 2 Heat to the mech. If this action causes the mech to enter the Danger Zone, they take an additional 1d6 Heat.</span><br/></li><li><span>SCRAP CHASSIS: Deal 4 Kinetic Damage. If this action causes the mech to drop below half health, they are Shredded until the end of their next turn.</span><br/></li></ul>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/A8GBSaB.png",
+    "y_pos": 23
+  },
+  {
+    "id": "MSG0079_ass-guntank",
+    "license_id": "MSG0079_rx_sevenfive_guntank",
+    "source": "EFRD",
+    "license_level": 2,
+    "name": "RTX-440 Ground Assault Guntank",
+    "mechtype": [
+      "Striker"
+    ],
+    "variant": "RX-75 Guntank",
+    "description": "The RTX-440 is a modern refit of the original RTX-44 Prototype Guntank that was developed as a conceptual testbed for a new form of 'heavy main battle tank', which would go on to be further developed into the RTX-65 and RX-75 Guntank line. This refit includes a 'partial' transformation system that allows the machine to assume a raised posture form similar to the RX-75, granting it a better vantage point along with allowing a wider traverse of its main hull. What makes it more distinct from its development counterparts however is the ability to assume an 'Assault Gun Mode' that brings its stance back to its original form factor, allowing for the Ground Assault Guntank to cross terrain at much higher speeds than other Guntanks due to its reduced frontal cross section.<br/>As the role of heavy artillery has already been covered by the RX-75 and its successors, the RTX-440 has instead been tuned for high-speed assaults, smashing apart enemy formations and fortifications and exploiting these breaches before a response can be properly mounted. The first time this was put to the test was during the Battle of Ardennes, where the Ground Assault Guntank was used as a vanguard unit in the counterattack mounted by European forces against Zeon. It would gain particular renown during skimishes in the Fulda Gap where it dueled against Hildolfr units, and during the Ukrainian liberation campaign where Assault Guntank squadrons rolling across the steppes were particularly effective at out-maneuvering Zeon mobile weapon forces.<br/>Originally intended as a stopgap using mothballed units, the RTX-440's successes has led to a new lease on life. Dedicated factory lines for the machine are contracted out to Nexter and Krauss-Maffei Wegmann as per agreement by the Earth Federation with KNDS, along with additional factories by Polska Grupa Zbrojeniowa and Shanghai Steel.",
+    "mounts": [
+      "Heavy",
+      "Flex",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Treaded Vehicle",
+        "use": "",
+        "description": "<span>Whenever the Assault Guntank makes a voluntary move, it must be made in a straight line. In order to change direction of movement, a new move must be initiated.</span>"
+      },
+      {
+        "name": "Suicide Blitz",
+        "use": "",
+        "description": "<span>Whenever the Assault Guntank moves through an object, wall, free-standing object, or any other piece of terrain, it first deals an amount of Kinetic damage to it based on the Assault Guntank’s size (Size 1: 10 AP, Size 2: 20 AP, Size 3: 30 AP). If this is enough to destroy the object, the Assault Guntank may pass through it. Otherwise, it is stopped as usual. Talents, Traits, and Systems that grant a similar effect contribute to this Trait additively.</span>"
+      },
+      {
+        "name": "Close-in Targeting Solutions",
+        "use": "",
+        "description": "<span>The Assault Guntank treats all Cannon weapons as if they were also CQB weapons with Threat 3.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Vernier Jet Thrusters",
+      "active_name": "Blue Sky, Moral War",
+      "active_effect": "<span>For the rest of the scene, you may activate the </span><strong><span>Beyond the Line </span></strong><span>ability even when you have already used it previously in a round. Whenever you use this ability beyond the 1/round limit, you take 2 Heat. Gain access to the </span><strong><span>Stay Blue </span></strong><span>Full Action.</span>",
+      "activation": "Protocol",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [
+        {
+          "name": "Stay Blue",
+          "activation": "Full",
+          "detail": "<span>1/scene. Move up to twice your speed in a direction of your choice, attacking with every weapon mounted to your suit at any point in the movement if you wish to do so. All weapons fired this way are unloaded as if they had the Loading tag. There is no effect anywhere that can modify, alter, stop, or otherwise impede this movement once it starts. Characters you collide with, regardless of their size, are knocked Prone and pushed to the outer edge of your movement, and terrain obstructions are utterly annihilated. Due to the stress this action puts on your frame, this is the only action you can take during any turn you use it.</span>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Beyond the Line",
+      "passive_effect": "<span>1/round, at any point during a movement you make, voluntary or otherwise, you may move up to 3 spaces. This movement may pass through other Characters and does not trigger Engagement or Reactions. All Characters you pass through with this movement take 3 Kinetic Damage. This is the only form of voluntary movement the Assault Guntank may take that does not have to be in a straight line.</span>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/sILuJJt.png",
+    "y_pos": "55"
+  },
+  {
+    "id": "MSG0079_krieger",
+    "license_id": "MSG0079_yms_onefive_gyan",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "MS-15Kg Gyan Krieger",
+    "mechtype": [
+      "Striker",
+      "Defender"
+    ],
+    "variant": "YMS-15 Gyan",
+    "description": "",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 6,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Captain of the Guard",
+        "use": "",
+        "description": "<span>Whenever the Gyan Krieger moves, it may designate an adjacent allied character. This character may move with the Gyan Krieger, mirroring its movements for as long as they remain adjacent, and ignoring engagement and reactions from other characters.</span>"
+      },
+      {
+        "name": "Old Hero",
+        "use": "",
+        "description": "<span>1/scene, the Gyan Krieger may turn a miss into a hit, a hit into a critical hit, or a critical hit into a natural 20.</span>"
+      },
+      {
+        "name": "Guardian",
+        "use": "",
+        "description": "<span>Adjacent allied characters may use the Gyan Krieger as Hard Cover.</span>"
+      },
+      {
+        "name": "Ponderous",
+        "use": "",
+        "description": "<span>The Gyan Krieger takes +1 Difficulty to all Agility Checks and Saves.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Battlefield Awareness Module",
+      "active_name": "Not One Step Back",
+      "active_effect": "<span>The Gyan Krieger plants its feet into the ground and widens its stance. It’s here where you will hold your ground or make your final stand. Until the end of the scene or you disable this effect as a Protocol, you gain the following effects:</span><br/><ul><li><span>You are Immobilized and have immunity to all forms of involuntary movement and Prone.</span><br/></li><li><span>You have Resistance to all Damage, Heat, and Burn that originates from beyond Range 3.</span><br/></li><li><span>Whenever you take the Overwatch reaction, you may choose to Barrage with a Superheavy weapon.</span><br/></li><li><span>You may take the Overwatch reaction whenever an enemy enters, exits, or moves within threat.</span><br/></li></ul>",
+      "activation": "Protocol",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [
+        "MSG0079_montante"
+      ],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/epsYWOO.png",
+    "y_pos": "21"
+  },
+  {
+    "id": "MSG0079_hardballer",
+    "license_id": "MSG0079_hardballer",
+    "source": "NEVEC",
+    "license_level": 2,
+    "name": "PTX-140 Hardballer",
+    "mechtype": [
+      "Striker"
+    ],
+    "variant": "",
+    "description": "One of the first machines designed by NEVEC from the ground up for combating Mobile Suits, the PTX-140 Hardballer is an agile machine built for aggressive hit-and-run tactics. It accomplishes this through its integrated flight backpack that allows it to either leap and hover for respectable distances or skate across the ground at high speeds. Along with being able to mount a versatile array of weapons, the Hardballer also includes a close combat weapon specifically designed for it that is commonly described as an oversized chainsaw.<br>Being smaller than most Mobile Suits yet larger than a majority of Junior Mobile Suits, NEVEC has coined the term 'Vital Suit' to describe this new size class of mobile weapon.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 7,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 6,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Thruster Skating",
+        "use": "",
+        "description": "1/round, after you Boost, the Hardballer may move additional spaces up to the pilot's Grit that ignores engagement. The boost also forces enemy reactions against it to take +1 Difficulty."
+      },
+      {
+        "name": "Integrated Flight Systems",
+        "use": "",
+        "description": "When Boosting, the Hardballer may opt to Hover. Whenever the Hardballer ends its turn not on the ground or any solid surface, it gains 2 Heat."
+      }
+    ],
+    "core_system": {
+      "name": "Integrated Motorized Close Combat Weaponry",
+      "active_name": "Until All Have Been Tamed",
+      "active_effect": "The VS Saw immediately deploys and revs up. Gain 5 Charges. Until the end of the scene or until all charges are expended, a charge may be expended as a free action to use the VS Saw. Additionally, on hit any number of charges may be used to add 1D6 bonus damage per charge.",
+      "activation": "Protocol",
+      "description": "Mounted in a wrist module on one of its arms, the Hardballer possesses a close combat weapon in the form of a motorized chain blade. This weapon, once extended and revved up, can tear apart armor and internal components of other mobile suits.",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Cut Down All Obstacles",
+      "passive_effect": "When in Danger Zone, the VS Saw integrated weapon inflicts Shred on-hit. This effect lasts until the start of the Hardballer's next turn.",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [
+        "MSG0079_hardballersaw"
+      ],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/llB6fdy.png",
+    "y_pos": "32"
   }
 ]

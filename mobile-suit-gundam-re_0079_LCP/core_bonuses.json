@@ -74,5 +74,21 @@
     "effect": "<span>Whenever you Rest or have a Full Repair, you may elect to sortie in the next Combat with the following effects:</span><br/><ul><li><span>Your Armor is increased by 1, up to a maximum of 4.</span><br/></li><li><span>Whenever you Barrage, you may select an additional weapon to fire at the same time.</span><br/></li><li><span>Gain Overshield equal to 12+Grit. This Overshield can not be increased or replaced, and persists between scenes (until a Full Repair).</span><br/><span>When the Overshield granted is depleted, or you choose to deplete it all as a Protocol, you cast off your armor kit and may move up to your speed, ignoring Reactions. You then lose all other benefits associated with this Core Bonus. This Core Bonus may only be used 1/mission.</span><br/></li></ul>",
     "description": "",
     "mounted_effect": ""
+  },
+  {
+    "id": "MSG0079_extreme-condition-tm",
+    "name": "Vital Suit Extreme Conditioning",
+    "source": "NEVEC",
+    "effect": "Gain +1 Accuracy on all Engineering Checks and Saves. Additionally, your mech gains immunity to difficult terrain, dangerous terrain, and environmental effects.",
+    "description": "A suite of mechanical failsafes, backup equipment, and special plating that allows many NEVEC suits to operate in even the most inhospitable environments. It's especially popular with construction and survey machines commonly used in terraforming and mining operations.",
+    "mounted_effect": ""
+  },
+  {
+    "id": "MSG0079_TENG-backpack",
+    "name": "Thermal Energy Reactor Cycler",
+    "source": "NEVEC",
+    "effect": "When your turn starts, before all other effects, you may either generate or clear 1 Heat as long as your mech is powered on. This doesn't count as an action, and may be done even when you wouldn't normally be able to take actions (Braced, Stunned).",
+    "description": "A small module mounted to a mobile suit's reactor. It allows the pilot to make small adjustments to reactor heat levels to ensure ideal operational conditions. ",
+    "mounted_effect": ""
   }
 ]

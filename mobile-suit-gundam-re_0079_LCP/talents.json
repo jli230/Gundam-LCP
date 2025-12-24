@@ -32,7 +32,7 @@
         "exclusive": false
       }
     ],
-    "description": "<div>A Newtype is a person who has reached a new stage of human evolution in the Gundam universe. The theory behind this minor but groundbreaking metamorphosis is: in order to adapt to life in space, the human body evolved with heightened mental awareness. As such, Newtypes tend to appear among Spacenoids, although not exclusively.</div>",
+    "description": "<em><span>The high-pitched whine of thrusters, the rumble of distant gunfire, the glow of an imperious monoeye. This is the battlefield of the human spirit, and Casval Rem Deikun knows it best. If a future is to be secured, debts paid and justice delivered, he would have to be faster and stronger than all others. Once the killing is done and the Earth has drank deeply of the blood of her tormentors, a new day will come. It’s not enough for Newtypes to exist—they’ll have to make themselves known. One body at a time.</span></em>",
     "terse": "Utilize superhuman senses to anticipate dangers on the battlefield."
   },
   {
@@ -43,19 +43,6 @@
       {
         "name": "One Man Phalanx",
         "description": "<div><span>Whenever you Brace, gain +1 Armor for each undestroyed Shield weapon mounted to your mech. This can bring you above the maximum (+4). This effect lasts until the end of your next turn.</span></div>",
-        "actions": [
-          {
-            "name": "A Taste of Grass",
-            "activation": "Free",
-            "detail": "<div>1/Round, when attacking with any weapon with the Shield tag, you may force an enemy to roll a hull save or be knocked prone.</div>",
-            "pilot": false,
-            "synergy_locations": [],
-            "tech_attack": false,
-            "frequency": "Unlimited",
-            "init": "",
-            "trigger": ""
-          }
-        ],
         "exclusive": false
       },
       {
@@ -65,7 +52,7 @@
       },
       {
         "name": "May I Stand Unshaken",
-        "description": "<div><span>At the end of every hostile turn in which you do not take damage and do not suffer involuntary movement, you gain 1 poise die—a D6—up to a maximum of 3 dice. They last until expended or the end of the scene. You may expend Poise dice 1-for-1 for the following effects:</span></div><ul><li><div><strong>Interpose: </strong><span>Whenever you Brace, expend a Poise die to grant all on-brace effects to one adjacent allied character. They do not suffer from a reduction in action economy. This effect lasts until they break adjacency, or until the end of your next turn.</span></div></li><li><div><strong>Immovable:</strong> <span>Whenever you Brace, you may expend a Poise die—this allows you to take two Quick Actions or one Full Action next turn, rather than a single Quick Action.</span></div></li><li><div><strong>Barrier Burst: </strong><span>Whenever you Brace, you may expend a Poise die to apply 1d6 Knockback to any number of characters within threat of one of your Shield weapons.</span></div></li></ul>",
+        "description": "<span>At the end of every hostile turn in which you do not take damage and do not suffer involuntary movement, you gain 1 poise die—a D6—up to a maximum of 3 dice. They last until expended or the end of the scene. You may expend Poise dice 1-for-1 for the following effects:</span><br/><ul><li><strong>Interpose: </strong><span>Whenever you Brace, expend a Poise die to grant all on-brace effects to one adjacent allied character. They do not suffer from a reduction in action economy. This effect lasts until they break adjacency, or until the end of your next turn.</span><br/></li><li><strong><span>Indefatigable:</span></strong><span> Spend a Poise die to Brace, even when you wouldn’t normally be able to (unable to take reactions, Stunned, already Braced, etc), but obeying the 1/turn reaction limit. Armor and Difficulty granted by Brace effects do not stack.</span><br/></li><li><strong>Barrier Burst: </strong><span>Whenever you Brace, you may expend a Poise die to apply 1d6 Knockback to any number of characters within threat of one of your Shield weapons.</span><br/></li></ul>",
         "exclusive": false
       }
     ],
@@ -92,7 +79,7 @@
         "exclusive": false
       }
     ],
-    "description": "placeholder"
+    "description": "<em><span>One day, all things will be subsumed into the structure of the Federation. That’s what Amuro Ray thought. To a system that thrived off of war, Newtypes were simply another weapon to be employed. Empathy and human connection were only as important as the Federation let it be—only as important as they were to the war effort. Zeon Zum Deikun was wrong. There is no next stage of humanity that could be brought by Newtypes. Becoming a Newtype could never make you a better person. It could never fix humanity. In the world, there are no miracles—only cold calculus. Could there be salvation? In a world like that?</span></em>"
   },
   {
     "id": "MSG0079_hypno-newtype",
@@ -141,6 +128,6 @@
         "exclusive": false
       }
     ],
-    "description": "placeholder"
+    "description": "<em><span>Newtypes are the front on which humanity may be saved; that’s what they say. But Con Qualia knows better. Ideals and dreams and salvation are the realms of humanity. She is no human. She is a monster. For people like her, there is no future. The world has never given her anything but pain and suffering. So why not? Why shouldn’t she be allowed to do whatever she wants? People are toys. Kill them, love them, butcher their hearts and leave them to die—it doesn’t matter. Nothing matters.</span></em>"
   }
 ]
