@@ -490,8 +490,8 @@
       "special_equipment": [],
       "tags": []
     },
-    "image_url": "https://i.imgur.com/mtfzMAu.png",
-    "y_pos": "20"
+    "image_url": "https://cdn.discordapp.com/attachments/961013256795865098/1067257205440655470/image.png",
+    "y_pos": 14
   },
   {
     "id": "MSG0079_mbr_zerofour_mk_vi_destroid_tomahawk",
@@ -1211,7 +1211,7 @@
       "Defender"
     ],
     "variant": "MSM-03C Hygogg ",
-    "description": "A postwar Zeon Republican modification of the Hygogg, the Hunter variant of the Hygogg is analogous to Federation Full Armor refits from the One Year War. This moniker was given due to being designed for frontline 'Hunter-Killer' tactics, where typically it'd be deployed as part of a pair, often partnered with either the base Hygogg or another Hunter Hygogg. The Hunter Hygogg would be used to draw incoming fire and identify the attacker while the other would eliminate said attacker.<br/>While still largely untested in a full-scaled war, the Hunter Hygogg has seen limited deployment during Federation peacekeeping operations in Southeast Asia. ",
+    "description": "<div>A postwar Zeon Republican modification of the Hygogg, the Hunter variant of the Hygogg is analogous to Federation Full Armor refits from the One Year War.</div>",
     "mounts": [
       "Flex",
       "Heavy"
@@ -1302,8 +1302,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "https://i.imgur.com/pNUl6q8.png",
-    "y_pos": "32"
+    "image_url": "",
+    "y_pos": 0
   },
   {
     "id": "fdsafdjsaiofghdsia",
@@ -1386,8 +1386,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "https://i.imgur.com/XfokCid.png",
-    "y_pos": "4"
+    "image_url": "",
+    "y_pos": 0
   },
   {
     "id": "dahle-skink",
@@ -1400,7 +1400,7 @@
       "Controller"
     ],
     "variant": "",
-    "description": "Dahle or Desert Skink is a designation used for a somewhat broad category of 'Franken Suits', Mobile Suits cobbled together from a wide range of salvaged parts, typically that of Zakus and GMs. Commonly used by insurgent and revolutionary groups that acquired said parts through black market deals, configurations tend to vary wildly as much due to resource constraints as much as tactical needs. This is made possible in part due to GM parts being developed with the feature to be refitted to captured Zakus and vice-versa as a contigency plan for potential resource shortages should the Principality of Zeon force Earth's militaries into fighting a guerilla war. Such features are perhaps ironically now often used to facilitate the arming of guerilla forces that stand in opposition to the current status quo on Earth.<br/>There also exists a rough template used by certain national and private entities as an 'economy' option over buying whole mobile suits. This version is analogous to the Earth Federation's Zanny mobile suit, a Zaku II refitted with technologies that would be later used on the GM. <br/>Notable operators of this pattern group include the Kurdish Free State, the South Seas Alliance, and the Afghan National Resistance Front. ",
+    "description": "",
     "mounts": [
       "Main/Aux",
       "Flex"
@@ -1476,8 +1476,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "https://i.imgur.com/us2jYnp.png",
-    "y_pos": "12"
+    "image_url": "",
+    "y_pos": 0
   },
   {
     "id": "gm_sniper_II",
@@ -1577,7 +1577,7 @@
       "heatcap": 6,
       "repcap": 3,
       "sensor_range": 15,
-      "tech_attack": 0,
+      "tech_attack": 1,
       "save": 10,
       "speed": 5,
       "sp": 6
@@ -1591,18 +1591,18 @@
       {
         "name": "Calibrated Weapon",
         "use": "",
-        "description": "<span>When you build this mech or Rest, choose 1 Ranged Weapon. 1/turn, you ignore the Heat (self) and Ordnance tag of that weapon.</span>"
+        "description": "<span>When you build this mech or Rest, choose 1 Ranged Weapon. You may only fire this weapon 1/turn, but you may ignore the Heat (self) and Ordnance tag of that weapon.</span>"
       },
       {
-        "name": "Overpowered Reactor",
+        "name": "Reactor Bleed",
         "use": "",
-        "description": "<span>When the X-1 is in the Danger Zone, all of its weapons that would deal kinetic or explosive damage instead deal energy, and your first successful attack that round deals +1d6 Bonus Damage.</span>"
+        "description": "<span>When the X-1 is in the Danger Zone, all of its weapons that would deal kinetic or explosive damage instead deal energy. Additionally, 1/turn when you consume Lock On for an attack roll while in the Danger Zone, the attack’s damage, heat, and burn cannot be reduced.</span>"
       }
     ],
     "core_system": {
       "name": "AIR SUPERIORITY KIT",
       "active_name": "Hyper-Active Intercept Suite",
-      "active_effect": "<strong><span>Trigger:</span></strong><span> When a hostile character moves within Range 5, even if that movement does not provoke Reactions.</span><br/><strong><span>Effect:</span></strong><span> You may expend your Overwatch reaction to Barrage against them. This ignores restrictions against allowing Superheavy weapons to fire as a reaction, but if you don’t fire a Superheavy with this action, you may instead Barrage with up to 3 Mounts. This action is </span><strong><span>Efficient</span></strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span>",
+      "active_effect": "<strong><span>Trigger:</span></strong><span> When a hostile character moves within Range 10 and Line of Sight, even if that movement does not provoke Reactions.</span><br/><strong><span>Effect:</span></strong><span> You may expend your Overwatch reaction to Lock On, then Barrage against the triggering character. This ignores restrictions against allowing Superheavy weapons to fire as a reaction. This action is </span><strong><span>Efficient</span></strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span>",
       "activation": "Reaction",
       "description": "<span>The X-1's design team conducted trials at the California Base, including transformation tests at subsonic speeds to observe the X-1’s adaptability in changing combat situations. However, the X-1 was unable to withstand the shock of transformation at subsonic speed and was destroyed. However, the data gathered contributed to improving the atmospheric flight performance of the MSZ-006A1 Zeta Plus A1.</span>",
       "deactivation": "",
@@ -1611,27 +1611,27 @@
         {
           "name": "Hyper-Active Intercept",
           "activation": "Reaction",
-          "detail": "<span>You may expend your Overwatch reaction to Barrage against them. This ignores restrictions against allowing Superheavy weapons to fire as a reaction, but if you don’t fire a Superheavy with this action, you may instead Barrage with up to 3 Mounts. This action is </span><strong><span>Efficient</span></strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span>",
+          "detail": "<span>You may expend your Overwatch reaction to Lock On, then Barrage against the triggering character. This ignores restrictions against allowing Superheavy weapons to fire as a reaction. This action is </span><strong><span>Efficient</span></strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span>",
           "cost": "1",
           "pilot": false,
           "damage": [],
           "range": [
             {
               "type": "Range",
-              "val": 5
+              "val": 10
             }
           ],
           "synergy_locations": [],
           "tech_attack": false,
           "frequency": "Unlimited",
           "init": "",
-          "trigger": "<span>When a hostile character moves within Range 5, even if that movement does not provoke Reactions.</span>"
+          "trigger": "<span>When a hostile character moves within Range 10 and Line of Sight, even if that movement does not provoke Reactions.</span>"
         }
       ],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Transformable Stealth Mobile Armor",
-      "passive_effect": "<span>As a Protocol, the X-1 may change into one of the following modes. It may choose to start a scene in any form.<br></span><strong><span>Mobile Suit mode:</span></strong><br/><ul><li><span>May treat all Ranged Energy Weapons as CQB Weapons with Threat 3.</span><br/></li><li><span>Arm Beam Gun gains Accurate tag.</span><br/></li><li><span>1/round, as a reaction, you may first Lock on to a hostile character attempting to Scan, Lock on, or Attack you.</span><br/></li></ul><strong><span>Mobile Armor mode:</span></strong><br/><ul><li><span>May count all movement as Flying.</span><br/></li><li><span>Hostiles attempting to Scan or Lock on against the X-1 Methuss must first pass a Systems save. On a Failure, they gain Lock on.</span><br/></li><li><span>1/round you may Boost as a Protocol.</span><br/></li><li><span>May not make melee attacks other than Ram.</span><br/></li></ul>",
+      "passive_effect": "<span>As a Protocol, the X-1 may change into one of the following modes. It may choose to start a scene in any form. You may not transform if you have Boosted this turn.</span><br><span><br></span><strong><span>Mobile Suit mode:</span></strong><br/><ul><li><span>Treats all Ranged weapons that deal energy as CQB weapons with Threat 3, but their range is halved (down to a minimum of their Threat).&nbsp;</span><br/></li><li><span>While in the Danger Zone, you may Hover, but must end all Hover movements on the ground or another solid surface, or else immediately begin falling.</span><br/></li><li><span>1/round, as a Quick Action, you may gain 4 Heat and choose an adjacent allied mech character. The target’s next attack gains the Reactor Bleed trait, but you may not make attacks or Stabilize until the target has resolved their attack, nor before taking this Quick Action.</span><br><br/></li></ul><strong><span>Mobile Armor mode:</span></strong><br/><ul><li><span>May count all movement as Flying.</span><br/></li><li><span>Hostiles attempting to Scan or Lock On against the X-1 must first pass a Systems save. On a Failure, you apply Lock On to the triggering character, and the triggering action automatically fails.</span><br/></li><li><span>1/round, while in the Danger Zone, you may Boost as a Protocol.</span><br/></li><li><span>You may not make melee attacks other than Ram.</span><br/></li></ul>",
       "passive_actions": [
         {
           "name": "Change Mode",
@@ -1751,8 +1751,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "https://i.imgur.com/QjhLGQx.png",
-    "y_pos": 26
+    "image_url": "",
+    "y_pos": 0
   },
   {
     "id": "MSG0079_hopper",
@@ -1825,8 +1825,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "https://i.imgur.com/XEBRtsV.png",
-    "y_pos": 24
+    "image_url": "",
+    "y_pos": 0
   },
   {
     "id": "MSG0079_zudah",
@@ -1916,8 +1916,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "https://i.imgur.com/K4A3PCT.png",
-    "y_pos": "14"
+    "image_url": "",
+    "y_pos": 0
   },
   {
     "id": "MSG0079_bleed",
@@ -1991,8 +1991,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "https://i.imgur.com/A8GBSaB.png",
-    "y_pos": 23
+    "image_url": "",
+    "y_pos": 0
   },
   {
     "id": "MSG0079_ass-guntank",
@@ -2004,7 +2004,7 @@
       "Striker"
     ],
     "variant": "RX-75 Guntank",
-    "description": "The RTX-440 is a modern refit of the original RTX-44 Prototype Guntank that was developed as a conceptual testbed for a new form of 'heavy main battle tank', which would go on to be further developed into the RTX-65 and RX-75 Guntank line. This refit includes a 'partial' transformation system that allows the machine to assume a raised posture form similar to the RX-75, granting it a better vantage point along with allowing a wider traverse of its main hull. What makes it more distinct from its development counterparts however is the ability to assume an 'Assault Gun Mode' that brings its stance back to its original form factor, allowing for the Ground Assault Guntank to cross terrain at much higher speeds than other Guntanks due to its reduced frontal cross section.<br/>As the role of heavy artillery has already been covered by the RX-75 and its successors, the RTX-440 has instead been tuned for high-speed assaults, smashing apart enemy formations and fortifications and exploiting these breaches before a response can be properly mounted. The first time this was put to the test was during the Battle of Ardennes, where the Ground Assault Guntank was used as a vanguard unit in the counterattack mounted by European forces against Zeon. It would gain particular renown during skimishes in the Fulda Gap where it dueled against Hildolfr units, and during the Ukrainian liberation campaign where Assault Guntank squadrons rolling across the steppes were particularly effective at out-maneuvering Zeon mobile weapon forces.<br/>Originally intended as a stopgap using mothballed units, the RTX-440's successes has led to a new lease on life. Dedicated factory lines for the machine are contracted out to Nexter and Krauss-Maffei Wegmann as per agreement by the Earth Federation with KNDS, along with additional factories by Polska Grupa Zbrojeniowa and Shanghai Steel.",
+    "description": "",
     "mounts": [
       "Heavy",
       "Flex",
@@ -2081,8 +2081,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "https://i.imgur.com/sILuJJt.png",
-    "y_pos": "55"
+    "image_url": "",
+    "y_pos": 0
   },
   {
     "id": "MSG0079_krieger",
@@ -2162,79 +2162,7 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "https://i.imgur.com/epsYWOO.png",
-    "y_pos": "21"
-  },
-  {
-    "id": "MSG0079_hardballer",
-    "license_id": "MSG0079_hardballer",
-    "source": "NEVEC",
-    "license_level": 2,
-    "name": "PTX-140 Hardballer",
-    "mechtype": [
-      "Striker"
-    ],
-    "variant": "",
-    "description": "One of the first machines designed by NEVEC from the ground up for combating Mobile Suits, the PTX-140 Hardballer is an agile machine built for aggressive hit-and-run tactics. It accomplishes this through its integrated flight backpack that allows it to either leap and hover for respectable distances or skate across the ground at high speeds. Along with being able to mount a versatile array of weapons, the Hardballer also includes a close combat weapon specifically designed for it that is commonly described as an oversized chainsaw.<br>Being smaller than most Mobile Suits yet larger than a majority of Junior Mobile Suits, NEVEC has coined the term 'Vital Suit' to describe this new size class of mobile weapon.",
-    "mounts": [
-      "Main",
-      "Flex",
-      "Heavy"
-    ],
-    "stats": {
-      "size": 1,
-      "structure": 4,
-      "stress": 4,
-      "armor": 1,
-      "hp": 7,
-      "evasion": 10,
-      "edef": 8,
-      "heatcap": 6,
-      "repcap": 5,
-      "sensor_range": 6,
-      "tech_attack": 0,
-      "save": 10,
-      "speed": 4,
-      "sp": 6
-    },
-    "traits": [
-      {
-        "name": "Thruster Skating",
-        "use": "",
-        "description": "1/round, after you Boost, the Hardballer may move additional spaces up to the pilot's Grit that ignores engagement. The boost also forces enemy reactions against it to take +1 Difficulty."
-      },
-      {
-        "name": "Integrated Flight Systems",
-        "use": "",
-        "description": "When Boosting, the Hardballer may opt to Hover. Whenever the Hardballer ends its turn not on the ground or any solid surface, it gains 2 Heat."
-      }
-    ],
-    "core_system": {
-      "name": "Integrated Motorized Close Combat Weaponry",
-      "active_name": "Until All Have Been Tamed",
-      "active_effect": "The VS Saw immediately deploys and revs up. Gain 5 Charges. Until the end of the scene or until all charges are expended, a charge may be expended as a free action to use the VS Saw. Additionally, on hit any number of charges may be used to add 1D6 bonus damage per charge.",
-      "activation": "Protocol",
-      "description": "Mounted in a wrist module on one of its arms, the Hardballer possesses a close combat weapon in the form of a motorized chain blade. This weapon, once extended and revved up, can tear apart armor and internal components of other mobile suits.",
-      "deactivation": "",
-      "use": "Scene",
-      "active_actions": [],
-      "active_bonuses": [],
-      "active_synergies": [],
-      "passive_name": "Cut Down All Obstacles",
-      "passive_effect": "When in Danger Zone, the VS Saw integrated weapon inflicts Shred on-hit. This effect lasts until the start of the Hardballer's next turn.",
-      "passive_actions": [],
-      "passive_bonuses": [],
-      "passive_synergies": [],
-      "deployables": [],
-      "counters": [],
-      "integrated": [
-        "MSG0079_hardballersaw"
-      ],
-      "special_equipment": [],
-      "tags": []
-    },
-    "specialty": false,
-    "image_url": "https://i.imgur.com/llB6fdy.png",
-    "y_pos": "32"
+    "image_url": "",
+    "y_pos": 0
   }
 ]

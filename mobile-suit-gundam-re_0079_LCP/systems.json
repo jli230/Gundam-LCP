@@ -1611,30 +1611,5 @@
         "trigger": ""
       }
     ]
-  },
-  {
-    "id": "MSG0079_boostattack",
-    "name": "Cossack Dueling OS Package",
-    "source": "NEVEC",
-    "license": "PTX-140 Hardballer",
-    "license_id": "MSG0079_hardballer",
-    "license_level": 1,
-    "effect": "When you Boost in a straight line, you may elect any Main Melee weapon to use to attack an enemy as a special reaction. Damage dealt, including bonus damage, is halved. The mount used is treated as having Skirmished this turn.",
-    "type": "System",
-    "sp": "2",
-    "description": "A simple OS tuning package that enables most mechs to be more effective in executing hit-and-run attacks.",
-    "actions": [
-      {
-        "name": "Sideswipe",
-        "activation": "Reaction",
-        "detail": "You may roll to attack with the melee weapon. Damage dealt, including bonus damage, is halved.",
-        "pilot": false,
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "1/round",
-        "init": "",
-        "trigger": "While <strong>Boosting</strong>, there is an enemy within Threat of an equipped Main Melee weapon along the path of the Boost."
-      }
-    ]
   }
 ]
