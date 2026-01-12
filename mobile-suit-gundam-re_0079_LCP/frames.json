@@ -1631,12 +1631,12 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Transformable Stealth Mobile Armor",
-      "passive_effect": "<span>As a Protocol, the X-1 may change into one of the following modes. It may choose to start a scene in any form. You may not transform if you have Boosted this turn.</span><br><span><br></span><strong><span>Mobile Suit mode:</span></strong><br/><ul><li><span>Treats all Ranged weapons that deal energy as CQB weapons with Threat 3, but their range is halved (down to a minimum of their Threat).&nbsp;</span><br/></li><li><span>While in the Danger Zone, you may Hover, but must end all Hover movements on the ground or another solid surface, or else immediately begin falling.</span><br/></li><li><span>1/round, as a Quick Action, you may gain 4 Heat and choose an adjacent allied mech character. The target’s next attack gains the Reactor Bleed trait, but you may not make attacks or Stabilize until the target has resolved their attack, nor before taking this Quick Action.</span><br><br/></li></ul><strong><span>Mobile Armor mode:</span></strong><br/><ul><li><span>May count all movement as Flying.</span><br/></li><li><span>Hostiles attempting to Scan or Lock On against the X-1 must first pass a Systems save. On a Failure, you apply Lock On to the triggering character, and the triggering action automatically fails.</span><br/></li><li><span>1/round, while in the Danger Zone, you may Boost as a Protocol.</span><br/></li><li><span>You may not make melee attacks other than Ram.</span><br/></li></ul>",
+      "passive_effect": "<span>As a Protocol, the X-1 may change into one of the following modes. It may choose to start a scene in any form. You may not transform if you have used </span><strong><span>Full Afterburners</span></strong><span> this turn.</span><br><span><br></span><strong><span>Mobile Suit mode:</span></strong><br/><ul><li><span>Treats all Ranged weapons that deal energy as CQB weapons with Threat 3, but their range is halved (down to a minimum of their Threat).&nbsp;</span><br/></li><li><span>While in the Danger Zone, you may Hover, but must end all Hover movements on the ground or another solid surface, or else immediately begin falling.</span><br/></li><li><span>1/round, as a Quick Action, you may gain 4 Heat and choose an adjacent allied mech character. The target’s next attack gains the Reactor Bleed trait, but you may not make attacks or Stabilize until the target has resolved their attack, nor before taking this Quick Action.</span><br><br/></li></ul><strong><span>Mobile Armor mode:</span></strong><br/><ul><li><span>May count all movement as Flying.</span><br/></li><li><span>Hostiles attempting to Scan or Lock On against the X-1 must first pass a Systems save. On a Failure, you apply Lock On to the triggering character, and the triggering action automatically fails.</span><br/></li><li><strong><span>Full Afterburners: </span></strong><span>1/round, while in the Danger Zone, you may Boost as a Protocol.</span><br/></li><li><span>You may not make melee attacks other than Ram.</span><br><br/></li></ul>",
       "passive_actions": [
         {
           "name": "Change Mode",
           "activation": "Protocol",
-          "detail": "<span>The X-1 may switch to a mode it is not already in.</span>",
+          "detail": "<span>The X-1 may switch to a mode it is not already in. You may not transform if you have used </span><strong><span>Full Afterburners</span></strong><span> this turn.</span>",
           "cost": "1",
           "pilot": false,
           "damage": [],
@@ -1650,7 +1650,7 @@
         {
           "name": "Full Afterburners",
           "activation": "Protocol",
-          "detail": "You may Boost as a Protocol",
+          "detail": "1/ round while in the Danger Zone, you may Boost as a Protocol.",
           "cost": "1",
           "pilot": false,
           "damage": [],
