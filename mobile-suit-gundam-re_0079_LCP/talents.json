@@ -10,7 +10,7 @@
       },
       {
         "name": "Combat Instinct",
-        "description": "<span>When you avoid any non-self inflicted pattern-based effect, move to any free space adjacent to the area of effect. 1/round, if you use this effect to move adjacent to a hostile character, they become Impaired until the end of their next turn.</span>",
+        "description": "<span>When you avoid any pattern-based effect, move to any free space adjacent to the area of effect and gain Immunity to the triggering effect as a reaction. 1/round, if you use this effect to move adjacent to a hostile character, they become Impaired until the end of their next turn.</span>",
         "exclusive": false
       },
       {
@@ -20,13 +20,13 @@
           {
             "name": "Flatten Probability",
             "activation": "Reaction",
-            "detail": "<div><span>Add or subtract the value of a Newtype die of your choice to or from the roll.</span></div>",
+            "detail": "<span>You may replace the d6 with the value of one of your Newtype dice.</span>",
             "pilot": false,
             "synergy_locations": [],
             "tech_attack": false,
             "frequency": "2/round",
             "init": "",
-            "trigger": "<div><span>You or any other character rolls a D20 within Line of Sight.</span></div>"
+            "trigger": "<span>You or any other character rolls a d6 within Line of Sight.</span>"
           }
         ],
         "exclusive": false
@@ -52,7 +52,7 @@
       },
       {
         "name": "May I Stand Unshaken",
-        "description": "<span>At the end of every hostile turn in which you do not take damage and do not suffer involuntary movement, you gain 1 poise die—a D6—up to a maximum of 3 dice. They last until expended or the end of the scene. You may expend Poise dice 1-for-1 for the following effects:</span><br/><ul><li><strong>Interpose: </strong><span>Whenever you Brace, expend a Poise die to grant all on-brace effects to one adjacent allied character. They do not suffer from a reduction in action economy. This effect lasts until they break adjacency, or until the end of your next turn.</span><br/></li><li><strong><span>Indefatigable:</span></strong><span> Spend a Poise die to Brace, even when you wouldn’t normally be able to (unable to take reactions, Stunned, already Braced, etc), but obeying the 1/turn reaction limit. Armor and Difficulty granted by Brace effects do not stack.</span><br/></li><li><strong>Barrier Burst: </strong><span>Whenever you Brace, you may expend a Poise die to apply 1d6 Knockback to any number of characters within threat of one of your Shield weapons.</span><br/></li></ul>",
+        "description": "<span>At the end of every hostile turn in which you do not take damage and do not suffer involuntary movement, you gain 1 poise die—a D6—up to a maximum of 3 dice. They last until expended or the end of the scene. You may expend Poise dice 1-for-1 for the following effects:</span><br><br/><ul><li><strong><span>Interpose: </span></strong><span>Spend a Poise die to Brace whenever you or an adjacent ally has been hit by an attack and damage has been rolled. When you do, you may grant all on-brace effects to one adjacent allied character, excepting any reduction of action economy. This effect lasts until they break adjacency, or until the end of your next turn.</span><br><br/></li><li><strong><span>Indefatigable:</span></strong><span> Spend a Poise die to Brace, even when you wouldn’t normally be able to (unable to take reactions, Stunned, already Braced, etc.), but obeying the 1/turn reaction limit and core trigger clause. Armor and Difficulty granted by Brace effects do not stack.</span><br><br/></li><li><strong>Barrier Burst: </strong><span>Whenever you Brace, you may expend a Poise die to apply 1d6 Knockback to any number of characters within threat of one of your Shield weapons.</span><br/></li><li><strong><span>Shield Bash:</span></strong><span> On any turn after taking the Brace reaction, you gain access to a special Quick Action, which you may take by spending 1 Poise die. You may move up to your speed, ignoring engagement, and attack with any of your mounted Shield weapons.</span><br><br/></li></ul>",
         "exclusive": false
       }
     ],
@@ -64,17 +64,17 @@
     "terse": "See things that others do not. Predict your enemy's moves before they happen. ",
     "ranks": [
       {
+        "name": "All Things as They Should Be",
+        "description": "<span>1/round, When your prepared action is triggered, the target (if there is one) gains +1 Difficulty on any Check or Save you force as a part of this action. If your prepared action was an attack, it gains +1 Accuracy.</span>",
+        "exclusive": false
+      },
+      {
         "name": "Blindsight",
         "description": "<span>Within Range 3, you ignore Invisible, Hidden, and Line of Sight restrictions on targeting.</span>",
         "exclusive": false
       },
       {
-        "name": "All Things as They Should be",
-        "description": "<span>1/round, When your prepared action is triggered, the target (if there is one) gains +1 Difficulty on any Check or Save you force as a part of this action. If your prepared action was an attack, it gains +1 Accuracy.</span>",
-        "exclusive": false
-      },
-      {
-        "name": "Precognition",
+        "name": "Evil Demon",
         "description": "<span>1/round, when you prepare an action, you may force the character who takes the trigger action to roll a Systems save. On failure, they must take the trigger action, so long as it is possible for them to do so.</span>",
         "exclusive": false
       }

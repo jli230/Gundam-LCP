@@ -1143,6 +1143,18 @@
         "name": "Unique",
         "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
       }
+    ],
+    "bonuses": [
+      {
+        "id": "heatcap",
+        "val": 1,
+        "damage_types": [],
+        "range_types": [],
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "overwrite": false,
+        "replace": false
+      }
     ]
   },
   {
@@ -1603,6 +1615,312 @@
         "name": "Deploy Smart Grenades",
         "activation": "Quick",
         "detail": "<span>You toss a bundle of Smart Grenades, which linger in the air and automatically seek out enemies. Select a Blast 2 area completely within Sensors and Line of Sight. Hostile characters that enter, leave, or move within this zone are struck by a Smart Grenade and take 1d6+2 Explosive damage. This may happen once per round, per character. This zone lasts until the start of your next turn.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_civdemo_packs",
+    "name": "CivDemo Packs",
+    "source": "EFRD",
+    "license": "RGM-79LX GM Pebble",
+    "license_id": "MSG0079_RGMLX",
+    "license_level": 1,
+    "effect": "Expend a charge for one of the following effects:<br/><ul><li>Reinforced TacCom Cam (Grenade, range 5, line 4): The camera takes a multilayered data reading in a line 4 path of your choice from its impact location. Characters within the targeted spaces make an AGILITY save or gain lock-on.<br/></li><li>Birdlime Burst Container (Grenade, range 5, Blast 1): Characters within a Blast 1 area may clear status and conditions caused by structure damage.<br/></li></ul>",
+    "type": "System",
+    "sp": "1",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_grenade",
+        "name": "Grenade",
+        "description": "As a quick action, this explosive or other device can be thrown to a space within line of sight and the specified Range."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_GECKO",
+    "name": "Grenade Evading/Concentration of Kinetics Orientator",
+    "source": "EFRD",
+    "license": "RGM-79LX GM Pebble",
+    "license_id": "MSG0079_RGMLX",
+    "license_level": 2,
+    "effect": "1/turn, if a non-hostile grenade would include you in its AOE, you may immediately move two spaces.",
+    "type": "System",
+    "sp": "2",
+    "description": ""
+  },
+  {
+    "id": "MSG0079_comdemo_grenade_pack",
+    "name": "ComDemo Grenade Pack",
+    "source": "EFRD",
+    "license": "RGM-79LX GM Pebble",
+    "license_id": "MSG0079_RGMLX",
+    "license_level": 2,
+    "effect": "Expend a charge for one of the following effects:<br/><ul><li>Automated Anchor Capsule (Grenade, range 5, Blast 2): Characters within the targeted spaces make an AGILITY save or be pulled into the center.<br/></li><li>Recursive Lighting Pod (Grenade, range 5, Blast 2): Characters within the targeted area make an AGILITY save or take 2 Energy Damage + 1 Energy Damage for every character making a save. On a success, they take half damage.<br/></li></ul>",
+    "type": "System",
+    "sp": "",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 4
+      },
+      {
+        "id": "tg_grenade",
+        "name": "Grenade",
+        "description": "As a quick action, this explosive or other device can be thrown to a space within line of sight and the specified Range."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_frag_grenade_kai",
+    "name": "Frag Grenade Kai",
+    "source": "EFRD",
+    "license": "RGM-79LX GM Pebble",
+    "license_id": "MSG0079_RGMLX",
+    "license_level": 3,
+    "effect": "Expend a charge for one of the following effects:<br/><ul><li>Range 5, Blast 1: Throw a Grenade within Range 5. All characters within a Blast 1 area must pass an Agility save or take 2+1 AP Explosive damage for every space of hard cover in the grenade’s blast. On a success, they take half damage.<br/></li></ul><ul><li>Message Big Sword if you have a good idea for something to go here.<br/></li></ul>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 4
+      },
+      {
+        "id": "tg_grenade",
+        "name": "Grenade",
+        "description": "As a quick action, this explosive or other device can be thrown to a space within line of sight and the specified Range."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_Dynamic",
+    "name": "Relations//Dynamics",
+    "source": "ZN",
+    "license": "MS-06E Zaku Reconnaissance Type",
+    "license_id": "MSG0079_Zaku-Rec",
+    "license_level": 1,
+    "effect": "Gain the following two Invasion options.",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Solipsism",
+        "activation": "Invade",
+        "detail": "<span>All characters adjacent to the target clear up to 2 heat. Then, the target takes an equivalent amount of heat, up to a maximum of 6 heat.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Ego Death",
+        "activation": "Invade",
+        "detail": "<span>The target clears all heat. Then, the target and all adjacent characters receive the amount of heat cleared, equally divided.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_sig-scra",
+    "name": "Signal Scrambler",
+    "source": "ZN",
+    "license": "MS-06E Zaku Reconnaissance Type",
+    "license_id": "MSG0079_Zaku-Rec",
+    "license_level": 1,
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_shield",
+        "name": "Shield",
+        "description": "This system is an energy shield of some kind."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Anathema",
+        "activation": "Quick",
+        "detail": "<span>Unfurl the wings on this special E-WAR module. For the duration of this effect, you are Slowed. If a hostile character would hit a character within Range 5 of you with a tech attack or smart weapon, you may become the new target, being hit automatically. This effect lasts until you retract the module as a Protocol.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_morbius",
+    "name": "Morbidity//Panacea",
+    "source": "ZN",
+    "license": "MS-06E Zaku Reconnaissance Type",
+    "license_id": "MSG0079_Zaku-Rec",
+    "license_level": 2,
+    "effect": "Gain the following two Invasion options.",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Contagion",
+        "activation": "Invade",
+        "detail": "<span>Select one condition on the target that was not self-inflicted. When it clears, select another mech character within Range 5 of the target. They are afflicted with the condition for whatever the original duration was. </span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Bloodletting",
+        "activation": "Invade",
+        "detail": "<span>Select one condition on the target that was not self-inflicted. They may immediately clear it, but they take 2 heat.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_part-dis-pod",
+    "name": "Minovsky Particle Dispersal Pods",
+    "source": "ZN",
+    "license": "MS-06E Zaku Reconnaissance Type",
+    "license_id": "MSG0079_Zaku-Rec",
+    "license_level": 3,
+    "type": "Deployable",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 2
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Minovsky Dispersal Pod",
+        "type": "Deployable",
+        "detail": "<span>When deployed, the Dispersal Pod releases a thick cloud of Minovsky Particles so charged and so dense that it’s visible as a swirling pink mist. This mist is a Blast 1 template, 3 spaces high, centered on the pod. Line of sight can not be drawn into or out of the mist, and pattern effects that deal any Energy damage terminate if they intersect with the mist. Characters at least partially in the area of effect are unable to use weapons that deal any Energy damage and may only draw line of sight to other spaces in the mist. Additionally, any character who enters the mist or begins their turn in it for the first time in a round must succeed an Engineering Save or else take 1d3 Heat damage. The mist remains until the Dispersal Pod is destroyed or the end of the scene.</span>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "5",
+        "evasion": "5",
+        "edef": "",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_brain-computer",
+    "name": "Cartesian Transubstantiated Machine Mind",
+    "source": "ZN",
+    "license": "MS-06E Zaku Reconnaissance Type",
+    "license_id": "MSG0079_Zaku-Rec",
+    "license_level": 3,
+    "effect": "<span>Your mech gains the AI tag and the </span><strong><span>Fabricate Reality</span></strong><span> Full Tech Action.</span>",
+    "type": "AI",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_ai",
+        "name": "AI",
+        "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or COMP/CON unit installed that can act somewhat autonomously. A pilot can choose to hand over the controls to their AI or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Fabricate Reality",
+        "activation": "Full Tech",
+        "detail": "<span>Make a tech attack against a character within sensors and line of sight. You launch a massive digital attack, throwing the target’s systems into an unreality of your creation. </span><br/><span>On a successful attack, until the end of the target's next turn, you are replaced with a perfect mirror copy of the target, sharing all of their statistics, including weapons, traits, systems, conditions, statuses, counters—everything. When they begin their next turn, you may select one version of the target to control, forcing the target to select the other. You both take a set of normal actions during this turn (though, if there is ever a question of whether you or the target takes an action first, it’s always you). </span><br/><span>As you are both copies of one another, whenever one character expends a chargeable ability, fires a Loading weapon, expends a Limited charge, uses an ability die, takes an action with a frequency restriction, etc., the resource is expended for both characters. Action duplication rules also apply as if you were both the same character. Additionally, whenever one character takes damage or heat, so does the other. Whenever one character suffers from a condition or status, so does the other.</span><br/><span>At the end of the target’s turn, you may select either your own or your target’s space to reappear as your usual self, validating the other position as the target’s “true” location. None of the effects taken during your time as the target remain applied to you after you reappear, but they do remain applied to the target. Due to the strain this puts on your machine’s AI, you can’t take any other action on any turn you take this action, including your standard move. A willing character may choose to be hit by this effect without rolling.</span>",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,

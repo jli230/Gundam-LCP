@@ -485,5 +485,164 @@
         "trigger": "<span>An enemy within threat has hit you with a melee attack, and damage has been rolled.</span>"
       }
     ]
+  },
+  {
+    "id": "MSG0079__leech_grenade_mounting",
+    "name": "“Leech” Grenade Mounting",
+    "source": "EFRD",
+    "license": "RGM-79LX GM Pebble",
+    "license_id": "MSG0079_RGMLX",
+    "license_level": 1,
+    "effect": "Choose a weapon: Attach a grenade launcher that draws on the tool’s internal mechanisms.<br/>1/Round, When you make an attack roll with this weapon, you may choose to miss, then throw a Grenade after the attack resolves with equal range to the range or threat of the modded weapon.",
+    "sp": "2",
+    "description": "",
+    "allowed_sizes": [],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": [],
+    "added_tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_mod",
+        "name": "Mod",
+        "description": "This modification can be applied to a weapon. Each weapon can only have one Mod, and cannot have more than one of the same Mod. Mods are applied when the user builds their mech or during a Full Repair."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_cable-dagger",
+    "name": "Cable Dagger Module",
+    "source": "ZN",
+    "license": "MS-08TX Efreet",
+    "license_id": "MSG0079_efreet",
+    "license_level": 2,
+    "effect": "<span>The applied weapon gains Thrown 5 if it doesn’t already. The weapon also gains the following Quick Action.</span>",
+    "sp": "2",
+    "description": "",
+    "allowed_types": [
+      "Melee"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main"
+    ],
+    "restricted_types": [
+      "Rifle",
+      "Cannon",
+      "Launcher",
+      "CQB",
+      "Nexus"
+    ],
+    "restricted_sizes": [
+      "Superheavy",
+      "Heavy"
+    ],
+    "added_damage": [],
+    "added_range": [],
+    "added_tags": [
+      {
+        "id": "tg_thrown",
+        "name": "Thrown {VAL}",
+        "description": "This melee weapon can be thrown at targets within {VAL} spaces. Thrown attacks follow the rules for melee attacks but are affected by cover; additionally, a thrown weapon comes to rest in an adjacent space to its target and must be retrieved as a free action while adjacent to that weapon before it can be used again.",
+        "val": 5
+      }
+    ],
+    "actions": [
+      {
+        "name": "Spin Up",
+        "activation": "Quick",
+        "detail": "<span>You start spinning your cabled weapon around, building momentum for a strike. Your next thrown attack with this weapon is made as if the weapon had an additional +3 Thrown. On a hit, the target must roll a Hull save. On a failure, the weapon snags, preventing them or you from moving, voluntarily or involuntarily, away from each other. They may remove the weapon with a successful Hull check taken as a Quick Action–after which the weapon drops into a free adjacent space. This effect also ends if you take the </span><strong><span>Retrieve </span></strong><span>action, or are Jammed or Stunned.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Retrieve",
+        "activation": "Quick",
+        "detail": "<span>Use this action to retrieve your thrown weapon if it is still within throwing range. You whip it back to you, striking enemies along the way. Make an attack with this weapon against all characters in a straight line between you and your weapon’s resting point. These attacks deal half damage, burn, and heat on hit, and can not deal bonus damage.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_revengeance",
+    "name": "Gun Sheathe",
+    "source": "ZN",
+    "license": "MS-08TX Efreet",
+    "license_id": "MSG0079_efreet",
+    "license_level": 3,
+    "effect": "<span>The modded weapon gains the </span><strong><span>Sheathe </span></strong><span>and </span><strong><span>Draw </span></strong><span>Quick Actions.</span>",
+    "sp": "2",
+    "description": "",
+    "allowed_types": [
+      "Melee"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main",
+      "Heavy"
+    ],
+    "restricted_types": [
+      "Rifle",
+      "Cannon",
+      "Launcher",
+      "CQB",
+      "Nexus"
+    ],
+    "restricted_sizes": [
+      "Superheavy"
+    ],
+    "added_damage": [],
+    "added_range": [],
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Sheathe",
+        "activation": "Quick",
+        "detail": "<span>Sheathe the modded weapon. This weapon is loaded into the Gun Sheathe, and becomes unusable in any context other than </span><strong><span>Draw.</span></strong>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Draw",
+        "activation": "Quick",
+        "detail": "<span>At the start of any turn you have a weapon loaded in the Gun Sheathe, you may use the </span><strong><span>Draw </span></strong><span>Quick Action. Attack a target in threat or throwing range of the loaded weapon. On a hit, the attack automatically counts as a critical hit and gains AP. On a miss, the attack deals an amount of Reliable damage equal to the weapon’s minimum damage if the weapon does not already have the Reliable tag. Your weapon is ejected from the sheathe, permitting normal use.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
   }
 ]

@@ -954,7 +954,7 @@
       "tags": []
     },
     "image_url": "https://cdn.shopify.com/s/files/1/2786/5582/products/mg-msm-07-z-gok-01_clipped_rev_1.png?v=1668804659",
-    "y_pos": 0
+    "y_pos": "11"
   },
   {
     "id": "MSG0079_rgm_sevenninegs_gunslinger_gm",
@@ -1602,7 +1602,7 @@
     "core_system": {
       "name": "AIR SUPERIORITY KIT",
       "active_name": "Hyper-Active Intercept Suite",
-      "active_effect": "<strong><span>Trigger:</span></strong><span> When a hostile character moves within Range 10 and Line of Sight, even if that movement does not provoke Reactions.</span><br/><strong><span>Effect:</span></strong><span> You may expend your Overwatch reaction to Lock On, then Barrage against the triggering character. This ignores restrictions against allowing Superheavy weapons to fire as a reaction. This action is </span><strong><span>Efficient</span></strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span>",
+      "active_effect": "<strong><span>Trigger:</span></strong><span> When a hostile character moves within Range 10 and Line of Sight, even if that movement does not provoke Reactions.</span><br><strong><span>Effect:</span></strong><span> You may expend your Overwatch reaction to Barrage against the triggering character. This Barrage ignores restrictions against allowing Superheavy weapons to fire as a reaction and counts as having consumed Lock On. This action is </span><strong><span>Efficient</span></strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span>",
       "activation": "Reaction",
       "description": "<span>The X-1's design team conducted trials at the California Base, including transformation tests at subsonic speeds to observe the X-1’s adaptability in changing combat situations. However, the X-1 was unable to withstand the shock of transformation at subsonic speed and was destroyed. However, the data gathered contributed to improving the atmospheric flight performance of the MSZ-006A1 Zeta Plus A1.</span>",
       "deactivation": "",
@@ -1631,12 +1631,12 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Transformable Stealth Mobile Armor",
-      "passive_effect": "<span>As a Protocol, the X-1 may change into one of the following modes. It may choose to start a scene in any form. You may not transform if you have used </span><strong><span>Full Afterburners</span></strong><span> this turn.</span><br><span><br></span><strong><span>Mobile Suit mode:</span></strong><br/><ul><li><span>Treats all Ranged weapons that deal energy as CQB weapons with Threat 3, but their range is halved (down to a minimum of their Threat).&nbsp;</span><br/></li><li><span>While in the Danger Zone, you may Hover, but must end all Hover movements on the ground or another solid surface, or else immediately begin falling.</span><br/></li><li><span>1/round, as a Quick Action, you may gain 4 Heat and choose an adjacent allied mech character. The target’s next attack gains the Reactor Bleed trait, but you may not make attacks or Stabilize until the target has resolved their attack, nor before taking this Quick Action.</span><br><br/></li></ul><strong><span>Mobile Armor mode:</span></strong><br/><ul><li><span>May count all movement as Flying.</span><br/></li><li><span>Hostiles attempting to Scan or Lock On against the X-1 must first pass a Systems save. On a Failure, you apply Lock On to the triggering character, and the triggering action automatically fails.</span><br/></li><li><strong><span>Full Afterburners: </span></strong><span>1/round, while in the Danger Zone, you may Boost as a Protocol.</span><br/></li><li><span>You may not make melee attacks other than Ram.</span><br><br/></li></ul>",
+      "passive_effect": "<span>As a Protocol, the X-1 may change into one of the following modes. It may choose to start a scene in any form. You may not transform and use </span><strong><span>Full Afterburners</span></strong><span> on the same turn.</span><br><span><br></span><strong><span>Mobile Suit mode:</span></strong><br/><ul><li><span>Treats all Ranged weapons that deal energy as CQB weapons with Threat 3, but their range is halved (down to a minimum of their Threat).&nbsp;</span><br/></li><li><span>While in the Danger Zone, you may Hover.</span><br/></li><li><span>1/round, as a Quick Action, you may gain 4 Heat and choose an adjacent allied mech character. The target’s next attack gains the Reactor Bleed trait and counts as having consumed Lock On, but you may not make attacks or Stabilize until the target has resolved their attack, nor before taking this Quick Action.</span><br/></li></ul><strong><span>Mobile Armor mode:</span></strong><br/><ul><li><span>May count all movement as Flying.</span><br/></li><li><span>The X-1 gains a special Hard Cover against Smart and Tech Attacks, and hostiles attempting to Lock On against the X-1 must first pass a Systems save. On a Failure, the Lock On action automatically fails.</span><br/></li><li><strong><span>Full Afterburners: </span></strong><span>1/round, you may Boost as a Free Action. If you are not in the Danger Zone when you do so, you gain 2 heat.</span><br/></li><li><span>You may not make melee attacks other than Ram.</span><br/></li></ul>",
       "passive_actions": [
         {
           "name": "Change Mode",
           "activation": "Protocol",
-          "detail": "<span>The X-1 may switch to a mode it is not already in. You may not transform if you have used </span><strong><span>Full Afterburners</span></strong><span> this turn.</span>",
+          "detail": "<span>The X-1 may switch to a mode it is not already in. You may not transform and use </span><strong><span>Full Afterburners</span></strong><span> on the same turn.</span>",
           "cost": "1",
           "pilot": false,
           "damage": [],
@@ -1649,8 +1649,8 @@
         },
         {
           "name": "Full Afterburners",
-          "activation": "Protocol",
-          "detail": "1/ round while in the Danger Zone, you may Boost as a Protocol.",
+          "activation": "Free",
+          "detail": "<span>1/round, you may Boost as a Free Action. If you are not in the Danger Zone when you do so, you gain 2 heat.</span>",
           "cost": "1",
           "pilot": false,
           "damage": [],
@@ -2158,6 +2158,340 @@
       "integrated": [
         "MSG0079_montante"
       ],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "",
+    "y_pos": 0
+  },
+  {
+    "id": "MSG0079_RGMLX",
+    "license_id": "MSG0079_RGMLX",
+    "source": "EFRD",
+    "license_level": 2,
+    "name": "RGM-79LX GM Pebble",
+    "mechtype": [
+      "Striker"
+    ],
+    "variant": "",
+    "description": "The GM Pebble is built around, but more significantly into, the Light Armor type. Designed as an early proof of concept for the flexibility of movable frame technology, it managed to impress at tech shows due to its human-like grenade-throwing motions. Creating enough excitement among the brass, test units see supported field use despite the tension its weapon of choice creates within colonies. This fact, combined with 16Lab and Neucom’s large part in its development, has led to ZOE-2 Units calling the frame their “Evil Step-Sister”.",
+    "mounts": [
+      "Main/Aux",
+      "Main"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 7,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 5,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "IMBALANCING CONTACT",
+        "use": "Round",
+        "description": "<strong>1/Round</strong> When targeting an enemy’s space while throwing a <strong>grenade</strong>, you may immediately make a <strong>ranged attack roll</strong> on that enemy before the grenade’s effects occur. On hit, that enemy takes <strong>1 kinetic damage</strong> and <strong>+2 Difficulty</strong> to <strong>Agility Saves</strong> until the end of this turn."
+      },
+      {
+        "name": "OPTIMIZED THROW",
+        "use": "",
+        "description": "When you make an attack on a mount that contains an <strong>Aux</strong> weapon during a <strong>Barrage</strong> or <strong>Skirmish</strong>, you may throw a <strong>grenade</strong> instead of using the <strong>Aux weapon</strong>. "
+      }
+    ],
+    "core_system": {
+      "name": "ASYMMETRICAL BODY",
+      "active_name": "Lengthened Arc Toss",
+      "active_effect": "<span>As a protocol, for the rest of the turn, your grenades gain +15 Range. Gain +1 charges to up to 2 different limited grenade systems of your choice.</span><br/><span>This ability is </span><strong><span>Efficient</span></strong><span> and will refund 1 Core Point at the end of any scene in which this ability was used.</span>",
+      "activation": "Protocol",
+      "description": "<span>\"No, that's not all; there lies the biggest egg still. How long </span><em>will</em><span> it take? I'm really almost sick of it.\"</span>",
+      "deactivation": "",
+      "use": null,
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/s7nksTe.png",
+    "y_pos": 5
+  },
+  {
+    "id": "MSG0079_Zaku-Rec",
+    "license_id": "MSG0079_Zaku-Rec",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "MS-06E Zaku Reconnaissance Type",
+    "mechtype": [
+      "Support",
+      "Controller"
+    ],
+    "variant": "",
+    "description": "",
+    "mounts": [
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 12,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 10,
+      "repcap": 4,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Bearer of the Curse",
+        "use": "",
+        "description": "<span>You are always a valid target for your own invasions. When you target yourself with an Invasion, you may automatically take the effect as if you targeted an ally, but you still take 2 Heat, which counts as an external source of heat for the purposes of Traits.</span>"
+      },
+      {
+        "name": "Flowers Bloom at Dawn",
+        "use": "",
+        "description": "<span>When you are adjacent to an allied character, you gain Resistance to all external sources of Heat damage.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Mirror-Lake Radome",
+      "active_name": "Return to the Garden",
+      "active_effect": "<span>For the rest of the scene or until you disable this effect as a Protocol, project a Burst 3 area around you. All characters fully in this area, except you, are Intangible. For as long as this effect is activated, you may affect both tangible and intangible characters. Whenever an ally starts their turn in this area, their next melee or ranged attack that turn deals +1d6 bonus damage on a hit. While this effect is active, you are Slowed. This effect ends immediately if you are Stunned or Jammed.</span>",
+      "activation": "Full",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "",
+    "y_pos": 0
+  },
+  {
+    "id": "MSG0079_oberon",
+    "license_id": "MSG0079_Zaku-Rec",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "Psycho Refit Zaku Reconnaissance Type",
+    "mechtype": [
+      "Controller"
+    ],
+    "variant": "MS-06E Zaku Reconnaissance Type",
+    "description": "",
+    "mounts": [
+      "Main/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 10,
+      "tech_attack": 2,
+      "save": 12,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Vile Repast",
+        "use": "",
+        "description": "<span>Whenever you clear a condition that was not self-inflicted, you may either recover 2 HP, or clear 1 Heat.</span>"
+      },
+      {
+        "name": "Underdog",
+        "use": "",
+        "description": "<span>For every condition you have that was not self-inflicted, you gain +1 Tech Attack until it is cleared.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Psycommu-Assisted Sensors Array",
+      "active_name": "Fall With Me",
+      "active_effect": "<span>Become Shredded until the end of the scene. The effects of your traits and core passive are all doubled whenever they trigger. Gain access to the </span><strong><span>Consume the Twilight </span></strong><span>Full Tech Action.</span>",
+      "activation": "Full",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [
+        {
+          "name": "Consume the Twilight",
+          "activation": "Full Tech",
+          "detail": "<span>Choose a Blast 2 area within Range 50 and line of sight. For the rest of the scene, or until you change the area of effect with another Full Tech action, this area becomes a complete dead zone. Characters at least partially in this area are unable to draw line of sight beyond adjacent spaces, are unable to select any character but you for any effect, and are unable to communicate with anyone, inside or out of the zone. Characters within the dead zone always consider you to be a valid target for actions, even when they wouldn’t normally be able to hit you (out of range, out of sensors, etc). Similarly, any space or character within the area of effect always counts as being within sensors and line of sight for the purposes of tech actions for you.</span><br/><span>If a character attempts to leave this zone, you may interrupt their movement and Invade them as a reaction. If you critically hit them as part of this reaction, they are teleported back to the center of the zone, or as close as possible, and Immobilized until the end of the turn. This can happen as many times per round as it is triggered, obeying normal reaction limits.</span>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "You Will Know Ruin",
+      "passive_effect": "<span>You are able to critically hit with your Tech Attacks. Whenever you critically hit with your tech attacks, you deal +1 bonus Heat damage. The amount of bonus damage you deal on a critical hit scales with how many Structure and Stress points you are below maximum. For example, if you are at 3 Structure and 2 Stress, every time you critically hit with a Tech Attack, you deal +4 bonus Heat damage in total.</span>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "",
+    "y_pos": 0
+  },
+  {
+    "id": "MSG0079_efreet",
+    "license_id": "MSG0079_efreet",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "MS-08TX Efreet",
+    "mechtype": [
+      "Striker"
+    ],
+    "variant": "",
+    "description": "",
+    "mounts": [
+      "Heavy",
+      "Main/Aux",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 11,
+      "edef": 7,
+      "heatcap": 5,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": -1,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Whirlwind",
+        "use": "",
+        "description": "<span>1/round, before making any non-weapon melee attack, the Efreet may attack the same target with a single Aux weapon of its choice. This attack can not benefit from bonus damage.</span>"
+      },
+      {
+        "name": "Last Rites",
+        "use": "",
+        "description": "<span>The Efreet treats all Aux melee weapons as if they were also Heavy melee weapons for the purposes of traits, systems, and talents.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "\"Rose\" Combat Computer",
+      "active_name": "Flower Warrior",
+      "active_effect": "<span>Gain a </span><strong><span>Combo </span></strong><span>die, a d6, starting at 1. Whenever you critically hit with an aux weapon or any non-weapon melee attack, the Combo die ticks up by one, to a maximum of 6. At 6, you may perform one of three finisher moves, which you may activate as a Free Action when taking certain actions. When you take one of these actions, the </span><strong><span>Combo </span></strong><span>die is reset to 1.</span>",
+      "activation": "Protocol",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [
+        {
+          "name": "Eviscerate",
+          "activation": "Free",
+          "detail": "<span>This action may be taken whenever you attack with an Improvised attack. You plunge your arm into your enemy and violently tear away at internal systems. If your Improvised Attack reduces the target’s HP to 0, instead of rolling the Structure damage table as usual, you may instead force them to roll the Stress damage table before taking Structure damage as usual. Either way, you reduce their rolled result by one category, down to a minimum of Direct Hit/Meltdown. If this attack does not reduce the target’s HP to 0, you may force them to roll either the Structure or Stress damage tables and suffer resulting effects without dealing Structure or Stress.</span>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        },
+        {
+          "name": "Suplex",
+          "activation": "Free",
+          "detail": "<span>This action may be taken after a successful grapple. Make a melee attack on the Grapple target. On a hit, deal 1d6+4 Kinetic damage, knock them Prone, and move them to any other free space adjacent to you.</span>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        },
+        {
+          "name": "Giant Swing",
+          "activation": "Free",
+          "detail": "<span>This action may be taken after a successful Ram. Make a melee attack on the Ram target, moving as necessary to become adjacent. On a hit, you spin them around by the legs before sending them flying. The target becomes Impaired until the end of your next turn. You may throw them at a space within Range 5. If this would cause them to collide with another character or obstruction, they both take 1d6 Kinetic damage before landing in a free adjacent space of your choice. Otherwise, just the thrown character takes damage.</span>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
       "special_equipment": [],
       "tags": []
     },
