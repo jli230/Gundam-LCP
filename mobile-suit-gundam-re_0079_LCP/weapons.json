@@ -3698,5 +3698,247 @@
         "val": 8
       }
     ]
+  },
+  {
+    "id": "MSG0079_phonon_maser_gun",
+    "name": "Phonon Maser Gun",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "",
+    "effect": "<div><span>Objects and terrain in the area automatically take 100 AP energy damage, and characters become Jammed and treat every other character as invisible until the end of their next turn on hit.</span></div>",
+    "mount": "Superheavy",
+    "type": "Special",
+    "sp": 0,
+    "barrage": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "3d6 + x"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 30
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_mega_particle_cannon_battery",
+    "name": "Mega Particle Cannon Battery",
+    "source": "ZN",
+    "license": "MSM-10 Zock",
+    "license_id": "MSG0079_msm_onezero_zock",
+    "license_level": 2,
+    "description": "<div><em><span>Twin mega particle cannon batteries made to overwhelm the enemy with sheer firepower rather than precision.&nbsp;</span></em></div>",
+    "effect": "<div><span>You may also make a secondary attack against a different character adjacent to the first target. You can continue making secondary attacks on hits, as long as there are new, valid targets within range; however, each attack generates 1 heat more than the last and secondary attacks can’t deal bonus damage. Characters can’t be hit more than once with the same firing of this weapon.</span></div>",
+    "mount": "Auxiliary",
+    "type": "Cannon",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 1
+      },
+      {
+        "id": "tg_inaccurate",
+        "name": "Inaccurate",
+        "description": "Attacks made with this weapon receive +1 Difficulty."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_multi_phase_phonon_cannon",
+    "name": "Multi-Phase Phonon Cannon",
+    "source": "ZN",
+    "license": "MSM-10 Zock",
+    "license_id": "MSG0079_msm_onezero_zock",
+    "license_level": 3,
+    "description": "<div><em><span>A downscaled version of the Phonon Maser Gun, requiring less time to build up the energy to fire at full strength but at the same time having its maximum output capped and causing heavy strain on the mobile suit’s power plant.</span></em></div>",
+    "effect": "<div><span>This weapon deals 2d6 + half your current heat as energy damage, you may also delay the firing of attacks made with this weapon. Choose the target area, which becomes visible to all characters: the beam fires at the end of your next turn, and deal 3d6 + your full current heat Energy damage instead of half, but you become Immobilized until the end of your next turn. If you move (even involuntarily) or become Stunned or Jammed while charging a delayed shot the weapon fires immediately using its original output.</span></div>",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "sp": 0,
+    "barrage": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6 + X"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 10
+      },
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_camera_gun",
+    "name": "CE-16TX Camera Gun",
+    "source": "ZN",
+    "license": "MS-06E-3 Zaku Flipper",
+    "license_id": "MSG0079_zaku_flipper",
+    "license_level": 1,
+    "description": "<em><span>However, due to not developing with experimental Psycomu Technology, significant upgrade packages were developed, such as advanced sensors and cameras for the Zaku Flipper. Essentially a mobile suit-sized, one-handed camcorder, this camera records everything about its target, external and internal systems.</span></em>",
+    "effect": "<span>This doesn’t deal any damage. </span>",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_accurate",
+        "name": "Accurate",
+        "description": "Attacks made with this weapon receive +1 Accuracy."
+      },
+      {
+        "id": "tg_smart",
+        "name": "Smart",
+        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "<span>you scan the target and receive Full Stats, One Piece of hidden Info, and All generic/Public Info.</span>",
+    "on_crit": "<span>you also apply Shredded as well on the target.</span>",
+    "damage": [
+      {
+        "val": 0
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      },
+      {
+        "type": "Threat",
+        "val": 3
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_zeon_beam_sniper",
+    "name": "RA-2 Heavy Beam Rifle",
+    "source": "ZN",
+    "license": "MS-06E-3 Zaku Flipper",
+    "license_id": "MSG0079_zaku_flipper",
+    "license_level": 2,
+    "description": "",
+    "effect": "<span>This weapon is designated a integrated weapon that may have mods attached to it. (Use the Heavy Mount to only equip this weapon on the Zaku II Sniper, and add the mod you want!)</span><br><span><br>The Weapon has two profiles (Rifle and Sniper) that the player can choose to start in, and can swap between them with a protocol action.</span>",
+    "mount": "Heavy",
+    "type": "Rifle",
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "Rifle Profile",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "3D4"
+          },
+          {
+            "type": "Burn",
+            "val": 2
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 12
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_accurate",
+            "name": "Accurate",
+            "description": "Attacks made with this weapon receive +1 Accuracy."
+          },
+          {
+            "id": "tg_ap",
+            "name": "Armor-Piercing (AP)",
+            "description": "Damage dealt by this weapon ignores Armor."
+          },
+          {
+            "id": "tg_heat_self",
+            "name": "Heat {VAL} (Self)",
+            "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+            "val": 2
+          }
+        ]
+      },
+      {
+        "name": "Sniper Profile",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "6D3+2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 18
+          },
+          {
+            "type": "Line",
+            "val": 5
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ordnance",
+            "name": "Ordnance",
+            "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+          },
+          {
+            "id": "tg_ap",
+            "name": "Armor-Piercing (AP)",
+            "description": "Damage dealt by this weapon ignores Armor."
+          },
+          {
+            "id": "tg_heat_self",
+            "name": "Heat {VAL} (Self)",
+            "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+            "val": 3
+          }
+        ]
+      }
+    ]
   }
 ]

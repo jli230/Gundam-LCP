@@ -644,5 +644,47 @@
         "trigger": ""
       }
     ]
+  },
+  {
+    "id": "MSG0079_disruptive_e_caps",
+    "name": "Disruptive E-Caps",
+    "source": "ZN",
+    "license": "MSM-10 Zock",
+    "license_id": "MSG0079_msm_onezero_zock",
+    "license_level": 3,
+    "effect": "<div><span>Choose a weapon that deals energy damage: You load it with unstable minovsky particles designed to mess with systems during assaults. It deals half damage but any target hit by it treats all characters within their sensor range as Invisible until the end of their next turn.</span></div>",
+    "sp": "4",
+    "description": "<div><em><span>A modification of the standard E-Cap designed for assaults, the Disruptive E-Caps pack a higher amount of unstable Minovsky particles into the energy charge. The compound disperses on firing, flooding the target with interference, disrupting targeting.</span></em></div>",
+    "allowed_types": [
+      "Rifle",
+      "Cannon",
+      "CQB",
+      "Nexus"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "restricted_types": [
+      "Launcher",
+      "Melee"
+    ],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": [],
+    "added_tags": [
+      {
+        "id": "tg_mod",
+        "name": "Mod",
+        "description": "This modification can be applied to a weapon. Each weapon can only have one Mod, and cannot have more than one of the same Mod. Mods are applied when the user builds their mech or during a Full Repair."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
   }
 ]

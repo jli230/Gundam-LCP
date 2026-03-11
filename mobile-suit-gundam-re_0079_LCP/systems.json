@@ -1929,5 +1929,258 @@
         "trigger": ""
       }
     ]
+  },
+  {
+    "id": "MSG0079_reactive_alloy_coating",
+    "name": "Reactive Alloy Coating",
+    "source": "ZN",
+    "license": "MSM-10 Zock",
+    "license_id": "",
+    "license_level": 1,
+    "effect": "<div><span>When a character adjacent to you gets hit by an attack you may Brace and receive the attack instead additionally you can elect to take all damage as heat instead.</span></div>",
+    "type": "System",
+    "sp": "1",
+    "description": "<div><em><span>Built on the same principles as conventional reactive armor, the Reactive alloy coating integrates a dense hardening compound directly into the unit's plating, triggering on impact to absorb the blow at the cost of straining the mobile suit’s power plant.</span></em></div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_shield",
+        "name": "Shield",
+        "description": "This system is an energy shield of some kind."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_rauschen_missiles",
+    "name": "Rauschen Missiles",
+    "source": "ZN",
+    "license": "MSM-10 Zock",
+    "license_id": "MSG0079_msm_onezero_zock",
+    "license_level": 1,
+    "effect": "<div>You gain access to the Launch Rauschen Missile quick action</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div><em><span>The Rauschen is a Minovsky particle warhead that detonates on impact, flooding the surrounding area with dense particle interference and blinding enemy sensors.&nbsp;</span></em></div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_drone",
+        "name": "Drone",
+        "description": "This is a self-propelled, semi-autonomous unit with rudimentary intelligence. Unless otherwise specified, Drones are Size 1/2 characters that are allied to the user and have 10 Evasion, 5 HP, and 0 Armor. To be used they must be deployed to a free, valid space within Sensors and line of sight, typically as a quick action. Once deployed, they can be recalled with the same action used to deploy them (quick action or full action, etc.), rejoining with your mech. By default, Drones can’t take actions or move; if they do have actions or movement, they act on their user’s turn. They benefit from cover and other defenses as usual, and make all mech skill checks and saves at +0. If a Drone reaches 0 HP, it is destroyed and must be repaired before it can be used again – like any system. As long as a Drone hasn’t been destroyed, it is restored to full HP when the user rests or performs a Full Repair. Deployed Drones persist for the rest of the scene, until destroyed, or until otherwise specified."
+      },
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 4
+      }
+    ],
+    "actions": [
+      {
+        "name": "Launch Rauschen Missile",
+        "activation": "Quick",
+        "detail": "<div><span>You can deploy a Rauschen Missile in an adjacent space and pick a target in range 20 and line of sight.</span></div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Rauschen Missile",
+        "type": "Drone",
+        "detail": "<div><span>At the start of your turns the missile flies 4 spaces towards its target, 8 if the target has Lock On. This missile travels in a straight line toward its target and cannot maneuver. Any obstruction in its path causes it to detonate immediately. When it collides with something or reaches its target, it creates a Burst 2 explosion. Characters in the affected area take 2d6 explosive damage, half if they pass an Agility save and treat all characters as invisible, At the end of their next turn, they can make a Systems save. On a success, they are no longer affected. This save can be repeated at the end of each of their turns, gaining +1 accuracy each time until successful.</span></div>",
+        "size": 0.5,
+        "activation": "",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "8",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG_0079_Mother_Cord",
+    "name": "Mother Cord",
+    "source": "ZN",
+    "license": "MSM-10 Zock",
+    "license_id": "MSG0079_msm_onezero_zock",
+    "license_level": 2,
+    "effect": "<span>As a quick action, these cords can be attached to an adjacent character. Once attached, at your discretion, that character can use your heat cap instead of their own.</span><br/><span>Any character can remove the cords on a hit with a melee attack or Improvised Attack against Evasion 10. If an attached character moves beyond 5 spaces from you the cord is instantly removed.</span>",
+    "type": "System",
+    "sp": "3",
+    "description": "The Mother cords are a crude but effective solution to prolonged power management during long combats, they are heavy cords that physically link the power plants of two mobile suits. The attached unit gains access to the host's full power capacity, though the connection can be severed by anyone close enough to try"
+  },
+  {
+    "id": "MSG0079_high_power_optics",
+    "name": "High Power Optics",
+    "source": "ZN",
+    "license": "MS-06E-3 Zaku Flipper",
+    "license_id": "MSG0079_zaku_flipper",
+    "license_level": 1,
+    "effect": "<span>All Lock-ons and Scans may apply to targets outside sensor range if you have Line of Sight. A Lock-on applied this way gets cleared at the beginning of your next turn.</span>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_external_cameras",
+    "name": "External Cameras",
+    "source": "ZN",
+    "license": "MS-06E-3 Zaku Flipper",
+    "license_id": "MSG0079_zaku_flipper",
+    "license_level": 2,
+    "effect": "<span>When applying lock-on or scanning a target, you may 2/Round choose to make it a burst 2 area centered on the target. All enemies must roll an Agility save or be included in the lock-on or scan.</span>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_radome",
+    "name": "Radome",
+    "source": "ZN",
+    "license": "MS-06E-3 Zaku Flipper",
+    "license_id": "MSG0079_zaku_flipper",
+    "license_level": 2,
+    "type": "System",
+    "sp": "1",
+    "description": "<em><span>Power shifts from your engines to increase the frame's sensor strength by strengthening the I-Field. Unfortunately, I-Fields require more power than Minovsky Particles.</span></em>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_protocol",
+        "name": "Protocol",
+        "description": "This system can be activated as a free action, but only at the start of the user’s turn. Another action might be needed to deactivate it."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Radome Activation",
+        "activation": "Protocol",
+        "detail": "<span>Upon activating, you become slowed, but gain +5 sensors until the end of your turn</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_compact_i_field_shield_generator",
+    "name": "Compact I-Field Shield Generator",
+    "source": "ZN",
+    "license": "MS-06E-3 Zaku Flipper",
+    "license_id": "MSG0079_zaku_flipper",
+    "license_level": 3,
+    "effect": "You gain the reaction Activate Compact I-Field Shield Generator",
+    "type": "System",
+    "sp": "2",
+    "description": "<em><span>Dozle’s dream for the production of the Big Zam would never come to be. This was due to the early activation of the United Maintenance Plan. However, not all his ideas were discarded as Gihern himself assigned his younger brother to create a compact I-field Shield generator while stationed on Space Fortress Solomon. Of course, with Dr.Minovsky’s defection to the Federation, it was only a matter of time before they also weaponized Minovsky Particles. That nightmare became true with the arrival of the Earth Federation’s Revamped Mobile Suit Fleet.</span></em>",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Activate Compact I-Field Shield Generator",
+        "activation": "Reaction",
+        "detail": "",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/encounter",
+        "init": "",
+        "trigger": "<span>1/scene as a Reaction, you personally gain an overshield of 20. However, you lose this at the start of your next turn.</span>"
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_minovsky_particle_dispersal_unit",
+    "name": "Minovsky Particle Dispersal Unit",
+    "source": "ZN",
+    "license": "MS-06E-3 Zaku Flipper",
+    "license_id": "MSG0079_zaku_flipper",
+    "license_level": 3,
+    "effect": "You gain the Full Tech Actions: <strong><span>M Particles Concentration and I Particles Concentration</span></strong>",
+    "type": "System",
+    "sp": "3",
+    "description": "<em><span>A part designed for use on the MS-05HS Prototype Zaku. Despite Dr.Minovsky’s defection, Zeon was able to miniaturize the part, though not without some difficulty. This was due to the United Maintenance Plan enacted by Gihern Zabu to shift funds away from experimental Psycomu Technology. As a result, this device can concentrate either M Particles or I Particles, depending upon the situation.</span></em>",
+    "actions": [
+      {
+        "name": "M Particles Concentration",
+        "activation": "Full Tech",
+        "detail": "<span>Choose 2 Burst 3 areas within sensors. All enemies must make a system save with an additional difficulty or become jammed on their next turn. The jammed condition ends at the start of their next turn.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "I Particles Concentration",
+        "activation": "Full Tech",
+        "detail": "<span>You and all allies in your sensor range immedeatly reduce their total heat by 50%. At the start of the next round, they gain resistance whenever they generate heat, regardless of the source.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
   }
 ]

@@ -2398,9 +2398,9 @@
     "variant": "",
     "description": "",
     "mounts": [
-      "Heavy",
+      "Aux/Aux",
       "Main/Aux",
-      "Aux/Aux"
+      "Heavy"
     ],
     "stats": {
       "size": 1,
@@ -2434,7 +2434,7 @@
       "name": "\"Rose\" Combat Computer",
       "active_name": "Flower Warrior",
       "active_effect": "<span>Gain a </span><strong><span>Combo </span></strong><span>die, a d6, starting at 1. Whenever you critically hit with an aux weapon or any non-weapon melee attack, the Combo die ticks up by one, to a maximum of 6. At 6, you may perform one of three finisher moves, which you may activate as a Free Action when taking certain actions. When you take one of these actions, the </span><strong><span>Combo </span></strong><span>die is reset to 1.</span>",
-      "activation": "Protocol",
+      "activation": "",
       "description": "",
       "deactivation": "",
       "use": "",
@@ -2486,6 +2486,261 @@
       "active_synergies": [],
       "passive_name": "",
       "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "",
+    "y_pos": 0
+  },
+  {
+    "id": "MSG0079_zock",
+    "license_id": "MSG0079_zock",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "MSM-10 Zock",
+    "mechtype": [
+      "Defender",
+      "Artillery"
+    ],
+    "variant": "",
+    "description": "",
+    "mounts": [
+      "Flex",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 8,
+      "evasion": 6,
+      "edef": 6,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 10,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 2,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "AQUATIC",
+        "use": "",
+        "description": "<div><span>The Zock treats all bodies of water or similar fluids as normal terrain, and has integrated EVA for deep ocean environments.</span></div>"
+      },
+      {
+        "name": "ULTRA-LARGE THERMONUCLEAR REACTOR",
+        "use": "",
+        "description": "<div><span>The Zock has resistance to heat as long as it's not self-inflicted.</span></div>"
+      },
+      {
+        "name": "COLOSSUS",
+        "use": "",
+        "description": "<div><span>The Zock can be used for hard cover by adjacent allied characters.</span></div>"
+      },
+      {
+        "name": "SLOW",
+        "use": "",
+        "description": "<div><span>The Zock receives +1 difficulty on Agility checks and saves.</span></div>"
+      }
+    ],
+    "core_system": {
+      "name": "Mobile Fortress",
+      "active_name": "MINOVSKY PARTICLE INDUCTION",
+      "active_effect": "<em><span>When activated, you start redirecting all possible energy to the Zock’s Phonon Maser Gun, an incredibly powerful Mega Particle cannon battery that requires high amounts of power. You become Jammed until the weapon is fired.</span></em><br/><em><span>This weapon can be fired even while Jammed. This weapon also affects every adjacent space to its range line once fired, it deals damage equal to 3d6 +&nbsp; the Zock’s current heat. At the start of your turn you can charge this weapon as a free action, every time the Zock charges the weapon it can add the heat value from the characters currently on board to the final damage of the weapon. Once the weapon is discharged all characters whose heat value was used clear all heat.</span></em>",
+      "activation": "",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [
+        {
+          "name": "Charge the Phonon Maser",
+          "activation": "Free",
+          "detail": "<em><span>You can add the heat value from a character currently on board to the final damage of the Phonon Maser Gun.</span></em>",
+          "cost": 0,
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "MOBILE FORTRESS",
+      "passive_effect": "<em><span>Up to four size 1 or lower, adjacent non-Immobilized characters can board the Zock as a quick action. While on board, they occupy the same space as you and are immobilized though they move when you move, while on board they cannot be targeted, target others, or be affected by outside effects.</span></em>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [
+        "MSG0079_phonon_maser_gun"
+      ],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/8I4TBxM.png",
+    "y_pos": "36"
+  },
+  {
+    "id": "MSG0079_zaku_flipper",
+    "license_id": "MSG0079_zaku_flipper",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "MS-06E-3 Zaku Flipper",
+    "mechtype": [
+      "Support",
+      "Controller"
+    ],
+    "variant": "",
+    "description": "<span>When Dr.Minovsky successfully defected to the Federation, it was said that Gihern broke his usually calm, calculating demeanor and had a very wrathful outburst. In the opening weeks of the war, the United Maintenance plan went into full effect. While it was never stated out loud, it was an open secret that Dr.Minovsky would rapidly speed up the Earth Federation’s development of mobile suits within months. As such, most experimental projects, including the Psycomu projects, were placed on the back burner for a reliable core fleet of mobile suits. One such frame was the MS-06E Zaku Reconnaissance Type, for it was stripped of the MS-06c’s triple-layer composite armor and given advanced camera systems for scouting the enemy. After the battle of Loum, the MS-06E was one of many Mobile Suits that would receive an upgrade package. In their case, most became the vastly superior MS-06E-3 Zaku Flipper. <br><br>Named after its highly advanced flipper backpack fins that would flip and flap when acquiring and tracking objects. The auto safety limiters were also removed to improve the Mobile Suit's maneuverability; This design choice was inspired by the Red Comet's maneuverability at Loum. Meanwhile, its cameras, Sensory equipment, &amp; radar were dramatically enhanced so that the Mobile Suit’s speed wouldn’t affect its Reconnaissance abilities. At the end of the war, the Earth Federation attempted to dissolve the Zeonic Company to requisition many of the Zaku Flippers into their Mobile Forces. This was due to being unable to successfully develop a reconnaissance Mobile Suit that could rival the Zaku Flippers specs. However, Garma was able to negotiate a deal where the Federation would get a portion of these Mobile Suits. In exchange, Zeonic was allowed to stay as an independent manufacturer, but would assist Anaheim Electronics in future Mobile Suit Development to be used by the Federation for a very long time.</span>",
+    "mounts": [
+      "Aux/Aux",
+      "Main/Aux",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 12,
+      "heatcap": 4,
+      "repcap": 3,
+      "sensor_range": 20,
+      "tech_attack": 2,
+      "save": 12,
+      "speed": 4,
+      "sp": 7
+    },
+    "traits": [
+      {
+        "name": "Manipulated Data",
+        "use": "",
+        "description": "<span>1/round if 2 characters in your sensor range and Line of Sight have the same condition - gain a free action to apply that condition to an unaffected character in sensors and Line of Sight. This condition lasts until the end of their next turn.</span>"
+      },
+      {
+        "name": "Miniaturized Buzznorse Booster",
+        "use": "",
+        "description": "<span>During its turn, the Zaku Flipper is Invisible; it reappears at the end of the turn.</span>"
+      },
+      {
+        "name": "Unrestrained S-Type Vernier Thruster Array",
+        "use": "",
+        "description": "<span>1/round, before or after the Zaku Flipper's Move, or Boost, it may move 3 spaces in any direction. This movement ignores engagement and doesn't provoke reactions.</span>"
+      },
+      {
+        "name": "Full Manual Control Systems",
+        "use": "",
+        "description": "<span>The Zaku Flipper takes +1 Difficulty to all Engineering saves and checks.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Directional Laser and Sonic Sensors Backpack ",
+      "active_name": "Flipper Pack Activation",
+      "active_effect": "<span>The following effects happen till the end of the scene:</span><br/><ul><li><span>Within sensors, you and your Allies' Attacks/Tech Attacks made above the enemy’s Evasion/E-Defense are considered critical hits. This only activates effects requiring it, and you don’t benefit from critical damage output. (not nat 20!)</span><br/></li></ul><ul><li><span>Enemies can’t have the Invisible or Hidden condition within the Zaku Flipper’s Sensors. Essentially, making all enemy positions publicly known.</span><br/></li></ul><ul><li><span>Upon activation, or when the Zaku Flipper’s turn starts, all enemies within sensors get Lock-On &amp; Scan automatically. Lock-On applied this way can only be removed when enemies start their turn out of the Zaku Flipper’s sensors.</span><br/></li></ul>",
+      "activation": "Protocol",
+      "description": "",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "High-Tech Sensory Equipment and Sonars",
+      "passive_effect": "<em><span>When applying lock-on and/or scan, you may ignore line-of-sight restrictions so long as the target is within your sensor range.</span></em>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "",
+    "y_pos": 0
+  },
+  {
+    "id": "MSG0079_ms_zerosixl_zaku_ii_sniper_type",
+    "license_id": "MSG0079_zaku_flipper",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "MS-06L Zaku II Sniper Type",
+    "mechtype": [
+      "Support",
+      "Artillery"
+    ],
+    "variant": "MS-06E-3 Zaku Flipper",
+    "description": "<span>When Gihern immediately greenlit the United Maintenance plan at the start of the war, it led them to revamp many Mobile Suit variations to fit multiple roles, allowing for mass production with ease. One such M.S. was the MS-06E Zaku Recon type, which would serve as the template for the Zaku Flipper Recon Type series. As the War continued on Earth, it became apparent that the Magella Top Guns needed to be replaced with a more precise and powerful rifle. As a result, the Gelgoog project was in full swing, but its already developed beam weapons required testing. Kycillia’s Noisy Fairy Squadron mechanics worked with California Base, using a spare MS-06E Zaku Recon type, and crudely integrated one of the Gelgoog’s Experimental Beam Cannon. This created an effective sniper capable of providing support with a low size profile. However, its Beam Cannon used too much power, resulting in nearly shutting down the mobile suit completely. Thus, an additional M.H.D. Sub Generator Backpack was integrated. They modified the prototype Beam Canon into a more power-efficient and customizable RA-2 Heavy Beam Rifle.&nbsp;</span><br/><span>It was quickly manufactured shortly after the disappearance of Garma Zabi, and the war began shifting into the Federation’s favor. Unfortunately, they were produced too late to join the battle at Jaburo, but they would prove themselves a lethal threat. As Zeonic Forces retreated from planet Earth, many Zaku II Sniper Types were deployed on all fronts. A majority used guerrilla tactics to cripple and exploit the Earth Federation’s lightly guarded, rapidly expanding supply lines to their horror. In North America, these Mobile Suits slowed the Earth Federation’s rapid advance into a cautious crawl akin to World War 1 verdun. It allowed Zeonic Personnel with their Prototypes and research to escape back into space. Since the end of the One Year War, however, unlike the Zaku Flippers that got requisitioned, a number of the MS-06L Zaku II Snipers were decommissioned as part of the peace treaty. Some say this was due to them killing several incompetent Earth Federation officers who were extremely well-connected to the Earth Federation government. Regardless, they’ve become the favorite weapon of private defense contractors operating from deep space to ground operations.</span>",
+    "mounts": [
+      "Main/Aux",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 10,
+      "heatcap": 7,
+      "repcap": 3,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Foldable Knee Pad",
+        "use": "Round",
+        "description": "<span>1/round when consuming a target’s Lock-On, roll with an additional accuracy.</span>"
+      },
+      {
+        "name": "Triple Multipurpose Camera Module",
+        "use": "",
+        "description": "<span>When the Zaku II Sniper Scans a target, you learn all three listed types of information about it. You always know the target's current HP &amp; Heat until you take the Scan action again.</span>"
+      },
+      {
+        "name": "X-ACTO Knife Precision",
+        "use": "",
+        "description": "<span>When the Zaku II Sniper causes Systems Trauma to another character, the Zaku II Sniper's pilot chooses which system or weapon is destroyed. No roll is made to determine what is destroyed.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "M.H.D. B-type Sub Generator Backpack",
+      "active_name": "Minovsky Particle Charged Shot",
+      "active_effect": "<span>As a quick action, transfer your frame’s accumulated heat into the next weapon attack in one of two forms. Should it hit, the following effect happens:</span><br><br/><ul><li><u><strong><span>Burn:</span></strong></u><span> The target receives a special burn marker, which stacks on top of any existing burn applied to the target. Due to Minnovsky Particles being the source of burn, all rolls to end burn are made with 2 additional difficulties.&nbsp; <br></span><br><br/></li><li><u><strong><span>Heat:</span></strong></u><span> If an enemy Overheats due to this effect, your enemy doesn’t roll reactor stress. Instead, they automatically take the lowest outcome possible.&nbsp;&nbsp;</span><br><br/></li></ul><span>It’s considered efficient and restores the core power once the current scene ends.</span>",
+      "activation": "Quick",
+      "description": "",
+      "deactivation": "",
+      "use": "",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "700KW Power Output Attachment",
+      "passive_effect": "<em><span>You may attach energy-damaging weapons to the backpack. This grants weapons equipped to it with the following tags:&nbsp;</span></em><br><br/><ul><li><em><span>AP&nbsp;</span></em><br><br/></li><li><em><span>Self Heat 1(Aux), 2(Main)</span></em><br><br>You also gain access to a modifiable integrated weapon, but due to Comp/Con Limitations it must be equipped manually into the Heavy Mount provided! Meaning you must be LL2 in the Zaku Flipper to access this weapon and the frame it's for simultaneously.<br/></li></ul>",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
