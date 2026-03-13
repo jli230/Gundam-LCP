@@ -1,23 +1,29 @@
 [
   {
     "id": "ZN",
-    "name": "Zeonic",
+    "name": "Zeonic Mobile Design Bureau",
     "light": "#10640AFF",
-    "dark": "#2C2C2C",
-    "description": "<div>The civilian company that developed the first mobile suits, and went on to become the Principality of Zeon's main mobile suit supplier. Zeonic is responsible for the development of the MS-05 Zaku I and MS-06 Zaku II, as well as later models like the MSM-04 Acguy and MS-14 Gelgoog.</div>",
-    "logo_url": "https://i.imgur.com/SZA7Q7g.png"
+    "dark": "#003A04",
+    "description": "The organization that catalogues all of the Principality-and later, Republic-of Zeon's mobile weapons from its various manufacturers, from Zeonic's iconic Zaku line to MIP's Bigro mobile armor.",
+    "logo_url": "https://i.imgur.com/SZA7Q7g.png",
+    "quote": "<em>\"For the future of the Zeonic people.\"</em>"
   },
   {
     "id": "EFRD",
     "name": "Earth Federation Research & Development",
     "light": "#EBB308",
     "dark": "#002199",
-    "logo_url": "https://i.imgur.com/izWQ0fW.png"
+    "logo_url": "https://i.imgur.com/izWQ0fW.png",
+    "description": "The Earth Federation Research &amp; Development Division catalogs various mobile weapons developed by national and corporate entities along with developing such technologies often in cooperation with said entities. Machines present under the EFRD umbrella consists of both units developed 'in-house' along with designs that were developed with significant Federation overhead to essentially be considered 'Federation' designs.",
+    "quote": "<em><span>\"Let those who desires peace, prepare for war.\"</span></em>"
   },
   {
     "id": "NEVEC",
     "name": "NeoVenus Construction",
     "light": "#00D8FF",
-    "dark": "#040347"
+    "dark": "#040347",
+    "description": "Originally headquartered in Baikonur, Kazakhstan as a private space agency, the company would become one of the early leaders in space colonization, with Venus in particular being a long-term project. With the advent of the One Year War, NEVEC has also begun its own development line of mobile weapons dubbed \"Vital Suits\", which are machines designed to handle the rigors of extreme environments and serve as a more 'properly' militarized version of the Junior Mobile Suit concept.",
+    "logo_url": "https://i.imgur.com/JK8fqU2.png",
+    "quote": "<em>\"Humanity shall inherit the stars.\"</em>"
   }
 ]

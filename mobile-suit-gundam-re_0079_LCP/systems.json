@@ -1143,18 +1143,6 @@
         "name": "Unique",
         "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
       }
-    ],
-    "bonuses": [
-      {
-        "id": "heatcap",
-        "val": 1,
-        "damage_types": [],
-        "range_types": [],
-        "weapon_types": [],
-        "weapon_sizes": [],
-        "overwrite": false,
-        "replace": false
-      }
     ]
   },
   {
@@ -1625,6 +1613,31 @@
     ]
   },
   {
+    "id": "MSG0079_boostattack",
+    "name": "Cossack Dueling OS Package",
+    "source": "NEVEC",
+    "license": "PTX-140 Hardballer",
+    "license_id": "MSG0079_hardballer",
+    "license_level": 1,
+    "effect": "When you Boost in a straight line, you may elect any Main Melee weapon to use to attack an enemy as a special reaction. Damage dealt, including bonus damage, is halved. The mount used is treated as having Skirmished this turn.",
+    "type": "System",
+    "sp": "2",
+    "description": "A simple OS tuning package that enables most mechs to be more effective in executing hit-and-run attacks.",
+    "actions": [
+      {
+        "name": "Sideswipe",
+        "activation": "Reaction",
+        "detail": "You may roll to attack with the melee weapon. Damage dealt, including bonus damage, is halved.",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "While <strong>Boosting</strong>, there is an enemy within Threat of an equipped Main Melee weapon along the path of the Boost."
+      }
+    ]
+  },
+  {
     "id": "MSG0079_civdemo_packs",
     "name": "CivDemo Packs",
     "source": "EFRD",
@@ -1955,92 +1968,6 @@
     ]
   },
   {
-    "id": "MSG0079_rauschen_missiles",
-    "name": "Rauschen Missiles",
-    "source": "ZN",
-    "license": "MSM-10 Zock",
-    "license_id": "MSG0079_msm_onezero_zock",
-    "license_level": 1,
-    "effect": "<div>You gain access to the Launch Rauschen Missile quick action</div>",
-    "type": "System",
-    "sp": "2",
-    "description": "<div><em><span>The Rauschen is a Minovsky particle warhead that detonates on impact, flooding the surrounding area with dense particle interference and blinding enemy sensors.&nbsp;</span></em></div>",
-    "tags": [
-      {
-        "id": "tg_unique",
-        "name": "Unique",
-        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
-      },
-      {
-        "id": "tg_drone",
-        "name": "Drone",
-        "description": "This is a self-propelled, semi-autonomous unit with rudimentary intelligence. Unless otherwise specified, Drones are Size 1/2 characters that are allied to the user and have 10 Evasion, 5 HP, and 0 Armor. To be used they must be deployed to a free, valid space within Sensors and line of sight, typically as a quick action. Once deployed, they can be recalled with the same action used to deploy them (quick action or full action, etc.), rejoining with your mech. By default, Drones can’t take actions or move; if they do have actions or movement, they act on their user’s turn. They benefit from cover and other defenses as usual, and make all mech skill checks and saves at +0. If a Drone reaches 0 HP, it is destroyed and must be repaired before it can be used again – like any system. As long as a Drone hasn’t been destroyed, it is restored to full HP when the user rests or performs a Full Repair. Deployed Drones persist for the rest of the scene, until destroyed, or until otherwise specified."
-      },
-      {
-        "id": "tg_quick_action",
-        "name": "Quick Action",
-        "description": "This system requires a quick action to Activate."
-      },
-      {
-        "id": "tg_limited",
-        "name": "Limited {VAL}",
-        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
-        "val": 4
-      }
-    ],
-    "actions": [
-      {
-        "name": "Launch Rauschen Missile",
-        "activation": "Quick",
-        "detail": "<div><span>You can deploy a Rauschen Missile in an adjacent space and pick a target in range 20 and line of sight.</span></div>",
-        "pilot": false,
-        "synergy_locations": [],
-        "tech_attack": false,
-        "frequency": "Unlimited",
-        "init": "",
-        "trigger": ""
-      }
-    ],
-    "deployables": [
-      {
-        "name": "Rauschen Missile",
-        "type": "Drone",
-        "detail": "<div><span>At the start of your turns the missile flies 4 spaces towards its target, 8 if the target has Lock On. This missile travels in a straight line toward its target and cannot maneuver. Any obstruction in its path causes it to detonate immediately. When it collides with something or reaches its target, it creates a Burst 2 explosion. Characters in the affected area take 2d6 explosive damage, half if they pass an Agility save and treat all characters as invisible, At the end of their next turn, they can make a Systems save. On a success, they are no longer affected. This save can be repeated at the end of each of their turns, gaining +1 accuracy each time until successful.</span></div>",
-        "size": 0.5,
-        "activation": "",
-        "deactivation": "",
-        "recall": "",
-        "redeploy": "",
-        "instances": 1,
-        "cost": 1,
-        "armor": "",
-        "hp": "8",
-        "evasion": "10",
-        "edef": "10",
-        "heatcap": "",
-        "repcap": "",
-        "sensor_range": "",
-        "tech_attack": "",
-        "save": "",
-        "speed": "",
-        "pilot": false,
-        "mech": false
-      }
-    ]
-  },
-  {
-    "id": "MSG_0079_Mother_Cord",
-    "name": "Mother Cord",
-    "source": "ZN",
-    "license": "MSM-10 Zock",
-    "license_id": "MSG0079_msm_onezero_zock",
-    "license_level": 2,
-    "effect": "<span>As a quick action, these cords can be attached to an adjacent character. Once attached, at your discretion, that character can use your heat cap instead of their own.</span><br/><span>Any character can remove the cords on a hit with a melee attack or Improvised Attack against Evasion 10. If an attached character moves beyond 5 spaces from you the cord is instantly removed.</span>",
-    "type": "System",
-    "sp": "3",
-    "description": "The Mother cords are a crude but effective solution to prolonged power management during long combats, they are heavy cords that physically link the power plants of two mobile suits. The attached unit gains access to the host's full power capacity, though the connection can be severed by anyone close enough to try"
-  },
-  {
     "id": "MSG0079_high_power_optics",
     "name": "High Power Optics",
     "source": "ZN",
@@ -2180,6 +2107,94 @@
         "frequency": "Unlimited",
         "init": "",
         "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_rauschen_missiles",
+    "name": "Rauschen Missiles",
+    "source": "ZN",
+    "license": "MSM-10 Zock",
+    "license_id": "MSG0079_zock",
+    "license_level": 1,
+    "effect": "You gain access to the Launch Rauschen Missile quick action",
+    "type": "System",
+    "sp": "2",
+    "description": "<em><span>The Rauschen is a Minovsky particle warhead that detonates on impact, flooding the surrounding area with dense particle interference and blinding enemy sensors.&nbsp;</span></em>",
+    "tags": [
+      {
+        "id": "tg_drone",
+        "name": "Drone",
+        "description": "This is a self-propelled, semi-autonomous unit with rudimentary intelligence. Unless otherwise specified, Drones are Size 1/2 characters that are allied to the user and have 10 Evasion, 5 HP, and 0 Armor. To be used they must be deployed to a free, valid space within Sensors and line of sight, typically as a quick action. Once deployed, they can be recalled with the same action used to deploy them (quick action or full action, etc.), rejoining with your mech. By default, Drones can’t take actions or move; if they do have actions or movement, they act on their user’s turn. They benefit from cover and other defenses as usual, and make all mech skill checks and saves at +0. If a Drone reaches 0 HP, it is destroyed and must be repaired before it can be used again – like any system. As long as a Drone hasn’t been destroyed, it is restored to full HP when the user rests or performs a Full Repair. Deployed Drones persist for the rest of the scene, until destroyed, or until otherwise specified."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 4
+      }
+    ],
+    "actions": [
+      {
+        "name": "Launch Rauschen Missile",
+        "activation": "Quick",
+        "detail": "<span>You can deploy a Rauschen Missile in an adjacent space and pick a target in range 20 and line of sight.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Rauschen Missile",
+        "type": "Drone",
+        "detail": "<span>At the start of your turns the missile flies 4 spaces towards its target, 8 if the target has Lock On. This missile travels in a straight line toward its target and cannot maneuver. Any obstruction in its path causes it to detonate immediately. When it collides with something or reaches its target, it creates a Burst 2 explosion. Characters in the affected area take 2d6 explosive damage, half if they pass an Agility save and treat all characters as invisible, At the end of their next turn, they can make a Systems save. On a success, they are no longer affected. This save can be repeated at the end of each of their turns, gaining +1 accuracy each time until successful.</span>",
+        "size": 0.5,
+        "activation": "",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "8",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_mother_cord",
+    "name": "Mother Cords",
+    "source": "ZN",
+    "license": "MSM-10 Zock",
+    "license_id": "MSG0079_zock",
+    "license_level": 2,
+    "effect": "<span>As a quick action, these cords can be attached to an adjacent character. Once attached, at your discretion, that character can use your heat cap instead of their own.</span><br><span>Any character can remove the cords on a hit with a melee attack or Improvised Attack against Evasion 10. If an attached character moves beyond 5 spaces from you the cord is instantly removed.</span>",
+    "type": "System",
+    "sp": "3",
+    "description": "The Mother Cords are a crude but effective solution to prolonged power management during long combats, they are heavy cords that physically link the power plants of two mobile suits. The attached unit gains access to the host's full power capacity, though the connection can be severed by anyone close enough to try.",
+    "tags": [
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
       }
     ]
   }

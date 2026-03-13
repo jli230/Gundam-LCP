@@ -2337,11 +2337,6 @@
             "id": "tg_seeking",
             "name": "Seeking",
             "description": "This weapon has a limited form of self-guidance and internal propulsion, allowing it to follow complicated paths to its targets. As long as it’s possible to draw a path to its target, this weapon ignores cover and doesn’t require line of sight."
-          },
-          {
-            "id": "tg_inaccurate",
-            "name": "Inaccurate",
-            "description": "Attacks made with this weapon receive +1 Difficulty."
           }
         ]
       }
@@ -3013,9 +3008,9 @@
     "source": "",
     "license": "",
     "license_id": "",
-    "license_level": 0,
+    "license_level": 1,
     "description": "<em><span>One on each forearm, the pair of arm beam guns flip forward when in use, and are powered directly by the X-1's generator. The particle beam fired from the weapon can penetrate any armor not treated with specific countermeasures. Each arm beam gun is power rated at 2.0 MW.</span></em>",
-    "effect": "<span>When you Overwatch with this weapon, it gains Reliable 2 and the AP tag.</span>",
+    "effect": "<span>When you Overwatch with this weapon, it deals an additional 3 damage and gains AP.</span>",
     "mount": "Main",
     "type": "CQB",
     "sp": 0,
@@ -3442,6 +3437,271 @@
     ]
   },
   {
+    "id": "MSG0079_hardballersaw",
+    "name": "VS Saw",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "description": "",
+    "effect": "After attacking with the VS Saw, you may move one space in any direction. This move ignores engagement and does not provoke reaction.",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1D6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_vsmachinepistol",
+    "name": "MGP/V-79-1 Machine Pistol",
+    "source": "NEVEC",
+    "license": "PTX-140 Hardballer",
+    "license_id": "MSG0079_hardballer",
+    "license_level": 1,
+    "description": "Created for close quarter battles, the MGP/V-79-1 Machine Pistol is a compact rapid-fire weapon that can usually be taken as a supplementary weapon to larger mech weapons or dual-wielded. The sizable magazine for the machine pistol also allows for it to be used in a \"Bandit Shooting\" stance, scattering munitions over a wide arc to attack a large concentration of enemies.",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "Standard Fire",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1D3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 5
+          },
+          {
+            "type": "Threat",
+            "val": 3
+          }
+        ]
+      },
+      {
+        "name": "Bandit Shooting",
+        "effect": "This weapon must be reloaded after being used in this profile.",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1D3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Cone",
+            "val": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_puntgun",
+    "name": "CRC/V-80 Punt Gun",
+    "source": "NEVEC",
+    "license": "PTX-140 Hardballer",
+    "license_id": "MSG0079_hardballer",
+    "license_level": 2,
+    "description": "This retooled smoothbore tank cannon has been shorted from its original form, now equipped to fire high-velocity canister shot in order to knock enemy mechs off-balance—an oftentimes fatal situation in a close-quarters battle.",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "name": "Knockback {VAL}",
+        "description": "On a hit, the user may choose to knock their target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a Blast). Multiple Knockback effects stack with each other. This means that an attack made with a Knockback 1 weapon and a talent that grants Knockback 1 counts as having Knockback 2.",
+        "val": 1
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "on_crit": "Target is knocked <strong>Prone</strong>.",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1D6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_emfblade",
+    "name": "LPB-999 EMF Blade",
+    "source": "NEVEC",
+    "license": "PTX-140 Hardballer",
+    "license_id": "MSG0079_hardballer",
+    "license_level": 3,
+    "description": "A set of large heat-conductive blades, the LPB-999's true power is shown when linked directly to the mech's reactor—causing the blades to be encased in an azure sheathe of burning plasma. While potentially causing long-term damage to the reactor, the EMF Blade's terrifying performance in close combat turns any pilot capable of wielding it into a hurricane of destruction as the blades cleaves through most forms of heavy-grade armor.",
+    "effect": "Unlike other Superheavy weapons, this weapon can be used with the basic profile to Skirmish and can be used as part of a barrage (counting as a single mount's weapon).<br>You may charge this weapon as a quick action. While charged, you are <strong>Slowed</strong>, take 4 Heat at the start of your turn, and can no longer use the EMF Blade with Skirmish. At the start of any of your turns while it is charged, it has the Charged profile.",
+    "mount": "Superheavy",
+    "type": "Melee",
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "Uncharged",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1D6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 1
+          },
+          {
+            "type": "Line",
+            "val": 2
+          }
+        ],
+        "actions": [
+          {
+            "name": "Charge EMF Blade",
+            "activation": "Quick",
+            "detail": "Charge the EMF Blade. At the start of any of your turns while the EMF Blade is Charged, it uses the \"Charged\" profile. You become <strong>Slowed</strong>, and benefit from soft cover. Additionally, gain 4 Heat at the start of your turn.<br>The \"Charged\" profile cannot be used to Skirmish.",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      },
+      {
+        "name": "Charged",
+        "barrage": true,
+        "skirmish": true,
+        "on_attack": "While charged, this weapon deals 30 AP Energy Damage when it hits objects or pieces of terrain. In addition, it creates a Burst 1 zone of burning terrain that inflicts 2 AP Energy Damage to all characters within it and 30 AP Energy Damage to all objects or pieces of terrain within it.<br>This weapon loses its charge when you hit a target, when you disperse its charge as a free action, or when you become <strong>Stunned </strong>or <strong>Shut Down</strong>.",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "2D6+10"
+          }
+        ],
+        "range": [
+          {
+            "type": "Cone",
+            "val": 3
+          }
+        ],
+        "actions": [
+          {
+            "name": "Disperse Charge",
+            "activation": "Free",
+            "detail": "Initiate emergency shunts, shutting down the EMF Blade. Returns the EMF Blade to its Uncharged State.",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap",
+            "name": "Armor-Piercing (AP)",
+            "description": "Damage dealt by this weapon ignores Armor."
+          },
+          {
+            "id": "tg_reliable",
+            "name": "Reliable {VAL}",
+            "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+            "val": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_emlaser",
+    "name": "VS EM Laser",
+    "source": "NEVEC",
+    "license": "PTX-140 Hardballer",
+    "license_id": "MSG0079_hardballer",
+    "license_level": 3,
+    "description": "",
+    "effect": "<span>Gain the </span><strong><span>Charge Weapon </span></strong><span>Quick Action. If the target Overheats as a part of this attack, they must roll an Engineering Save or else be Stunned until the end of their next turn.</span>",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "sp": "2",
+    "tags": [
+      {
+        "id": "tg_danger_zone",
+        "name": "Danger Zone",
+        "description": "This system, talent, or weapon can only be used if the user is in the Danger Zone (Heat equal to at least half of their Heat Cap)."
+      },
+      {
+        "id": "tg_ordnance",
+        "name": "Ordnance",
+        "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1D3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "actions": [
+      {
+        "name": "Charge Weapon",
+        "activation": "Quick",
+        "detail": "<span>Generate 2 Heat. Whenever you take this action, this weapon deals +2 heat and forces its Save at +1 Difficulty, with maximums of +6 Heat and +3 Difficulty.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
     "id": "MSG0079_hyena_frog_shotgun",
     "name": "Hyena-Frog Shotgun",
     "source": "EFRD",
@@ -3730,13 +3990,26 @@
     "name": "Mega Particle Cannon Battery",
     "source": "ZN",
     "license": "MSM-10 Zock",
-    "license_id": "MSG0079_msm_onezero_zock",
+    "license_id": "MSG0079_zock",
     "license_level": 2,
     "description": "<div><em><span>Twin mega particle cannon batteries made to overwhelm the enemy with sheer firepower rather than precision.&nbsp;</span></em></div>",
     "effect": "<div><span>You may also make a secondary attack against a different character adjacent to the first target. You can continue making secondary attacks on hits, as long as there are new, valid targets within range; however, each attack generates 1 heat more than the last and secondary attacks can’t deal bonus damage. Characters can’t be hit more than once with the same firing of this weapon.</span></div>",
     "mount": "Auxiliary",
     "type": "Cannon",
     "sp": 0,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 1
+      },
+      {
+        "id": "tg_inaccurate",
+        "name": "Inaccurate",
+        "description": "Attacks made with this weapon receive +1 Difficulty."
+      }
+    ],
     "barrage": true,
     "skirmish": true,
     "damage": [
@@ -3750,19 +4023,6 @@
         "type": "Line",
         "val": 10
       }
-    ],
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "name": "Heat {VAL} (Self)",
-        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
-        "val": 1
-      },
-      {
-        "id": "tg_inaccurate",
-        "name": "Inaccurate",
-        "description": "Attacks made with this weapon receive +1 Difficulty."
-      }
     ]
   },
   {
@@ -3770,26 +4030,13 @@
     "name": "Multi-Phase Phonon Cannon",
     "source": "ZN",
     "license": "MSM-10 Zock",
-    "license_id": "MSG0079_msm_onezero_zock",
+    "license_id": "MSG0079_zock",
     "license_level": 3,
     "description": "<div><em><span>A downscaled version of the Phonon Maser Gun, requiring less time to build up the energy to fire at full strength but at the same time having its maximum output capped and causing heavy strain on the mobile suit’s power plant.</span></em></div>",
     "effect": "<div><span>This weapon deals 2d6 + half your current heat as energy damage, you may also delay the firing of attacks made with this weapon. Choose the target area, which becomes visible to all characters: the beam fires at the end of your next turn, and deal 3d6 + your full current heat Energy damage instead of half, but you become Immobilized until the end of your next turn. If you move (even involuntarily) or become Stunned or Jammed while charging a delayed shot the weapon fires immediately using its original output.</span></div>",
     "mount": "Superheavy",
     "type": "Cannon",
     "sp": 0,
-    "barrage": true,
-    "damage": [
-      {
-        "type": "Energy",
-        "val": "2d6 + X"
-      }
-    ],
-    "range": [
-      {
-        "type": "Line",
-        "val": 15
-      }
-    ],
     "tags": [
       {
         "id": "tg_heat_self",
@@ -3801,6 +4048,19 @@
         "id": "tg_ap",
         "name": "Armor-Piercing (AP)",
         "description": "Damage dealt by this weapon ignores Armor."
+      }
+    ],
+    "barrage": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 15
       }
     ]
   },
