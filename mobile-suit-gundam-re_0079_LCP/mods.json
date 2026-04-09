@@ -686,5 +686,115 @@
         "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
       }
     ]
+  },
+  {
+    "id": "MSG0079_super_napalm_rocket_launcher",
+    "name": "Super Napalm Rocket Launcher",
+    "source": "EFRD",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "effect": "<span>Attach a miniture Rocket Launcher to the underbarrel of a Main RIfle or CQB weapon. It may be fired as a Quick Action as a separate weapon</span>",
+    "sp": "2",
+    "description": "<span>An optional armament mounted underneath the Beam Rifle's barrel, the Super Napalm is a 4-tube rocket launcher that fires powerful napalm rounds. It is used to incinerate large areas.</span>",
+    "allowed_types": [
+      "Rifle",
+      "CQB"
+    ],
+    "allowed_sizes": [
+      "Main",
+      "Auxiliary",
+      "Heavy",
+      "Superheavy"
+    ],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": [],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 4
+      }
+    ],
+    "actions": [
+      {
+        "name": "Super Napalm Rocket",
+        "activation": "Quick",
+        "detail": "Upon firing all targets that are hit gain a special burn marker indicating that their source of burn is from minovsky particles. This also effects structures, fortifications, deployables, and dropped items (Equipment, ect.) as they catch on fire and take triple the damage. This can be stacked with other sources of burn damage. All rolls involving engineering gain an additional difficulty. <br><br>Anyone starting their turn, or moving into in the burst 2 area must make an engineering save against the Frame's Save Target. A pass results in gaining 1 burn with no special burn marker. A failure results in getting 2 burn with the special burn marker and gaining the shredded status which specifically lasts till the end of your next turn.",
+        "cost": "1",
+        "pilot": false,
+        "damage": [
+          {
+            "type": "Burn",
+            "val": 2
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          },
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_ready_rack",
+    "name": "Ready Rack",
+    "source": "EFRD",
+    "license": "RGM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license_level": 2,
+    "effect": "<span>1/Round, as a Protocol, you may expend a charge from this system to load the modified weapon.</span>",
+    "sp": "3",
+    "description": "<em><span>Strategically placed ready racks allow for much, much quicker loading. Unfortunately, ready racks tend to be extremely limited in ammunition capacity.</span></em>",
+    "allowed_types": [
+      "Rifle",
+      "Cannon",
+      "Launcher",
+      "CQB",
+      "Nexus",
+      "Melee",
+      "Special",
+      "???"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": [],
+    "added_tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      },
+      {
+        "id": "tg_protocol",
+        "name": "Protocol",
+        "description": "This system can be activated as a free action, but only at the start of the user’s turn. Another action might be needed to deactivate it."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
   }
 ]

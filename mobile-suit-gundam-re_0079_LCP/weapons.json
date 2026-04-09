@@ -5,7 +5,7 @@
     "source": "EFRD",
     "license": "RGM-79 GM",
     "license_id": "MSG0079_rgm_sevennine_gm",
-    "license_level": 2,
+    "license_level": 1,
     "description": "<div>The BR-M79-C-1 Beam Spray Gun was designed and developed by BOWA corporation as an Anti-Mobile Suit weapon for the RGM-79. &nbsp;&nbsp;While the XBR-M-79, the pioneering beam rifle developed by the Federation Military ahead of the Principality of Zeon, would be classified as an long range assault rifle under the previous system of weapon categorization, the Beam Spray Gun falls more into the category of a mid range machine pistol. &nbsp;</div><div>The Beam Spray gun is not equipped with any targeting sensors, but instead relies on the data received from the head sensors of the GM, and the FCS relies on the data supplied from the main mobile suit. &nbsp;Regardless of the mid-range classification, the official effective range of the weapon remains classified, but slightly surpasses that of the 120mm machine gun utilized by the main Mobile Suit deployed by the Principality of Zeon, the MS-06 Zaku II, while still retaining more than sufficient knock down power.</div>",
     "mount": "Main",
     "type": "CQB",
@@ -186,9 +186,9 @@
     "id": "MSG0079_sixzeromm_vulcan_cannon",
     "name": "60mm Vulcan Cannon",
     "source": "EFRD",
-    "license": "RGM-79 GM",
-    "license_id": "MSG0079_rgm_sevennine_gm",
-    "license_level": 1,
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
     "description": "<div>A basic armament of many Federation mobile suits, a 60mm three-barrel vulcan guns can be mounted in the head and used for mid-range and close combat defense. While generally ineffective against the armor of other mobile suits, they are useful for intercepting incoming missiles/rockets, destroying mobile suit sensors, and attacking lightly-armored vehicles.</div>",
     "effect": "<div>This weapon does not take difficulty from being Engaged.</div>",
     "mount": "Auxiliary",
@@ -2016,13 +2016,13 @@
     ]
   },
   {
-    "id": "MSG0079_beamrifle",
-    "name": "Beam Rifle",
+    "id": "MSG0079_blash_xbr_m_sevenninee_beam_rifle",
+    "name": "BLASH XBR-M-79E Beam Rifle",
     "source": "EFRD",
-    "license": "RGM-79 GM",
-    "license_id": "MSG0079_rgm_sevennine_gm",
-    "license_level": 4,
-    "description": "<div>A revolutionary weapon for its time, the beam rifle is the primary weapon of the Gundam. It is a miniaturized version of a mega particle cannon with an output of 1.9 megawatts. The beam rifle employs the Federation's energy capacitor, or E-cap, technology and uses charged concentrations of Minovsky particles as ammunition. The resulting weapon has power equivalent to that of a battleship's main gun at the time of the One Year War, allowing it to defeat a mobile suit with a single shot. The rifle can fire 12-15 shots when fully charged. It also features an offset, movable sensor that interfaces with the RX-78’s Fire Control System to achieve a high degree of accuracy, as well as a foregrip for firing support. When not in use, the beam rifle can be stored on the back of the Gundam's waist or behind its shield.</div><div>There are several different variants of the Beam Rifle, with semi-mass-produced versions being distributed to Guncannons and GMs in limited amounts as potent mid-range weapons.</div>",
+    "license": "RGM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license_level": 3,
+    "description": "<span>The same beam rifle as used by the Gundam Ground Type, it is a redesign of the RX-78-2 Gundam's XBR-M-79-07G beam rifle. Instead of the 79-07G’s large movable sensor, this rifle is fitted with the BP-SS-001 composite box-type sensor system utilized on the BR-M-79C-3 Beam Spray Gun and licensed from BOWA Corporation, granting the weapon improved targeting precision.</span>",
     "mount": "Main",
     "type": "Rifle",
     "sp": 0,
@@ -2031,7 +2031,7 @@
         "id": "tg_limited",
         "name": "Limited {VAL}",
         "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
-        "val": 7
+        "val": 5
       },
       {
         "id": "tg_ap",
@@ -4115,8 +4115,8 @@
     "license": "MS-06E-3 Zaku Flipper",
     "license_id": "MSG0079_zaku_flipper",
     "license_level": 2,
-    "description": "",
-    "effect": "<span>This weapon is designated a integrated weapon that may have mods attached to it. (Use the Heavy Mount to only equip this weapon on the Zaku II Sniper, and add the mod you want!)</span><br><span><br>The Weapon has two profiles (Rifle and Sniper) that the player can choose to start in, and can swap between them with a protocol action.</span>",
+    "description": "<strong><span>This weapon is designated a integrated weapon that may have mods attached to it. (Use the Heavy Mount to only equip this weapon on the Zaku II Sniper, and add the mod you want!)</span></strong>",
+    "effect": "<span>The Weapon has two profiles (Rifle and Sniper) that the player can choose to start in, and can swap between them with a protocol action.</span>",
     "mount": "Heavy",
     "type": "Rifle",
     "sp": 0,
@@ -4128,7 +4128,7 @@
         "damage": [
           {
             "type": "Energy",
-            "val": "3D4"
+            "val": "4D3"
           },
           {
             "type": "Burn",
@@ -4198,6 +4198,628 @@
             "val": 3
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_twofourzeromm_shoulder_cannon",
+    "name": "240MM Shoulder Cannon",
+    "source": "EFRD",
+    "license": "RX-77D GunCannon Mass Production Type",
+    "license_id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "license_level": 2,
+    "description": "<strong>This is a Superheavy Integrated weapon option only for the RX-77D GunCannon Mass Production Type.</strong>",
+    "effect": "<span>Attacks with this weapon can target up to two separate enemies, but cannot overlap their burst attacks.</span><br><br/><span>You may also delay the impact of attacks made with this weapon. Choose the target area(s), which become visible to all characters: the shells land at the end of the round, after all characters have acted. Deal 6d3+3 explosive damage instead of 4d3+2, but you become Slowed until the end of your next turn.</span>",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_accurate",
+        "name": "Accurate",
+        "description": "Attacks made with this weapon receive +1 Accuracy."
+      },
+      {
+        "id": "tg_arcing",
+        "name": "Arcing",
+        "description": "This weapon can be fired over obstacles, usually by lobbing a projectile in an arc. Attacks made with this weapon don’t require line of sight, as long as it’s possible to trace a path to the target; however, they are still affected by cover."
+      },
+      {
+        "id": "tg_ordnance",
+        "name": "Ordnance",
+        "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+      },
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 2
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "4d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 18
+      },
+      {
+        "type": "Blast",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_twofour_missile_shoulder_launchers",
+    "name": "24 Missile Shoulder Launchers",
+    "source": "EFRD",
+    "license": "RX-77D GunCannon Mass Production Type",
+    "license_id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "license_level": 2,
+    "description": "<strong>This is a Superheavy Integrated weapon option only for the RX-77D GunCannon Mass Production Type.</strong>",
+    "effect": "<span>Each time you attack with this weapon, you target a Blast 1 area of the map. The GM determines where the Cone 5 radius actually hits (through random rolls or otherwise), but it must contain the area you picked.</span><br><br><span>All enemies are knocked prone and must make an agility save or be knocked out of the cone area by the shortest route possible. Afterwards, knockback from the attack is then activated, pushing targets out of the cone area.</span>",
+    "mount": "Superheavy",
+    "type": "Launcher",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_arcing",
+        "name": "Arcing",
+        "description": "This weapon can be fired over obstacles, usually by lobbing a projectile in an arc. Attacks made with this weapon don’t require line of sight, as long as it’s possible to trace a path to the target; however, they are still affected by cover."
+      },
+      {
+        "id": "tg_ordnance",
+        "name": "Ordnance",
+        "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+      },
+      {
+        "id": "tg_knockback",
+        "name": "Knockback {VAL}",
+        "description": "On a hit, the user may choose to knock their target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a Blast). Multiple Knockback effects stack with each other. This means that an attack made with a Knockback 1 weapon and a talent that grants Knockback 1 counts as having Knockback 2.",
+        "val": 2
+      },
+      {
+        "id": "tg_reliable",
+        "name": "Reliable {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 5
+      },
+      {
+        "id": "tg_inaccurate",
+        "name": "Inaccurate",
+        "description": "Attacks made with this weapon receive +1 Difficulty."
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 2
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "2D6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 13
+      },
+      {
+        "type": "Cone",
+        "val": 5
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_nfhi_rgm_m_sh_agd_shield",
+    "name": "NFHI RGM-M-Sh-AGD Shield",
+    "source": "EFRD",
+    "license": "RX-77D GunCannon Mass Production Type",
+    "license_id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "license_level": 1,
+    "description": "<em><span>A shield made of titanium/ceramic composite was developed near the end of the One Year War. Thanks to its curved shape and an anti-beam coating with a higher heat resistance than previous models, it is more resistant against both ballistic and beam weapons. There is an opening at the top of the shield for the shoulder vernier to go through. The inside of the shield has a weapon latch, which can be used to store various equipment and two spare magazines. Since it was mostly used by GM Command, the shield was colloquially known as the \"Command Shield.\"</span></em>",
+    "effect": "<span>Gain access to the Quick Action: Raise the Command Shield</span>",
+    "mount": "Main",
+    "type": "Melee",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_shield",
+        "name": "Shield",
+        "description": "This system is an energy shield of some kind."
+      },
+      {
+        "id": "tg_quick_action",
+        "name": "Quick Action",
+        "description": "This system requires a quick action to Activate."
+      },
+      {
+        "id": "tg_protocol",
+        "name": "Protocol",
+        "description": "This system can be activated as a free action, but only at the start of the user’s turn. Another action might be needed to deactivate it."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1D3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Raise the Command Shield",
+        "activation": "Quick",
+        "detail": "<span>As a quick action, you may raise the shield to gain resistance to Kinetic and Energy damage. When you brace with the shield raised, you act as a hard cover for adjacent allies. You also become SLOWED, and all ranged weapon attacks suffer a Difficulty when firing. To end this effect, you must spend a quick action or protocol.<br><br>As a protocol, you may choose to attack an engaged enemy with your shield. On hit, you deal no damage, howeverer you knock the enemy prone and deal 2 knockback. Knockback traits, mods, etc., apply to this specific action</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_yhi_yf_mgonezerozero_onezerozeromm_machine_gun",
+    "name": "YHI YF-MG100 100mm Machine Gun",
+    "source": "EFRD",
+    "license": "RX-77D GunCannon Mass Production Type",
+    "license_id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "license_level": 2,
+    "description": "<em><span>The standard armament for the Federation's mobile suit ground forces during the One Year War was developed by Yashima Heavy Industries. It has an alternate model number: \"NF·GMG-Type.37/100mm\". Equipped with a box magazine and folding stock, it has an excellent rate of fire and is easy to wield. It utilized a smoothbore type barrel that lacked rifling and had to be replaced after firing 3000 rounds. The weapon could utilize three different types of ammunition: HEAT (High Explosive Anti-Tank), APFSDS (Armor-Piercing Fin-Stabilized Discarding-Sabot), and HESH (High Explosive Squash Head), allowing combat units to select the appropriate type to meet operational needs.</span></em>",
+    "effect": "<span>In base mode, it can fire the basic Mech Shot rounds as listed without using your limited rounds. However, as a protocol, you can swap out the type of attack you do for the round. Afterwards, you must spend a protocol to select a different type of ammo to use or automatically return to firing basic Mech Shot.<br></span>",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      },
+      {
+        "id": "tg_protocol",
+        "name": "Protocol",
+        "description": "This system can be activated as a free action, but only at the start of the user’s turn. Another action might be needed to deactivate it."
+      }
+    ],
+    "profiles": [
+      {
+        "name": "Mech Shot",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "4D3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 12
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_inaccurate",
+            "name": "Inaccurate",
+            "description": "Attacks made with this weapon receive +1 Difficulty."
+          },
+          {
+            "id": "tg_overkill",
+            "name": "Overkill",
+            "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
+          },
+          {
+            "id": "tg_reliable",
+            "name": "Reliable {VAL}",
+            "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+            "val": 4
+          }
+        ],
+        "cost": "0"
+      },
+      {
+        "name": "H.E.A.T. (High Explosive Anti-Tank)",
+        "effect": "<span>Ignore the cover when firing upon an enemy in this mode. When firing on an enemy in no cover, or has been flanked resulting in a no cover attack the pilot takes half the total damage. Should the pilot die, the frame is considered shut off until a new pilot (Sentient Lifeform or A.I.) mounts it.</span>",
+        "barrage": true,
+        "skirmish": true,
+        "cost": "1",
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "4D3+2"
+          },
+          {
+            "type": "Burn",
+            "val": 4
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 12
+          },
+          {
+            "type": "Cone",
+            "val": 4
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_overkill",
+            "name": "Overkill",
+            "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
+          }
+        ]
+      },
+      {
+        "name": "A.P.F.S.D.S. (Armor-Piercing Fin-Stabilized Discarding-Sabot)",
+        "effect": "<span>When attacking two or more adjacent enemies in a line, the damage can’t be reduced and redirected by any means.</span>",
+        "barrage": true,
+        "skirmish": true,
+        "cost": "1",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2D6+4"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 12
+          },
+          {
+            "type": "Line",
+            "val": 3
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap",
+            "name": "Armor-Piercing (AP)",
+            "description": "Damage dealt by this weapon ignores Armor."
+          },
+          {
+            "id": "tg_accurate",
+            "name": "Accurate",
+            "description": "Attacks made with this weapon receive +1 Accuracy."
+          }
+        ]
+      },
+      {
+        "name": "H.E.S.H. (High Explosive Squash Head)",
+        "effect": "<span>You deal half damage to all enemies in cover. When firing this weapon, you deal double AP damage against structures, terrains, deployables, and fortifications. Should any piece of equipment (Thrown/Placed Weapons, Items, Tokens, etc.) usable by a frame be caught by itself in the blast, it is considered destroyed.</span>",
+        "barrage": true,
+        "skirmish": true,
+        "cost": "1",
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "2D6+4"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 12
+          },
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_xbr_m_sevenninea_beam_rifle",
+    "name": "XBR-M-79a Beam Rifle",
+    "source": "EFRD",
+    "license": "RX-77D GunCannon Mass Production Type",
+    "license_id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "license_level": 3,
+    "description": "<em><span>Weapon made and developed by the BOWA corporation specifically for the Guncannon. This particular beam rifle is classified as an XBR-L type despite its model number and is specialized for sniping. Compared to the XBR-M type beam rifle used by the Gundam, it was harder to use but had higher accuracy and longer range.</span></em>",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_accurate",
+        "name": "Accurate",
+        "description": "Attacks made with this weapon receive +1 Accuracy."
+      },
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_ordnance",
+        "name": "Ordnance",
+        "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+      },
+      {
+        "id": "tg_loading",
+        "name": "Loading",
+        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+      },
+      {
+        "id": "tg_reliable",
+        "name": "Reliable {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 6
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 3
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "6D3+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 30
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_dual_beam_cannons",
+    "name": "Dual Beam Cannons",
+    "source": "EFRD",
+    "license": "RX-77D GunCannon Mass Production Type",
+    "license_id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "license_level": 2,
+    "description": "<strong>This is the Superheavy Integrated weapon for only the RGC-83 GM Cannon II.</strong>",
+    "effect": "<span>A Core Integrated piece of equipment is available to use. It is capable of attaching mods.</span>",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_accurate",
+        "name": "Accurate",
+        "description": "Attacks made with this weapon receive +1 Accuracy."
+      },
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_ordnance",
+        "name": "Ordnance",
+        "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 3
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "3D6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 20
+      },
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_hyper_beam_cannon",
+    "name": "Hyper Beam Cannon",
+    "source": "EFRD",
+    "license": "RGM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license_level": 2,
+    "description": "<span>The primary armament of the Light Cannon is a single beam cannon model similar to the one used by </span>RX-77-02 Guncannon<span>, mounted over the right shoulder. This beam cannon is used for mid-range fire support.</span>",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_accurate",
+        "name": "Accurate",
+        "description": "Attacks made with this weapon receive +1 Accuracy."
+      },
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_loading",
+        "name": "Loading",
+        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "3D3+3 "
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 18
+      },
+      {
+        "type": "Line",
+        "val": 5
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_light_type_beam_saber",
+    "name": "Light-Type Beam Saber",
+    "source": "EFRD",
+    "license": "RGM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license_level": 1,
+    "description": "<span>The beam saber is a small device stored on the back, and is able to be held in the mobile suit's hands when deployed out and is powered by a rechargeable energy capacitor. It emits high-energy Minovsky particles to form a blade-shaped I-field (via manipulation of electromagnetic fields), and then fills this I-field shell with superheated Minovsky particle plasma to produce an effective cutting blade. It is the same model of beam saber used by the </span>Gundam<span>.</span>",
+    "effect": "You gain the Beam Clash reaction",
+    "mount": "Main",
+    "type": "Melee",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_reliable",
+        "name": "Reliable {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 2
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Beam Clash",
+        "activation": "Reaction",
+        "detail": "",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "When you are hit by a melee attack.",
+        "trigger": "You may use your reaction to attempt to block the incoming attack with the Light-Type Beam Saber. Roll for attack with +1 Accuracy. If you roll higher than the triggering attack, all damage is nullified, and you may push the attacker back one space."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_hyper_gundam_hammer_and_grappling_anchor",
+    "name": "Hyper Gundam Hammer and Grappling Anchor",
+    "source": "EFRD",
+    "license": "RGM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license_level": 2,
+    "description": "<span>A mobile suit sized flail-type weapon with a long chain and anchor-shaped grip attached to a spiked iron ball. The weapon could either be thrown or swung around the mobile suit itself to damage the enemy units.</span>",
+    "effect": "<span>It is a Melee that benefits from CQB talents.</span><br><br><span>Gain access to the Quick Action, Reel in the Anchor Point, and the Full Action, Anchor Point Charge.</span>",
+    "mount": "Heavy",
+    "type": "Melee",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_reliable",
+        "name": "Reliable {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 4
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "on_hit": "<span>You may grapple an enemy instead of doing damage. The target becomes immobilized and suffers 2 difficulties when attempting to break free. They are considered your Anchor point until they break free or you move more than 5 spaces away. You gain new actions when you have an anchor point.</span>",
+    "on_crit": "The enemy is knocked Prone!",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d3+4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 5
+      },
+      {
+        "type": "Line",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "name": "Reel in the Anchor Point",
+        "activation": "Quick",
+        "detail": "<span>Reel in the Anchor Point in a direct line to a nearby free space next to you. Otherwise, move it to the closest free space nearest to you. Any enemies in the path must make a hull save or be knocked out of the path. Effects, traits, talents, etc, for knockback apply.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Anchor Point Charge",
+        "activation": "Full",
+        "detail": "<span>You may instead drag yourself towards your Anchor Point. The path must always be moving towards and ending with you being adjacent to the Anchor Point. If not available, you end up in the nearest free spot to the anchor. You may choose to attack every enemy you pass by with one mount of your choice. Ending with a hull save on the anchor point when failed causes X knockback in a direction of your choice. X is half of your total spaces traveled, rounded up. Effects, traits, talents, etc, for knockback apply.</span>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
       }
     ]
   }

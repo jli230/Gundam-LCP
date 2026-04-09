@@ -749,7 +749,7 @@
     "id": "MSG0079_rgm_sevennine_gm",
     "license_id": "MSG0079_rgm_sevennine_gm",
     "source": "EFRD",
-    "license_level": 1,
+    "license_level": 2,
     "name": "RGM-79 GM",
     "mechtype": [
       "Balanced"
@@ -807,7 +807,9 @@
       "passive_synergies": [],
       "deployables": [],
       "counters": [],
-      "integrated": [],
+      "integrated": [
+        "MSG0079_sixzeromm_vulcan_cannon"
+      ],
       "special_equipment": [],
       "tags": []
     },
@@ -960,7 +962,7 @@
     "id": "MSG0079_rgm_sevenninegs_gunslinger_gm",
     "license_id": "MSG0079_rgm_sevennine_gm",
     "source": "EFRD",
-    "license_level": 3,
+    "license_level": 2,
     "name": "RGM-79GS Gunslinger GM",
     "mechtype": [
       "Striker"
@@ -978,12 +980,12 @@
       "stress": 4,
       "armor": 1,
       "hp": 10,
-      "evasion": 9,
+      "evasion": 8,
       "edef": 8,
-      "heatcap": 6,
-      "repcap": 6,
+      "heatcap": 5,
+      "repcap": 5,
       "sensor_range": 12,
-      "tech_attack": 1,
+      "tech_attack": 0,
       "save": 10,
       "speed": 4,
       "sp": 6
@@ -991,13 +993,18 @@
     "traits": [
       {
         "name": "Gunslinger's Grit",
-        "use": "",
+        "use": "Round",
         "description": "2/round upon successfully evading an attack, the Gunslinger GM <span>can immediately move 1 space in any direction as long as it isn’t Immobilize or Slowed. This movement ignores engagement and doesn’t provoke reactions.</span>"
       },
       {
         "name": "Quick Draw",
-        "use": "",
-        "description": "<span>1/round, whenever the GM Gunslinger is targeted by an attack, it may Skirmish before being attacked with a non-Heavy mount against the attacker, dealing half damage, heat, and burn on a hit and expending its Overwatch reaction. If the attacker is destroyed or structured from this attack, the GM Gunslinger may move up to its speed, ignoring Engagement and Reactions.</span>"
+        "use": "Round",
+        "description": "<span>1/round, whenever the GM Gunslinger is targeted by an attack, it may Skirmish before being attacked against the attacker, expending its Overwatch reaction. However all damage dealt is halved. If the attacker is destroyed or structured from this attack, the GM Gunslinger may move up to its speed, ignoring Engagement and Reactions.</span>"
+      },
+      {
+        "name": "Integrated Command Module",
+        "use": "Round",
+        "description": "1/round, as a reaction, you may allow an allied character to reroll an attack, check, or save."
       }
     ],
     "core_system": {
@@ -1618,7 +1625,7 @@
           "range": [
             {
               "type": "Range",
-              "val": 5
+              "val": 10
             }
           ],
           "synergy_locations": [],
@@ -1673,8 +1680,8 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "",
-    "y_pos": 0
+    "image_url": "https://i.imgur.com/A0EuH8W.png",
+    "y_pos": 31
   },
   {
     "id": "MSG0079_shorty",
@@ -2761,7 +2768,7 @@
       "Artillery"
     ],
     "variant": "MS-06E-3 Zaku Flipper",
-    "description": "<span>When Gihern immediately greenlit the United Maintenance plan at the start of the war, it led them to revamp many Mobile Suit variations to fit multiple roles, allowing for mass production with ease. One such M.S. was the MS-06E Zaku Recon type, which would serve as the template for the Zaku Flipper Recon Type series. As the War continued on Earth, it became apparent that the Magella Top Guns needed to be replaced with a more precise and powerful rifle. As a result, the Gelgoog project was in full swing, but its already developed beam weapons required testing. Kycillia’s Noisy Fairy Squadron mechanics worked with California Base, using a spare MS-06E Zaku Recon type, and crudely integrated one of the Gelgoog’s Experimental Beam Cannon. This created an effective sniper capable of providing support with a low size profile. However, its Beam Cannon used too much power, resulting in nearly shutting down the mobile suit completely. Thus, an additional M.H.D. Sub Generator Backpack was integrated. They modified the prototype Beam Canon into a more power-efficient and customizable RA-2 Heavy Beam Rifle.&nbsp;</span><br/><span>It was quickly manufactured shortly after the disappearance of Garma Zabi, and the war began shifting into the Federation’s favor. Unfortunately, they were produced too late to join the battle at Jaburo, but they would prove themselves a lethal threat. As Zeonic Forces retreated from planet Earth, many Zaku II Sniper Types were deployed on all fronts. A majority used guerrilla tactics to cripple and exploit the Earth Federation’s lightly guarded, rapidly expanding supply lines to their horror. In North America, these Mobile Suits slowed the Earth Federation’s rapid advance into a cautious crawl akin to World War 1 verdun. It allowed Zeonic Personnel with their Prototypes and research to escape back into space. Since the end of the One Year War, however, unlike the Zaku Flippers that got requisitioned, a number of the MS-06L Zaku II Snipers were decommissioned as part of the peace treaty. Some say this was due to them killing several incompetent Earth Federation officers who were extremely well-connected to the Earth Federation government. Regardless, they’ve become the favorite weapon of private defense contractors operating from deep space to ground operations.</span>",
+    "description": "<span>When Gihern immediately greenlit the United Maintenance plan at the start of the war, it led them to revamp many Mobile Suit variations to fit multiple roles, allowing for mass production with ease. One such M.S. was the MS-06E Zaku Recon type, which would serve as the template for the Zaku Flipper Recon Type series. As the War continued on Earth, it became apparent that the Magella Top Guns needed to be replaced with a more precise and powerful rifle. As a result, the Gelgoog project was in full swing, but its already developed beam weapons required testing. Kycillia’s Noisy Fairy Squadron mechanics worked with California Base, using a spare MS-06E Zaku Recon type, and crudely integrated one of the Gelgoog’s Experimental Beam Cannon. This created an effective sniper capable of providing support with a low size profile. However, its Beam Cannon used too much power, resulting in nearly shutting down the mobile suit completely. Thus, an additional M.H.D. Sub Generator Backpack was integrated. They modified the prototype Beam Canon into a more power-efficient and customizable RA-2 Heavy Beam Rifle.&nbsp;</span><br><span>It was quickly manufactured shortly after the disappearance of Garma Zabi, and the war began shifting into the Federation’s favor. Unfortunately, they were produced too late to join the battle at Jaburo, but they would prove themselves a lethal threat. As Zeonic Forces retreated from planet Earth, many Zaku II Sniper Types were deployed on all fronts. A majority used guerrilla tactics to cripple and exploit the Earth Federation’s lightly guarded, rapidly expanding supply lines to their horror. In North America, these Mobile Suits slowed the Earth Federation’s rapid advance into a cautious crawl akin to World War 1 verdun. It allowed Zeonic Personnel with their Prototypes and research to escape back into space. Since the end of the One Year War, however, unlike the Zaku Flippers that got requisitioned, a number of the MS-06L Zaku II Snipers were decommissioned as part of the peace treaty. Some say this was due to them killing several incompetent Earth Federation officers who were extremely well-connected to the Earth Federation government. Regardless, they’ve become the favorite weapon of private defense contractors operating from deep space to ground operations.</span><br><br><strong><span>DUE TO LIMITATIONS WITH COMP/CON, IT has an Heavy Mount for its integrated Weapon that accepts mods! (RA-2 Heavy Beam Rifle)</span></strong>",
     "mounts": [
       "Main/Aux",
       "Flex",
@@ -2812,7 +2819,7 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "700KW Power Output Attachment",
-      "passive_effect": "<em><span>You may attach energy-damaging weapons to the backpack. This grants weapons equipped to it with the following tags:&nbsp;</span></em><br><br/><ul><li><em><span>AP&nbsp;</span></em><br><br/></li><li><em><span>Self Heat 1(Aux), 2(Main)</span></em><br><br>You also gain access to a modifiable integrated weapon, but due to Comp/Con Limitations it must be equipped manually into the Heavy Mount provided! Meaning you must be LL2 in the Zaku Flipper to access this weapon and the frame it's for simultaneously.<br/></li></ul>",
+      "passive_effect": "<em><span>You may attach energy-damaging weapons to the backpack. This grants weapons equipped to it with the following tags:&nbsp;</span></em><br/><ul><li><em><span>AP&nbsp;</span></em><br><br/></li><li><em><span>Self Heat 1(Aux), 2(Main)</span></em><br><br><br>You also gain access to a modifiable integrated weapon, but due to Comp/Con Limitations it must be equipped manually into the Heavy Mount provided! Meaning you must be LL2 in the Zaku Flipper to access this weapon and the frame it's for simultaneously.<br><br/></li></ul>",
       "passive_actions": [],
       "passive_bonuses": [],
       "passive_synergies": [],
@@ -2825,5 +2832,261 @@
     "specialty": false,
     "image_url": "",
     "y_pos": 0
+  },
+  {
+    "id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "license_id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "source": "EFRD",
+    "license_level": 2,
+    "name": "RX-77D GunCannon Mass Production Type",
+    "mechtype": [
+      "Artillery"
+    ],
+    "variant": "",
+    "description": "<strong><span>DUE TO LIMITATIONS WITH COMP/CON, IT has an extra Flex and Heavy Mount for its integrated Weapons that accepts mods! (240mm Shoulder Cannons or 24 Missile Shoulder Launchers)</span></strong>",
+    "mounts": [
+      "Main/Aux",
+      "Aux/Aux",
+      "Heavy",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 2,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 20,
+      "tech_attack": 0,
+      "save": 12,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Advanced Cooling Systems",
+        "use": "",
+        "description": "<span>When you stabilize the RX-77D to clear heat, or you exceed the frame’s Heat Cap, it also gains soft cover until the start of your next turn.</span>"
+      },
+      {
+        "name": "Mobile Firing Platform",
+        "use": "",
+        "description": "<span>Choose one RX-77D mount: All Launchers or Cannons equipped on that mount gain Arcing.</span>"
+      },
+      {
+        "name": "Autonomous Targeting Systems",
+        "use": "",
+        "description": "<span>The RX-77D can use ranged weapons to attack a character with the Lock On condition as if its weapon had Seeking, but must consume the Lock On during the attack. When it does so, the attack’s damage cannot be reduced in any way.</span>"
+      },
+      {
+        "name": "Slow Reflexes",
+        "use": "",
+        "description": "<span>The RX-77D has difficulty to all agility saves and checks.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Interchangeable Artillery Support Backpack",
+      "active_name": "Rapid Fire Support ",
+      "active_effect": "<span>Upon activation, you can Skirmish or Overwatch once with a Superheavy Weapon for the round; it still costs the appropriate action as normal and deals half damage, burn, and heat.<br><br>It is considered efficient, and you regain the Core power in the next scene</span>",
+      "activation": "Full",
+      "description": "",
+      "deactivation": "",
+      "use": "Next Round",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Defender of the Colonies",
+      "passive_effect": "<em><span>Whenever firing upon anything that counts as cover, you may choose to have your attack deal half damage. However, all cover is ignored for ½ mechs, Infantry, and Drones using it.</span></em>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/QrIbZZR.png",
+    "y_pos": "11"
+  },
+  {
+    "id": "MSG0079_rgc_eightthree_gm_cannon_ii",
+    "license_id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "source": "EFRD",
+    "license_level": 2,
+    "name": "RGC-83 GM Cannon II",
+    "mechtype": [
+      "Artillery",
+      "Defender"
+    ],
+    "variant": "RX-77D GunCannon Mass Production Type",
+    "description": "<strong><span>DUE TO LIMITATIONS WITH COMP/CON, IT has an extra Flex and Heavy Mount for its integrated Weapon that accepts mods! (Dual Beam Cannons)</span></strong>",
+    "mounts": [
+      "Main/Aux",
+      "Heavy",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "structure": 4,
+      "stress": 4,
+      "armor": 3,
+      "hp": 10,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 5,
+      "sensor_range": 15,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Integrated Chobam Armor",
+        "use": "",
+        "description": "<span>The RGC-83 GM Cannon II has resistance to Explosive sources of damage.</span>"
+      },
+      {
+        "name": "Auto-Adjusting Fire Support",
+        "use": "",
+        "description": "<span>1/round when the RGC-83 GM Cannon II makes a ranged attack on its turn, it can target any character within Range 3 of an allied character that is at least partially in the RGC-83 GM Cannon II's Sensors, measuring Line of Sight and Range from that allied character.</span>"
+      },
+      {
+        "name": "Wide Stance",
+        "use": "",
+        "description": "<span>Dismounted characters, frames size ½ - size X (X being the frame’s size) that are adjacent to the RGC-83 GM Cannon II may always treat it as Hard Cover.<br><br>However, your frame must be in the cover of something greater than your current frame size to be considered in Hard Cover!</span>"
+      },
+      {
+        "name": "Armory Encumbrance",
+        "use": "",
+        "description": "<span>When the RGC-83 GM Cannon II makes its standard move or Boosts, it can only move in straight lines.</span><br><br><span>You also suffer difficulty with all agility checks and saves.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Embedded Energy Cap Circuitry",
+      "active_name": "Energy Cap Circuit Activation",
+      "active_effect": "<span>Your Integrated Weapon loses the </span><strong><span>Ordnance Tag</span></strong><span> for the rest of the combat scene. It is fired with the rest of your weapons as a barrage attack. This can also be fired independently as a skirmish attack. It does 4D6+4, and you take self-heat 4 when firing. <br><br>The RGC-83 GM Cannon II also ignores the trait Armory Encumbrance for the rest of the scene. This is due to the Energy Cap no longer feeding upon your frame’s reactor.</span>",
+      "activation": "Quick",
+      "description": "",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "The Culmination of M.S. Artillery Support",
+      "passive_effect": "<span>1/round The RGC-83 GM Cannon II can choose to ignore dealing damage to any allies caught in a Line, blast, or cone-shaped attack, so long as an enemy with lock-on is included in that attack.</span>",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/nnMj4J7.png",
+    "y_pos": "12"
+  },
+  {
+    "id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "source": "EFRD",
+    "license_level": 2,
+    "name": "RGM-79 Light-Type GunCannon",
+    "mechtype": [
+      "Artillery",
+      "Striker"
+    ],
+    "variant": "",
+    "description": "The EFF MS development plan was changed due to the theft of the <u>RX-78-02 Gundam</u> and the <u>Pegasus-class</u>, which forced the Federation to base their further development on the <u>RX-77-02 Guncannon</u> and use available operational data from the previously built test units, especially the Gundam. The result was a mobile suit that combined the mobility and close combat capabilities of the Gundam, while retaining the firepower and durability of the Guncannon.<br/>The Light Cannon sported a relatively balanced performance, capable of engaging in both close combat and mid-range combat. The Light Cannon has modified arms and legs, while the chest, head, and main armament come from the Guncannon. The backpack sported a beam saber on the left side and a beam cannon on the right side. Like its predecessors, the Light Cannon also retains the <u>Core Block System</u>, which can act as an escape craft system, ensuring its pilot's survival.<br/><strong><span>DUE TO LIMITATIONS WITH COMP/CON, ITS SECOND HEAVY MOUNT IS FOR THE STORED HEAVY WEAPON ONLY</span></strong>",
+    "mounts": [
+      "Main/Aux",
+      "Flex",
+      "Heavy",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 3,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Vessel of the White Devil",
+        "use": "Round",
+        "description": "<span>Any number of times per round, whenever an enemy's ranged or melee attack roll is equal to the RGM-79 Light-Type's Evasion, you may force that attack to miss as a reaction automatically. The RGM-79 Light-Type has Immunity to all damage and effects from attacks that miss this way, and they cannot be rerolled.</span>"
+      },
+      {
+        "name": "Versatile Modifications",
+        "use": "",
+        "description": "<span>When you apply a Mod to a weapon on the RMG-79 Light Type, its effects apply to all valid weapons on the same type of Mount. You may apply only one Mod per Mount. All mods with Limited lose that tag and instead gain Recharge (4+)</span>"
+      },
+      {
+        "name": "Unworthy Vessel",
+        "use": "",
+        "description": "<span>This frame gains +1 difficulty to Engineering checks &amp; saves, and cannot use actions gained from overcharge to make tech actions.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Integrated Hardpoint Extender",
+      "active_name": "Release the White Devil",
+      "active_effect": "<span>Until the end of the scene, 1/round, you may Quick Fire the stored weapon as a Skirmish or part of a Barrage. The stored weapon automatically reloads immediately after the attack is resolved. Additionally, all range-based weaponry on your frame does not suffer from engagement. This includes ignoring restrictions preventing ranged weapons from being fired within a certain range of you.</span>",
+      "activation": "Quick",
+      "description": "<em><span>The Light Cannon is equipped with various hardpoints, found on its shoulder pauldrons, elbows, and knees, which can be used to mount different types of equipment, including weapons and shields.&nbsp;</span><br><span>Backpack-Integrated sub-arms allow for quick-swapping of armaments on the Light-Type.</span></em>",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "Walking Arsenal",
+      "passive_effect": "<span>You gain Extenders for your Heavy Mount, which can be used to store one other Heavy or smaller weapon. Weapons stored in this way are not equipped to your mech's mounts and may not be used to attack.</span><br><span>You also gain the Quick Swap protocol</span>",
+      "passive_actions": [
+        {
+          "name": "Quick Swap",
+          "activation": "Protocol",
+          "detail": "<span>1/round, you may swap the equipped weapon with the one stored on the Extender. The recently stored weapon automatically reloads at the end of this turn.</span>",
+          "cost": "0",
+          "pilot": false,
+          "damage": [],
+          "range": [],
+          "synergy_locations": [],
+          "tech_attack": false,
+          "frequency": "Unlimited",
+          "init": "",
+          "trigger": ""
+        }
+      ],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/8sQ2p2o.png",
+    "y_pos": 32
   }
 ]

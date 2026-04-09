@@ -70,9 +70,9 @@
     "id": "MSG0079_electromagnetic_actuators",
     "name": "Electromagnetic Actuators",
     "source": "EFRD",
-    "license": "RGM-79 GM",
-    "license_id": "MSG0079_rgm_sevennine_gm",
-    "license_level": 4,
+    "license": "RGM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license_level": 1,
     "effect": "<div>1/round, upon being targeted by a ranged weapon (and not tech attacks), spend a reaction to move one space in any direction before the attack is resolved. This movement does not trigger overwatch or reaction fire. Additionally, gain access to the Rapid Reaction action.</div>",
     "type": "System",
     "sp": "2",
@@ -249,9 +249,9 @@
     "id": "MSG0079__prometheus_model_ultracompact_fusion_reactor",
     "name": "\"Prometheus\" Model Ultracompact Fusion Reactor",
     "source": "EFRD",
-    "license": "RGM-79 GM",
-    "license_id": "MSG0079_rgm_sevennine_gm",
-    "license_level": 4,
+    "license": "RGM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license_level": 3,
     "effect": "<div>The MS may now <strong>Shunt Power to Maneuvering Subsystems </strong>or <strong>Shunt Power to Weapon Systems </strong>as a Protocol in exchange for taking 1d3 Heat.</div>",
     "type": "System",
     "sp": "4",
@@ -264,12 +264,6 @@
       {
         "id": "tg_protocol",
         "val": null
-      },
-      {
-        "id": "tg_exotic",
-        "name": "EXOTIC GEAR",
-        "description": "EXOTIC GEAR is a general tag for equipment that exists outside the traditional licensing system.",
-        "filter_ignore": true
       }
     ],
     "actions": [
@@ -2195,6 +2189,151 @@
         "id": "tg_quick_action",
         "name": "Quick Action",
         "description": "This system requires a quick action to Activate."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_integrated_sensor_array_and_coprocessor_system",
+    "name": "Integrated Sensor Array and Coprocessor System",
+    "source": "EFRD",
+    "license": "RX-77D GunCannon Mass Production Type",
+    "license_id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "license_level": 1,
+    "effect": "<span>This system allows you to use the Lock-on action as a free action 1/round. However, the target is chosen randomly (Through a random roll or otherwise) within your frame’s sensors. This Lock-on will remain and can only be used by you on that enemy. The only way to remove it is for the enemy to be out of your sensors, the enemy is destroyed, or you repeat the free action on the next round.</span>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 1
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_full_body_stabilization_gear",
+    "name": "Full Body Stabilization Gear",
+    "source": "EFRD",
+    "license": "RX-77D GunCannon Mass Production Type",
+    "license_id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "license_level": 2,
+    "effect": "<span>A protocol action that modifies your chassis. Choose from one of the following effects that last until the start of your next turn:</span><br><br><span>Hunker Down</span><br/><span>You choose a heavy or Superheavy weapon that can no longer be fired for the round. You then gain armor based on the size of the weapon: Heavy (2 Armor) or SuperHeavy (3 Armor). This can go over the armor cap, but the armor from this effect does not stack with itself. You also become slowed.<br></span><br><span><br>Ceaseless Advance</span><br/><span>You may move an additional 2 spaces when you move or boost, but you make all attack rolls with +2 Difficulty.<br></span>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 2
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_protocol",
+        "name": "Protocol",
+        "description": "This system can be activated as a free action, but only at the start of the user’s turn. Another action might be needed to deactivate it."
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_multipurpose_precision_targeting_system",
+    "name": "Multipurpose Precision Targeting System",
+    "source": "EFRD",
+    "license": "RX-77D GunCannon Mass Production Type",
+    "license_id": "MSG0079_rx_sevensevend_guncannon_mass_production_type",
+    "license_level": 3,
+    "effect": "<span>Your mech gains the AI property.</span><br><br><span>Gain the full action Tragic Encounter</span>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_ai",
+        "name": "AI",
+        "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or COMP/CON unit installed that can act somewhat autonomously. A pilot can choose to hand over the controls to their AI or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 3
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Tragic Encounter",
+        "activation": "Full",
+        "detail": "<span>At the start of your next turn, you ignore the ordinance tag on all weapons equipped to this frame and replace it with the accurate tag. Whenever you barrage or skirmish this turn, you may attack any number of enemies either through their Evasion or E-defense <br><br>However, during this time, you may only reroll a missed ranged attack once, choosing a new target within the attack’s Range. If the attack was part of an area of effect (Line, Cone, or Blast), it must target a character in the same area. Any given target can't be hit more than once as part of the same action.<br><br>At the start of your next turn, Tragic Encounter ends unless you take 3 self heat to keep it in effect.</span>",
+        "cost": "1",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_grappling_hook",
+    "name": "Grappling Hook",
+    "source": "EFRD",
+    "license": "RGM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license_level": 1,
+    "effect": "You gain the \"Stigma Attack\" Free Action",
+    "type": "System",
+    "sp": "2",
+    "description": "<span>A special equipment unique to </span>Shiiko Sugai<span>'s unit, installed onto the mobile suit's arms, which shoots out a tether from the fingers that can attach itself to objects including mobile suits. It is an essential part of Shiiko's signature \"Stigma Attack\", a maneuver which uses the tether to perform difficult maneuvers around enemy mobile suits, including firing beam rifles remotely via the tether from unexpected angles.</span>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 1
+      },
+      {
+        "id": "tg_heat_self",
+        "name": "Heat {VAL} (Self)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 1
+      },
+      {
+        "id": "tg_round",
+        "name": "{VAL}/Round",
+        "description": "This system, trait or reaction can be used {VAL} number of times between the start of the user’s turn and the start of their next turn.",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Stigma Attack",
+        "activation": "Free",
+        "detail": "Once per round, you may force a character within Range 5 to roll a Systems save. On a Failure, you may move to any free space adjacent to them, ignoring Engagement and Reactions. The next melee or ranged attack you make against them gains +1 Accuracy, and they cannot target you until the end of their next turn, or until they successfully locate you via a successful Systems save as a Quick Action on their turn, whichever comes first.",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
       }
     ]
   }
