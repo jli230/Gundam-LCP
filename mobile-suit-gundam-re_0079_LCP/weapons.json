@@ -988,6 +988,353 @@
     ]
   },
   {
+    "id": "MSG0079_jubilee_micro_missile_rack",
+    "name": "Jubilee Micro Missile Rack",
+    "source": "EFRD",
+    "license": "MBR-04-Mk.VI Destroid Tomahawk",
+    "license_id": "MSG0079_mbr_zerofour_mk_vi_destroid_tomahawk",
+    "license_level": 1,
+    "description": "",
+    "effect": "<div>Whenever this weapon is used, it can make up to six attacks, either on different targets or the same target.</div>",
+    "mount": "Auxiliary",
+    "type": "Launcher",
+    "sp": "0",
+    "tags": [
+      {
+        "id": "tg_smart",
+        "name": "SMART",
+        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks can’t simply be dodged – they must be scrambled or jammed. Because of this, all attacks with this weapon – including melee and ranged attacks – use the target’s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+      },
+      {
+        "id": "tg_seeking",
+        "name": "SEEKING",
+        "description": "This weapon has a limited form of self-guidance and internal propulsion, allowing it to follow complicated paths to its targets. As long as it’s possible to draw a path to its target, this weapon ignores cover and doesn’t require line of sight."
+      },
+      {
+        "id": "tg_loading",
+        "name": "LOADING",
+        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "on_crit": "<div>This attack deals AP damage.</div>",
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": 1
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 3
+      },
+      {
+        "type": "Range",
+        "val": 5
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_eclipse_multi_purpose_munitions_platform",
+    "name": "Eclipse Multi-Purpose Munitions Platform",
+    "source": "EFRD",
+    "license": "MBR-04-Mk.VI Destroid Tomahawk",
+    "license_id": "MSG0079_mbr_zerofour_mk_vi_destroid_tomahawk",
+    "license_level": 3,
+    "description": "",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "sp": "2",
+    "profiles": [
+      {
+        "name": "",
+        "effect": "<div>You may begin any fight with any of this weapon's profiles. Each profile lasts until you fire and unload this weapon, after which you may switch to any other profile as a free action when you load this weapon. You may also swap profiles as a quick action.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "2d6+3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 15
+          }
+        ],
+        "actions": [
+          {
+            "name": "Rearm",
+            "activation": "Free",
+            "detail": "<div>Whenever this weapon is loaded, you may take this action to select any of its profiles.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          },
+          {
+            "name": "Swap Rounds",
+            "activation": "Quick",
+            "detail": "<div>You may take this action to change your weapon profile without firing.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_unique",
+            "name": "UNIQUE",
+            "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+          },
+          {
+            "id": "tg_protocol",
+            "name": "PROTOCOL",
+            "description": "This system can be activated as a free action, but only at the start of the user’s turn. Another action might be needed to deactivate it."
+          },
+          {
+            "id": "tg_ordnance",
+            "name": "ORDNANCE",
+            "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+          },
+          {
+            "id": "tg_loading",
+            "name": "LOADING",
+            "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+          },
+          {
+            "id": "tg_quick_action",
+            "name": "QUICK ACTION",
+            "description": "This system requires a quick action to Activate."
+          }
+        ]
+      },
+      {
+        "name": "Quickloader Autocannon",
+        "effect": "<div>This weapon profile can be fired as a quick action. If fired as a part of a barrage, this profile may attack two targets at a time.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+3"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 8
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_loading",
+            "name": "LOADING",
+            "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+          },
+          {
+            "id": "tg_inaccurate",
+            "name": "INACCURATE",
+            "description": "Attacks made with this weapon receive +1 Difficulty."
+          },
+          {
+            "id": "tg_heat_self",
+            "name": "HEAT {VAL} (SELF)",
+            "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+            "val": 1
+          }
+        ]
+      },
+      {
+        "name": "Airburst Rounds",
+        "effect": "<div>This weapon profile does double damage, including bonus damage, to Biological and Shredded targets.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "on_hit": "<div>If the target is Biological, they are immediately Shredded. Otherwise, the target must make a Hull save or else be Shredded.</div>",
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": 5
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 15
+          },
+          {
+            "type": "Blast",
+            "val": 2
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ordnance",
+            "name": "ORDNANCE",
+            "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+          },
+          {
+            "id": "tg_arcing",
+            "name": "ARCING",
+            "description": "This weapon can be fired over obstacles, usually by lobbing a projectile in an arc. Attacks made with this weapon don’t require line of sight, as long as it’s possible to trace a path to the target; however, they are still affected by cover."
+          },
+          {
+            "id": "tg_loading",
+            "name": "LOADING",
+            "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+          },
+          {
+            "id": "tg_reliable",
+            "name": "RELIABLE {VAL}",
+            "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+            "val": 2
+          }
+        ]
+      },
+      {
+        "name": "Total War Munitions",
+        "effect": "<div>All objects in the blast radius automatically take 30 AP explosive damage. Additionally, a blast 1 zone of burning terrain is generated in the blast. This area counts as difficult terrain, provides soft cover, obscures line of sight, and deals 2 burn to any character that ends their turn in or enters the zone for the first time.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "on_crit": "<div>The target must pass an Engineering save or else be Jammed.</div>",
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6"
+          },
+          {
+            "type": "Burn",
+            "val": 3
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 15
+          },
+          {
+            "type": "Blast",
+            "val": 1
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ordnance",
+            "name": "ORDNANCE",
+            "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+          },
+          {
+            "id": "tg_loading",
+            "name": "LOADING",
+            "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+          },
+          {
+            "id": "tg_heat_self",
+            "name": "HEAT {VAL} (SELF)",
+            "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+            "val": 5
+          }
+        ]
+      },
+      {
+        "name": "Castigation Rounds",
+        "effect": "<div>If this profile deals enough damage to destroy a character or cause them to take structure damage, mech parts and metal shards sheer off the frame at high speed, generating a cone 2 zone of razor debris that deals 2 Kinetic to all characters caught in the cone. This cone follows the trajectory of the original shot. When this round is loaded, you are immobilized and may not benefit from cover until the end of your next turn.</div>",
+        "barrage": true,
+        "skirmish": true,
+        "on_attack": "<div>If you overheat during this attack, you must roll for Stress damage twice and choose the lower result.</div>",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "5d6+5"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 20
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap",
+            "name": "ARMOR-PIERCING (AP)",
+            "description": "Damage dealt by this weapon ignores Armor."
+          },
+          {
+            "id": "tg_ordnance",
+            "name": "ORDNANCE",
+            "description": "This weapon can only be fired before the user moves or takes any other actions on their turn, excepting Protocols. The user can still act and move normally after attacking. Additionally, because of its size, this weapon can’t be used against targets in engagement with the user’s mech, and cannot be used for Overwatch."
+          },
+          {
+            "id": "tg_loading",
+            "name": "LOADING",
+            "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+          },
+          {
+            "id": "tg_heat_self",
+            "name": "HEAT {VAL} (SELF)",
+            "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+            "val": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_comet_class_railcannon",
+    "name": "Comet Class Railcannon",
+    "source": "EFRD",
+    "license": "MBR-04-Mk.VI Destroid Tomahawk",
+    "license_id": "MSG0079_mbr_zerofour_mk_vi_destroid_tomahawk",
+    "license_level": 2,
+    "description": "",
+    "effect": "<div>For every condition your target is suffering, deal an additional 1d6 bonus damage up to a maximum of 3d6 bonus damage.</div>",
+    "mount": "Heavy",
+    "type": "Cannon",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_ap",
+        "name": "ARMOR-PIERCING (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_loading",
+        "name": "LOADING",
+        "description": "This weapon must be reloaded after each use. Mechs can reload with Stabilize and some systems."
+      },
+      {
+        "id": "tg_reliable",
+        "name": "RELIABLE {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 3
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "on_crit": "<div>The target is stunned.</div>",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": 3
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 18
+      }
+    ]
+  },
+  {
     "id": "MSG0079_mk_i_excalibur_multirole_beam_system",
     "name": "Mk. I \"Excalibur\" Multirole Beam System",
     "source": "EFRD",

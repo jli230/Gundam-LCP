@@ -2336,5 +2336,75 @@
         "trigger": ""
       }
     ]
+  },
+  {
+    "id": "MSG0079_minovsky_particle_smoke_rounds",
+    "name": "Minovsky Particle Smoke Rounds",
+    "source": "EFRD",
+    "license": "MBR-04-Mk.VI Destroid Tomahawk",
+    "license_id": "MSG0079_mbr_zerofour_mk_vi_destroid_tomahawk",
+    "license_level": 1,
+    "effect": "<div>Grants use of the <strong>Deploy Countermeasures </strong>reaction.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "LIMITED {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      }
+    ],
+    "actions": [
+      {
+        "name": "Deploy Countermeasures",
+        "activation": "Reaction",
+        "detail": "<div>Create a burst 1 zone that interferes with targeting. All attacks, regardless of type, receive +1 Difficulty when targeting characters at least partially in this area. This effect lasts until the end of the round.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<div>An enemy has attacked you.</div>"
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_horizon_class_learning_computer",
+    "name": "Horizon Class Learning Computer",
+    "source": "EFRD",
+    "license": "MBR-04-Mk.VI Destroid Tomahawk",
+    "license_id": "MSG0079_mbr_zerofour_mk_vi_destroid_tomahawk",
+    "license_level": 3,
+    "effect": "<div>Upon equipping this AI, choose any Aux, Main, or Heavy weapon available to print. This weapon is attached to your frame on an integrated mount. Depending on the size of the weapon, this integrated mount receives different effects:</div><ul><li><div>Aux: This weapon gains Limited 2d6+3. Additionally, this weapon has the Accurate tag. If this weapon already had the Accurate tag, it benefits from +1 additional Accuracy.</div></li><li><div>Main: This weapon gains Limited 1d6+2. </div></li><li><div>Heavy: This weapon gains Limited 1d3+1. Additionally, this weapon has the Inaccurate tag. If this weapon already had the Inaccurate Tag, it suffers from +1 additional Difficulty.</div><div>The weapon granted by this AI may not be fired regularly. Instead, gain access to the <strong>Plus One </strong>reaction, which is the only way this weapon may be fired. You may change the weapon this AI holds every Full Repair.</div></li></ul>",
+    "type": "AI",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_ai",
+        "name": "AI",
+        "description": "A mech can only have one system with this tag installed at a time. Some AI systems grant the AI tag to the mech. A mech with the AI tag has an NHP or comp/con unit installed that can act onsomewhat autonomously. A pilot can choose to hand over the controls to their AI  or take control back as a protocol. Their mech gains its own set of actions and reactions when controlled by an AI, but the pilot can’t take actions or reactions with it until the start of their next turn. AIs can’t benefit from talents, and have a small chance of cascading when they take structure damage or stress damage."
+      },
+      {
+        "id": "tg_unique",
+        "name": "UNIQUE",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Plus One",
+        "activation": "Reaction",
+        "detail": "<div>You may immediately skirmish with this weapon as a reaction.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<div>You take the Barrage action.</div>"
+      }
+    ]
   }
 ]
