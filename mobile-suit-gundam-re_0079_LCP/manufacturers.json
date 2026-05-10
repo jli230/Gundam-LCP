@@ -4,7 +4,7 @@
     "name": "Zeonic Mobile Design Bureau",
     "light": "#10640AFF",
     "dark": "#003A04",
-    "description": "The organization that catalogues all of the Principality-and later, Republic-of Zeon's mobile weapons from its various manufacturers, from Zeonic's iconic Zaku line to MIP's Bigro mobile armor.",
+    "description": "The organization that catalogues all of the Principality—and later, Republic—of Zeon's mobile weapons from its various manufacturers, from Zeonic's iconic Zaku line to MIP's Bigro mobile armor.",
     "logo_url": "https://i.imgur.com/SZA7Q7g.png",
     "quote": "<em>\"For the future of the Zeonic people.\"</em>"
   },
@@ -15,7 +15,7 @@
     "dark": "#002199",
     "logo_url": "https://i.imgur.com/izWQ0fW.png",
     "description": "The Earth Federation Research &amp; Development Division catalogs various mobile weapons developed by national and corporate entities along with developing such technologies often in cooperation with said entities. Machines present under the EFRD umbrella consists of both units developed 'in-house' along with designs that were developed with significant Federation overhead to essentially be considered 'Federation' designs.",
-    "quote": "<em><span>\"Let those who desires peace, prepare for war.\"</span></em>"
+    "quote": "<em><span>\"Let those who desire peace, prepare for war.\"</span></em>"
   },
   {
     "id": "NEVEC",

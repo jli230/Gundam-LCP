@@ -2366,8 +2366,8 @@
     "id": "MSG0079_blash_xbr_m_sevenninee_beam_rifle",
     "name": "BLASH XBR-M-79E Beam Rifle",
     "source": "EFRD",
-    "license": "RGM-79 Light-Type GunCannon",
-    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license": "RCM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rcm_sevennine_light_type_guncannon",
     "license_level": 3,
     "description": "<span>The same beam rifle as used by the Gundam Ground Type, it is a redesign of the RX-78-2 Gundam's XBR-M-79-07G beam rifle. Instead of the 79-07G’s large movable sensor, this rifle is fitted with the BP-SS-001 composite box-type sensor system utilized on the BR-M-79C-3 Beam Spray Gun and licensed from BOWA Corporation, granting the weapon improved targeting precision.</span>",
     "mount": "Main",
@@ -2630,7 +2630,7 @@
     "profiles": [
       {
         "name": "Dumbfire Mode",
-        "effect": "This firing mode is used when attacking targets that are not Locked On. This weapon gains +1 Accuracy when attacking targets within Range 4.",
+        "effect": "This firing mode is used when attacking targets that are not Locked On and benefits from CQB talents.",
         "barrage": true,
         "skirmish": true,
         "damage": [
@@ -2654,12 +2654,18 @@
             "id": "tg_inaccurate",
             "name": "Inaccurate",
             "description": "Attacks made with this weapon receive +1 Difficulty."
+          },
+          {
+            "id": "tg_reliable",
+            "name": "Reliable {VAL}",
+            "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+            "val": 1
           }
         ]
       },
       {
         "name": "Lock-On Mode",
-        "effect": "This firing mode is used when you consume Lock On. When attacking in this mode, any additional Ringnecks are treated as part of the same attack roll. If the attack roll indicates a hit, all Ringnecks that are committed to this attack count as hitting the target, combining their damage.<span> </span>Normal action costs apply when committing mounts.",
+        "effect": "This firing mode is used when you consume Lock On. When attacking in this mode, any additional Ringnecks are treated as part of the same attack roll. If the attack roll indicates a hit, all Ringnecks that are committed to this attack count as hitting the target, combining their damage.<span> </span>Normal action costs apply when committing mounts, and you may commit up to 5 Ringnecks at a time. You may only fire with this mode 1/turn, even when you have unfired Ringnecks. On a Miss with 2+ committed Ringnecks, the target becomes Impaired until the end of their next turn.",
         "barrage": true,
         "skirmish": true,
         "damage": [
@@ -2684,6 +2690,12 @@
             "id": "tg_seeking",
             "name": "Seeking",
             "description": "This weapon has a limited form of self-guidance and internal propulsion, allowing it to follow complicated paths to its targets. As long as it’s possible to draw a path to its target, this weapon ignores cover and doesn’t require line of sight."
+          },
+          {
+            "id": "tg_turn",
+            "name": "{VAL}/Turn",
+            "description": "This system, trait, or reaction can be used {VAL} number of times in any given turn.",
+            "val": 1
           }
         ]
       }
@@ -2700,7 +2712,7 @@
     "effect": "<div>You may attack enemies with Lock-On applied to them as if this was Range 20.</div>",
     "mount": "Main",
     "type": "Launcher",
-    "sp": "1",
+    "sp": "0",
     "barrage": true,
     "skirmish": true,
     "damage": [
@@ -3143,10 +3155,16 @@
     "sp": "0",
     "tags": [
       {
+        "id": "tg_reliable",
+        "name": "Reliable {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 2
+      },
+      {
         "id": "tg_accurate",
         "name": "Accurate",
         "description": "Attacks made with this weapon receive +1 Accuracy.",
-        "val": "Reliable 2"
+        "val": 0
       }
     ],
     "barrage": true,
@@ -5004,8 +5022,8 @@
     "id": "MSG0079_hyper_beam_cannon",
     "name": "Hyper Beam Cannon",
     "source": "EFRD",
-    "license": "RGM-79 Light-Type GunCannon",
-    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license": "RCM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rcm_sevennine_light_type_guncannon",
     "license_level": 2,
     "description": "<span>The primary armament of the Light Cannon is a single beam cannon model similar to the one used by </span>RX-77-02 Guncannon<span>, mounted over the right shoulder. This beam cannon is used for mid-range fire support.</span>",
     "mount": "Heavy",
@@ -5051,8 +5069,8 @@
     "id": "MSG0079_light_type_beam_saber",
     "name": "Light-Type Beam Saber",
     "source": "EFRD",
-    "license": "RGM-79 Light-Type GunCannon",
-    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license": "RCM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rcm_sevennine_light_type_guncannon",
     "license_level": 1,
     "description": "<span>The beam saber is a small device stored on the back, and is able to be held in the mobile suit's hands when deployed out and is powered by a rechargeable energy capacitor. It emits high-energy Minovsky particles to form a blade-shaped I-field (via manipulation of electromagnetic fields), and then fills this I-field shell with superheated Minovsky particle plasma to produce an effective cutting blade. It is the same model of beam saber used by the </span>Gundam<span>.</span>",
     "effect": "You gain the Beam Clash reaction",
@@ -5104,14 +5122,14 @@
     "id": "MSG0079_hyper_gundam_hammer_and_grappling_anchor",
     "name": "Hyper Gundam Hammer and Grappling Anchor",
     "source": "EFRD",
-    "license": "RGM-79 Light-Type GunCannon",
-    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license": "RCM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rcm_sevennine_light_type_guncannon",
     "license_level": 2,
     "description": "<span>A mobile suit sized flail-type weapon with a long chain and anchor-shaped grip attached to a spiked iron ball. The weapon could either be thrown or swung around the mobile suit itself to damage the enemy units.</span>",
     "effect": "<span>It is a Melee that benefits from CQB talents.</span><br><br><span>Gain access to the Quick Action, Reel in the Anchor Point, and the Full Action, Anchor Point Charge.</span>",
     "mount": "Heavy",
     "type": "Melee",
-    "sp": 0,
+    "sp": "2",
     "tags": [
       {
         "id": "tg_ap",
@@ -5167,6 +5185,141 @@
         "frequency": "Unlimited",
         "init": "",
         "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "ttt",
+    "name": "Gatling Lance",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<span>The brainchild of an eccentric gun maker, the Gatling Lance, as its name would suggest, is a gatling cannon and combat drill combined into one weapon. While the design has made sacrifices to accommodate the necessary reinforcements for its use, the gatling lane has still proven itself as a deadly weapon.</span>",
+    "mount": "Superheavy",
+    "type": "Melee",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_exotic",
+        "name": "Exotic Gear",
+        "description": "EXOTIC GEAR is a general tag for equipment that exists outside the traditional licensing system.",
+        "filter_ignore": true
+      }
+    ],
+    "profiles": [
+      {
+        "name": "Lance Mode",
+        "effect": "<span>Special Skill: Predator &amp; Prey<br>When attacking a prone, stunned, or immobilized enemy, you may choose to grapple onto them, upon success, you spear clean through the enemy and hoist them high into the air, firing into them as your drill spins: roll the damage for the drill as normal and add 3d3+2.</span>",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2d6"
+          },
+          {
+            "type": "Energy",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_ap",
+            "name": "Armor-Piercing (AP)",
+            "description": "Damage dealt by this weapon ignores Armor."
+          },
+          {
+            "id": "tg_overkill",
+            "name": "Overkill",
+            "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
+          }
+        ]
+      },
+      {
+        "name": "Gatling Mode",
+        "barrage": true,
+        "skirmish": true,
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "4d3+4"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_reliable",
+            "name": "Reliable {VAL}",
+            "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+            "val": 3
+          },
+          {
+            "id": "tg_heat_self",
+            "name": "Heat {VAL} (Self)",
+            "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+            "val": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_megaparticle_PDC",
+    "name": "Megaparticle Point-Defense Cannon",
+    "source": "ZN",
+    "license": "MA-03S Adzam Command Type",
+    "license_id": "MSG0079_Adzam",
+    "license_level": 3,
+    "description": "",
+    "effect": "<span>If this weapon is on a mount with another instance of itself, both deal +1 bonus damage.</span>",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_inaccurate",
+        "name": "Inaccurate",
+        "description": "Attacks made with this weapon receive +1 Difficulty."
+      },
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      },
+      {
+        "id": "tg_reliable",
+        "name": "Reliable {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1D3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      },
+      {
+        "type": "Range",
+        "val": 8
       }
     ]
   }

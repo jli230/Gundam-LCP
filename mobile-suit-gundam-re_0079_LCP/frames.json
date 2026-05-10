@@ -1577,17 +1577,17 @@
       "size": 1,
       "structure": 4,
       "stress": 4,
-      "armor": 1,
+      "armor": 0,
       "hp": 6,
       "evasion": 12,
       "edef": 8,
       "heatcap": 6,
       "repcap": 3,
       "sensor_range": 15,
-      "tech_attack": 1,
+      "tech_attack": -1,
       "save": 10,
       "speed": 5,
-      "sp": 6
+      "sp": 7
     },
     "traits": [
       {
@@ -1598,12 +1598,17 @@
       {
         "name": "Calibrated Weapon",
         "use": "",
-        "description": "<span>When you build this mech or Rest, choose 1 Ranged Weapon. 1/turn, you ignore the Heat (self) and Ordnance tag of that weapon.</span>"
+        "description": "<span>When you build this mech or Rest, choose 1 Ranged Weapon. You may ignore the Heat (self), Overkill, and Ordnance of that weapon.</span>"
       },
       {
         "name": "Reactor Bleed",
         "use": "",
         "description": "<span>When the X-1 is in the Danger Zone, all of its weapons that would deal kinetic or explosive damage instead deal energy. Additionally, 1/turn when you consume Lock On for an attack roll while in the Danger Zone, the attack’s damage, heat, and burn cannot be reduced.</span>"
+      },
+      {
+        "name": "Head-Mounted Display Tracking",
+        "use": "",
+        "description": "<span>Upon destroying or structuring a character after having consumed a </span><strong>Lock-On</strong><span>, the X-1 may immediately apply </span><strong>Lock-On</strong><span> to any other character within Sensors (including the same character if this was triggered via structuring). This can only trigger once per character during the same turn.</span>"
       }
     ],
     "core_system": {
@@ -1638,7 +1643,7 @@
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Transformable Stealth Mobile Armor",
-      "passive_effect": "<span>As a Protocol, the X-1 may change into one of the following modes. It may choose to start a scene in any form. You may not transform and use </span><strong><span>Full Afterburners</span></strong><span> on the same turn.</span><br><span><br></span><strong><span>Mobile Suit mode:</span></strong><br/><ul><li><span>Treats all Ranged weapons that deal energy as CQB weapons with Threat 3, but their range is halved (down to a minimum of their Threat).&nbsp;</span><br/></li><li><span>While in the Danger Zone, you may Hover.</span><br/></li><li><span>1/round, as a Quick Action, you may gain 4 Heat and choose an adjacent allied mech character. The target’s next attack gains the Reactor Bleed trait and counts as having consumed Lock On, but you may not make attacks or Stabilize until the target has resolved their attack, nor before taking this Quick Action.</span><br/></li></ul><strong><span>Mobile Armor mode:</span></strong><br/><ul><li><span>May count all movement as Flying.</span><br/></li><li><span>The X-1 gains a special Hard Cover against Smart and Tech Attacks, and hostiles attempting to Lock On against the X-1 must first pass a Systems save. On a Failure, the Lock On action automatically fails.</span><br/></li><li><strong><span>Full Afterburners: </span></strong><span>1/round, you may Boost as a Free Action. If you are not in the Danger Zone when you do so, you gain 2 heat.</span><br/></li><li><span>You may not make melee attacks other than Ram.</span><br><br/></li></ul>",
+      "passive_effect": "<span>As a Protocol, the X-1 may change into one of the following modes. It may choose to start a scene in any form. You may not transform and use </span><strong><span>Full Afterburners</span></strong><span> on the same turn.<br></span><strong><span>Mobile Suit mode:</span></strong><br/><ul><li><span>Treats all Ranged weapons that deal energy as CQB weapons with Threat 3, but their range is halved (down to a minimum of their Threat).&nbsp;</span><br/></li><li><span>While in the Danger Zone, you may Hover.</span><br/></li><li><span>1/round, as a Quick Action, you may gain 4 Heat and choose an adjacent allied mech character. The target’s next attack gains the Reactor Bleed trait and counts as having consumed Lock On, but you may not make attacks or Stabilize until the target has resolved their attack, nor before taking this Quick Action.</span><br/></li></ul><strong><span>Mobile Armor mode:</span></strong><br/><ul><li><span>May count all movement as Flying.</span><br/></li><li><span>The X-1 gains a special Hard Cover against Smart and Tech Attacks, and hostiles attempting to Lock On against the X-1 must first pass a Systems save. On a Failure, the Lock On action automatically fails.</span><br/></li><li><strong><span>Full Afterburners: </span></strong><span>1/round, you may Boost as a Free Action. If you are not in the Danger Zone when you do so, you gain 2 heat.</span><br/></li><li><span>You may not make melee attacks other than Ram.</span><br/></li></ul>",
       "passive_actions": [
         {
           "name": "Change Mode",
@@ -2998,11 +3003,11 @@
     "y_pos": "12"
   },
   {
-    "id": "MSG0079_rgm_sevennine_light_type_guncannon",
-    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "id": "MSG0079_rcm_sevennine_light_type_guncannon",
+    "license_id": "MSG0079_rcm_sevennine_light_type_guncannon",
     "source": "EFRD",
     "license_level": 2,
-    "name": "RGM-79 Light-Type GunCannon",
+    "name": "RCM-79 Light-Type GunCannon",
     "mechtype": [
       "Artillery",
       "Striker"
@@ -3029,7 +3034,7 @@
       "tech_attack": 0,
       "save": 11,
       "speed": 5,
-      "sp": 6
+      "sp": 7
     },
     "traits": [
       {
@@ -3086,7 +3091,87 @@
       "tags": []
     },
     "specialty": false,
-    "image_url": "https://i.imgur.com/8sQ2p2o.png",
-    "y_pos": 32
+    "image_url": "https://i.imgur.com/3sBpGZW.png",
+    "y_pos": 12
+  },
+  {
+    "id": "MSG0079_Adzam",
+    "license_id": "MSG0079_Adzam",
+    "source": "ZN",
+    "license_level": 2,
+    "name": "MA-03S Adzam Command Type",
+    "mechtype": [
+      "Support"
+    ],
+    "variant": "",
+    "description": "The MAX-03 Adzam was one of the first Zeon mobile armors to be fielded in combat during the One Year War, seeing deployment as early as the First Battle of Chicago during the North American Earth Drop Operation. Developed from the Luna Tank and the subsequent Terra Tank, the Adzam was initially built as a mobile floating weapons platform designed for force multiplication of mobile suit teams. However, design compromises made to facilitate this such as the reduction of the machine's weight along with the inclusion of a bulky Minovsky Craft System made the machine less durable in frontline combat (worsened by its large profile making it an obvious target) and more manpower-intensive during maintenance. As a result, early Adzam field prototypes suffered high attrition rates from combat damage and mechanical issues.<br>In the latter half of the One Year War, the Adzam was primarily relegated to being used as mobile command centers, its spacious interiors allowing for the installation of a variety of communications equipment hardened against Minovsky Particle interference and overall being less exposed to risk in this role. However, its 'mobile gun turret' concept was revisited in certain combat theaters. This involved fitting additional armor plates onto various parts of the mobile armor along with reinforcement of its landing gears. These modifications improved its survivability when fixed into an entrenched position while retaining nominal responsiveness to shifting battlelines.<br>Both the mobile command center and mobile fortification modifications would be re-integrated into the postwar MA-03S Adzam Command Type, commissioned by the Republic of Zeon from the Zimmermann Mondewerks company (formerly Zeonic's Granada branch, the original developers of the Luna Tank, Terra Tank, and Adzam).<br/>In an instance of noted postwar irony, by 0083 only one Adzam Command Type was seen in Republic of Zeon service outside of its own borders in Earthside peacekeeping operations, whereas at least four in total were observed to have been purchased and fielded by Ukraine, France, and Bharat in similar operations. Among these, the first Ukrainian Adzam featured aftermarket integration with their own arsenal of combat drones, which would eventually become retrofitted into later Adzams. One notable Zeon Republican Adzam featuring these modifications was informally nicknamed 'The Wizard of Oz' by its crew.",
+    "mounts": [
+      "Flex",
+      "Aux/Aux",
+      "Aux/Aux"
+    ],
+    "stats": {
+      "size": 3,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 12,
+      "evasion": 6,
+      "edef": 10,
+      "heatcap": 5,
+      "repcap": 10,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 3,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Minovsky Craft System",
+        "use": "",
+        "description": "<span>The Adzam may hover when it moves, but it must end movement on a flat surface or else immediately start falling.</span>"
+      },
+      {
+        "name": "Mobile Tactical Operations Center",
+        "use": "",
+        "description": "<span>For the purposes of Tech Actions and deploying Drones, the Adzam may draw Line of Sight and Sensors from any allied Drone. Allied characters within Range 8 of an allied Drone also benefit from this effect, using your base Sensors when necessary.</span>"
+      },
+      {
+        "name": "Refit and Repair Bay",
+        "use": "",
+        "description": "<span>Whenever the Adzam stabilizes, it may additionally spend repairs to restore Limited charges of one of its undeployed Drone systems up to their maximum, at a rate of 1 repair to 1 charge. This may also be done during Rests.</span>"
+      },
+      {
+        "name": "Fragile",
+        "use": "",
+        "description": "<span>The Adzam makes all Hull Checks and Saves at +1 Difficulty.</span>"
+      }
+    ],
+    "core_system": {
+      "name": "Battlefield Command and Control System",
+      "active_name": "SITREP",
+      "active_effect": "<span>Until the end of the scene, you may draw Line of Sight and Sensors from any allied character for the purposes of Tech Actions and this Core Active. As long as this effect is active, you always know the current HP, Heat, Speed, Armor, Evasion, E-defense, and Mech Skills of all characters in Line of Sight and Sensors, and may share this information with allies.</span>",
+      "activation": "Protocol",
+      "description": "",
+      "deactivation": "",
+      "use": "Scene",
+      "active_actions": [],
+      "active_bonuses": [],
+      "active_synergies": [],
+      "passive_name": "",
+      "passive_effect": "",
+      "passive_actions": [],
+      "passive_bonuses": [],
+      "passive_synergies": [],
+      "deployables": [],
+      "counters": [],
+      "integrated": [],
+      "special_equipment": [],
+      "tags": []
+    },
+    "specialty": false,
+    "image_url": "https://i.imgur.com/NrpQX94.png",
+    "y_pos": 26
   }
 ]

@@ -70,8 +70,8 @@
     "id": "MSG0079_electromagnetic_actuators",
     "name": "Electromagnetic Actuators",
     "source": "EFRD",
-    "license": "RGM-79 Light-Type GunCannon",
-    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license": "RCM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rcm_sevennine_light_type_guncannon",
     "license_level": 1,
     "effect": "<div>1/round, upon being targeted by a ranged weapon (and not tech attacks), spend a reaction to move one space in any direction before the attack is resolved. This movement does not trigger overwatch or reaction fire. Additionally, gain access to the Rapid Reaction action.</div>",
     "type": "System",
@@ -249,8 +249,8 @@
     "id": "MSG0079__prometheus_model_ultracompact_fusion_reactor",
     "name": "\"Prometheus\" Model Ultracompact Fusion Reactor",
     "source": "EFRD",
-    "license": "RGM-79 Light-Type GunCannon",
-    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license": "RCM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rcm_sevennine_light_type_guncannon",
     "license_level": 3,
     "effect": "<div>The MS may now <strong>Shunt Power to Maneuvering Subsystems </strong>or <strong>Shunt Power to Weapon Systems </strong>as a Protocol in exchange for taking 1d3 Heat.</div>",
     "type": "System",
@@ -335,18 +335,31 @@
     "id": "MSG0079_icarus_frame_shift_drive",
     "name": "Icarus Frame Shift Drive",
     "source": "EFRD",
-    "license": "",
-    "license_id": "",
-    "license_level": 0,
+    "license": "VF-0 Phoenix",
+    "license_id": "MSG0079_vf_zero_phoenix",
+    "license_level": 2,
     "effect": "<div>Gain access to the Frame Shift action.</div>",
     "type": "System",
     "sp": "4",
     "description": "",
+    "tags": [
+      {
+        "id": "tg_turn",
+        "name": "{VAL}/Turn",
+        "description": "This system, trait, or reaction can be used {VAL} number of times in any given turn.",
+        "val": 1
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
     "actions": [
       {
         "name": "Frame Shift",
         "activation": "Free",
-        "detail": "<div>You may take 1d6+3 heat in order to perform a full action as a quick action.</div>",
+        "detail": "1/turn, you may perform any Protocol of your choice as a Free Action.",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
@@ -1092,12 +1105,12 @@
     "effect": "<span>1/scene, you may launch one targeting drone as a Quick Action, deploying it within Line of Sight and Sensors. The drone hovers at Height 10 and is permanently invisible.</span>",
     "type": "System",
     "sp": "3",
-    "description": "<span>In a bid to improve pilot battlefield awareness, the Condor is the result of attaching as many cameras, laser rangefinders and designators onto a small drone frame. Launched from a mobile suit and maintaining a connection via optic fiber cables, this drone hovers high in the air and constantly streams targeting information back to its pilot. Artillery units have found great use of this drone by being able to strike their targets far beyond their expected effective ranges.</span>",
+    "description": "<span>In a bid to improve pilot battlefield awareness, the Condor is the result of attaching as many cameras, laser rangefinders, and designators as possible onto a small drone frame. Launched from a mobile suit and maintaining a connection via optic fiber cables, this drone hovers high in the air and constantly streams targeting information back to its pilot. Artillery units have found great use of this drone by being able to strike their targets far beyond their expected effective ranges.</span>",
     "deployables": [
       {
         "name": "Condor Targeting Drone",
         "type": "Drone",
-        "detail": "<span>Enemies within Range 10 and Line of Sight do not benefit from any cover, and any ranged attack made against them has +1 Accuracy within a weapon’s range or threat. Additionally, these enemies can be attacked with ranged weapons outside of their effective range for +2 Difficulty.</span>",
+        "detail": "<span>Enemies within Range 10 and Line of Sight can be Marked with a quick action. Marked enemies gain a special Lock On, which comes with the following benefits until it is consumed:</span><br/><ul><li><span>Any ranged attack made against them has +1 Accuracy within a weapon’s range or threat.</span><br/></li><li><span>If you choose to consume the special lock-on, the target can be attacked with ranged weapons outside of their effective range for +2 Difficulty.</span><br/><span>The mark can be changed to another enemy with a quick action. This action ignores ordnance.</span><br/></li></ul>",
         "size": 0.5,
         "activation": "Quick",
         "deactivation": "",
@@ -2296,12 +2309,12 @@
     "id": "MSG0079_grappling_hook",
     "name": "Grappling Hook",
     "source": "EFRD",
-    "license": "RGM-79 Light-Type GunCannon",
-    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license": "RCM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rcm_sevennine_light_type_guncannon",
     "license_level": 1,
     "effect": "You gain the \"Stigma Attack\" Free Action",
     "type": "System",
-    "sp": "2",
+    "sp": "1",
     "description": "<span>A special equipment unique to </span>Shiiko Sugai<span>'s unit, installed onto the mobile suit's arms, which shoots out a tether from the fingers that can attach itself to objects including mobile suits. It is an essential part of Shiiko's signature \"Stigma Attack\", a maneuver which uses the tether to perform difficult maneuvers around enemy mobile suits, including firing beam rifles remotely via the tether from unexpected angles.</span>",
     "tags": [
       {
@@ -2404,6 +2417,258 @@
         "frequency": "1/round",
         "init": "",
         "trigger": "<div>You take the Barrage action.</div>"
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_Adzam_Gunship",
+    "name": "Gunship",
+    "source": "ZN",
+    "license": "MA-03S Adzam Command Type",
+    "license_id": "MSG0079_Adzam",
+    "license_level": 1,
+    "effect": "<div><span>This drone may be deployed to a free space within Line of Sight and Sensors as a Quick Action. </span><br><span>The Limited Tag on this drone does not refer to how many of this Drone you may deploy—it refers to the amount of times you may take this Protocol action. You may redeploy or recall the Gunship as a Quick Action.</span></div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Gunship Drone",
+        "type": "Drone",
+        "detail": "<span>The Gunship is a Drone that hovers 8 spaces above the space it is deployed to, where it establishes a Burst 2 perimeter. As a Protocol, you may prompt the Gunship to fire upon any target within its perimeter.</span>",
+        "size": 1,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": "1",
+        "hp": "8",
+        "evasion": "8",
+        "edef": "8",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Gunship Attack",
+            "activation": "Protocol",
+            "detail": "<span>Characters of your choice within Burst 2 of the Gunship must succeed at an Agility save or else take 1d6+4 Explosive damage, half on a successful save. Characters targeted by the Gunship may fall Prone to automatically succeed at this Save.</span>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_Attacker",
+    "name": "Attack Aircraft",
+    "source": "ZN",
+    "license": "MA-03S Adzam Command Type",
+    "license_id": "MSG0079_Adzam",
+    "license_level": 1,
+    "effect": "<div><span>This drone may be deployed to a free space within Line of Sight and Sensors as a Quick Action. </span><br><span>The Limited Tag on this drone does not refer to how many of this Drone you may deploy—it refers to the amount of times you may take this Protocol action. You may redeploy or recall the Interceptor as a Quick Action.</span></div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Attack Aircraft Drone",
+        "type": "Drone",
+        "detail": "<span>The Attack Aircraft is a Drone that flies 8 spaces above the space it is deployed to. As a Protocol, you may prompt the Attack Aircraft to begin a strafing run.</span>",
+        "size": 1,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "5",
+        "evasion": "12",
+        "edef": "8",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Strafing Run",
+            "activation": "Protocol",
+            "detail": "<span>The Attack Aircraft moves 8 spaces in a direction of your choice. All Characters in the path of flight must succeed at an Agility save or take 1d6 Kinetic damage, half on a successful save. Characters who are Shredded or have the Biological tag take double damage from this effect. Characters targeted by the Attack Aircraft may fall Prone to automatically succeed at this save.</span>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_Interceptor",
+    "name": "Interceptor",
+    "source": "ZN",
+    "license": "MA-03S Adzam Command Type",
+    "license_id": "MSG0079_Adzam",
+    "license_level": 2,
+    "effect": "<div><span>This drone may be deployed to a free space within Line of Sight and Sensors as a Quick Action. </span><br><span>The Limited Tag on this drone does not refer to how many of this Drone you may deploy—it refers to the amount of times you may take this Protocol action. You may redeploy or recall the Interceptor as a Quick Action.</span></div>",
+    "type": "System",
+    "sp": "2",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Interceptor",
+        "type": "Drone",
+        "detail": "<span>The Interceptor is a Drone that flies 8 spaces above the space it is deployed to. As a Protocol, you may prompt the Interceptor to attack a Character of your choice within Range 10 of the Interceptor.</span>",
+        "size": 1,
+        "activation": "Quick",
+        "deactivation": "Quick",
+        "recall": "",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "5",
+        "evasion": "12",
+        "edef": "8",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Interception",
+            "activation": "Protocol",
+            "detail": "<span>The Interceptor moves 8 spaces in a direction of your choice. The selected target must succeed at a Agility save or else take 2d6 AP Explosive damage, half on a successful save. If the target is Flying, Hovering, or has the Lock-on Condition, they automatically fail this save.</span>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_Leader",
+    "name": "Plasma Leader",
+    "source": "ZN",
+    "license": "MA-03S Adzam Command Type",
+    "license_id": "MSG0079_Adzam",
+    "license_level": 2,
+    "effect": "<div><span>This drone may be deployed to a free space within Line of Sight and Sensors as a Quick Action. </span></div>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_resistance",
+        "name": "Resistance {VAL}",
+        "description": "This unit has Resistance to all damage types",
+        "val": "All"
+      },
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Plasma Leader",
+        "type": "Drone",
+        "detail": "<div><span>The Leader is a Drone that flies 4 spaces above the space it is deployed to.</span></div><div><span>When deployed, expend a limited charge to project a Burst 2 cage of charged Minovsky Particles. All Characters in this Burst 2 area must make an Agility save or else take 2 Energy damage and 1d3+2 Heat, become Impaired, and be unable to leave this Burst 2 area. On a successful save, they take half damage and may move to any adjacent free space outside of the Burst 2 area if there is one. This effect lasts until the Leader is destroyed, recalled or redeployed as a Quick Action, or the end of the scene. Characters who begin their turns in the Leader’s zone must repeat this save, but do not leave the area of effect on a successful save.</span></div>",
+        "size": 1,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "8",
+        "evasion": "8",
+        "edef": "8",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_Hangar",
+    "name": "Hangar Compartment",
+    "source": "ZN",
+    "license": "MA-03S Adzam Command Type",
+    "license_id": "MSG0079_Adzam",
+    "license_level": 3,
+    "effect": "<span>This modification comes in the form of a dedicated hangar space, either external or internally mounted, that allows for more extensive field repair. Adjacent non-Immobilized allied characters can climb in or out the Hangar Compartment of your mech as a Free Action, but only once per turn, per character. While they’re inside, they share your space, move when you move, have Immunity to all external effects, and are similarly unable to target or affect any character but themselves. Whenever they Stabilize while inside the Hangar Compartment, they may choose as many Stabilize options as they wish. The Hangar Compartment can hold an amount of Characters with a combined size equal to 1 less than your current size (eg., if you’re size 3, you can hold 1 size 1 character and 2 size half characters. If you’re size 1, you can hold no characters). If this System is selected for destruction while there is a character inside, they take 1d6+4 irreducible damage before being deposited into an adjacent Free Space of their choice.</span><br/><span>Additionally, whenever you rest, you may select a number of characters along the same guidelines. These characters do not have to expend Repairs to restore HP.</span>",
+    "type": "System",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
       }
     ]
   }

@@ -340,11 +340,19 @@
     ],
     "allowed_sizes": [
       "Heavy",
-      "Superheavy"
+      "Superheavy",
+      "Main"
     ],
     "restricted_sizes": [],
     "added_damage": [],
-    "added_range": []
+    "added_range": [],
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ]
   },
   {
     "id": "ZN_shipbreaker_mount",
@@ -753,8 +761,8 @@
     "id": "MSG0079_ready_rack",
     "name": "Ready Rack",
     "source": "EFRD",
-    "license": "RGM-79 Light-Type GunCannon",
-    "license_id": "MSG0079_rgm_sevennine_light_type_guncannon",
+    "license": "RCM-79 Light-Type GunCannon",
+    "license_id": "MSG0079_rcm_sevennine_light_type_guncannon",
     "license_level": 2,
     "effect": "<span>1/Round, as a Protocol, you may expend a charge from this system to load the modified weapon.</span>",
     "sp": "3",
@@ -778,12 +786,12 @@
     "restricted_sizes": [],
     "added_damage": [],
     "added_range": [],
-    "added_tags": [
+    "tags": [
       {
         "id": "tg_limited",
         "name": "Limited {VAL}",
         "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
-        "val": 3
+        "val": 5
       },
       {
         "id": "tg_protocol",
