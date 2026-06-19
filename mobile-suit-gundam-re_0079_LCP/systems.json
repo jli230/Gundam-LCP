@@ -2000,10 +2000,10 @@
     "license": "MS-06E-3 Zaku Flipper",
     "license_id": "MSG0079_zaku_flipper",
     "license_level": 2,
-    "effect": "<span>When applying lock-on or scanning a target, you may 2/Round choose to make it a burst 2 area centered on the target. All enemies must roll an Agility save or be included in the lock-on or scan.</span>",
+    "effect": "<span>When applying lock-on or scanning a target, you may 2/Round choose to make it a blast 2 area centered on the target. All enemies must roll an Agility save or be included in the lock-on or scan.&nbsp;</span>",
     "type": "System",
     "sp": "2",
-    "description": "",
+    "description": "<em><span>The Zaku Flipper featured several external cameras in both of its shoulders and its front pelvic armor, as well as high-tech sensory equipment and sonars in its head.</span></em>",
     "tags": [
       {
         "id": "tg_unique",
@@ -2055,7 +2055,7 @@
     "license": "MS-06E-3 Zaku Flipper",
     "license_id": "MSG0079_zaku_flipper",
     "license_level": 3,
-    "effect": "You gain the reaction Activate Compact I-Field Shield Generator",
+    "effect": "<span>You gain the Reaction: </span><strong><span>I-Field Shield Activate</span></strong>",
     "type": "System",
     "sp": "2",
     "description": "<em><span>Dozle’s dream for the production of the Big Zam would never come to be. This was due to the early activation of the United Maintenance Plan. However, not all his ideas were discarded as Gihern himself assigned his younger brother to create a compact I-field Shield generator while stationed on Space Fortress Solomon. Of course, with Dr.Minovsky’s defection to the Federation, it was only a matter of time before they also weaponized Minovsky Particles. That nightmare became true with the arrival of the Earth Federation’s Revamped Mobile Suit Fleet.</span></em>",
@@ -2069,15 +2069,15 @@
     ],
     "actions": [
       {
-        "name": "Activate Compact I-Field Shield Generator",
+        "name": "I-Field Shield Activate",
         "activation": "Reaction",
-        "detail": "",
+        "detail": "<span>Gain a 20-point overshield to absorb the damage. However, you lose this at the start of your next turn.</span>",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
         "frequency": "1/encounter",
         "init": "",
-        "trigger": "<span>1/scene as a Reaction, you personally gain an overshield of 20. However, you lose this at the start of your next turn.</span>"
+        "trigger": "<span>You are hit by an attack that would deal damage.</span>"
       }
     ]
   },
@@ -2088,15 +2088,28 @@
     "license": "MS-06E-3 Zaku Flipper",
     "license_id": "MSG0079_zaku_flipper",
     "license_level": 3,
-    "effect": "You gain the Full Tech Actions: <strong><span>M Particles Concentration and I Particles Concentration</span></strong>",
+    "effect": "Gain the following Full Tech Actions: <strong><span>M Particles Concentration </span></strong><span>and</span><strong><span> I Particles Concentration</span></strong>",
     "type": "System",
     "sp": "3",
     "description": "<em><span>A part designed for use on the MS-05HS Prototype Zaku. Despite Dr.Minovsky’s defection, Zeon was able to miniaturize the part, though not without some difficulty. This was due to the United Maintenance Plan enacted by Gihern Zabu to shift funds away from experimental Psycomu Technology. As a result, this device can concentrate either M Particles or I Particles, depending upon the situation.</span></em>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "Unique",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_limited",
+        "name": "Limited {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 3
+      }
+    ],
     "actions": [
       {
         "name": "M Particles Concentration",
         "activation": "Full Tech",
-        "detail": "<span>Choose 2 Burst 3 areas within sensors. All enemies must make a system save with an additional difficulty or become jammed on their next turn. The jammed condition ends at the start of their next turn.</span>",
+        "detail": "<span>Choose 2 Blast 2 areas within your sensors that remain active till the end of your next turn. All enemies must make a system save with an additional difficulty or become </span><strong><span>jammed</span></strong><span> and have their sensors lowered by 5 to a minimum of 1 while still in the blast zones. The jammed condition and reduced sensors can end prematurely upon leaving the affected area.</span>",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
@@ -2107,7 +2120,7 @@
       {
         "name": "I Particles Concentration",
         "activation": "Full Tech",
-        "detail": "<span>You and all allies in your sensor range immedeatly reduce their total heat by 50%. At the start of the next round, they gain resistance whenever they generate heat, regardless of the source.</span>",
+        "detail": "<span>You select an ally within your sensor range and immediately halve their total heat accumulated. Your selected ally may also remove as many status conditions as possible, regardless of their source, but you receive 1 heat for each status removed.&nbsp; At the start of the next round, your chosen ally gains resistance whenever they generate or receive heat from any source. This effect stops at the end of the round.</span>",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
@@ -2427,11 +2440,16 @@
     "license": "MA-03S Adzam Command Type",
     "license_id": "MSG0079_Adzam",
     "license_level": 1,
-    "effect": "<div><span>This drone may be deployed to a free space within Line of Sight and Sensors as a Quick Action. </span><br><span>The Limited Tag on this drone does not refer to how many of this Drone you may deploy—it refers to the amount of times you may take this Protocol action. You may redeploy or recall the Gunship as a Quick Action.</span></div>",
+    "effect": "<span>Deploy to a space within Line of Sight and Sensors as a Quick Action. The Gunship is a Drone that hovers 8 spaces above the space it is deployed to, where it establishes a Burst 2 perimeter. As a Protocol, you may prompt the Gunship to fire upon any target within its perimeter. Characters of your choice within Burst 2 of the Gunship must succeed at an Agility save or else take 1d6+4 Explosive damage, half on a successful save. Characters targeted by the Gunship may fall Prone to automatically succeed at this Save. </span><br/><span>The Limited Tag on this drone does not refer to how many of this Drone you may deploy—it refers to the amount of times you may take this Protocol action. You may redeploy or recall the Gunship as a Quick Action.</span>",
     "type": "System",
     "sp": "2",
     "description": "",
     "tags": [
+      {
+        "id": "tg_drone",
+        "name": "Drone",
+        "description": "This is a self-propelled, semi-autonomous unit with rudimentary intelligence. Unless otherwise specified, Drones are Size 1/2 characters that are allied to the user and have 10 Evasion, 5 HP, and 0 Armor. To be used they must be deployed to a free, valid space within Sensors and line of sight, typically as a quick action. Once deployed, they can be recalled with the same action used to deploy them (quick action or full action, etc.), rejoining with your mech. By default, Drones can’t take actions or move; if they do have actions or movement, they act on their user’s turn. They benefit from cover and other defenses as usual, and make all mech skill checks and saves at +0. If a Drone reaches 0 HP, it is destroyed and must be repaired before it can be used again – like any system. As long as a Drone hasn’t been destroyed, it is restored to full HP when the user rests or performs a Full Repair. Deployed Drones persist for the rest of the scene, until destroyed, or until otherwise specified."
+      },
       {
         "id": "tg_unique",
         "name": "Unique",
@@ -2491,7 +2509,7 @@
     "license": "MA-03S Adzam Command Type",
     "license_id": "MSG0079_Adzam",
     "license_level": 1,
-    "effect": "<div><span>This drone may be deployed to a free space within Line of Sight and Sensors as a Quick Action. </span><br><span>The Limited Tag on this drone does not refer to how many of this Drone you may deploy—it refers to the amount of times you may take this Protocol action. You may redeploy or recall the Interceptor as a Quick Action.</span></div>",
+    "effect": "<span>Deploy drone to a space within Line of Sight and Sensors as a Quick Action.</span><br/><span>The Limited Tag on this drone does not refer to how many of this Drone you may deploy—it refers to the amount of times you may take this Protocol action. You may redeploy or recall the Interceptor as a Quick Action.</span>",
     "type": "System",
     "sp": "2",
     "description": "",
@@ -2501,6 +2519,11 @@
         "name": "Limited {VAL}",
         "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
         "val": 3
+      },
+      {
+        "id": "tg_drone",
+        "name": "Drone",
+        "description": "This is a self-propelled, semi-autonomous unit with rudimentary intelligence. Unless otherwise specified, Drones are Size 1/2 characters that are allied to the user and have 10 Evasion, 5 HP, and 0 Armor. To be used they must be deployed to a free, valid space within Sensors and line of sight, typically as a quick action. Once deployed, they can be recalled with the same action used to deploy them (quick action or full action, etc.), rejoining with your mech. By default, Drones can’t take actions or move; if they do have actions or movement, they act on their user’s turn. They benefit from cover and other defenses as usual, and make all mech skill checks and saves at +0. If a Drone reaches 0 HP, it is destroyed and must be repaired before it can be used again – like any system. As long as a Drone hasn’t been destroyed, it is restored to full HP when the user rests or performs a Full Repair. Deployed Drones persist for the rest of the scene, until destroyed, or until otherwise specified."
       }
     ],
     "deployables": [
@@ -2550,7 +2573,7 @@
     "license": "MA-03S Adzam Command Type",
     "license_id": "MSG0079_Adzam",
     "license_level": 2,
-    "effect": "<div><span>This drone may be deployed to a free space within Line of Sight and Sensors as a Quick Action. </span><br><span>The Limited Tag on this drone does not refer to how many of this Drone you may deploy—it refers to the amount of times you may take this Protocol action. You may redeploy or recall the Interceptor as a Quick Action.</span></div>",
+    "effect": "<span>Deploy to a space within Line of Sight and Sensors as a Quick Action.</span><br/><span>The Limited Tag on this drone does not refer to how many of this Drone you may deploy—it refers to the amount of times you may take this Protocol action. You may redeploy or recall the Interceptor as a Quick Action.</span>",
     "type": "System",
     "sp": "2",
     "description": "",
@@ -2560,6 +2583,11 @@
         "name": "Limited {VAL}",
         "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
         "val": 3
+      },
+      {
+        "id": "tg_drone",
+        "name": "Drone",
+        "description": "This is a self-propelled, semi-autonomous unit with rudimentary intelligence. Unless otherwise specified, Drones are Size 1/2 characters that are allied to the user and have 10 Evasion, 5 HP, and 0 Armor. To be used they must be deployed to a free, valid space within Sensors and line of sight, typically as a quick action. Once deployed, they can be recalled with the same action used to deploy them (quick action or full action, etc.), rejoining with your mech. By default, Drones can’t take actions or move; if they do have actions or movement, they act on their user’s turn. They benefit from cover and other defenses as usual, and make all mech skill checks and saves at +0. If a Drone reaches 0 HP, it is destroyed and must be repaired before it can be used again – like any system. As long as a Drone hasn’t been destroyed, it is restored to full HP when the user rests or performs a Full Repair. Deployed Drones persist for the rest of the scene, until destroyed, or until otherwise specified."
       }
     ],
     "deployables": [
@@ -2575,9 +2603,9 @@
         "instances": 1,
         "cost": 1,
         "armor": "",
-        "hp": "5",
-        "evasion": "12",
-        "edef": "8",
+        "hp": "",
+        "evasion": "",
+        "edef": "",
         "heatcap": "",
         "repcap": "",
         "sensor_range": "",
@@ -2609,15 +2637,20 @@
     "license": "MA-03S Adzam Command Type",
     "license_id": "MSG0079_Adzam",
     "license_level": 2,
-    "effect": "<div><span>This drone may be deployed to a free space within Line of Sight and Sensors as a Quick Action. </span></div>",
+    "effect": "<span>Deploy to a space within Line of Sight and Sensors as a Quick Action. The Leader is a Drone that flies 4 spaces above the space it is deployed to.</span>",
     "type": "System",
     "sp": "3",
     "description": "",
     "tags": [
       {
+        "id": "tg_drone",
+        "name": "Drone",
+        "description": "This is a self-propelled, semi-autonomous unit with rudimentary intelligence. Unless otherwise specified, Drones are Size 1/2 characters that are allied to the user and have 10 Evasion, 5 HP, and 0 Armor. To be used they must be deployed to a free, valid space within Sensors and line of sight, typically as a quick action. Once deployed, they can be recalled with the same action used to deploy them (quick action or full action, etc.), rejoining with your mech. By default, Drones can’t take actions or move; if they do have actions or movement, they act on their user’s turn. They benefit from cover and other defenses as usual, and make all mech skill checks and saves at +0. If a Drone reaches 0 HP, it is destroyed and must be repaired before it can be used again – like any system. As long as a Drone hasn’t been destroyed, it is restored to full HP when the user rests or performs a Full Repair. Deployed Drones persist for the rest of the scene, until destroyed, or until otherwise specified."
+      },
+      {
         "id": "tg_resistance",
-        "name": "Resistance {VAL}",
-        "description": "This unit has Resistance to all damage types",
+        "name": "Resistance",
+        "description": "Reduce all damage from a source you have resistance to by half",
         "val": "All"
       },
       {
@@ -2630,7 +2663,7 @@
       {
         "name": "Plasma Leader",
         "type": "Drone",
-        "detail": "<div><span>The Leader is a Drone that flies 4 spaces above the space it is deployed to.</span></div><div><span>When deployed, expend a limited charge to project a Burst 2 cage of charged Minovsky Particles. All Characters in this Burst 2 area must make an Agility save or else take 2 Energy damage and 1d3+2 Heat, become Impaired, and be unable to leave this Burst 2 area. On a successful save, they take half damage and may move to any adjacent free space outside of the Burst 2 area if there is one. This effect lasts until the Leader is destroyed, recalled or redeployed as a Quick Action, or the end of the scene. Characters who begin their turns in the Leader’s zone must repeat this save, but do not leave the area of effect on a successful save.</span></div>",
+        "detail": "<span>When deployed, expend a limited charge to project a Burst 2 cage of charged Minovsky Particles. All Characters in this Burst 2 area must make an Agility save or else take 2 Energy damage and 1d3+2 Heat, become Impaired, and be unable to leave this Burst 2 area. On a successful save, they take half damage and may move to any adjacent free space outside of the Burst 2 area if there is one. This effect lasts until the Leader is destroyed, recalled or redeployed as a Quick Action, or the end of the scene. Characters who begin their turns in the Leader’s zone must repeat this save, but do not leave the area of effect on a successful save.</span>",
         "size": 1,
         "activation": "Quick",
         "deactivation": "",

@@ -2664,8 +2664,8 @@
         ]
       },
       {
-        "name": "Lock-On Mode",
-        "effect": "This firing mode is used when you consume Lock On. When attacking in this mode, any additional Ringnecks are treated as part of the same attack roll. If the attack roll indicates a hit, all Ringnecks that are committed to this attack count as hitting the target, combining their damage.<span> </span>Normal action costs apply when committing mounts, and you may commit up to 5 Ringnecks at a time. You may only fire with this mode 1/turn, even when you have unfired Ringnecks. On a Miss with 2+ committed Ringnecks, the target becomes Impaired until the end of their next turn.",
+        "name": "Itano Missile Circus",
+        "effect": "This firing mode is used when you consume Lock On against 2 to 4 targets, and you may commit 2 to 5 Ringnecks at a time (combining and halving their base damage). On hit, bonus damage is halved as if this were an AOE attack.<span> </span>Normal action costs apply when committing mounts, and you may only fire with this mode 1/round, even when you have unfired Ringnecks. On a Miss, the target becomes impaired until the end of their next turn.",
         "barrage": true,
         "skirmish": true,
         "damage": [
@@ -2709,12 +2709,13 @@
     "license_id": "MSG0079_vf_zero_phoenix",
     "license_level": 1,
     "description": "<div>The AIM-180 Joint-Attack Medium-Ranged Air-to-Air Missile is a further development of the AMRAAM series of missiles, designed based on modern considerations in aerial combat with the introduction of Minovsky Particle interference. The presence of M-Particles interferes with the beyond visual range capabilities of its predecessors, forcing aircraft to close into visual range to engage targets. The JAMRAAM partially resolves this issue by having the missile interface with a frontline spotting craft once within terminal range of its target, riding along a laser beam emitted by the spotting craft's targetting module. While this involves putting said spotting craft in potential danger of engagement, proper coordination enables devastating alpha strikes.</div><div>The current Block 4 version of the JAMRAAM has been tuned to enable multi-purpose targetting, allowing it to be used to attack ground targets-particularly Mobile Suits.</div>",
-    "effect": "<div>You may attack enemies with Lock-On applied to them as if this was Range 20.</div>",
+    "effect": "You may attack enemies with Lock-On applied to them as if this was Range 20. You gain Reliable 3 against flying targets.",
     "mount": "Main",
     "type": "Launcher",
     "sp": "0",
     "barrage": true,
     "skirmish": true,
+    "on_hit": "When you consume lock-on and hit with a JAMRAAM, subsequent JAMRAAM attacks against that enemy this turn count as having consumed lock-on.",
     "damage": [
       {
         "type": "Explosive",
@@ -4437,7 +4438,7 @@
     "license_id": "MSG0079_zaku_flipper",
     "license_level": 1,
     "description": "<em><span>However, due to not developing with experimental Psycomu Technology, significant upgrade packages were developed, such as advanced sensors and cameras for the Zaku Flipper. Essentially a mobile suit-sized, one-handed camcorder, this camera records everything about its target, external and internal systems.</span></em>",
-    "effect": "<span>This doesn’t deal any damage. </span>",
+    "effect": "<span>This weapon can’t deal any damage. </span>",
     "mount": "Auxiliary",
     "type": "CQB",
     "sp": 0,

@@ -1569,7 +1569,7 @@
     "variant": "VF-0 Phoenix",
     "description": "<span>After the completion of the MSA-005 Methuss, Anaheim Electronics started to explore further development potential of the mobile suit. The design team for the MSA-005X-1 Methuss X-1 included former members of the Hervic Company, which developed the FF-X7 Core Fighter during the One Year War. The X-1 was designed for air superiority in a 1G environment, resulting in its mobile armor mode resembling an air combat fighter. Stealth properties built into the design of the X-1 made it difficult to detect by radar. The X-1’s clipped delta wing design allowed for stable, high-speed flight. Its tail stabilizers, which mounted electronic equipment, were later used by the Zeta Plus series and other mobile suits.</span>",
     "mounts": [
-      "Aux/Aux",
+      "Flex",
       "Flex",
       "Heavy"
     ],
@@ -1591,59 +1591,49 @@
     },
     "traits": [
       {
-        "name": "Fragile",
-        "use": "",
-        "description": "<span>The X-1 makes all Hull Checks and Saves with +1 Difficulty.</span>"
-      },
-      {
         "name": "Calibrated Weapon",
         "use": "",
-        "description": "<span>When you build this mech or Rest, choose 1 Ranged Weapon. You may ignore the Heat (self), Overkill, and Ordnance of that weapon.</span>"
+        "description": "<span>When you build this mech or Rest, choose one mount. You may ignore the Heat (self), Overkill, and Ordnance of all weapons on that mount.</span>"
       },
       {
         "name": "Reactor Bleed",
         "use": "",
-        "description": "<span>When the X-1 is in the Danger Zone, all of its weapons that would deal kinetic or explosive damage instead deal energy. Additionally, 1/turn when you consume Lock On for an attack roll while in the Danger Zone, the attack’s damage, heat, and burn cannot be reduced.</span>"
+        "description": "<span>When the X-1 is in the Danger Zone, all of its weapons that would deal kinetic or explosive damage instead deal energy, and all ranged weapons count as CQB weapons with Threat 3. </span>"
       },
       {
-        "name": "Head-Mounted Display Tracking",
+        "name": "Fragile",
         "use": "",
-        "description": "<span>Upon destroying or structuring a character after having consumed a </span><strong>Lock-On</strong><span>, the X-1 may immediately apply </span><strong>Lock-On</strong><span> to any other character within Sensors (including the same character if this was triggered via structuring). This can only trigger once per character during the same turn.</span>"
+        "description": "<span>The X-1 makes all Hull Checks and Saves with +1 Difficulty.</span>"
       }
     ],
     "core_system": {
       "name": "AIR SUPERIORITY KIT",
-      "active_name": "Hyper-Active Intercept Suite",
-      "active_effect": "<strong><span>Trigger:</span></strong><span> When a hostile character moves within Range 10 and Line of Sight, even if that movement does not provoke Reactions.</span><br><strong><span>Effect:</span></strong><span> You may expend your Overwatch reaction to Barrage against the triggering character. This Barrage ignores restrictions against allowing Superheavy weapons to fire as a reaction and counts as having consumed Lock On. This action is </span><strong><span>Efficient</span></strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span>",
-      "activation": "Reaction",
+      "active_name": "Minovsky Particle Saturation",
+      "active_effect": "<span>Until the end of the scene, hostile characters consider you Invisible if you are 5 or more spaces away from them.</span>",
+      "activation": "Protocol",
       "description": "<span>The X-1's design team conducted trials at the California Base, including transformation tests at subsonic speeds to observe the X-1’s adaptability in changing combat situations. However, the X-1 was unable to withstand the shock of transformation at subsonic speed and was destroyed. However, the data gathered contributed to improving the atmospheric flight performance of the MSZ-006A1 Zeta Plus A1.</span>",
       "deactivation": "",
       "use": "Scene",
       "active_actions": [
         {
-          "name": "Hyper-Active Intercept",
-          "activation": "Reaction",
-          "detail": "<span>You may expend your Overwatch reaction to Barrage against them. This ignores restrictions against allowing Superheavy weapons to fire as a reaction, but if you don’t fire a Superheavy with this action, you may instead Barrage with up to 3 Mounts. This action is </span><strong><span>Efficient</span></strong><span>, and refunds 1 Core Power at the end of any scene in which it’s used.</span>",
-          "cost": "1",
+          "name": "Minovsky Particle Saturation",
+          "activation": "Protocol",
+          "detail": "<span>Until the end of the scene, hostile characters consider you Invisible if you are 5 or more spaces away from them.</span>",
+          "cost": 0,
           "pilot": false,
           "damage": [],
-          "range": [
-            {
-              "type": "Range",
-              "val": 10
-            }
-          ],
+          "range": [],
           "synergy_locations": [],
           "tech_attack": false,
           "frequency": "Unlimited",
           "init": "",
-          "trigger": "<span>When a hostile character moves within Range 5, even if that movement does not provoke Reactions.</span>"
+          "trigger": ""
         }
       ],
       "active_bonuses": [],
       "active_synergies": [],
       "passive_name": "Transformable Stealth Mobile Armor",
-      "passive_effect": "<span>As a Protocol, the X-1 may change into one of the following modes. It may choose to start a scene in any form. You may not transform and use </span><strong><span>Full Afterburners</span></strong><span> on the same turn.<br></span><strong><span>Mobile Suit mode:</span></strong><br/><ul><li><span>Treats all Ranged weapons that deal energy as CQB weapons with Threat 3, but their range is halved (down to a minimum of their Threat).&nbsp;</span><br/></li><li><span>While in the Danger Zone, you may Hover.</span><br/></li><li><span>1/round, as a Quick Action, you may gain 4 Heat and choose an adjacent allied mech character. The target’s next attack gains the Reactor Bleed trait and counts as having consumed Lock On, but you may not make attacks or Stabilize until the target has resolved their attack, nor before taking this Quick Action.</span><br/></li></ul><strong><span>Mobile Armor mode:</span></strong><br/><ul><li><span>May count all movement as Flying.</span><br/></li><li><span>The X-1 gains a special Hard Cover against Smart and Tech Attacks, and hostiles attempting to Lock On against the X-1 must first pass a Systems save. On a Failure, the Lock On action automatically fails.</span><br/></li><li><strong><span>Full Afterburners: </span></strong><span>1/round, you may Boost as a Free Action. If you are not in the Danger Zone when you do so, you gain 2 heat.</span><br/></li><li><span>You may not make melee attacks other than Ram.</span><br/></li></ul>",
+      "passive_effect": "<span>As a Protocol, the X-1 may change into one of the following modes. It may choose to start a scene in any form. You may not transform and use </span><strong><span>Full Afterburners</span></strong><span> on the same turn.<br></span><strong><span>Mobile Suit mode:</span></strong><br/><ul><li><span>You may now Overwatch 2/round, but only 1/turn as usual.</span><br/></li><li><span>May count all movement as Hovering.</span><br/></li><li><span>1/round, as a Quick Action, you may gain 4 Heat and choose an adjacent allied mech character. The target’s next attack gains the Reactor Bleed trait and counts as having consumed Lock On, but you may not make attacks or Stabilize until the target has resolved their attack, nor before taking this Quick Action.</span><br/></li></ul><strong><span>Mobile Armor mode:</span></strong><br/><ul><li><span>May count all movement as Flying.</span><br/></li><li><span>The X-1 gains a special Hard Cover against Smart and Tech Attacks, and hostiles attempting to Lock On against the X-1 must first pass a Systems save. On a Failure, the Lock On action automatically fails.</span><br/></li><li><strong><span>Full Afterburners: </span></strong><span>1/round, you may Boost as a Free Action. If you are not in the Danger Zone when you do so, you gain 2 heat.</span><br/></li><li><span>You may not make melee attacks other than Ram.</span><br/></li></ul>",
       "passive_actions": [
         {
           "name": "Change Mode",
