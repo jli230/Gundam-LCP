@@ -5282,7 +5282,7 @@
     "source": "ZN",
     "license": "MA-03S Adzam Command Type",
     "license_id": "MSG0079_Adzam",
-    "license_level": 3,
+    "license_level": 1,
     "description": "",
     "effect": "<span>If this weapon is on a mount with another instance of itself, both deal +1 bonus damage.</span>",
     "mount": "Auxiliary",
@@ -5321,6 +5321,61 @@
       {
         "type": "Range",
         "val": 8
+      }
+    ]
+  },
+  {
+    "id": "MSG0079_Hygogg_Claws",
+    "name": "Serrated Heat Claws",
+    "source": "ZN",
+    "license": "MSM-03C Hygogg ",
+    "license_id": "MSG0079_msm_zerothreec_hygogg_",
+    "license_level": 2,
+    "description": "",
+    "mount": "Main",
+    "type": "Melee",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_overkill",
+        "name": "Overkill",
+        "description": "When rolling for damage with this weapon, any damage dice that land on a 1 cause the attacker to take 1 Heat, and are then rerolled. Additional 1s continue to trigger this effect."
+      },
+      {
+        "id": "tg_ap",
+        "name": "Armor-Piercing (AP)",
+        "description": "Damage dealt by this weapon ignores Armor."
+      }
+    ],
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3"
+      },
+      {
+        "type": "Burn",
+        "val": 2
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Tear Apart",
+        "activation": "Reaction",
+        "detail": "Make an attack with this weapon on the trigger character. On hit, the character must succeed on a <strong>Hull </strong>save or be <strong>Shredded </strong>until the end of their next turn.",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "A character you are grappling is moved out of grapple by any means."
       }
     ]
   }

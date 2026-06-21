@@ -174,15 +174,15 @@
       "size": 2,
       "structure": 4,
       "stress": 4,
-      "armor": 0,
-      "hp": 8,
-      "evasion": 8,
+      "armor": 1,
+      "hp": 12,
+      "evasion": 10,
       "edef": 8,
       "heatcap": 6,
       "repcap": 4,
       "sensor_range": 5,
       "tech_attack": -2,
-      "save": 10,
+      "save": 11,
       "speed": 4,
       "sp": 5
     },
@@ -206,8 +206,8 @@
     "core_system": {
       "name": "Kraken Routine",
       "active_name": "IT CAME FROM THE SEA",
-      "active_effect": "<span>For the remainder of the scene, the Hygogg exerts a </span><strong><span>Burst </span></strong><span>2 zone of control. Any character of its choice that enters, exits, or moves within this zone must succeed a </span><strong><span>Hull </span></strong><span>save or be pulled adjacent (or to the nearest free space) and grappled. Additionally, for the purposes of engagement, ramming, and grappling, the Hygogg always counts as the larger character while this effect is active.</span>",
-      "activation": "Full",
+      "active_effect": "<span>For the remainder of the scene, the Hygogg exerts a </span><strong><span>Burst </span></strong><span>3 zone of control. Any character of its choice that enters, exits, or moves within this zone must succeed a </span><strong><span>Hull </span></strong><span>save or be pulled adjacent (or to the nearest free space) and grappled. Additionally, for the purposes of engagement, ramming, and grappling, the Hygogg always counts as the larger character while this effect is active. When this core is active, the Hygogg may take reactions during grapples.</span>",
+      "activation": "Quick",
       "description": "",
       "deactivation": "",
       "use": "",
@@ -1228,7 +1228,7 @@
       "structure": 4,
       "stress": 4,
       "armor": 3,
-      "hp": 4,
+      "hp": 8,
       "evasion": 6,
       "edef": 8,
       "heatcap": 6,
@@ -1310,7 +1310,7 @@
     },
     "specialty": false,
     "image_url": "https://i.imgur.com/pNUl6q8.png",
-    "y_pos": "32"
+    "y_pos": 32
   },
   {
     "id": "fdsafdjsaiofghdsia",
